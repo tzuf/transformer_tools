@@ -632,7 +632,7 @@ def params(config):
 
     group.add_option("--data_builder",
                          dest="data_builder",
-                         default='json_mcqa',
+                         default='multi_qa',
                          type=str,
                          help="Dataset builder function [default='json_mcqa']")
 

@@ -399,10 +399,12 @@ def multi_qa(config,
             else: prefix = "answer:"
 
             # # #### encoder side 
-            input_ = "%s %s </s>" % (prefix,json_line["question"]["stem"])
+            #input_ = "%s %s </s>" % (prefix,json_line["question"]["stem"])
+            input_ = "%s %s" % (prefix,json_line["question"]["stem"])
             input_ = re.sub(r'\s+|\n+',' ',input_)
             ## decoder side
-            target = "%s </s>" % json_line["output"]
+            #target = "%s </s>" % json_line["output"]
+            target = "%s" % json_line["output"]
 
             ##
             input_tokens = tokenizer.tokenize(input_)
@@ -413,7 +415,8 @@ def multi_qa(config,
             tokenized_inputs = tokenizer.batch_encode_plus(
                     [input_],
                     max_length=config.max_seq_length,
-                    pad_to_max_length=True,
+                    #pad_to_max_length=True,
+                    padding=True,
                     return_tensors="pt",
                     truncation=True, ## throws off warning if switched off
                 )
@@ -421,7 +424,8 @@ def multi_qa(config,
             tokenized_targets = tokenizer.batch_encode_plus(
                     [target],
                     max_length=config.max_answer,
-                    pad_to_max_length=True,
+                    #pad_to_max_length=True,
+                    padding=True,
                     return_tensors="pt",
                     truncation=True, ## throws off warning if switched off
                 )
