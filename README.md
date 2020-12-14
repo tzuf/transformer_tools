@@ -12,8 +12,9 @@ conda create -n transformer_tools python=3.6.7
 conda activate transformer_tools ## after setting up above
 pip install -r requirements.txt
 ```
+Below are some of the current use cases. 
 
-Running T5
+Running T5 for QA
 ----------------------------
 One main utility here is the T5 model, to run this and see all of its
 options, do the following:
@@ -90,10 +91,11 @@ single GPU), but so far I've only been able to get this to work with
 `gradient_accumulation` (e.g., by adding
 `--gradient_accumulation_steps "8"` above) and a `train_batch_size` of 1. 
 
-Running Transformer Taggers
+Polarity Projection Models 
 ----------------------------
 
-TODO: add documentation
+
+
 
 
 Setting up on beaker (AI2 Internal)
@@ -102,4 +104,10 @@ Setting up on beaker (AI2 Internal)
 Do the following:
 ```
 ./create_beaker_image.sh
+```
+
+An example beaker experiment is included in
+`etc/beaker_templates/run_t5_babi_v1.yaml`. To launch, run:
+```
+beaker experiment create -n "beaker_babi_run" -f etc/beaker_templates/run_t5_babi_v1.yaml
 ```
