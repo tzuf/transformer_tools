@@ -1,7 +1,9 @@
 # #### an interface to the `simple_transformers` NER models
 
+import os
 import logging 
 import sys
+import torch
 import numpy as np
 import pandas as pd
 from scipy.special import softmax
@@ -15,22 +17,30 @@ from transformer_tools.Base import (
     LoggableClass,
 )
 
-# def LoadTagger(config):
-#     """Factory method for loading a tagger 
+util_logger = logging.getLogger('transformer_tools.Tagger')
 
-#     :param config: the global configuration 
-#     """
-#     NERModel("bert",
-#                  "bert-base-cased",
-#                  args={"overwrite_output_dir": True, "reprocess_input_data": True})
+## data loaders 
+
+def _load(labels):
+    util_logger.info('Loading label list...')
+    label_list = ["O"]
+    with open(labels) as my_labels:
+        for line in my_labels:
+            line = line.strip()
+            label_list.append("B-%s" % line)
+
+    out_list = list(set(label_list))
+    util_logger.info('Output list: %s' % out_list)
+    return out_list
 
 class TaggerModel(ConfigurableClass):
     """Base class for building tagger models
 
     """
 
-    def __init__(self,model):
+    def __init__(self,model,config):
         self.model = model
+        self.config = config
 
     @classmethod
     def from_config(cls,config):
@@ -53,16 +63,43 @@ class TaggerModel(ConfigurableClass):
 
         :param config: the global configuration 
         """
+        ## find labels in list
+        label_list = _load(config.label_list)
+        use_cuda = True if torch.cuda.is_available() else False
+        
         model = NERModel(
             config.model_name,
             config.model_type,
-            use_cuda=False,
+            use_cuda=use_cuda,
+            labels=label_list,
             args={
                 "overwrite_output_dir" : True,
                 "reprocess_input_data": True,
+                "learning_rate"       : config.learning_rate,
+                "num_train_epochs"    : config.num_train_epochs,
+                "train_batch_size"    : config.train_batch_size,
+                "eval_batch_size"     : config.eval_batch_size,
+                "gradient_accumulation_steps": config.gradient_accumulation_steps,
+                "use_early_stopping" : config.early_stopping,
             }
         )
-        return cls(model)
+        return cls(model,config)
+
+    def train_model(self):
+        """Main method for training the data 
+
+        :rtype: None 
+        """
+        self.logger.info('Loading the data...')
+        #train_data = self.load_data(split="train")
+        #dev_data = self.load_data(split="dev")
+
+        self.logger.info('Training the model...')
+        self.model.train_model(
+            [],
+            output_dir=self.config.output_dir,
+            )
+        #print("hello world")
 
 class ArrowTagger(TaggerModel):
     pass
@@ -122,7 +159,7 @@ def TaggerModel(config):
     tclass = _TAGGERS.get(config.tagger_model)
     if tclass is None:
         raise ValueError('Unknown tagger: %s' % config.tagger_model)
-    if not config.label_list or os.path.isfile(config.label_list):
+    if not config.label_list or not os.path.isfile(config.label_list):
         raise ValueError('Must specify a label list!')
     
     return tclass.from_config(config)
@@ -139,8 +176,8 @@ def main(argv):
     config = initialize_config(argv,params)
 
     model = TaggerModel(config)
-
-
+    if not config.no_training: 
+        model.train_model()
 
 if __name__ == "__main__":
     main(sys.argv[1:])
