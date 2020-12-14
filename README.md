@@ -21,6 +21,12 @@ options, do the following:
 ./run.sh {T5Generator,T5Classifier} --help 
 ```
 
+Running Transformer Taggers
+----------------------------
+
+TODO: add documentation
+
+
 Setting up on beaker
 ---------------------------
 
