@@ -1,0 +1,12 @@
+*.md
+etc/kb
+*/*.py~
+*.py~
+examples/*
+etc/*
+
+notes/
+notebooks/
+_runs/
+etc/datasets/*
+_runs/*
