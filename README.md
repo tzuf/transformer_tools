@@ -21,6 +21,31 @@ options, do the following:
 ./run.sh {T5Generator,T5Classifier} --help 
 ```
 
+The following trains a T5 classifier model on a version of the babi
+data:
+```
+./run.sh  T5Classifier \
+          --dtype mcqa \
+          --output_dir _runs/example \
+          --data_dir etc/data/mix_babi \
+          --num_train_epochs "8" \
+          --model_name_or_path  t5-large \
+          --tokenizer_name_or_path t5-large \
+          --learning_rate "0.0005" \
+          --train_batch_size "16" \
+          --seed "42" \
+          --max_seq_len "250" \
+          --max_answer, "5" \
+          --early_stopping \
+          --dev_eval \
+          --patience "4" \
+          --num_beams "2" \
+          --print_output \
+          --no_repeat_ngram_size "0" 
+```
+
+
+
 Running Transformer Taggers
 ----------------------------
 

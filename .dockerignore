@@ -4,6 +4,7 @@ etc/kb
 *.py~
 examples/*
 etc/*
+scripts/*
 
 notes/
 notebooks/
