@@ -648,6 +648,8 @@ def params(config):
                          type=str,
                          help="The type of generation prefix to use [default='retrieve:']")
 
+    config.add_option_group(group)
+
 def main(argv):
     """Main execution point 
 

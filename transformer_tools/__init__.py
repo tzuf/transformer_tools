@@ -93,8 +93,8 @@ def _load_module(module_path):
         #util_logger.error(e,exc_info=True)
 
 _SHORTCUTS = {
-    "t5_classifier" : "transformer_tools.solver",
-    "t5_generator"   : "transformer_tools.lang",
+    # "t5_classifier"  : "transformer_tools.solver",
+    # "t5_generator"   : "transformer_tools.lang",
 }
 
 def get_config(module_name,logging='info'):

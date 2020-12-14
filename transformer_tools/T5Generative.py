@@ -254,6 +254,8 @@ def params(config):
                          type=str,
                          help="Dataset builder function [default='json_mcqa']")
 
+    config.add_option_group(group)
+
 def main(argv):
     """Main execution loop
 
