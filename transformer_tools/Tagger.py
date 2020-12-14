@@ -1,5 +1,5 @@
 # #### an interface to the `simple_transformers` NER models
-
+import json
 import os
 import logging 
 import sys
@@ -10,6 +10,8 @@ from scipy.special import softmax
 from simpletransformers.ner import NERModel
 from optparse import OptionParser,OptionGroup
 
+from transformer_tools.util.tagger_utils import *
+
 
 from transformer_tools.Base import (
     ConfigurableClass,
@@ -18,20 +20,7 @@ from transformer_tools.Base import (
 )
 
 util_logger = logging.getLogger('transformer_tools.Tagger')
-
-## data loaders 
-
-def _load(labels):
-    util_logger.info('Loading label list...')
-    label_list = ["O"]
-    with open(labels) as my_labels:
-        for line in my_labels:
-            line = line.strip()
-            label_list.append("B-%s" % line)
-
-    out_list = list(set(label_list))
-    util_logger.info('Output list: %s' % out_list)
-    return out_list
+    
 
 class TaggerModel(ConfigurableClass):
     """Base class for building tagger models
@@ -64,7 +53,7 @@ class TaggerModel(ConfigurableClass):
         :param config: the global configuration 
         """
         ## find labels in list
-        label_list = _load(config.label_list)
+        label_list = load_label_list(config.label_list)
         use_cuda = True if torch.cuda.is_available() else False
         
         model = NERModel(
@@ -72,16 +61,6 @@ class TaggerModel(ConfigurableClass):
             config.model_type,
             use_cuda=use_cuda,
             labels=label_list,
-            args={
-                "overwrite_output_dir" : True,
-                "reprocess_input_data": True,
-                "learning_rate"       : config.learning_rate,
-                "num_train_epochs"    : config.num_train_epochs,
-                "train_batch_size"    : config.train_batch_size,
-                "eval_batch_size"     : config.eval_batch_size,
-                "gradient_accumulation_steps": config.gradient_accumulation_steps,
-                "use_early_stopping" : config.early_stopping,
-            }
         )
         return cls(model,config)
 
@@ -91,18 +70,35 @@ class TaggerModel(ConfigurableClass):
         :rtype: None 
         """
         self.logger.info('Loading the data...')
-        #train_data = self.load_data(split="train")
-        #dev_data = self.load_data(split="dev")
+        train_data = self.load_data(split="train")
+        dev_data = self.load_data(split="dev")
 
         self.logger.info('Training the model...')
         self.model.train_model(
-            [],
+            train_data,
+            eval_data=dev_data,
             output_dir=self.config.output_dir,
-            )
+            args={
+                "overwrite_output_dir" : True,
+                "reprocess_input_data": True,
+                "learning_rate"       : self.config.learning_rate,
+                "num_train_epochs"    : self.config.num_train_epochs,
+                "train_batch_size"    : self.config.train_batch_size,
+                "eval_batch_size"     : self.config.eval_batch_size,
+                "gradient_accumulation_steps": self.config.gradient_accumulation_steps,
+                "use_early_stopping" : self.config.early_stopping,
+            })
+
         #print("hello world")
 
 class ArrowTagger(TaggerModel):
-    pass
+
+    def load_data(self,split='train'):
+        """Load data for running experiments 
+
+        :param split: the particular split to load 
+        """
+        return load_arrow_data(self.config.data_dir,split)
     
 
 def params(config):
