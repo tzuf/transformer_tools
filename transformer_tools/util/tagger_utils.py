@@ -140,10 +140,10 @@ def read_report(output_dir):
             fields = [l for l in re.split("\s+",line) if l.strip()]
             if len(fields) == 5: 
                 label = fields[0]
-                label_scores["%s_precision" % label] = float(field[1])
-                label_scores["%s_recall" % label] = float(field[2])
-                label_scores["%s_f1-score" % label] = float(field[3])
-                label_scores["%s_support" % label] = float(field[4])
+                label_scores["%s_precision" % label] = float(fields[1])
+                label_scores["%s_recall" % label] = float(fields[2])
+                label_scores["%s_f1-score" % label] = float(fields[3])
+                label_scores["%s_support" % label] = float(fields[4])
 
     util_logger.info(label_scores)
     return label_scores
