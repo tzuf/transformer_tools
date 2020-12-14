@@ -41,7 +41,8 @@ data:
           --patience "4" \
           --num_beams "2" \
           --print_output \
-          --no_repeat_ngram_size "0" 
+          --no_repeat_ngram_size "0"
+          --T5_type T5ClassificationMultiQA
 ```
 
 Running Transformer Taggers
