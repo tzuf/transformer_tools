@@ -94,7 +94,7 @@ single GPU), but so far I've only been able to get this to work with
 Polarity Projection Models 
 ----------------------------
 This library also has functionality for sequence tagging using pre-trained
-encoder (e.g., BERT, RoBERTa, ..).  The current version relies on the
+encoders (e.g., BERT, RoBERTa, ..).  The current version relies on the
 [**Simple Transformers**](https://www.google.com/search?q=simple+transformers&oq=simple&aqs=chrome.1.69i57j69i59l2j69i60l3j69i65j69i60.2021j0j4&sourceid=chrome&ie=UTF-8)
 library.
 
@@ -108,13 +108,27 @@ The code below will train a *BERT-base* polarity tagger.
   --train_batch_size "16" \
   --label_list "B-up;B-down;B-=" \ ## set of target labels
   --dev_eval \
-  --print_output \
+  --print_output \ ## will print the model predictions, etc..
   --model_name bert \
   --model_type bert-base-uncased \
   --tagger_model arrow_tagger
 ```
 As above, type `./run.sh Tagger --help` to see the full list of
-details. 
+details. The target files have the same format as above:
+```
+{
+     "1148_sick.matched.txt_first_arrows"
+    "question" :
+        {
+            "stem": "A man and a woman are hiking through a wooded area"
+        },
+    "output": "u u u u u u u u u u u"
+}
+```
+where the `output` field shows the target arrow annotations (`u/up` =
+up; `d/down` = down, `=` = equals. Should also work with symbols `↑`
+and `↓`, if you prefer).
+
 
 Setting up on beaker (AI2 Internal)
 ---------------------------
