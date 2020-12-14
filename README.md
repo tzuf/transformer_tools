@@ -44,8 +44,6 @@ data:
           --no_repeat_ngram_size "0" 
 ```
 
-
-
 Running Transformer Taggers
 ----------------------------
 
