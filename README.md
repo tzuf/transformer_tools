@@ -21,7 +21,7 @@ options, do the following:
 ./run.sh {T5Generator,T5Classifier} --help 
 ```
 
-The following trains a T5 classifier model on a version of the babi
+The following trains a T5(-large) classifier model on a version of the babi
 data:
 ```
 ./run.sh  T5Classifier \

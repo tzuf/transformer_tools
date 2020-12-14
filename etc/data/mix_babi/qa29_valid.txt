@@ -1,0 +1,4428 @@
+1 Julie and Jeff went to the school.
+2 After that they went back to the office.
+3 Where is Julie?	office
+4 Jeff went back to the bathroom.
+5 Then he went to the bedroom.
+6 Is Julie in the office?	yes
+7 Bill and Sandra moved to the park.
+8 Bill went back to the kitchen.
+9 John is either in the office or the school.
+10 Is Julie in the office?	yes
+11 Daniel is in the park.
+12 Sandra is not in the bathroom.
+13 Bill is in the school.
+14 Where is Daniel?	park
+15 Bill picked up the football.
+16 Daniel is either in the bathroom or the hallway.
+17 Where is Jeff?	bedroom
+1 John and Sandra journeyed to the garden.
+2 After that they journeyed to the school.
+3 Is Sandra in the school?	yes
+4 John is in the garden.
+5 Daniel journeyed to the office.
+6 Where is Daniel?	office
+7 Jeff got the football.
+8 Jeff discarded the football.
+9 After that he journeyed to the cinema.
+10 Where is Sandra?	school
+11 Julie travelled to the school.
+12 John went back to the cinema.
+13 Afterwards he went back to the school.
+14 Daniel took the football there.
+15 After that he discarded the football.
+16 Daniel grabbed the apple.
+17 Daniel moved to the bedroom.
+18 Where is the apple?	bedroom
+19 John and Jeff travelled to the hallway.
+20 Then they journeyed to the garden.
+21 Daniel dropped the apple there.
+22 Where is Jeff?	garden
+1 Fred is in the garden.
+2 Julie and Bill went back to the bedroom.
+3 Then they moved to the park.
+4 John went to the garden.
+5 After that he moved to the hallway.
+6 Where is Fred?	garden
+7 Mary is either in the bedroom or the garden.
+8 Daniel is either in the park or the bedroom.
+9 Mary and Julie moved to the school.
+10 John travelled to the kitchen.
+11 Afterwards he went back to the cinema.
+12 Where is Mary?	school
+13 John went back to the school.
+14 Sandra travelled to the cinema.
+15 Is Daniel in the garden?	no
+16 Julie is either in the cinema or the park.
+17 Bill grabbed the milk there.
+18 Then he left the milk.
+19 Where is the milk?	park
+20 John and Mary journeyed to the office.
+21 Sandra and Daniel travelled to the park.
+22 Bill is no longer in the school.
+23 Daniel took the milk there.
+24 Then he went back to the hallway.
+25 Sandra and Bill went back to the bedroom.
+26 Afterwards they went back to the hallway.
+27 Fred went back to the park.
+28 Where is Bill?	hallway
+1 Mary is no longer in the school.
+2 John and Mary went back to the bathroom.
+3 Is John in the bathroom?	yes
+4 Jeff moved to the hallway.
+5 Afterwards he took the milk.
+6 John is not in the garden.
+7 Bill is either in the garden or the park.
+8 Sandra got the football there.
+9 Following that she dropped the football.
+10 Julie is in the school.
+11 Where is the milk?	hallway
+12 Sandra got the football.
+13 Jeff discarded the milk.
+14 Where is Mary?	bathroom
+15 Jeff grabbed the milk.
+16 Daniel travelled to the kitchen.
+17 After that he went to the hallway.
+18 Where is the milk?	hallway
+19 Bill is either in the bedroom or the school.
+20 Jeff passed the milk to Daniel.
+21 Julie and Mary went to the kitchen.
+22 Then they travelled to the office.
+23 Sandra and Daniel travelled to the bedroom.
+24 Following that they moved to the kitchen.
+25 Is Sandra in the kitchen?	yes
+1 Daniel grabbed the football there.
+2 John went to the bathroom.
+3 Afterwards he moved to the bedroom.
+4 Is John in the bedroom?	yes
+5 Bill and Jeff travelled to the cinema.
+6 Afterwards they went to the park.
+7 Daniel put down the football there.
+8 Where is Bill?	park
+9 Sandra travelled to the office.
+10 Julie is either in the park or the kitchen.
+11 Is Sandra in the office?	yes
+12 Mary moved to the park.
+13 Fred is not in the hallway.
+14 Julie and John moved to the bathroom.
+15 After that they went back to the cinema.
+16 Is Julie in the cinema?	yes
+17 Mary and Daniel travelled to the school.
+18 Mary is either in the bathroom or the office.
+19 Where is Sandra?	office
+1 Jeff took the milk.
+2 Bill got the football.
+3 Mary journeyed to the bathroom.
+4 After that she moved to the park.
+5 How many objects is Fred carrying?	none
+6 Sandra picked up the apple there.
+7 Following that she went to the school.
+8 How many objects is Julie carrying?	none
+9 Sandra is no longer in the garden.
+10 Sandra is either in the cinema or the school.
+11 Is Mary in the cinema?	no
+12 Mary is no longer in the bathroom.
+13 Sandra discarded the apple.
+14 Then she went back to the hallway.
+15 Where is Sandra?	hallway
+16 John is either in the cinema or the park.
+17 John is either in the garden or the school.
+18 Daniel is either in the hallway or the bedroom.
+19 Bill journeyed to the kitchen.
+20 Bill is not in the hallway.
+21 Jeff passed the milk to Sandra.
+22 Who gave the milk to Sandra?	Jeff
+1 Jeff and Sandra moved to the cinema.
+2 Following that they moved to the park.
+3 Is Sandra in the park?	yes
+4 Mary is in the garden.
+5 Sandra is either in the cinema or the hallway.
+6 John is either in the kitchen or the park.
+7 Daniel moved to the bathroom.
+8 Is John in the park?	maybe
+9 Daniel is either in the kitchen or the park.
+10 Daniel and John went back to the bedroom.
+11 After that they moved to the bathroom.
+12 Is John in the school?	no
+13 Fred grabbed the football.
+14 Daniel picked up the apple.
+15 Daniel left the apple there.
+16 Where is the apple?	bathroom
+17 John and Fred moved to the office.
+18 Then they travelled to the school.
+19 How many objects is Daniel carrying?	none
+1 John and Daniel went back to the bedroom.
+2 After that they moved to the school.
+3 Is Daniel in the school?	yes
+4 John went to the bedroom.
+5 Sandra and John travelled to the bathroom.
+6 Sandra got the apple.
+7 Then she put down the apple there.
+8 Is Daniel in the school?	yes
+9 Sandra got the apple there.
+10 John and Jeff went back to the park.
+11 Is Jeff in the hallway?	no
+12 Julie is in the bedroom.
+13 Sandra dropped the apple.
+14 Afterwards she took the apple.
+15 Where is Jeff?	park
+16 Julie is either in the cinema or the kitchen.
+17 Sandra put down the apple.
+18 Then she got the apple there.
+19 Where is Jeff?	park
+1 Daniel is either in the kitchen or the bedroom.
+2 Julie is in the cinema.
+3 Where is Julie?	cinema
+4 John took the milk there.
+5 Fred grabbed the football there.
+6 Julie moved to the park.
+7 How many objects is Mary carrying?	none
+8 Sandra travelled to the kitchen.
+9 Fred moved to the hallway.
+10 After that he left the football there.
+11 John is either in the garden or the bedroom.
+12 Fred picked up the football.
+13 Then he discarded the football.
+14 Fred went back to the school.
+15 How many objects is Fred carrying?	none
+16 Sandra and Mary went to the bathroom.
+17 Afterwards they went to the garden.
+18 How many objects is Sandra carrying?	none
+19 Daniel is no longer in the bathroom.
+20 Daniel grabbed the apple there.
+21 John handed the milk to Sandra.
+22 Where is the milk?	garden
+1 Sandra and John journeyed to the hallway.
+2 John moved to the kitchen.
+3 Then he travelled to the bathroom.
+4 Where is John?	bathroom
+5 John journeyed to the hallway.
+6 Fred is either in the school or the office.
+7 Bill journeyed to the kitchen.
+8 Afterwards he went to the cinema.
+9 Fred journeyed to the garden.
+10 Is Fred in the garden?	yes
+11 Bill and Fred journeyed to the hallway.
+12 Daniel and Julie moved to the office.
+13 Then they went back to the kitchen.
+14 Mary got the milk.
+15 Bill and Julie journeyed to the school.
+16 Afterwards they moved to the bathroom.
+17 Is John in the hallway?	yes
+18 John is either in the park or the garden.
+19 Bill and Jeff journeyed to the cinema.
+20 Afterwards they went to the garden.
+21 Jeff and Sandra journeyed to the school.
+22 Then they travelled to the garden.
+23 Mary discarded the milk.
+24 Is John in the office?	no
+25 Fred is either in the bedroom or the school.
+26 Julie picked up the apple there.
+27 Where is the apple?	bathroom
+1 Mary took the apple there.
+2 Daniel got the football there.
+3 Daniel and Julie travelled to the school.
+4 Afterwards they travelled to the hallway.
+5 How many objects is Fred carrying?	none
+6 Mary discarded the apple there.
+7 Julie went to the school.
+8 Daniel dropped the football.
+9 Bill and Jeff went to the bedroom.
+10 Fred is either in the hallway or the school.
+11 Mary grabbed the apple there.
+12 Where is the football?	hallway
+13 Sandra and Fred went back to the park.
+14 Fred is either in the school or the office.
+15 Where is Julie?	school
+16 Mary dropped the apple there.
+17 Bill is either in the park or the bathroom.
+18 Julie went back to the hallway.
+19 Is Fred in the cinema?	no
+20 Mary is either in the bedroom or the school.
+21 Fred went to the office.
+22 Where was the football before the hallway?	school
+1 Bill took the football there.
+2 Sandra is either in the cinema or the park.
+3 Bill put down the football.
+4 Is Sandra in the kitchen?	no
+5 Fred is either in the bedroom or the bathroom.
+6 John is no longer in the park.
+7 John picked up the football there.
+8 John passed the football to Bill.
+9 How many objects is Sandra carrying?	none
+10 Julie went back to the garden.
+11 Julie is in the office.
+12 How many objects is Julie carrying?	none
+13 Daniel is no longer in the office.
+14 Bill got the milk.
+15 What did John give to Bill?	football
+16 Bill dropped the football there.
+17 Bill handed the milk to John.
+18 Who received the milk?	John
+1 Bill is in the cinema.
+2 Jeff went to the school.
+3 Mary grabbed the apple.
+4 How many objects is Jeff carrying?	none
+5 Mary and Julie moved to the park.
+6 Jeff is no longer in the park.
+7 John went back to the office.
+8 Fred travelled to the office.
+9 Mary put down the apple there.
+10 After that she grabbed the milk.
+11 John journeyed to the bedroom.
+12 Is John in the school?	no
+13 Bill moved to the bedroom.
+14 Afterwards he journeyed to the garden.
+15 Mary put down the milk.
+16 Then she got the milk.
+17 Where is the apple?	park
+18 Mary handed the milk to Julie.
+19 Jeff is in the garden.
+20 Mary grabbed the apple there.
+21 Afterwards she moved to the hallway.
+22 Mary gave the apple to Sandra.
+23 Where is the milk?	park
+24 Julie left the milk.
+25 Fred travelled to the bathroom.
+26 Where was the apple before the hallway?	park
+1 Bill is either in the school or the bathroom.
+2 Fred moved to the school.
+3 Is Bill in the bathroom?	maybe
+4 Mary travelled to the cinema.
+5 Bill is in the school.
+6 John got the apple there.
+7 Afterwards he went to the office.
+8 Bill moved to the hallway.
+9 Is John in the park?	no
+10 Fred got the football.
+11 Julie went to the office.
+12 After that she went back to the hallway.
+13 Where is John?	office
+14 Daniel moved to the cinema.
+15 Sandra journeyed to the kitchen.
+16 Where is John?	office
+17 Fred gave the football to Jeff.
+18 Daniel and Jeff went back to the office.
+19 Jeff went back to the school.
+20 Jeff put down the football there.
+21 Then he went to the garden.
+22 Fred got the football.
+23 After that he left the football there.
+24 Mary is not in the office.
+25 How many objects is Mary carrying?	none
+1 Daniel and John moved to the hallway.
+2 John journeyed to the office.
+3 Is Daniel in the school?	no
+4 Jeff is in the school.
+5 Jeff went to the kitchen.
+6 Afterwards he travelled to the park.
+7 Sandra picked up the milk there.
+8 Julie is in the bathroom.
+9 Mary picked up the football.
+10 Is John in the office?	yes
+11 Mary and Fred went to the bedroom.
+12 Mary passed the football to Fred.
+13 Sandra passed the milk to Julie.
+14 John is in the kitchen.
+15 Daniel is in the office.
+16 Daniel is either in the school or the cinema.
+17 How many objects is Sandra carrying?	none
+18 Julie gave the milk to Sandra.
+19 Fred dropped the football.
+20 After that he went back to the garden.
+21 Jeff journeyed to the hallway.
+22 Where is the milk?	bathroom
+23 Mary grabbed the football there.
+24 Mary put down the football.
+25 How many objects is Jeff carrying?	none
+1 Mary went to the park.
+2 Afterwards she journeyed to the garden.
+3 Fred journeyed to the kitchen.
+4 Is Mary in the park?	no
+5 John is either in the office or the kitchen.
+6 John and Sandra journeyed to the school.
+7 Following that they travelled to the office.
+8 Where is Sandra?	office
+9 Mary is in the bedroom.
+10 Julie and Sandra moved to the cinema.
+11 Where is John?	office
+12 John got the football there.
+13 Julie travelled to the bathroom.
+14 Is Mary in the bedroom?	yes
+15 Sandra picked up the milk there.
+16 John passed the football to Daniel.
+17 Jeff went to the cinema.
+18 Sandra discarded the milk.
+19 After that she went to the kitchen.
+20 Daniel is no longer in the park.
+21 Where is Sandra?	kitchen
+1 John is either in the hallway or the kitchen.
+2 Fred is either in the kitchen or the garden.
+3 Is John in the park?	no
+4 Sandra moved to the bathroom.
+5 Sandra is either in the garden or the park.
+6 Is John in the school?	no
+7 Julie and John travelled to the office.
+8 Fred is either in the park or the bedroom.
+9 Daniel and Sandra went to the cinema.
+10 Then they went back to the garden.
+11 Fred went to the office.
+12 Jeff picked up the football.
+13 How many objects is Jeff carrying?	one
+14 Sandra is either in the bedroom or the bathroom.
+15 Jeff passed the football to Mary.
+16 Where is Julie?	office
+17 Mary is either in the bedroom or the garden.
+18 Fred is in the park.
+19 Where is Fred?	park
+1 Jeff is no longer in the office.
+2 Jeff took the apple there.
+3 Then he travelled to the kitchen.
+4 Where is the apple?	kitchen
+5 Jeff discarded the apple there.
+6 Fred is either in the school or the bathroom.
+7 Is Fred in the bedroom?	no
+8 Mary picked up the milk.
+9 Jeff and Mary journeyed to the school.
+10 Mary dropped the milk there.
+11 Daniel is not in the office.
+12 Fred is not in the garden.
+13 Mary went back to the hallway.
+14 John and Mary went to the office.
+15 Bill took the apple there.
+16 Bill dropped the apple.
+17 Julie and Mary went to the hallway.
+18 Jeff picked up the milk.
+19 Then he put down the milk.
+20 Julie is either in the garden or the school.
+21 Jeff picked up the milk there.
+22 Jeff left the milk.
+23 Afterwards he went back to the office.
+24 Where is John?	office
+25 Jeff is not in the cinema.
+26 Mary grabbed the football there.
+27 Julie grabbed the milk there.
+28 Mary discarded the football there.
+29 Bill is in the park.
+30 Fred moved to the school.
+31 How many objects is Daniel carrying?	none
+32 Julie discarded the milk there.
+33 Julie travelled to the garden.
+34 After that she moved to the bathroom.
+35 Fred got the milk there.
+36 Is John in the office?	yes
+1 Daniel took the milk.
+2 Following that he moved to the hallway.
+3 Mary is not in the garden.
+4 Daniel is not in the bedroom.
+5 How many objects is John carrying?	none
+6 Julie and Bill moved to the bedroom.
+7 Afterwards they moved to the bathroom.
+8 Fred journeyed to the garden.
+9 Afterwards he journeyed to the park.
+10 Jeff travelled to the office.
+11 Following that he went back to the park.
+12 Sandra is either in the cinema or the garden.
+13 Fred is either in the office or the bedroom.
+14 Where is Julie?	bathroom
+15 Daniel travelled to the garden.
+16 Then he put down the milk.
+17 Is Daniel in the garden?	yes
+18 Mary is in the bedroom.
+19 Julie and Mary went to the cinema.
+20 Sandra grabbed the milk there.
+21 Sandra handed the milk to Daniel.
+22 Jeff and John went back to the hallway.
+23 Then they travelled to the kitchen.
+24 Where is the milk?	garden
+25 Bill journeyed to the office.
+26 Daniel handed the milk to Sandra.
+27 Fred got the football.
+28 Where is the milk?	garden
+1 Sandra travelled to the garden.
+2 Daniel is in the bathroom.
+3 Julie took the apple.
+4 Afterwards she discarded the apple.
+5 Where is Sandra?	garden
+6 Julie went back to the kitchen.
+7 Mary is in the kitchen.
+8 Daniel took the apple.
+9 Where is the apple?	bathroom
+10 Mary journeyed to the bedroom.
+11 Daniel put down the apple there.
+12 After that he got the apple there.
+13 Bill and Fred moved to the kitchen.
+14 Following that they moved to the bathroom.
+15 Fred is no longer in the cinema.
+16 How many objects is Julie carrying?	none
+17 Daniel put down the apple.
+18 Fred is either in the kitchen or the office.
+19 John is in the office.
+20 Where is the apple?	bathroom
+21 Sandra is no longer in the bedroom.
+22 Fred and Sandra journeyed to the school.
+23 Afterwards they journeyed to the hallway.
+24 Where is Fred?	hallway
+1 Sandra went to the garden.
+2 Sandra and Bill journeyed to the hallway.
+3 Then they moved to the garden.
+4 Where is Sandra?	garden
+5 Jeff grabbed the football there.
+6 Bill is in the bedroom.
+7 How many objects is Mary carrying?	none
+8 Bill took the apple there.
+9 Fred and Mary travelled to the garden.
+10 Where is Mary?	garden
+11 Daniel picked up the milk there.
+12 Sandra travelled to the cinema.
+13 Is Bill in the bedroom?	yes
+14 John and Fred travelled to the cinema.
+15 Daniel dropped the milk.
+16 Jeff is in the cinema.
+17 Fred is no longer in the park.
+18 Jeff discarded the football there.
+19 How many objects is Jeff carrying?	none
+1 Sandra picked up the football.
+2 Fred and Daniel went back to the bathroom.
+3 Sandra and Fred went to the park.
+4 Sandra left the football.
+5 Is Daniel in the bathroom?	yes
+6 Julie and Jeff journeyed to the cinema.
+7 Jeff went to the bathroom.
+8 After that he went to the school.
+9 Sandra took the football.
+10 Afterwards she put down the football there.
+11 Where is the football?	park
+12 Jeff took the milk.
+13 Afterwards he went back to the kitchen.
+14 Where was the milk before the kitchen?	school
+15 Mary and Daniel journeyed to the cinema.
+16 Following that they went back to the office.
+17 How many objects is Jeff carrying?	one
+18 Daniel and Bill went back to the school.
+19 Afterwards they moved to the cinema.
+20 Where is Sandra?	park
+1 Mary went to the school.
+2 Fred grabbed the milk there.
+3 Jeff moved to the park.
+4 How many objects is Sandra carrying?	none
+5 Mary is either in the garden or the bathroom.
+6 Fred dropped the milk there.
+7 Julie journeyed to the bedroom.
+8 Afterwards she went back to the park.
+9 Julie is in the bathroom.
+10 Is Jeff in the kitchen?	no
+11 Sandra is no longer in the kitchen.
+12 Fred is either in the park or the office.
+13 Is Sandra in the kitchen?	no
+14 Sandra grabbed the milk there.
+15 Jeff went to the office.
+16 Sandra put down the milk there.
+17 Sandra is in the park.
+18 Sandra is in the kitchen.
+19 Is Mary in the office?	no
+20 Bill took the football.
+21 Bill and Julie journeyed to the office.
+22 Sandra moved to the cinema.
+23 Daniel is either in the office or the kitchen.
+24 Where is Bill?	office
+1 Bill picked up the football.
+2 Jeff is either in the bathroom or the garden.
+3 Bill and Jeff travelled to the school.
+4 Bill moved to the kitchen.
+5 Where was the football before the kitchen?	school
+6 Sandra travelled to the bathroom.
+7 After that she went back to the cinema.
+8 John is either in the garden or the office.
+9 Sandra and Jeff went back to the bedroom.
+10 Afterwards they went back to the hallway.
+11 Where is Bill?	kitchen
+12 Daniel moved to the cinema.
+13 Jeff is not in the park.
+14 Julie picked up the apple there.
+15 Sandra went to the park.
+16 Mary and Fred journeyed to the school.
+17 Following that they went to the bedroom.
+18 Where is the football?	kitchen
+19 Bill and Sandra went back to the garden.
+20 Afterwards they travelled to the bathroom.
+21 Where is Daniel?	cinema
+22 Bill passed the football to Julie.
+23 Julie dropped the apple.
+24 Julie grabbed the apple.
+25 Afterwards she went back to the park.
+26 Sandra is in the garden.
+27 Daniel and Jeff journeyed to the hallway.
+28 How many objects is Sandra carrying?	none
+1 Jeff picked up the apple there.
+2 Julie journeyed to the kitchen.
+3 Is Julie in the kitchen?	yes
+4 Jeff got the milk there.
+5 John is either in the hallway or the kitchen.
+6 How many objects is Mary carrying?	none
+7 Daniel and Jeff moved to the cinema.
+8 Afterwards they moved to the bathroom.
+9 Jeff is in the bedroom.
+10 Where is Jeff?	bedroom
+11 Jeff is either in the bathroom or the garden.
+12 Jeff put down the milk there.
+13 Mary moved to the cinema.
+14 Is Jeff in the bedroom?	no
+15 Jeff is in the park.
+16 Fred is in the bathroom.
+17 Bill went to the kitchen.
+18 How many objects is Sandra carrying?	none
+1 Jeff and Julie travelled to the cinema.
+2 Sandra travelled to the school.
+3 Following that she journeyed to the cinema.
+4 Sandra is either in the hallway or the kitchen.
+5 Where is Jeff?	cinema
+6 Mary and Julie went back to the hallway.
+7 Jeff went back to the garden.
+8 Is Mary in the office?	no
+9 Daniel went back to the park.
+10 Sandra and Bill journeyed to the office.
+11 Following that they moved to the cinema.
+12 Fred is no longer in the cinema.
+13 Mary is either in the bedroom or the park.
+14 Fred is not in the garden.
+15 Mary picked up the football there.
+16 Mary picked up the milk there.
+17 Then she picked up the apple.
+18 Where is Jeff?	garden
+19 Jeff is either in the cinema or the bedroom.
+20 Jeff is not in the school.
+21 Mary left the milk.
+22 Where is Julie?	hallway
+23 Mary took the milk there.
+24 After that she went to the hallway.
+25 How many objects is Fred carrying?	none
+1 Jeff is no longer in the cinema.
+2 John is either in the bedroom or the school.
+3 Is John in the office?	no
+4 Fred and Bill travelled to the garden.
+5 Following that they travelled to the school.
+6 Where is Bill?	school
+7 Mary got the apple.
+8 Jeff is either in the garden or the office.
+9 Where is Fred?	school
+10 Mary discarded the apple.
+11 Jeff and Daniel moved to the school.
+12 Then they travelled to the garden.
+13 Is John in the hallway?	no
+14 Jeff is either in the hallway or the cinema.
+15 Daniel and Mary went back to the office.
+16 Is Jeff in the bathroom?	no
+1 Julie went back to the cinema.
+2 Daniel travelled to the bedroom.
+3 Where is Julie?	cinema
+4 John is in the kitchen.
+5 Bill and Julie moved to the kitchen.
+6 Is Julie in the kitchen?	yes
+7 Mary is not in the bedroom.
+8 Mary is either in the bathroom or the garden.
+9 Is John in the school?	no
+10 Mary journeyed to the office.
+11 Following that she went back to the kitchen.
+12 Is Daniel in the bedroom?	yes
+13 Daniel is either in the garden or the office.
+14 Bill is either in the cinema or the bathroom.
+15 Where is John?	kitchen
+1 Bill and Daniel moved to the bathroom.
+2 Daniel is either in the park or the garden.
+3 Is Daniel in the school?	no
+4 Daniel is in the park.
+5 Sandra and John journeyed to the garden.
+6 Then they went to the office.
+7 Daniel travelled to the garden.
+8 Is Bill in the hallway?	no
+9 Julie and Fred went to the bedroom.
+10 After that they moved to the bathroom.
+11 John and Julie went back to the school.
+12 Julie is either in the bedroom or the cinema.
+13 Where is Sandra?	office
+14 Fred and Jeff went to the bedroom.
+15 Mary and Daniel journeyed to the park.
+16 Then they journeyed to the school.
+17 Is Mary in the bedroom?	no
+18 Julie and Sandra journeyed to the hallway.
+19 Then they moved to the park.
+20 Jeff went back to the cinema.
+21 Where is Daniel?	school
+1 Fred journeyed to the school.
+2 Daniel grabbed the milk there.
+3 Afterwards he left the milk.
+4 John moved to the bathroom.
+5 After that he went to the cinema.
+6 Julie and Fred went to the hallway.
+7 After that they went to the bathroom.
+8 Julie journeyed to the hallway.
+9 Afterwards she picked up the football.
+10 How many objects is John carrying?	none
+11 Daniel is in the office.
+12 Mary is no longer in the cinema.
+13 Is Julie in the school?	no
+14 Daniel and John journeyed to the school.
+15 Fred is not in the hallway.
+16 How many objects is Bill carrying?	none
+17 Sandra went to the kitchen.
+18 Julie left the football there.
+19 John journeyed to the kitchen.
+20 Where is the football?	hallway
+21 Bill is in the cinema.
+22 Fred is in the office.
+23 Where is the football?	hallway
+1 Fred and Jeff journeyed to the cinema.
+2 Fred and Julie went back to the garden.
+3 Mary is either in the garden or the cinema.
+4 Mary grabbed the milk there.
+5 Is Jeff in the cinema?	yes
+6 Mary gave the milk to Julie.
+7 Bill is in the school.
+8 How many objects is Fred carrying?	none
+9 Sandra and Julie went to the cinema.
+10 Afterwards they went to the kitchen.
+11 What did Mary give to Julie?	milk
+12 Jeff got the apple.
+13 Julie is either in the office or the garden.
+14 Where is the apple?	cinema
+15 Bill moved to the kitchen.
+16 Jeff put down the apple.
+17 Where was the milk before the kitchen?	cinema
+1 Fred is in the bedroom.
+2 Sandra took the apple there.
+3 Sandra dropped the apple.
+4 Where is Fred?	bedroom
+5 Fred went to the hallway.
+6 Daniel is in the bedroom.
+7 Where is Daniel?	bedroom
+8 Fred got the milk there.
+9 Julie and Jeff went to the school.
+10 Afterwards they went to the bedroom.
+11 How many objects is Fred carrying?	one
+12 Jeff is in the bathroom.
+13 Sandra grabbed the apple there.
+14 Fred got the football.
+15 Sandra dropped the apple.
+16 Following that she went back to the park.
+17 Mary and Julie travelled to the garden.
+18 Following that they went to the park.
+19 Is Jeff in the bathroom?	yes
+20 Fred discarded the football.
+21 Then he got the football there.
+22 Julie is not in the office.
+23 How many objects is John carrying?	none
+1 John is no longer in the hallway.
+2 Julie journeyed to the cinema.
+3 Where is Julie?	cinema
+4 Bill moved to the park.
+5 Sandra went back to the office.
+6 Afterwards she picked up the apple there.
+7 Sandra put down the apple there.
+8 Jeff and Bill journeyed to the school.
+9 Following that they went back to the bathroom.
+10 Fred and John went back to the bedroom.
+11 After that they went to the garden.
+12 Sandra went back to the bathroom.
+13 After that she picked up the football.
+14 How many objects is Julie carrying?	none
+15 Bill is either in the kitchen or the office.
+16 Sandra is no longer in the kitchen.
+17 Where is the apple?	office
+18 Sandra left the football there.
+19 Fred and Julie travelled to the kitchen.
+20 Where is John?	garden
+21 Fred went to the garden.
+22 Jeff is in the kitchen.
+23 Is Bill in the bedroom?	no
+1 Jeff is not in the bedroom.
+2 Julie is either in the school or the park.
+3 Mary is either in the park or the kitchen.
+4 Is Mary in the bedroom?	no
+5 Mary is no longer in the bedroom.
+6 Jeff went back to the office.
+7 John and Sandra travelled to the hallway.
+8 Then they went to the garden.
+9 Is Julie in the hallway?	no
+10 Fred and Julie went back to the garden.
+11 Julie is not in the kitchen.
+12 John grabbed the apple there.
+13 After that he went back to the kitchen.
+14 Where is John?	kitchen
+15 Bill went back to the bathroom.
+16 Julie moved to the office.
+17 Following that she went to the hallway.
+18 Sandra is either in the hallway or the cinema.
+19 Fred is either in the cinema or the kitchen.
+20 John gave the apple to Fred.
+21 Where was the apple before the kitchen?	garden
+22 Mary is either in the bathroom or the kitchen.
+23 Fred discarded the apple.
+24 Who did John give the apple to?	Fred
+1 Bill got the apple.
+2 Mary got the milk there.
+3 How many objects is Mary carrying?	one
+4 Daniel and Sandra went to the garden.
+5 Then they went back to the bedroom.
+6 Jeff and Mary travelled to the hallway.
+7 Afterwards they journeyed to the school.
+8 How many objects is John carrying?	none
+9 Daniel went back to the hallway.
+10 Afterwards he went back to the school.
+11 Mary handed the milk to Daniel.
+12 Who gave the milk?	Mary
+13 Bill and Fred went back to the bathroom.
+14 Following that they moved to the garden.
+15 Where was the apple before the garden?	bathroom
+16 John is no longer in the bathroom.
+17 Fred travelled to the office.
+18 Who received the milk?	Daniel
+1 Daniel went to the bathroom.
+2 John and Julie moved to the cinema.
+3 Then they went to the bedroom.
+4 Mary is either in the hallway or the kitchen.
+5 Where is Julie?	bedroom
+6 Sandra journeyed to the bedroom.
+7 Fred took the apple.
+8 Mary is in the garden.
+9 How many objects is Bill carrying?	none
+10 Daniel and Sandra went to the park.
+11 Afterwards they went to the bathroom.
+12 Sandra is either in the cinema or the park.
+13 Is Sandra in the office?	no
+14 Fred and Jeff travelled to the school.
+15 Fred and Bill went back to the kitchen.
+16 Is Daniel in the bedroom?	no
+17 Mary is not in the bedroom.
+18 Fred dropped the apple.
+19 Afterwards he moved to the park.
+20 Daniel picked up the football there.
+21 Daniel dropped the football.
+22 John and Mary moved to the park.
+23 After that they went to the bedroom.
+24 Is Sandra in the park?	maybe
+1 Jeff took the apple there.
+2 Afterwards he travelled to the cinema.
+3 Jeff dropped the apple there.
+4 Mary is either in the cinema or the office.
+5 Where is Jeff?	cinema
+6 Jeff and John travelled to the kitchen.
+7 Then they journeyed to the garden.
+8 Is John in the garden?	yes
+9 Jeff is either in the office or the school.
+10 Fred is either in the office or the park.
+11 Where is the apple?	cinema
+12 Fred went to the kitchen.
+13 Mary took the football.
+14 Mary grabbed the apple.
+15 After that she put down the football.
+16 Mary grabbed the football there.
+17 Afterwards she put down the football.
+18 Fred travelled to the cinema.
+19 Where is John?	garden
+20 Sandra is in the office.
+21 Mary handed the apple to Fred.
+22 How many objects is Mary carrying?	none
+1 John is either in the kitchen or the bathroom.
+2 Daniel is not in the office.
+3 Is Daniel in the office?	no
+4 Daniel journeyed to the cinema.
+5 Daniel is either in the school or the garden.
+6 Is Daniel in the cinema?	no
+7 Sandra got the apple.
+8 Afterwards she dropped the apple.
+9 Is Daniel in the park?	no
+10 Bill picked up the milk.
+11 Mary is either in the school or the bedroom.
+12 Is Daniel in the garden?	maybe
+13 Sandra got the football.
+14 Bill journeyed to the office.
+15 Afterwards he discarded the milk.
+16 Sandra got the apple.
+17 Julie went to the cinema.
+18 After that she travelled to the school.
+19 Sandra put down the apple.
+20 How many objects is Fred carrying?	none
+1 Daniel went back to the garden.
+2 Fred went back to the kitchen.
+3 Sandra took the milk.
+4 After that she went back to the office.
+5 Sandra is either in the hallway or the bathroom.
+6 Where is Fred?	kitchen
+7 Bill is in the bathroom.
+8 Fred is either in the park or the hallway.
+9 Sandra handed the milk to John.
+10 Daniel and John went back to the office.
+11 Then they went back to the hallway.
+12 Is Daniel in the hallway?	yes
+13 Bill and Fred travelled to the cinema.
+14 Following that they went to the park.
+15 Daniel and Fred went to the school.
+16 Fred got the football there.
+17 Who gave the milk?	Sandra
+18 Fred put down the football there.
+19 Sandra is either in the kitchen or the bedroom.
+20 Julie is either in the garden or the bathroom.
+21 Fred journeyed to the hallway.
+22 Julie is not in the cinema.
+23 John left the milk there.
+24 Is Fred in the hallway?	yes
+25 Sandra is no longer in the office.
+26 Fred and Mary travelled to the office.
+27 Afterwards they went to the bathroom.
+28 John grabbed the milk there.
+29 Where is the football?	school
+1 John is no longer in the garden.
+2 Jeff grabbed the football there.
+3 After that he discarded the football.
+4 Is John in the garden?	no
+5 Julie went back to the bathroom.
+6 Afterwards she travelled to the hallway.
+7 Where is Julie?	hallway
+8 John is in the office.
+9 Bill moved to the bathroom.
+10 Where is Bill?	bathroom
+11 Bill and Julie went to the kitchen.
+12 Bill went to the hallway.
+13 Following that he grabbed the apple.
+14 Daniel and Sandra travelled to the park.
+15 Following that they journeyed to the bathroom.
+16 Jeff took the football there.
+17 After that he went to the office.
+18 Julie and Sandra went to the school.
+19 Is John in the office?	yes
+20 Bill picked up the milk.
+21 Mary and Daniel moved to the kitchen.
+22 Where is the football?	office
+1 Sandra travelled to the park.
+2 Daniel is either in the kitchen or the park.
+3 Is Daniel in the kitchen?	maybe
+4 Bill journeyed to the garden.
+5 Afterwards he went to the kitchen.
+6 Mary is either in the garden or the kitchen.
+7 Julie is either in the office or the garden.
+8 Bill picked up the apple there.
+9 Where is Bill?	kitchen
+10 Mary moved to the park.
+11 Bill put down the apple there.
+12 Where is the apple?	kitchen
+13 John is in the kitchen.
+14 Sandra and Julie journeyed to the bedroom.
+15 Following that they journeyed to the garden.
+16 Is Julie in the garden?	yes
+17 Bill got the apple there.
+18 Bill left the apple.
+19 Where is Bill?	kitchen
+1 Bill is either in the park or the cinema.
+2 Mary picked up the football there.
+3 Mary left the football there.
+4 Is Bill in the bedroom?	no
+5 Jeff got the apple.
+6 Jeff handed the apple to Mary.
+7 Is Bill in the cinema?	maybe
+8 Mary dropped the apple there.
+9 Mary took the football there.
+10 Mary took the apple there.
+11 How many objects is John carrying?	none
+12 Mary handed the apple to Jeff.
+13 John journeyed to the kitchen.
+14 Following that he moved to the hallway.
+15 How many objects is John carrying?	none
+16 Daniel is either in the hallway or the school.
+17 Mary put down the football there.
+18 Where is John?	hallway
+1 Bill travelled to the office.
+2 Then he went back to the bathroom.
+3 Sandra got the milk there.
+4 Following that she moved to the cinema.
+5 Is Bill in the office?	no
+6 Bill and Mary moved to the cinema.
+7 John travelled to the school.
+8 Where is the milk?	cinema
+9 Fred is either in the bathroom or the garden.
+10 Sandra left the milk.
+11 Daniel is either in the cinema or the school.
+12 Where is John?	school
+13 Jeff journeyed to the office.
+14 Mary moved to the school.
+15 Where is the milk?	cinema
+16 Bill and John went back to the bedroom.
+17 Following that they moved to the cinema.
+18 Julie is either in the hallway or the park.
+19 Bill is in the school.
+20 Is Bill in the school?	yes
+1 Fred is not in the cinema.
+2 Mary and Julie went back to the bedroom.
+3 Where is Julie?	bedroom
+4 Daniel and Mary went back to the garden.
+5 Following that they moved to the park.
+6 Is Fred in the cinema?	no
+7 Fred is either in the hallway or the garden.
+8 Daniel grabbed the football.
+9 Daniel left the football there.
+10 Is Fred in the hallway?	maybe
+11 Daniel is not in the school.
+12 Sandra and Daniel went back to the bathroom.
+13 Where is the football?	park
+14 Bill took the football.
+15 Bill and Julie moved to the office.
+16 Afterwards they travelled to the school.
+17 John is either in the park or the cinema.
+18 Where is Julie?	school
+1 Mary is no longer in the hallway.
+2 Jeff is either in the park or the hallway.
+3 Is Jeff in the garden?	no
+4 Jeff went back to the bedroom.
+5 Julie journeyed to the bedroom.
+6 Mary got the football.
+7 Is Jeff in the bedroom?	yes
+8 Mary and Julie travelled to the bathroom.
+9 Following that they journeyed to the school.
+10 How many objects is Mary carrying?	one
+11 Julie grabbed the milk there.
+12 Then she discarded the milk.
+13 How many objects is Fred carrying?	none
+14 John and Julie journeyed to the office.
+15 Mary put down the football there.
+16 Where is the football?	school
+1 Julie is not in the cinema.
+2 John got the football there.
+3 Then he dropped the football there.
+4 Is Julie in the cinema?	no
+5 John is either in the park or the bathroom.
+6 Julie and Sandra travelled to the kitchen.
+7 Daniel and Julie travelled to the hallway.
+8 After that they journeyed to the bedroom.
+9 Julie got the football there.
+10 Where is the football?	bedroom
+11 John and Daniel journeyed to the hallway.
+12 After that they went back to the park.
+13 Is Julie in the bedroom?	yes
+14 Daniel is either in the hallway or the bathroom.
+15 Julie and Fred went to the kitchen.
+16 After that they went back to the hallway.
+17 Sandra grabbed the milk there.
+18 Where is the football?	hallway
+19 Bill and Daniel went back to the kitchen.
+20 Jeff went back to the hallway.
+21 Where was the football before the kitchen?	bedroom
+1 Bill and Fred journeyed to the bedroom.
+2 Fred picked up the apple there.
+3 Sandra is in the school.
+4 How many objects is Jeff carrying?	none
+5 Fred discarded the apple there.
+6 Bill picked up the apple.
+7 Fred moved to the school.
+8 After that he went back to the garden.
+9 Jeff is either in the hallway or the office.
+10 Bill discarded the apple there.
+11 Where is the apple?	bedroom
+12 Julie travelled to the bedroom.
+13 Afterwards she took the apple there.
+14 Julie put down the apple there.
+15 Julie went back to the bathroom.
+16 Jeff is in the kitchen.
+17 Jeff got the milk there.
+18 Where is the apple?	bedroom
+19 Bill picked up the apple.
+20 Jeff grabbed the football.
+21 Daniel is no longer in the cinema.
+22 Where is the football?	kitchen
+23 Mary and Bill travelled to the garden.
+24 Sandra is either in the hallway or the bathroom.
+25 Where is Fred?	garden
+1 Sandra is either in the park or the hallway.
+2 Julie got the football there.
+3 Is Sandra in the park?	maybe
+4 Daniel is not in the kitchen.
+5 Jeff went back to the office.
+6 How many objects is Julie carrying?	one
+7 Julie dropped the football.
+8 Mary and Daniel journeyed to the office.
+9 After that they travelled to the bedroom.
+10 Is Daniel in the bedroom?	yes
+11 Julie got the football.
+12 Mary journeyed to the bathroom.
+13 Julie gave the football to Daniel.
+14 Bill got the milk there.
+15 Following that he travelled to the school.
+16 Where is the football?	bedroom
+17 Bill grabbed the apple.
+18 Fred is either in the bathroom or the garden.
+19 How many objects is Julie carrying?	none
+1 Sandra is in the park.
+2 Daniel went back to the bathroom.
+3 John picked up the apple there.
+4 John dropped the apple.
+5 Daniel travelled to the bedroom.
+6 Afterwards he travelled to the kitchen.
+7 Daniel journeyed to the park.
+8 After that he went to the kitchen.
+9 Is Sandra in the park?	yes
+10 Daniel took the apple.
+11 Daniel discarded the apple there.
+12 Mary and Jeff went to the cinema.
+13 Fred is no longer in the bathroom.
+14 Is Jeff in the cinema?	yes
+15 Jeff is either in the park or the garden.
+16 Daniel picked up the apple there.
+17 Afterwards he put down the apple.
+18 Is Jeff in the kitchen?	no
+19 Daniel got the apple.
+20 Daniel discarded the apple there.
+21 Is Jeff in the park?	maybe
+22 John got the apple there.
+23 Mary is no longer in the office.
+24 Where is Daniel?	kitchen
+1 Mary journeyed to the bedroom.
+2 Bill is either in the park or the kitchen.
+3 Julie and Daniel went back to the kitchen.
+4 Daniel picked up the football there.
+5 Sandra is either in the bathroom or the garden.
+6 Where is Julie?	kitchen
+7 Bill travelled to the office.
+8 Following that he travelled to the bathroom.
+9 Mary journeyed to the hallway.
+10 Is Bill in the park?	no
+11 Jeff went to the bathroom.
+12 Mary is either in the bathroom or the park.
+13 Daniel discarded the football there.
+14 Is Bill in the hallway?	no
+15 Bill and Sandra travelled to the school.
+16 Daniel is in the office.
+17 Where is Bill?	school
+18 Julie is in the garden.
+19 Mary is in the bedroom.
+20 Is Mary in the bedroom?	yes
+1 Bill grabbed the apple.
+2 John and Bill moved to the park.
+3 How many objects is Jeff carrying?	none
+4 John is either in the school or the office.
+5 Mary and Bill moved to the kitchen.
+6 Afterwards they went back to the cinema.
+7 Where was the apple before the cinema?	kitchen
+8 Daniel journeyed to the bedroom.
+9 Following that he went to the office.
+10 Daniel took the football there.
+11 Is Bill in the cinema?	yes
+12 Bill passed the apple to Mary.
+13 Mary discarded the apple there.
+14 Who received the apple?	Mary
+15 Jeff journeyed to the bathroom.
+16 Bill grabbed the apple there.
+17 After that he journeyed to the office.
+18 John travelled to the cinema.
+19 Julie went back to the cinema.
+20 Julie went to the garden.
+21 Following that she travelled to the kitchen.
+22 Who gave the milk to Sandra?	Daniel
+1 Jeff went back to the park.
+2 Bill is either in the kitchen or the school.
+3 Jeff is no longer in the bathroom.
+4 John grabbed the milk there.
+5 Jeff got the apple there.
+6 Daniel moved to the office.
+7 John handed the milk to Sandra.
+8 Julie is in the school.
+9 Who did John give the milk to?	Sandra
+10 Jeff discarded the apple there.
+11 After that he travelled to the kitchen.
+12 Where is Jeff?	kitchen
+13 Mary is either in the office or the park.
+14 John moved to the garden.
+15 Then he went to the bedroom.
+16 Is Daniel in the cinema?	no
+17 Sandra dropped the milk.
+18 Following that she travelled to the garden.
+19 John took the milk there.
+20 Following that he moved to the kitchen.
+21 Where is the milk?	kitchen
+22 John discarded the milk there.
+23 Jeff got the milk.
+24 How many objects is Daniel carrying?	none
+1 John is in the school.
+2 Julie is no longer in the garden.
+3 Julie took the milk there.
+4 Julie discarded the milk there.
+5 Afterwards she took the milk there.
+6 Where is John?	school
+7 Fred went to the kitchen.
+8 Following that he went back to the school.
+9 Julie discarded the milk there.
+10 Is Fred in the school?	yes
+11 Julie took the milk.
+12 Sandra and Mary went to the park.
+13 Following that they journeyed to the school.
+14 Where is Sandra?	school
+15 Fred is either in the park or the hallway.
+16 John is in the bedroom.
+17 Sandra travelled to the bathroom.
+18 How many objects is Sandra carrying?	none
+19 Julie is either in the school or the park.
+20 Julie left the milk there.
+21 John travelled to the park.
+22 Where is Sandra?	bathroom
+1 Sandra and Mary travelled to the kitchen.
+2 After that they travelled to the hallway.
+3 Where is Sandra?	hallway
+4 John moved to the bedroom.
+5 Fred took the milk.
+6 Then he went back to the office.
+7 Is John in the bedroom?	yes
+8 Jeff is not in the park.
+9 Daniel is either in the office or the school.
+10 Bill took the apple there.
+11 How many objects is Jeff carrying?	none
+12 Daniel and Jeff went to the bathroom.
+13 After that they travelled to the cinema.
+14 Where is the milk?	office
+15 Bill handed the apple to Jeff.
+16 Julie is either in the office or the kitchen.
+17 John went to the hallway.
+18 Jeff left the apple there.
+19 Fred dropped the milk there.
+20 Where is the apple?	cinema
+1 Jeff picked up the football.
+2 Sandra went to the park.
+3 John went to the garden.
+4 Is John in the garden?	yes
+5 John is no longer in the cinema.
+6 Jeff dropped the football there.
+7 Then he picked up the football there.
+8 Is Sandra in the park?	yes
+9 John is in the park.
+10 Jeff dropped the football there.
+11 Jeff grabbed the football.
+12 Afterwards he discarded the football.
+13 Jeff is either in the bathroom or the garden.
+14 John and Bill journeyed to the bedroom.
+15 Afterwards they moved to the cinema.
+16 Is Jeff in the cinema?	no
+17 John is either in the garden or the office.
+18 Julie is either in the office or the cinema.
+19 Is Bill in the park?	no
+20 Mary picked up the milk.
+21 After that she left the milk.
+22 Where is Sandra?	park
+1 Fred moved to the office.
+2 Fred got the football.
+3 Following that he put down the football there.
+4 Fred picked up the football there.
+5 Afterwards he left the football there.
+6 Sandra is not in the hallway.
+7 Bill and Julie went to the garden.
+8 Jeff is either in the bedroom or the office.
+9 Sandra is either in the kitchen or the bedroom.
+10 Fred is either in the garden or the bedroom.
+11 Is Julie in the garden?	yes
+12 Fred travelled to the cinema.
+13 Bill took the apple.
+14 Afterwards he travelled to the bathroom.
+15 How many objects is Daniel carrying?	none
+16 Mary travelled to the garden.
+17 Jeff is not in the garden.
+18 Julie is in the school.
+19 Bill dropped the apple there.
+20 Then he journeyed to the office.
+21 Where is the apple?	bathroom
+22 Sandra journeyed to the school.
+23 Mary went to the kitchen.
+24 Following that she got the milk there.
+25 Bill took the football there.
+26 Where is the apple?	bathroom
+27 Julie is either in the cinema or the bedroom.
+28 Jeff is not in the school.
+29 Where was the apple before the bathroom?	garden
+1 Sandra is either in the cinema or the garden.
+2 Daniel took the milk there.
+3 Is Sandra in the garden?	maybe
+4 Mary and Julie moved to the park.
+5 Daniel gave the milk to John.
+6 How many objects is Bill carrying?	none
+7 John put down the milk there.
+8 Sandra journeyed to the school.
+9 After that she moved to the kitchen.
+10 Where is Mary?	park
+11 Daniel took the milk there.
+12 Fred and Mary travelled to the office.
+13 Is Mary in the office?	yes
+14 Bill and Mary went back to the garden.
+15 Daniel discarded the milk.
+16 Afterwards he went back to the garden.
+17 Is Mary in the school?	no
+1 Mary and Daniel moved to the school.
+2 Julie moved to the cinema.
+3 Afterwards she went to the office.
+4 Fred got the football.
+5 Following that he dropped the football.
+6 Jeff travelled to the garden.
+7 After that he journeyed to the park.
+8 Daniel and Mary went to the office.
+9 Afterwards they journeyed to the cinema.
+10 Fred grabbed the football.
+11 Julie picked up the apple there.
+12 Fred moved to the garden.
+13 Where is the football?	garden
+14 Fred is in the school.
+15 Jeff took the milk.
+16 Jeff dropped the milk there.
+17 Afterwards he took the milk.
+18 Where is Daniel?	cinema
+19 Daniel went to the school.
+20 Sandra and Jeff travelled to the kitchen.
+21 Where was the milk before the kitchen?	park
+22 Julie dropped the apple there.
+23 Julie took the apple.
+24 Jeff passed the milk to Sandra.
+25 Sandra is not in the bedroom.
+26 Bill is either in the kitchen or the park.
+27 Who gave the milk?	Jeff
+28 Julie dropped the apple there.
+29 Afterwards she journeyed to the cinema.
+30 Julie and Sandra went back to the hallway.
+31 Afterwards they journeyed to the park.
+32 How many objects is John carrying?	none
+1 Sandra and Daniel travelled to the kitchen.
+2 Mary and Julie travelled to the park.
+3 Is Mary in the bedroom?	no
+4 Bill is no longer in the garden.
+5 John travelled to the bathroom.
+6 Daniel and Sandra went back to the garden.
+7 Jeff got the milk.
+8 After that he moved to the garden.
+9 How many objects is Bill carrying?	none
+10 Julie is in the office.
+11 Sandra went back to the park.
+12 Mary journeyed to the cinema.
+13 Is Bill in the garden?	no
+14 Sandra and John went back to the cinema.
+15 Julie went back to the kitchen.
+16 Afterwards she travelled to the office.
+17 How many objects is Jeff carrying?	one
+18 Sandra is either in the bedroom or the office.
+19 Julie is either in the kitchen or the bathroom.
+20 Fred and John moved to the garden.
+21 Afterwards they travelled to the bedroom.
+22 Mary is in the hallway.
+23 John journeyed to the garden.
+24 Is Sandra in the school?	no
+1 Bill got the apple.
+2 Bill discarded the apple.
+3 Afterwards he got the apple.
+4 How many objects is Daniel carrying?	none
+5 Daniel is either in the park or the cinema.
+6 Daniel and Jeff went to the bedroom.
+7 Following that they travelled to the bathroom.
+8 Fred grabbed the milk.
+9 Following that he journeyed to the hallway.
+10 How many objects is Fred carrying?	one
+11 Fred and Daniel went back to the cinema.
+12 Following that they moved to the bathroom.
+13 Julie got the football.
+14 John is either in the bedroom or the garden.
+15 Fred put down the milk.
+16 Where was the milk before the bathroom?	cinema
+17 Fred got the milk.
+18 Jeff is either in the school or the cinema.
+19 Julie and Bill journeyed to the bathroom.
+20 Afterwards they moved to the park.
+21 Julie went to the bathroom.
+22 Where was the football before the bathroom?	park
+23 Julie gave the football to Daniel.
+24 Daniel gave the football to Julie.
+25 Julie discarded the football there.
+26 Following that she went to the garden.
+27 Bill dropped the apple.
+28 Is John in the cinema?	no
+1 Jeff is in the cinema.
+2 Bill is either in the school or the park.
+3 Daniel picked up the football.
+4 Is Jeff in the hallway?	no
+5 Fred and Daniel went back to the garden.
+6 After that they moved to the bedroom.
+7 Where is Fred?	bedroom
+8 Daniel dropped the football there.
+9 Daniel moved to the garden.
+10 After that he moved to the cinema.
+11 Where is Daniel?	cinema
+12 Daniel moved to the hallway.
+13 Jeff moved to the garden.
+14 Fred took the football.
+15 Sandra went back to the bathroom.
+16 How many objects is John carrying?	none
+17 John is either in the kitchen or the office.
+18 Jeff is in the office.
+19 Where is the football?	bedroom
+1 Bill is either in the park or the kitchen.
+2 Jeff is in the park.
+3 Where is Jeff?	park
+4 John is in the office.
+5 Fred is in the kitchen.
+6 Where is Fred?	kitchen
+7 John and Julie travelled to the bedroom.
+8 Then they journeyed to the park.
+9 Daniel is either in the hallway or the garden.
+10 John and Julie travelled to the cinema.
+11 Afterwards they travelled to the kitchen.
+12 Where is Julie?	kitchen
+13 Sandra got the milk.
+14 Sandra discarded the milk there.
+15 After that she took the milk there.
+16 Is John in the kitchen?	yes
+17 Mary went to the school.
+18 John moved to the park.
+19 Mary is either in the garden or the hallway.
+20 John moved to the bathroom.
+21 Where is Julie?	kitchen
+1 John moved to the cinema.
+2 Mary picked up the apple.
+3 Then she left the apple.
+4 Jeff took the football.
+5 Is John in the cinema?	yes
+6 Sandra is not in the bedroom.
+7 Jeff dropped the football there.
+8 Mary moved to the office.
+9 Then she travelled to the cinema.
+10 Is Mary in the cinema?	yes
+11 Mary is no longer in the kitchen.
+12 Jeff grabbed the football.
+13 John is either in the office or the hallway.
+14 Is John in the school?	no
+15 Jeff discarded the football there.
+16 Jeff got the football.
+17 Mary is in the cinema.
+18 Where is Mary?	cinema
+19 Jeff left the football there.
+20 Following that he took the football.
+21 Jeff left the football.
+22 Jeff picked up the football there.
+23 Is Sandra in the bedroom?	no
+1 Bill is either in the hallway or the bedroom.
+2 Mary picked up the milk.
+3 Sandra is either in the school or the bathroom.
+4 How many objects is Sandra carrying?	none
+5 Daniel is not in the bathroom.
+6 Sandra is in the office.
+7 John and Julie moved to the bathroom.
+8 Afterwards they travelled to the office.
+9 Sandra is either in the school or the bedroom.
+10 Mary dropped the milk there.
+11 John and Sandra moved to the hallway.
+12 After that they went back to the bathroom.
+13 Julie is either in the kitchen or the school.
+14 Where is John?	bathroom
+15 Julie got the apple.
+16 Jeff travelled to the hallway.
+17 Sandra and Daniel travelled to the cinema.
+18 Sandra and John travelled to the hallway.
+19 Where is Sandra?	hallway
+20 Julie and Sandra journeyed to the school.
+21 Following that they went to the hallway.
+22 Mary went to the kitchen.
+23 Where is the apple?	hallway
+24 Julie and Sandra travelled to the cinema.
+25 Sandra is either in the bathroom or the park.
+26 Where was the apple before the hallway?	school
+1 Bill picked up the apple.
+2 Then he dropped the apple there.
+3 Bill grabbed the apple there.
+4 How many objects is Bill carrying?	one
+5 Julie is either in the park or the garden.
+6 Julie went to the office.
+7 Afterwards she travelled to the hallway.
+8 Bill and Daniel journeyed to the office.
+9 Is Bill in the office?	yes
+10 John moved to the office.
+11 After that he moved to the bedroom.
+12 How many objects is Jeff carrying?	none
+13 Bill put down the apple there.
+14 Julie and Mary went to the cinema.
+15 Following that they moved to the school.
+16 Where is the apple?	office
+17 Fred is no longer in the kitchen.
+18 Julie went back to the park.
+19 Mary is no longer in the hallway.
+20 Where is the apple?	office
+1 Daniel and Bill moved to the garden.
+2 Afterwards they went to the hallway.
+3 Where is Daniel?	hallway
+4 Daniel picked up the football there.
+5 Daniel discarded the football.
+6 Is Daniel in the kitchen?	no
+7 Bill got the football.
+8 After that he discarded the football.
+9 Where is the football?	hallway
+10 Fred is either in the bathroom or the garden.
+11 John journeyed to the cinema.
+12 Where is the football?	hallway
+13 Daniel and Jeff journeyed to the bedroom.
+14 After that they moved to the school.
+15 Where is the football?	hallway
+1 Daniel took the apple there.
+2 Following that he dropped the apple.
+3 Daniel got the apple.
+4 How many objects is Daniel carrying?	one
+5 John got the milk there.
+6 Daniel left the apple there.
+7 Then he picked up the apple there.
+8 How many objects is Sandra carrying?	none
+9 Daniel is either in the bathroom or the school.
+10 John put down the milk there.
+11 Bill picked up the football there.
+12 Then he discarded the football.
+13 Is Daniel in the garden?	no
+14 John travelled to the hallway.
+15 Jeff is either in the bathroom or the cinema.
+16 Jeff is either in the hallway or the school.
+17 Julie took the milk there.
+18 Daniel moved to the office.
+19 Is Jeff in the garden?	no
+20 Bill took the football there.
+21 Sandra and Bill went to the park.
+22 Daniel went back to the hallway.
+23 Where was the apple before the hallway?	office
+1 Fred got the apple there.
+2 Fred handed the apple to Sandra.
+3 Sandra put down the apple.
+4 Who did Fred give the apple to?	Sandra
+5 Sandra is either in the cinema or the kitchen.
+6 Fred grabbed the apple there.
+7 Following that he travelled to the bedroom.
+8 Where is Fred?	bedroom
+9 Fred left the apple.
+10 Mary went back to the bathroom.
+11 Julie went back to the bedroom.
+12 Then she travelled to the garden.
+13 John is either in the garden or the cinema.
+14 Daniel is either in the bedroom or the cinema.
+15 Sandra and Mary went to the cinema.
+16 After that they went to the school.
+17 Who received the apple?	Sandra
+18 Bill is either in the school or the garden.
+19 Fred grabbed the apple there.
+20 Following that he put down the apple.
+21 Sandra and Fred moved to the bathroom.
+22 Following that they went to the cinema.
+23 Julie moved to the park.
+24 Julie moved to the kitchen.
+25 Is Sandra in the garden?	no
+26 Bill is in the garden.
+27 Daniel is either in the hallway or the garden.
+28 Where is the apple?	bedroom
+1 Julie and Bill moved to the bathroom.
+2 John is no longer in the bedroom.
+3 Daniel and Julie journeyed to the park.
+4 Afterwards they travelled to the cinema.
+5 Is John in the bedroom?	no
+6 Mary went back to the hallway.
+7 Afterwards she went to the cinema.
+8 Where is Daniel?	cinema
+9 Julie and Daniel went to the kitchen.
+10 Fred journeyed to the office.
+11 Is Daniel in the kitchen?	yes
+12 Bill went to the hallway.
+13 Following that he journeyed to the school.
+14 Julie took the apple.
+15 Where is the apple?	kitchen
+16 Daniel is in the cinema.
+17 Bill and Jeff went back to the bathroom.
+18 Afterwards they travelled to the cinema.
+19 Is Daniel in the cinema?	yes
+1 John is no longer in the cinema.
+2 Daniel and Jeff went back to the cinema.
+3 Is John in the cinema?	no
+4 Julie took the milk there.
+5 Afterwards she journeyed to the park.
+6 How many objects is Sandra carrying?	none
+7 Julie took the football there.
+8 Then she went to the office.
+9 Where was the football before the office?	park
+10 Jeff went to the garden.
+11 John is no longer in the school.
+12 Is Julie in the office?	yes
+13 Mary and Fred journeyed to the school.
+14 Julie left the milk.
+15 Where is Fred?	school
+1 Mary and Bill went back to the kitchen.
+2 Sandra is no longer in the office.
+3 Fred went back to the kitchen.
+4 John went to the bathroom.
+5 Where is John?	bathroom
+6 Bill is in the cinema.
+7 Jeff is no longer in the bedroom.
+8 Where is John?	bathroom
+9 Sandra went to the cinema.
+10 Following that she moved to the kitchen.
+11 Is John in the bathroom?	yes
+12 Jeff journeyed to the hallway.
+13 Sandra journeyed to the school.
+14 Then she went to the office.
+15 Mary is in the office.
+16 Is Fred in the bedroom?	no
+17 Jeff is in the garden.
+18 Bill is in the bathroom.
+19 Mary went back to the school.
+20 Where is Sandra?	office
+1 Julie picked up the apple there.
+2 Sandra is in the hallway.
+3 Julie left the apple.
+4 Bill and Mary journeyed to the hallway.
+5 Afterwards they went back to the office.
+6 Where is Bill?	office
+7 Fred went back to the park.
+8 After that he went to the school.
+9 Is Sandra in the hallway?	yes
+10 Sandra is not in the cinema.
+11 Sandra is either in the kitchen or the bathroom.
+12 Bill journeyed to the bedroom.
+13 Where is Mary?	office
+14 Julie took the apple.
+15 Then she discarded the apple.
+16 Where is Fred?	school
+17 Daniel got the apple there.
+18 Following that he moved to the cinema.
+19 Bill picked up the milk.
+20 Mary and Sandra went to the garden.
+21 Then they went back to the bathroom.
+22 Where is the milk?	bedroom
+1 Fred is no longer in the hallway.
+2 Fred and Bill went back to the bedroom.
+3 Where is Fred?	bedroom
+4 Daniel journeyed to the kitchen.
+5 Sandra journeyed to the garden.
+6 Where is Daniel?	kitchen
+7 John is either in the bathroom or the garden.
+8 Sandra got the milk there.
+9 John and Sandra journeyed to the hallway.
+10 Jeff and Sandra journeyed to the cinema.
+11 Sandra is either in the garden or the school.
+12 Julie is either in the cinema or the bathroom.
+13 Jeff grabbed the football there.
+14 Julie moved to the garden.
+15 Jeff went back to the kitchen.
+16 Where is the football?	kitchen
+17 Bill is not in the bathroom.
+18 Fred is not in the bathroom.
+19 Daniel is either in the school or the cinema.
+20 Sandra gave the milk to Julie.
+21 Jeff is in the park.
+22 Sandra went back to the cinema.
+23 Mary journeyed to the bathroom.
+24 After that she journeyed to the school.
+25 Where was the football before the kitchen?	cinema
+26 Sandra moved to the kitchen.
+27 Then she moved to the bathroom.
+28 John is in the kitchen.
+29 Is Mary in the office?	no
+1 Mary is either in the school or the office.
+2 Mary is either in the office or the bathroom.
+3 Is Mary in the bathroom?	maybe
+4 Mary is either in the park or the hallway.
+5 Jeff and Bill went back to the school.
+6 After that they went back to the park.
+7 Bill is either in the school or the bedroom.
+8 Sandra got the football.
+9 Then she journeyed to the office.
+10 Where is the football?	office
+11 Bill and Daniel travelled to the cinema.
+12 Then they journeyed to the hallway.
+13 Fred journeyed to the cinema.
+14 Where is Daniel?	hallway
+15 Sandra put down the football there.
+16 Julie and Sandra journeyed to the bathroom.
+17 Where is Daniel?	hallway
+18 John is either in the school or the bathroom.
+19 Julie is either in the office or the cinema.
+20 John is not in the park.
+21 Julie got the football there.
+22 Then she dropped the football there.
+23 Where is the football?	office
+1 Daniel is either in the office or the cinema.
+2 Jeff travelled to the garden.
+3 Then he moved to the kitchen.
+4 Bill went back to the park.
+5 Jeff journeyed to the hallway.
+6 Jeff is no longer in the kitchen.
+7 Jeff journeyed to the bathroom.
+8 Following that he went back to the garden.
+9 Mary and Jeff went back to the office.
+10 Where is Mary?	office
+11 Fred journeyed to the bedroom.
+12 Fred picked up the football.
+13 How many objects is Julie carrying?	none
+14 Julie is either in the bedroom or the park.
+15 Jeff is either in the garden or the bedroom.
+16 Where is Bill?	park
+17 Fred gave the football to Jeff.
+18 Jeff gave the football to Fred.
+19 Where is the football?	bedroom
+20 Fred put down the football.
+21 John moved to the office.
+22 Mary is in the park.
+23 Where is Fred?	bedroom
+1 Daniel is either in the cinema or the office.
+2 Daniel is in the bathroom.
+3 Bill is either in the cinema or the garden.
+4 Is Daniel in the bathroom?	yes
+5 Julie travelled to the park.
+6 Following that she journeyed to the cinema.
+7 Is Julie in the office?	no
+8 Bill is either in the park or the bathroom.
+9 Mary and Jeff went back to the school.
+10 Where is Mary?	school
+11 Julie grabbed the apple there.
+12 Following that she journeyed to the garden.
+13 Where was the apple before the garden?	cinema
+14 Fred is either in the kitchen or the park.
+15 Fred journeyed to the bedroom.
+16 Afterwards he travelled to the bathroom.
+17 Sandra journeyed to the park.
+18 Where was the apple before the garden?	cinema
+1 Jeff is not in the kitchen.
+2 Mary went back to the bedroom.
+3 Following that she moved to the bathroom.
+4 Where is Mary?	bathroom
+5 Bill picked up the apple there.
+6 Jeff is in the cinema.
+7 Where is Mary?	bathroom
+8 Daniel went to the hallway.
+9 Following that he moved to the school.
+10 How many objects is Jeff carrying?	none
+11 Fred is in the bedroom.
+12 Bill journeyed to the bathroom.
+13 Bill passed the apple to John.
+14 Mary is in the hallway.
+15 Mary took the milk there.
+16 Then she journeyed to the cinema.
+17 Where was the milk before the cinema?	hallway
+18 John gave the apple to Bill.
+19 John journeyed to the garden.
+20 Afterwards he took the football there.
+21 John left the football there.
+22 After that he went back to the cinema.
+23 Mary put down the milk.
+24 Is Jeff in the cinema?	yes
+1 Daniel and Jeff moved to the school.
+2 Bill travelled to the office.
+3 Following that he went back to the school.
+4 Is Bill in the school?	yes
+5 Daniel is no longer in the office.
+6 John and Sandra moved to the garden.
+7 Then they went back to the bedroom.
+8 Where is John?	bedroom
+9 Fred got the football.
+10 After that he dropped the football there.
+11 Is Jeff in the school?	yes
+12 Mary picked up the apple there.
+13 Mary dropped the apple.
+14 Afterwards she picked up the apple there.
+15 Mary passed the apple to John.
+16 John passed the apple to Mary.
+17 Is Bill in the school?	yes
+18 Fred picked up the football.
+19 Fred moved to the bathroom.
+20 Then he put down the football there.
+21 Is Fred in the bathroom?	yes
+1 Fred is either in the kitchen or the hallway.
+2 Sandra and Mary moved to the hallway.
+3 Where is Sandra?	hallway
+4 Daniel is either in the office or the hallway.
+5 Sandra is no longer in the cinema.
+6 Jeff is either in the office or the garden.
+7 John is either in the park or the office.
+8 Is Mary in the cinema?	no
+9 Jeff picked up the milk.
+10 Fred travelled to the school.
+11 How many objects is Fred carrying?	none
+12 Bill is not in the kitchen.
+13 Bill picked up the football there.
+14 Sandra is either in the kitchen or the park.
+15 How many objects is Julie carrying?	none
+16 Fred travelled to the kitchen.
+17 Bill is either in the bedroom or the school.
+18 Is Fred in the kitchen?	yes
+1 Fred is either in the garden or the office.
+2 John is either in the garden or the park.
+3 Sandra went back to the hallway.
+4 Where is Sandra?	hallway
+5 John moved to the cinema.
+6 After that he went back to the park.
+7 Bill and Mary journeyed to the cinema.
+8 Fred picked up the milk.
+9 Is Fred in the bathroom?	no
+10 Daniel went back to the bedroom.
+11 Then he got the apple there.
+12 Where is Daniel?	bedroom
+13 Sandra is in the bathroom.
+14 Fred picked up the football.
+15 Afterwards he travelled to the office.
+16 Mary is not in the school.
+17 How many objects is Jeff carrying?	none
+18 Daniel went back to the school.
+19 Sandra travelled to the bedroom.
+20 Daniel and Mary went to the cinema.
+21 Julie went to the garden.
+22 How many objects is Mary carrying?	none
+1 Mary is in the cinema.
+2 Julie went back to the cinema.
+3 Following that she went to the garden.
+4 Is Mary in the cinema?	yes
+5 John is no longer in the office.
+6 John grabbed the milk.
+7 Afterwards he dropped the milk there.
+8 John got the milk there.
+9 After that he dropped the milk.
+10 Daniel is either in the hallway or the kitchen.
+11 Where is Mary?	cinema
+12 Daniel picked up the football.
+13 Sandra is not in the park.
+14 How many objects is Daniel carrying?	one
+15 John got the milk there.
+16 Afterwards he left the milk.
+17 Is Sandra in the park?	no
+18 John moved to the hallway.
+19 Following that he moved to the office.
+20 Fred went back to the cinema.
+21 Mary and Daniel went back to the bathroom.
+22 Afterwards they went back to the office.
+23 Where was the football before the office?	bathroom
+1 John is either in the bedroom or the kitchen.
+2 Jeff went back to the garden.
+3 Bill and Jeff went back to the school.
+4 Julie grabbed the milk.
+5 Mary took the apple there.
+6 Daniel travelled to the hallway.
+7 Is John in the park?	no
+8 Bill is either in the bedroom or the office.
+9 Daniel is not in the park.
+10 Where is Jeff?	school
+11 Sandra travelled to the kitchen.
+12 Daniel and Sandra went back to the cinema.
+13 After that they went to the bedroom.
+14 Julie gave the milk to Jeff.
+15 Jeff handed the milk to Julie.
+16 Julie handed the milk to Jeff.
+17 Daniel is either in the school or the office.
+18 Mary put down the apple.
+19 John and Bill travelled to the kitchen.
+20 Mary grabbed the apple.
+21 Then she travelled to the kitchen.
+22 Fred and Julie went back to the park.
+23 Then they went back to the cinema.
+24 Mary and Daniel went back to the cinema.
+25 Mary went to the bedroom.
+26 Daniel is in the school.
+27 Julie is either in the bedroom or the school.
+28 Is Julie in the bathroom?	no
+29 Julie and Mary journeyed to the cinema.
+30 After that they moved to the hallway.
+31 Jeff put down the milk there.
+32 Afterwards he got the milk.
+33 Is John in the office?	no
+34 John went to the garden.
+35 Afterwards he grabbed the football there.
+36 Who gave the apple to Fred?	Mary
+1 Mary is either in the office or the park.
+2 Daniel is in the garden.
+3 Julie moved to the bathroom.
+4 Where is Julie?	bathroom
+5 Julie is in the kitchen.
+6 Julie got the milk.
+7 Fred went to the school.
+8 John got the football there.
+9 Fred journeyed to the hallway.
+10 Then he went to the bedroom.
+11 Where is Daniel?	garden
+12 Julie is either in the office or the bathroom.
+13 John journeyed to the office.
+14 Is Julie in the kitchen?	no
+15 Daniel is either in the bedroom or the hallway.
+16 John put down the football.
+17 Where is John?	office
+18 Julie left the milk there.
+19 Bill got the apple there.
+20 Then he went to the cinema.
+21 Where is Fred?	bedroom
+1 Bill went back to the school.
+2 John is in the bathroom.
+3 Bill is either in the bedroom or the office.
+4 John moved to the hallway.
+5 Fred is either in the hallway or the school.
+6 Fred is either in the school or the park.
+7 Is John in the hallway?	yes
+8 Fred is either in the school or the cinema.
+9 Jeff is either in the park or the office.
+10 Fred is either in the park or the bedroom.
+11 Where is John?	hallway
+12 Bill is no longer in the school.
+13 Fred is in the cinema.
+14 Is John in the hallway?	yes
+15 Julie travelled to the hallway.
+16 Jeff and Daniel went back to the kitchen.
+17 Sandra picked up the milk.
+18 How many objects is Fred carrying?	none
+19 Sandra put down the milk there.
+20 Bill is in the hallway.
+21 Bill is either in the kitchen or the bedroom.
+22 Where is John?	hallway
+1 Julie is in the park.
+2 Fred is not in the bedroom.
+3 Where is Julie?	park
+4 Julie travelled to the bedroom.
+5 Bill is either in the hallway or the cinema.
+6 Mary got the milk.
+7 Mary and Bill went back to the bathroom.
+8 After that they went back to the bedroom.
+9 Where is the milk?	bedroom
+10 Fred journeyed to the school.
+11 Then he travelled to the bedroom.
+12 John got the apple there.
+13 How many objects is Sandra carrying?	none
+14 Mary is in the cinema.
+15 Daniel is either in the kitchen or the cinema.
+16 Where was the milk before the cinema?	bedroom
+17 Jeff and Fred went back to the bathroom.
+18 Following that they moved to the park.
+19 Julie went to the park.
+20 Mary discarded the milk.
+21 Bill is in the park.
+22 John put down the apple there.
+23 Then he got the football.
+24 Where is the milk?	cinema
+1 Sandra and Fred moved to the kitchen.
+2 Julie and John travelled to the bathroom.
+3 Is Sandra in the kitchen?	yes
+4 Julie took the apple there.
+5 Fred journeyed to the office.
+6 Sandra grabbed the milk there.
+7 Julie discarded the apple.
+8 How many objects is Daniel carrying?	none
+9 Fred is either in the bedroom or the park.
+10 Jeff and John travelled to the hallway.
+11 How many objects is Sandra carrying?	one
+12 Mary picked up the apple.
+13 Mary passed the apple to Julie.
+14 Julie put down the apple.
+15 What did Mary give to Julie?	apple
+16 Sandra put down the milk.
+17 Following that she picked up the milk there.
+18 Where is the milk?	kitchen
+1 Fred and Mary moved to the office.
+2 Jeff is in the bedroom.
+3 Is Mary in the office?	yes
+4 Bill and John travelled to the office.
+5 Afterwards they went back to the garden.
+6 Where is Jeff?	bedroom
+7 John is either in the school or the kitchen.
+8 Julie is either in the kitchen or the cinema.
+9 John grabbed the football.
+10 Is Julie in the cinema?	maybe
+11 Bill is either in the bathroom or the park.
+12 John put down the football.
+13 Then he grabbed the football.
+14 Is Mary in the hallway?	no
+15 Mary is no longer in the hallway.
+16 Sandra journeyed to the kitchen.
+17 Jeff and Julie went back to the cinema.
+18 Bill travelled to the bedroom.
+19 Where is Fred?	office
+1 Bill is in the bedroom.
+2 Fred is either in the cinema or the kitchen.
+3 Mary and Fred travelled to the park.
+4 Then they journeyed to the office.
+5 Where is Fred?	office
+6 Daniel travelled to the bathroom.
+7 After that he journeyed to the kitchen.
+8 Is Mary in the office?	yes
+9 Sandra and Daniel travelled to the office.
+10 After that they went to the park.
+11 Is Daniel in the park?	yes
+12 Julie and Jeff went to the school.
+13 Sandra and Mary journeyed to the school.
+14 Where is Sandra?	school
+15 Mary got the apple.
+16 After that she went back to the hallway.
+17 Where is the apple?	hallway
+1 Mary is not in the kitchen.
+2 Jeff is either in the garden or the bathroom.
+3 John and Julie journeyed to the garden.
+4 Following that they journeyed to the hallway.
+5 Is Julie in the bathroom?	no
+6 Fred and Jeff journeyed to the office.
+7 Sandra journeyed to the school.
+8 Where is John?	hallway
+9 John went back to the park.
+10 Then he journeyed to the bedroom.
+11 Where is Sandra?	school
+12 Julie picked up the apple.
+13 After that she put down the apple.
+14 Sandra is either in the cinema or the kitchen.
+15 Where is John?	bedroom
+16 Jeff is either in the bedroom or the bathroom.
+17 Mary and Sandra moved to the bedroom.
+18 Is Jeff in the kitchen?	no
+1 Mary and Sandra went back to the hallway.
+2 Julie is either in the park or the school.
+3 Where is Sandra?	hallway
+4 Mary travelled to the cinema.
+5 Sandra got the football.
+6 Afterwards she journeyed to the park.
+7 Is Julie in the cinema?	no
+8 Fred and Sandra moved to the bathroom.
+9 Afterwards they travelled to the hallway.
+10 Is Julie in the cinema?	no
+11 Jeff is in the cinema.
+12 Bill and Mary went back to the hallway.
+13 Where is the football?	hallway
+14 Jeff is either in the garden or the park.
+15 John went to the park.
+16 Is Fred in the cinema?	no
+1 John got the apple there.
+2 Then he picked up the football.
+3 How many objects is Fred carrying?	none
+4 Jeff picked up the milk.
+5 Jeff is either in the hallway or the kitchen.
+6 Daniel is in the kitchen.
+7 Daniel and Sandra went to the bedroom.
+8 Is Jeff in the hallway?	maybe
+9 Julie is in the hallway.
+10 John handed the apple to Mary.
+11 Where is Sandra?	bedroom
+12 Julie and John travelled to the school.
+13 Mary went back to the park.
+14 How many objects is Daniel carrying?	none
+15 Sandra is in the school.
+16 Mary put down the apple there.
+17 John dropped the football.
+18 Jeff put down the milk.
+19 John journeyed to the kitchen.
+20 Mary is no longer in the kitchen.
+21 Bill moved to the cinema.
+22 Where is the apple?	park
+1 John went back to the park.
+2 Following that he picked up the milk there.
+3 Jeff went to the park.
+4 Is Jeff in the park?	yes
+5 Bill is in the park.
+6 Daniel moved to the hallway.
+7 Sandra and Daniel travelled to the cinema.
+8 Following that they journeyed to the office.
+9 Where is John?	park
+10 Mary and Julie travelled to the park.
+11 John handed the milk to Jeff.
+12 Who received the milk?	Jeff
+13 Bill moved to the bathroom.
+14 Fred and John journeyed to the school.
+15 What did John give to Jeff?	milk
+16 Julie is not in the bathroom.
+17 Julie picked up the apple there.
+18 How many objects is Mary carrying?	none
+1 Daniel and Bill travelled to the bathroom.
+2 After that they went back to the bedroom.
+3 Where is Daniel?	bedroom
+4 Mary and Daniel went back to the office.
+5 Afterwards they went back to the cinema.
+6 Jeff grabbed the football.
+7 After that he put down the football there.
+8 Where is Bill?	bedroom
+9 Daniel is in the bedroom.
+10 Jeff grabbed the football.
+11 Then he put down the football.
+12 Is Daniel in the bedroom?	yes
+13 Sandra is either in the bathroom or the cinema.
+14 Fred and John moved to the bathroom.
+15 Then they journeyed to the hallway.
+16 Is Sandra in the bedroom?	no
+17 Sandra is no longer in the park.
+18 Sandra moved to the bedroom.
+19 Mary and Sandra moved to the hallway.
+20 Jeff picked up the football.
+21 Following that he journeyed to the cinema.
+22 Fred is either in the office or the cinema.
+23 Jeff put down the football.
+24 Jeff picked up the milk there.
+25 Jeff discarded the milk.
+26 Jeff travelled to the school.
+27 Mary journeyed to the school.
+28 Where is John?	hallway
+1 Fred journeyed to the cinema.
+2 Afterwards he journeyed to the office.
+3 Is Fred in the office?	yes
+4 John went back to the hallway.
+5 After that he went back to the cinema.
+6 Is Fred in the office?	yes
+7 John travelled to the bedroom.
+8 Following that he went to the kitchen.
+9 Where is John?	kitchen
+10 John and Jeff journeyed to the park.
+11 Afterwards they travelled to the garden.
+12 Is John in the kitchen?	no
+13 Fred moved to the bathroom.
+14 Following that he went back to the bedroom.
+15 Where is Jeff?	garden
+1 Sandra is either in the bedroom or the bathroom.
+2 Julie is either in the park or the kitchen.
+3 Bill got the apple.
+4 Bill discarded the apple.
+5 Is Julie in the park?	maybe
+6 Jeff travelled to the garden.
+7 Then he picked up the apple.
+8 How many objects is John carrying?	none
+9 Jeff put down the apple there.
+10 Afterwards he grabbed the apple there.
+11 Sandra journeyed to the school.
+12 John and Jeff journeyed to the bathroom.
+13 Where was the apple before the bathroom?	garden
+14 John took the football.
+15 Then he went to the cinema.
+16 Julie and Mary travelled to the office.
+17 Then they moved to the bathroom.
+18 Where is Mary?	bathroom
+19 Jeff dropped the apple.
+20 After that he went back to the hallway.
+21 Where is the apple?	bathroom
+1 Julie took the apple there.
+2 Then she travelled to the cinema.
+3 Julie is in the park.
+4 Fred and Bill went back to the bedroom.
+5 Julie discarded the apple there.
+6 Fred is no longer in the hallway.
+7 John is in the school.
+8 Bill went to the garden.
+9 Where is John?	school
+10 Julie grabbed the apple.
+11 Following that she discarded the apple.
+12 Sandra and Mary went to the hallway.
+13 Then they moved to the kitchen.
+14 Where is John?	school
+15 Fred is either in the kitchen or the park.
+16 Fred is either in the bedroom or the office.
+17 Is Fred in the bathroom?	no
+18 Julie picked up the football.
+19 Julie and Daniel journeyed to the hallway.
+20 After that they went back to the kitchen.
+21 Where was the football before the kitchen?	hallway
+22 Julie left the football.
+23 John got the milk there.
+24 Afterwards he journeyed to the kitchen.
+25 John put down the milk.
+26 Then he grabbed the milk there.
+27 Is Fred in the park?	no
+1 Daniel is either in the park or the hallway.
+2 John is in the bathroom.
+3 Jeff is either in the cinema or the hallway.
+4 Is John in the bathroom?	yes
+5 Sandra took the milk.
+6 Sandra discarded the milk there.
+7 After that she journeyed to the bedroom.
+8 Is John in the bedroom?	no
+9 John got the apple there.
+10 Following that he dropped the apple there.
+11 Julie travelled to the bathroom.
+12 Is John in the bathroom?	yes
+13 Jeff journeyed to the kitchen.
+14 Then he went back to the bathroom.
+15 Jeff is either in the cinema or the hallway.
+16 Fred journeyed to the hallway.
+17 Where is the apple?	bathroom
+18 Sandra is either in the cinema or the hallway.
+19 Julie picked up the apple.
+20 Where is the apple?	bathroom
+1 Jeff grabbed the apple.
+2 Afterwards he discarded the apple there.
+3 John travelled to the bedroom.
+4 Daniel went to the park.
+5 Daniel is no longer in the office.
+6 Is John in the bedroom?	yes
+7 Jeff got the apple.
+8 John and Sandra travelled to the school.
+9 Following that they went to the park.
+10 Bill is either in the kitchen or the school.
+11 Sandra and Fred moved to the school.
+12 After that they journeyed to the hallway.
+13 Mary moved to the office.
+14 Julie is either in the school or the kitchen.
+15 Sandra is either in the garden or the kitchen.
+16 Where is Mary?	office
+17 Mary is either in the kitchen or the hallway.
+18 Mary journeyed to the cinema.
+19 Mary journeyed to the garden.
+20 Following that she went to the hallway.
+21 Jeff passed the apple to Bill.
+22 How many objects is Daniel carrying?	none
+23 Jeff and John went back to the garden.
+24 Julie journeyed to the garden.
+25 How many objects is Jeff carrying?	none
+26 Bill left the apple.
+27 After that he moved to the office.
+28 Who received the apple?	Bill
+1 Daniel and Julie travelled to the school.
+2 After that they journeyed to the bathroom.
+3 Mary and Julie journeyed to the hallway.
+4 Then they travelled to the bedroom.
+5 Where is Julie?	bedroom
+6 John picked up the milk there.
+7 After that he discarded the milk there.
+8 Julie grabbed the football there.
+9 After that she put down the football there.
+10 Where is Julie?	bedroom
+11 Sandra went to the park.
+12 Following that she moved to the bedroom.
+13 Where is Mary?	bedroom
+14 Bill picked up the apple there.
+15 Julie moved to the bathroom.
+16 Sandra journeyed to the cinema.
+17 Bill passed the apple to Daniel.
+18 How many objects is John carrying?	none
+19 Daniel dropped the apple.
+20 Daniel is either in the office or the cinema.
+21 Where is Sandra?	cinema
+1 Mary is no longer in the park.
+2 Julie and John went back to the bathroom.
+3 Afterwards they went to the park.
+4 Mary went back to the office.
+5 Is Mary in the office?	yes
+6 Daniel is not in the cinema.
+7 Jeff is not in the bedroom.
+8 Is John in the park?	yes
+9 John is in the bedroom.
+10 Bill and Fred went back to the hallway.
+11 Where is Fred?	hallway
+12 Fred went to the cinema.
+13 Bill travelled to the garden.
+14 Is John in the kitchen?	no
+15 Julie went back to the bathroom.
+16 Julie is not in the garden.
+17 Fred is in the kitchen.
+18 Where is Mary?	office
+1 Fred is in the school.
+2 Mary is either in the office or the bedroom.
+3 Mary is either in the hallway or the bedroom.
+4 Is Fred in the school?	yes
+5 Bill is either in the school or the hallway.
+6 Jeff and John went to the park.
+7 Bill is not in the office.
+8 Is Fred in the school?	yes
+9 Jeff is either in the school or the bedroom.
+10 Mary is not in the bathroom.
+11 Bill and Julie travelled to the hallway.
+12 Following that they moved to the kitchen.
+13 Where is John?	park
+14 Fred and Jeff journeyed to the garden.
+15 Sandra grabbed the milk.
+16 Afterwards she journeyed to the school.
+17 Fred is in the bedroom.
+18 Sandra put down the milk.
+19 Is Fred in the bedroom?	yes
+20 Sandra is either in the bathroom or the park.
+21 Jeff grabbed the football there.
+22 Then he dropped the football there.
+23 Jeff took the football.
+24 Following that he put down the football.
+25 Mary journeyed to the bedroom.
+26 Jeff went back to the school.
+27 Where is John?	park
+1 Fred grabbed the football.
+2 Fred handed the football to Sandra.
+3 Mary is not in the kitchen.
+4 How many objects is Mary carrying?	none
+5 Sandra discarded the football.
+6 Fred and John travelled to the cinema.
+7 John is either in the office or the bedroom.
+8 Daniel is in the garden.
+9 Where is Fred?	cinema
+10 Sandra is no longer in the bathroom.
+11 Jeff grabbed the milk.
+12 Who gave the apple to John?	Mary
+13 Sandra and Daniel went back to the office.
+14 Then they went back to the hallway.
+15 What did Fred give to Sandra?	football
+16 Jeff left the milk.
+17 Sandra went back to the kitchen.
+18 Afterwards she journeyed to the cinema.
+19 Mary and Jeff travelled to the office.
+20 Afterwards they moved to the kitchen.
+21 Bill travelled to the bathroom.
+22 Where is Jeff?	kitchen
+1 Mary took the milk there.
+2 Afterwards she left the milk.
+3 Mary is either in the office or the park.
+4 Is Mary in the bathroom?	no
+5 Julie took the milk.
+6 Afterwards she discarded the milk there.
+7 Julie grabbed the milk.
+8 Is Mary in the school?	no
+9 Bill journeyed to the bathroom.
+10 Julie left the milk.
+11 Where is Bill?	bathroom
+12 Sandra is in the cinema.
+13 Fred and Bill moved to the bedroom.
+14 Following that they moved to the office.
+15 Is Bill in the bedroom?	no
+16 Julie took the milk there.
+17 Daniel is either in the garden or the bathroom.
+18 Julie discarded the milk.
+19 Daniel picked up the apple there.
+20 How many objects is Fred carrying?	none
+1 John grabbed the milk.
+2 Bill and John moved to the park.
+3 Daniel went to the office.
+4 Where is Daniel?	office
+5 Sandra and Bill went to the garden.
+6 Following that they went to the hallway.
+7 Where is the milk?	park
+8 Bill and John moved to the office.
+9 Sandra went back to the bathroom.
+10 Mary is in the park.
+11 Where was the milk before the office?	park
+12 Fred went to the cinema.
+13 Following that he went back to the park.
+14 Mary went back to the school.
+15 Then she travelled to the office.
+16 John left the milk.
+17 Where is Sandra?	bathroom
+18 John picked up the milk.
+19 Then he discarded the milk there.
+20 Is John in the office?	yes
+1 Julie got the football there.
+2 Afterwards she dropped the football there.
+3 Jeff moved to the bathroom.
+4 Where is Jeff?	bathroom
+5 Julie got the football there.
+6 Jeff grabbed the apple there.
+7 After that he left the apple.
+8 Daniel is in the kitchen.
+9 Mary travelled to the school.
+10 How many objects is Jeff carrying?	none
+11 Mary moved to the bathroom.
+12 Daniel is no longer in the office.
+13 John is either in the park or the kitchen.
+14 How many objects is Sandra carrying?	none
+15 Mary journeyed to the hallway.
+16 Julie dropped the football.
+17 Mary and Jeff moved to the garden.
+18 John went to the hallway.
+19 Where is the apple?	bathroom
+20 Julie took the football.
+21 Jeff is either in the bedroom or the park.
+22 Jeff is no longer in the bedroom.
+23 How many objects is Daniel carrying?	none
+1 Jeff is either in the hallway or the kitchen.
+2 Julie moved to the bedroom.
+3 John got the football there.
+4 How many objects is Mary carrying?	none
+5 Fred is either in the kitchen or the bathroom.
+6 Fred is either in the hallway or the office.
+7 How many objects is Fred carrying?	none
+8 John went to the hallway.
+9 John is in the school.
+10 Where was the football before the school?	hallway
+11 Mary and Fred went back to the bathroom.
+12 Bill went back to the garden.
+13 Afterwards he went back to the office.
+14 Jeff grabbed the milk.
+15 Where is the football?	school
+16 Mary is either in the park or the garden.
+17 John put down the football.
+18 Where is the football?	school
+1 Bill grabbed the football.
+2 Afterwards he went to the school.
+3 John is either in the hallway or the garden.
+4 Where is Bill?	school
+5 Bill took the milk.
+6 Jeff and Bill journeyed to the garden.
+7 Then they journeyed to the hallway.
+8 Fred is either in the bedroom or the garden.
+9 Bill dropped the milk.
+10 Bill and Sandra travelled to the bedroom.
+11 Following that they moved to the kitchen.
+12 Bill left the football there.
+13 Sandra took the football there.
+14 Then she dropped the football.
+15 Where is Sandra?	kitchen
+16 Fred moved to the park.
+17 John and Sandra travelled to the bedroom.
+18 Then they went back to the office.
+19 Where was the milk before the hallway?	garden
+20 Jeff grabbed the milk there.
+21 Jeff put down the milk.
+22 Where is the milk?	hallway
+23 Jeff took the milk.
+24 Jeff dropped the milk.
+25 Is Bill in the park?	no
+1 Bill travelled to the cinema.
+2 Julie and Jeff went to the office.
+3 Following that they travelled to the kitchen.
+4 Is Jeff in the kitchen?	yes
+5 Julie went back to the garden.
+6 After that she picked up the milk there.
+7 How many objects is Sandra carrying?	none
+8 Sandra is either in the cinema or the garden.
+9 Jeff is not in the hallway.
+10 Where is the milk?	garden
+11 John travelled to the school.
+12 Fred is no longer in the cinema.
+13 Daniel went back to the cinema.
+14 Then he went back to the bathroom.
+15 Julie is not in the bedroom.
+16 Julie got the apple.
+17 How many objects is Daniel carrying?	none
+18 Julie is in the kitchen.
+19 Julie moved to the hallway.
+20 Then she journeyed to the park.
+21 Julie is either in the office or the garden.
+22 Where was the milk before the hallway?	kitchen
+1 Fred is not in the bedroom.
+2 Mary went back to the school.
+3 Bill is not in the office.
+4 Where is Mary?	school
+5 John and Mary went to the kitchen.
+6 John is either in the school or the cinema.
+7 John went back to the park.
+8 Then he travelled to the office.
+9 Where is Mary?	kitchen
+10 Jeff is in the office.
+11 Julie and Jeff went back to the park.
+12 Then they travelled to the school.
+13 Fred got the football there.
+14 Following that he went to the office.
+15 Jeff is in the garden.
+16 Where is the football?	office
+17 John is either in the garden or the bathroom.
+18 Jeff took the apple there.
+19 Fred handed the football to Bill.
+20 John and Sandra travelled to the garden.
+21 Following that they went back to the bedroom.
+22 Who did Fred give the football to?	Bill
+23 Jeff and Daniel moved to the kitchen.
+24 Then they travelled to the office.
+25 What did Fred give to Bill?	football
+1 John went back to the kitchen.
+2 Fred took the football there.
+3 Where is John?	kitchen
+4 Fred put down the football.
+5 Sandra is either in the bathroom or the kitchen.
+6 Daniel journeyed to the school.
+7 Bill and Daniel went to the cinema.
+8 Following that they journeyed to the school.
+9 Daniel took the apple there.
+10 Daniel discarded the apple there.
+11 Sandra is either in the hallway or the school.
+12 Is Sandra in the cinema?	no
+13 Daniel is no longer in the office.
+14 Bill grabbed the apple.
+15 Where is John?	kitchen
+16 Jeff travelled to the bedroom.
+17 John and Bill went back to the bedroom.
+18 Where is the apple?	bedroom
+19 Bill put down the apple there.
+20 Following that he took the apple.
+21 Sandra is in the office.
+22 Where is the apple?	bedroom
+1 Julie journeyed to the office.
+2 Julie went to the park.
+3 Then she moved to the garden.
+4 Is Julie in the garden?	yes
+5 Mary picked up the milk.
+6 Sandra is in the garden.
+7 Mary is in the park.
+8 Mary put down the milk.
+9 Mary got the milk.
+10 How many objects is Sandra carrying?	none
+11 Daniel went to the bathroom.
+12 Then he went to the park.
+13 How many objects is Julie carrying?	none
+14 Sandra and Julie went to the school.
+15 Sandra picked up the apple.
+16 Where is Sandra?	school
+17 Sandra and Bill moved to the hallway.
+18 Following that they travelled to the office.
+19 How many objects is Daniel carrying?	none
+1 Jeff is not in the garden.
+2 Daniel is either in the office or the kitchen.
+3 Jeff is no longer in the hallway.
+4 Is Daniel in the park?	no
+5 Julie picked up the milk there.
+6 Jeff moved to the park.
+7 Bill is in the garden.
+8 How many objects is Sandra carrying?	none
+9 Julie and Bill journeyed to the bedroom.
+10 Fred journeyed to the cinema.
+11 Bill and John went to the office.
+12 Afterwards they journeyed to the kitchen.
+13 How many objects is Sandra carrying?	none
+14 Julie gave the milk to Mary.
+15 Sandra and Bill went to the hallway.
+16 Mary put down the milk.
+17 Is Bill in the cinema?	no
+18 Jeff and Sandra moved to the cinema.
+19 Fred is either in the office or the bedroom.
+20 Where is the milk?	bedroom
+1 Julie is either in the cinema or the kitchen.
+2 Jeff and Mary went to the kitchen.
+3 Then they travelled to the office.
+4 Where is Mary?	office
+5 Sandra is in the hallway.
+6 Mary is either in the garden or the kitchen.
+7 Is Jeff in the office?	yes
+8 Sandra got the football there.
+9 Mary is either in the cinema or the bathroom.
+10 How many objects is Julie carrying?	none
+11 Bill went to the kitchen.
+12 Daniel is not in the office.
+13 Bill moved to the hallway.
+14 Mary is either in the hallway or the bedroom.
+15 Mary moved to the office.
+16 How many objects is Sandra carrying?	one
+17 Sandra dropped the football.
+18 Daniel went back to the hallway.
+19 Jeff went back to the bathroom.
+20 John is either in the garden or the school.
+21 Where is the football?	hallway
+1 Daniel grabbed the milk there.
+2 After that he went to the kitchen.
+3 Julie grabbed the football there.
+4 Bill is no longer in the office.
+5 Is Daniel in the kitchen?	yes
+6 Bill is either in the school or the park.
+7 Fred went back to the kitchen.
+8 Then he journeyed to the bathroom.
+9 Mary went to the garden.
+10 Is Bill in the bathroom?	no
+11 Julie put down the football.
+12 Then she picked up the football.
+13 Is Bill in the garden?	no
+14 John is either in the bedroom or the school.
+15 Julie passed the football to Fred.
+16 Mary is not in the bathroom.
+17 Sandra went to the garden.
+18 Where is Fred?	bathroom
+19 Fred passed the football to Mary.
+20 Mary handed the football to Fred.
+21 Fred is not in the park.
+22 Jeff went to the office.
+23 Afterwards he travelled to the bedroom.
+24 Is John in the bathroom?	no
+1 Bill is not in the bathroom.
+2 Daniel travelled to the school.
+3 After that he picked up the apple there.
+4 Daniel left the apple.
+5 Jeff is either in the bedroom or the garden.
+6 Julie is either in the garden or the bathroom.
+7 Where is the apple?	school
+8 John journeyed to the garden.
+9 John went back to the bathroom.
+10 Mary is either in the bathroom or the bedroom.
+11 John is in the bedroom.
+12 Where is Daniel?	school
+13 Daniel and Mary went to the office.
+14 Julie got the milk.
+15 Fred picked up the football.
+16 Following that he discarded the football there.
+17 John and Mary went to the school.
+18 Fred is in the hallway.
+19 Jeff is either in the school or the hallway.
+20 Fred is either in the garden or the cinema.
+21 Is Bill in the bathroom?	no
+22 Julie left the milk there.
+23 John is in the garden.
+24 Mary and John moved to the kitchen.
+25 Where is the apple?	school
+26 Fred got the milk.
+27 Afterwards he put down the milk.
+28 Is Julie in the bedroom?	no
+1 John is not in the kitchen.
+2 Fred got the football there.
+3 Following that he dropped the football there.
+4 Fred moved to the hallway.
+5 Jeff picked up the apple.
+6 Jeff left the apple there.
+7 After that he got the apple.
+8 Is Fred in the park?	no
+9 Jeff is in the kitchen.
+10 Jeff dropped the apple.
+11 Then he got the apple there.
+12 How many objects is Julie carrying?	none
+13 Sandra and Mary went to the park.
+14 Jeff went to the garden.
+15 Jeff discarded the apple.
+16 Where is Sandra?	park
+17 Jeff went back to the school.
+18 Mary is either in the cinema or the bathroom.
+19 Julie is no longer in the bedroom.
+20 Where is the apple?	garden
+21 Mary is no longer in the bedroom.
+22 Mary got the football there.
+23 How many objects is Jeff carrying?	none
+1 Daniel is either in the office or the kitchen.
+2 Julie picked up the apple there.
+3 Afterwards she dropped the apple.
+4 Is Daniel in the office?	maybe
+5 John is no longer in the office.
+6 Fred is in the hallway.
+7 Is Fred in the hallway?	yes
+8 Julie went to the bathroom.
+9 Daniel picked up the football there.
+10 Fred grabbed the apple there.
+11 Fred gave the apple to Sandra.
+12 Is Daniel in the cinema?	no
+13 Daniel gave the football to John.
+14 Sandra and John moved to the school.
+15 After that they went back to the hallway.
+16 Sandra and Julie journeyed to the park.
+17 After that they travelled to the bathroom.
+18 John left the football.
+19 Sandra put down the apple.
+20 Following that she went to the park.
+21 John took the football.
+22 After that he dropped the football.
+23 Daniel is no longer in the hallway.
+24 Mary travelled to the bathroom.
+25 Where is John?	hallway
+26 Mary and Bill went back to the hallway.
+27 Following that they travelled to the park.
+28 Julie got the apple.
+29 Julie and Bill went back to the office.
+30 After that they went to the kitchen.
+31 Where is the apple?	kitchen
+1 Fred got the football there.
+2 Daniel is in the school.
+3 Bill took the milk.
+4 Sandra and John journeyed to the hallway.
+5 Afterwards they journeyed to the garden.
+6 Where is Sandra?	garden
+7 Bill is in the office.
+8 Bill picked up the apple there.
+9 Mary is either in the school or the office.
+10 Is Mary in the kitchen?	no
+11 Sandra and Julie went back to the bedroom.
+12 Bill and Mary journeyed to the hallway.
+13 Afterwards they journeyed to the bedroom.
+14 Daniel is in the park.
+15 Bill left the apple.
+16 Fred handed the football to John.
+17 Sandra took the apple there.
+18 Afterwards she put down the apple there.
+19 Where is Bill?	bedroom
+20 Bill went back to the park.
+21 Bill dropped the milk.
+22 How many objects is Jeff carrying?	none
+23 John and Sandra journeyed to the office.
+24 Daniel picked up the milk there.
+25 Jeff is in the garden.
+26 Daniel put down the milk.
+27 Afterwards he grabbed the milk there.
+28 Sandra went back to the kitchen.
+29 Is Mary in the garden?	no
+1 Sandra and John went back to the cinema.
+2 Then they moved to the office.
+3 Julie picked up the milk.
+4 Afterwards she went to the garden.
+5 Where is John?	office
+6 Fred got the apple there.
+7 After that he went back to the cinema.
+8 How many objects is Mary carrying?	none
+9 Fred moved to the kitchen.
+10 After that he dropped the apple there.
+11 How many objects is Jeff carrying?	none
+12 Fred journeyed to the school.
+13 Fred and Sandra went to the kitchen.
+14 Bill went to the hallway.
+15 Where was the apple before the kitchen?	cinema
+16 Bill went back to the office.
+17 After that he journeyed to the kitchen.
+18 Where was the apple before the kitchen?	cinema
+1 Fred and Mary went to the garden.
+2 Following that they moved to the park.
+3 Fred and Mary went to the bedroom.
+4 Where is Mary?	bedroom
+5 Daniel travelled to the school.
+6 Daniel and Bill journeyed to the hallway.
+7 After that they journeyed to the bathroom.
+8 Where is Fred?	bedroom
+9 John and Bill moved to the office.
+10 Jeff travelled to the park.
+11 Is Daniel in the bathroom?	yes
+12 Fred is not in the hallway.
+13 Daniel went to the hallway.
+14 Where is Mary?	bedroom
+15 Jeff is either in the school or the bathroom.
+16 Bill journeyed to the garden.
+17 Is Jeff in the bathroom?	maybe
+1 Daniel and Sandra went to the hallway.
+2 Following that they travelled to the garden.
+3 Is Sandra in the garden?	yes
+4 Julie is either in the hallway or the garden.
+5 Julie and Bill went back to the bathroom.
+6 Mary got the apple.
+7 Fred is no longer in the park.
+8 Sandra and Bill went back to the hallway.
+9 Is Bill in the bathroom?	no
+10 John went back to the cinema.
+11 John is either in the garden or the kitchen.
+12 Is John in the cinema?	no
+13 Mary put down the apple there.
+14 Afterwards she grabbed the apple there.
+15 How many objects is John carrying?	none
+16 Fred took the milk there.
+17 Then he journeyed to the bedroom.
+18 How many objects is Jeff carrying?	none
+1 Sandra is either in the park or the cinema.
+2 Bill and Sandra went to the office.
+3 Is Bill in the office?	yes
+4 Mary and Daniel went to the school.
+5 Mary and Jeff went to the cinema.
+6 After that they moved to the park.
+7 Is Jeff in the hallway?	no
+8 Daniel picked up the apple there.
+9 Afterwards he journeyed to the cinema.
+10 Where was the apple before the cinema?	school
+11 John and Julie moved to the school.
+12 After that they travelled to the bathroom.
+13 Where is the apple?	cinema
+14 John got the milk there.
+15 Then he left the milk there.
+16 How many objects is Bill carrying?	none
+1 Mary got the football.
+2 After that she left the football.
+3 Mary grabbed the football there.
+4 Then she moved to the school.
+5 Mary handed the football to Julie.
+6 Where is Mary?	school
+7 Sandra is either in the office or the school.
+8 Mary and Bill went to the bedroom.
+9 Following that they journeyed to the office.
+10 Who received the football?	Julie
+11 Bill journeyed to the garden.
+12 John is either in the school or the hallway.
+13 Is Sandra in the school?	maybe
+14 Julie left the football.
+15 Fred got the apple there.
+16 Fred travelled to the school.
+17 Where is the football?	school
+18 Fred left the apple there.
+19 Mary is either in the kitchen or the bedroom.
+20 Bill is either in the hallway or the bathroom.
+21 Where is Fred?	school
+1 John and Fred went to the cinema.
+2 Daniel got the apple there.
+3 Daniel passed the apple to Sandra.
+4 How many objects is John carrying?	none
+5 Jeff and Bill journeyed to the kitchen.
+6 After that they journeyed to the bathroom.
+7 Sandra moved to the bedroom.
+8 Fred is either in the park or the school.
+9 Where is the apple?	bedroom
+10 Julie is in the school.
+11 Sandra grabbed the football there.
+12 How many objects is John carrying?	none
+13 Sandra left the football.
+14 Afterwards she discarded the apple there.
+15 Who gave the football to Jeff?	Fred
+16 Julie is either in the hallway or the office.
+17 Sandra picked up the football.
+18 Fred is either in the bathroom or the bedroom.
+19 Where is the football?	bedroom
+1 John grabbed the milk.
+2 John and Mary went to the hallway.
+3 Is John in the park?	no
+4 Fred is either in the office or the kitchen.
+5 Sandra is either in the garden or the kitchen.
+6 How many objects is Jeff carrying?	none
+7 Sandra is in the park.
+8 Daniel got the football there.
+9 Afterwards he moved to the school.
+10 Daniel put down the football there.
+11 Mary is no longer in the garden.
+12 Julie is either in the kitchen or the hallway.
+13 Where is the football?	school
+14 Fred is either in the cinema or the school.
+15 Mary and Daniel moved to the hallway.
+16 John discarded the milk there.
+17 Where is the football?	school
+18 Mary went to the kitchen.
+19 Jeff is not in the school.
+20 Where is the football?	school
+1 Fred grabbed the apple.
+2 Sandra is no longer in the hallway.
+3 Fred put down the apple.
+4 Daniel moved to the cinema.
+5 Is Daniel in the cinema?	yes
+6 Jeff is in the school.
+7 Fred is in the cinema.
+8 Where is Daniel?	cinema
+9 Bill took the milk there.
+10 Sandra is in the office.
+11 Sandra went to the cinema.
+12 Bill and Mary journeyed to the kitchen.
+13 Following that they moved to the bedroom.
+14 Fred is in the office.
+15 How many objects is Sandra carrying?	none
+16 Jeff and Julie went back to the garden.
+17 Afterwards they travelled to the park.
+18 Is Julie in the park?	yes
+19 Bill discarded the milk.
+20 Daniel is in the bathroom.
+21 Bill picked up the apple there.
+22 Afterwards he dropped the apple.
+23 Bill got the milk there.
+24 Then he took the apple.
+25 Bill left the apple.
+26 Where is Fred?	office
+1 Julie is in the kitchen.
+2 Daniel is in the bedroom.
+3 Sandra is either in the garden or the bathroom.
+4 Sandra is not in the office.
+5 Is Julie in the kitchen?	yes
+6 Mary is no longer in the kitchen.
+7 Fred travelled to the garden.
+8 Afterwards he went to the school.
+9 Jeff moved to the bathroom.
+10 Where is Julie?	kitchen
+11 Daniel journeyed to the park.
+12 Following that he took the apple.
+13 Sandra went back to the bathroom.
+14 Where is Jeff?	bathroom
+15 Daniel left the apple.
+16 Fred grabbed the milk.
+17 Is Daniel in the park?	yes
+18 Fred went to the kitchen.
+19 John is no longer in the school.
+20 Where is Jeff?	bathroom
+1 Fred went back to the garden.
+2 Following that he moved to the hallway.
+3 Sandra and Fred moved to the bedroom.
+4 Then they journeyed to the kitchen.
+5 Is Fred in the kitchen?	yes
+6 Fred took the milk there.
+7 Fred passed the milk to Sandra.
+8 Bill and Mary travelled to the school.
+9 Daniel went back to the park.
+10 Following that he moved to the office.
+11 Sandra passed the milk to Fred.
+12 Fred handed the milk to Julie.
+13 Sandra is not in the school.
+14 Who did Fred give the milk to?	Julie
+15 Julie handed the milk to Fred.
+16 Mary and Daniel travelled to the hallway.
+17 Then they went to the bedroom.
+18 How many objects is John carrying?	none
+19 Fred and Sandra travelled to the bathroom.
+20 After that they travelled to the garden.
+21 Mary travelled to the park.
+22 Fred passed the milk to Sandra.
+23 Where is Fred?	garden
+24 Sandra left the milk.
+25 Daniel and John moved to the garden.
+26 Following that they went to the hallway.
+27 Sandra grabbed the milk.
+28 After that she put down the milk there.
+29 Sandra got the milk there.
+30 Afterwards she travelled to the office.
+31 Who gave the milk?	Fred
+1 Mary and Julie went to the bathroom.
+2 Daniel moved to the park.
+3 Is Julie in the bathroom?	yes
+4 John travelled to the kitchen.
+5 Jeff picked up the football.
+6 Jeff put down the football.
+7 Where is Mary?	bathroom
+8 Julie is in the cinema.
+9 Fred is not in the office.
+10 John is either in the hallway or the garden.
+11 Where is Mary?	bathroom
+12 Mary went to the garden.
+13 After that she journeyed to the bathroom.
+14 Jeff travelled to the school.
+15 Daniel is in the hallway.
+16 Julie grabbed the milk.
+17 Sandra took the football.
+18 Sandra discarded the football.
+19 Jeff and John went to the park.
+20 Then they went to the kitchen.
+21 Mary moved to the garden.
+22 Then she journeyed to the cinema.
+23 Where is Julie?	cinema
+24 Sandra got the apple.
+25 Sandra picked up the football there.
+26 Bill is either in the office or the hallway.
+27 How many objects is John carrying?	none
+1 Julie picked up the apple there.
+2 Mary picked up the milk there.
+3 Bill grabbed the football.
+4 Then he put down the football there.
+5 How many objects is John carrying?	none
+6 John and Mary went to the school.
+7 After that they travelled to the hallway.
+8 Julie handed the apple to Fred.
+9 Where was the milk before the hallway?	school
+10 Fred put down the apple there.
+11 Julie took the apple there.
+12 Mary passed the milk to John.
+13 Who gave the milk?	Mary
+14 Bill took the football.
+15 After that he left the football there.
+16 What did Mary give to John?	milk
+17 Julie handed the apple to Fred.
+18 John moved to the cinema.
+19 Where was the milk before the cinema?	hallway
+1 Jeff journeyed to the bedroom.
+2 Daniel is either in the kitchen or the hallway.
+3 Bill picked up the apple.
+4 Jeff and Sandra moved to the hallway.
+5 After that they journeyed to the cinema.
+6 Is Jeff in the cinema?	yes
+7 Mary is no longer in the bedroom.
+8 Daniel is no longer in the school.
+9 Bill put down the apple.
+10 Jeff and Julie travelled to the bedroom.
+11 Jeff moved to the hallway.
+12 Is Julie in the bedroom?	yes
+13 Bill and Mary went back to the garden.
+14 After that they travelled to the park.
+15 John took the apple there.
+16 Bill went back to the cinema.
+17 How many objects is Mary carrying?	none
+18 Bill is in the kitchen.
+19 Daniel travelled to the bathroom.
+20 Where is Julie?	bedroom
+21 John passed the apple to Bill.
+22 John picked up the milk there.
+23 Then he journeyed to the park.
+24 Where is the apple?	kitchen
+1 Julie is no longer in the park.
+2 Sandra is not in the school.
+3 Sandra went to the bedroom.
+4 Jeff picked up the apple.
+5 Afterwards he dropped the apple there.
+6 Mary journeyed to the bedroom.
+7 Sandra picked up the apple.
+8 Then she discarded the apple.
+9 Jeff picked up the apple.
+10 How many objects is John carrying?	none
+11 Jeff put down the apple there.
+12 Bill went back to the garden.
+13 Where is Bill?	garden
+14 Julie went to the school.
+15 After that she went to the bedroom.
+16 Where is Mary?	bedroom
+17 Jeff took the milk.
+18 Afterwards he left the milk.
+19 Julie went back to the kitchen.
+20 Where is the apple?	bedroom
+21 Mary travelled to the cinema.
+22 After that she journeyed to the hallway.
+23 Where is Mary?	hallway
+1 Mary grabbed the milk.
+2 Then she left the milk there.
+3 Bill is not in the garden.
+4 Is Bill in the garden?	no
+5 Bill is either in the park or the bathroom.
+6 Fred travelled to the bathroom.
+7 Following that he went back to the school.
+8 Mary is either in the park or the bedroom.
+9 Is Fred in the school?	yes
+10 Mary is either in the office or the cinema.
+11 Sandra went to the bedroom.
+12 Where is Sandra?	bedroom
+13 Daniel journeyed to the garden.
+14 Afterwards he moved to the bedroom.
+15 Jeff is either in the park or the school.
+16 Where is Daniel?	bedroom
+17 Bill went to the hallway.
+18 After that he went back to the cinema.
+19 John went to the bedroom.
+20 After that he went to the garden.
+21 Daniel is either in the office or the hallway.
+22 Is Daniel in the bedroom?	no
+1 Daniel and John travelled to the kitchen.
+2 Fred is either in the kitchen or the bedroom.
+3 Where is Daniel?	kitchen
+4 Sandra went back to the hallway.
+5 Julie took the apple.
+6 How many objects is Daniel carrying?	none
+7 Daniel and Bill went back to the cinema.
+8 Then they travelled to the bedroom.
+9 Is Sandra in the hallway?	yes
+10 Sandra travelled to the garden.
+11 Afterwards she moved to the kitchen.
+12 Is Fred in the school?	no
+13 Mary and John moved to the school.
+14 Jeff is in the bedroom.
+15 Is John in the school?	yes
+1 John is either in the kitchen or the bathroom.
+2 Sandra travelled to the cinema.
+3 Where is Sandra?	cinema
+4 Daniel took the football.
+5 Bill and Daniel journeyed to the hallway.
+6 Where is Bill?	hallway
+7 Daniel handed the football to Bill.
+8 Daniel took the apple.
+9 Bill put down the football.
+10 Is John in the bedroom?	no
+11 Sandra went back to the bedroom.
+12 John and Julie journeyed to the hallway.
+13 Afterwards they travelled to the bedroom.
+14 Is John in the bedroom?	yes
+15 Jeff journeyed to the office.
+16 Daniel travelled to the school.
+17 Julie is in the office.
+18 How many objects is Julie carrying?	none
+1 Daniel is in the hallway.
+2 Bill travelled to the bathroom.
+3 Daniel is in the bedroom.
+4 Where is Bill?	bathroom
+5 Mary journeyed to the kitchen.
+6 Fred went back to the garden.
+7 Where is Daniel?	bedroom
+8 Julie is either in the garden or the school.
+9 Bill is either in the hallway or the school.
+10 Where is Mary?	kitchen
+11 Bill is either in the cinema or the bathroom.
+12 Julie travelled to the office.
+13 Daniel and Mary moved to the office.
+14 Is Bill in the bathroom?	maybe
+15 Fred and Julie travelled to the kitchen.
+16 Jeff is either in the garden or the bedroom.
+17 Bill went to the school.
+18 Julie is either in the bathroom or the hallway.
+19 Where is Fred?	kitchen
+1 Bill grabbed the apple there.
+2 Bill put down the apple.
+3 Sandra grabbed the football there.
+4 Bill grabbed the apple there.
+5 John journeyed to the cinema.
+6 How many objects is John carrying?	none
+7 Jeff travelled to the cinema.
+8 Following that he went to the park.
+9 Is John in the cinema?	yes
+10 Julie is either in the hallway or the garden.
+11 Bill and Daniel travelled to the hallway.
+12 Where is Jeff?	park
+13 Fred travelled to the bathroom.
+14 Daniel and Jeff went back to the garden.
+15 After that they moved to the office.
+16 Bill moved to the school.
+17 Following that he dropped the apple.
+18 Is Daniel in the office?	yes
+19 Sandra discarded the football.
+20 Daniel is either in the school or the kitchen.
+21 Where was the apple before the school?	hallway
+1 Bill picked up the milk there.
+2 John and Bill moved to the cinema.
+3 Bill gave the milk to Fred.
+4 Where is the milk?	cinema
+5 Jeff is either in the office or the bedroom.
+6 Mary is no longer in the kitchen.
+7 Where is John?	cinema
+8 Jeff and Julie travelled to the office.
+9 Following that they went back to the bathroom.
+10 Is John in the cinema?	yes
+11 Fred handed the milk to Sandra.
+12 Sandra and Julie moved to the office.
+13 How many objects is Mary carrying?	none
+14 Sandra and Bill went to the bedroom.
+15 Then they journeyed to the kitchen.
+16 Where is Sandra?	kitchen
+1 John got the milk.
+2 John dropped the milk.
+3 Mary and Julie travelled to the bedroom.
+4 Where is Mary?	bedroom
+5 Mary is either in the bathroom or the kitchen.
+6 Fred moved to the kitchen.
+7 Where is Julie?	bedroom
+8 Julie is either in the park or the bathroom.
+9 Sandra is either in the cinema or the garden.
+10 Where is Fred?	kitchen
+11 Jeff went back to the bathroom.
+12 After that he went back to the hallway.
+13 Is Fred in the bathroom?	no
+14 Bill is either in the hallway or the park.
+15 Mary went back to the bedroom.
+16 Where is Jeff?	hallway
+1 Jeff grabbed the apple.
+2 Jeff discarded the apple.
+3 After that he went back to the bedroom.
+4 Fred is either in the cinema or the hallway.
+5 Julie is no longer in the garden.
+6 Where is Jeff?	bedroom
+7 Sandra and Fred went back to the office.
+8 Mary and Daniel went back to the kitchen.
+9 Afterwards they went to the hallway.
+10 Jeff picked up the milk.
+11 Following that he discarded the milk.
+12 Mary is in the bedroom.
+13 Mary is no longer in the park.
+14 Where is the milk?	bedroom
+15 Bill is either in the bedroom or the hallway.
+16 Jeff took the milk.
+17 Is Sandra in the office?	yes
+18 Bill is in the hallway.
+19 Julie and Daniel travelled to the kitchen.
+20 Mary went to the garden.
+21 Julie grabbed the apple.
+22 Bill and Julie went back to the office.
+23 Julie passed the apple to Fred.
+24 Where is Sandra?	office
+25 Bill is either in the garden or the park.
+26 Fred is not in the bathroom.
+27 Fred discarded the apple.
+28 Julie is not in the hallway.
+29 Mary is in the cinema.
+30 Who did Julie give the apple to?	Fred
+1 Daniel moved to the school.
+2 After that he picked up the milk there.
+3 Julie and Bill went back to the bedroom.
+4 Where is the milk?	school
+5 Daniel dropped the milk there.
+6 Daniel grabbed the milk.
+7 Where is the milk?	school
+8 Julie is either in the park or the office.
+9 Sandra is either in the office or the kitchen.
+10 Where is the milk?	school
+11 Daniel and Jeff moved to the office.
+12 Following that they journeyed to the park.
+13 Daniel dropped the milk there.
+14 Following that he went to the kitchen.
+15 Where is Jeff?	park
+16 Fred is either in the school or the office.
+17 Mary is not in the school.
+18 John is not in the school.
+19 Daniel journeyed to the bedroom.
+20 Where is the milk?	park
+1 Julie travelled to the garden.
+2 Bill moved to the bathroom.
+3 Where is Bill?	bathroom
+4 Bill went to the park.
+5 Afterwards he travelled to the kitchen.
+6 Bill is either in the cinema or the school.
+7 Is Bill in the kitchen?	no
+8 Daniel went back to the kitchen.
+9 Sandra and Julie went back to the bedroom.
+10 Fred got the milk.
+11 Then he moved to the garden.
+12 Where is Sandra?	bedroom
+13 Daniel is either in the park or the cinema.
+14 Daniel is either in the kitchen or the school.
+15 Daniel is either in the bathroom or the bedroom.
+16 Fred put down the milk there.
+17 Daniel went to the garden.
+18 Fred is either in the park or the school.
+19 Bill went back to the office.
+20 Where is the milk?	garden
+21 Jeff went to the bathroom.
+22 After that he journeyed to the school.
+23 Is Fred in the hallway?	no
+1 John is either in the garden or the park.
+2 Julie is not in the garden.
+3 Is Julie in the garden?	no
+4 Julie moved to the park.
+5 Daniel went back to the garden.
+6 John grabbed the apple.
+7 Daniel and Mary went back to the hallway.
+8 After that they journeyed to the school.
+9 Is Mary in the school?	yes
+10 Fred and Julie went back to the bedroom.
+11 Afterwards they went to the school.
+12 Where is Daniel?	school
+13 Daniel is either in the hallway or the bathroom.
+14 Daniel is either in the kitchen or the cinema.
+15 John discarded the apple there.
+16 Following that he journeyed to the cinema.
+17 Where is Fred?	school
+18 Daniel is in the bathroom.
+19 Bill is not in the bathroom.
+20 Sandra and Daniel went to the school.
+21 Where is Julie?	school
+1 Fred took the football there.
+2 Then he went to the cinema.
+3 Jeff is not in the hallway.
+4 Where is the football?	cinema
+5 Sandra is either in the bedroom or the cinema.
+6 Mary went to the kitchen.
+7 Is Sandra in the hallway?	no
+8 Mary is not in the bathroom.
+9 Fred handed the football to Daniel.
+10 Daniel put down the football.
+11 Mary journeyed to the office.
+12 Where is the football?	cinema
+13 Fred is either in the bedroom or the kitchen.
+14 Bill grabbed the football.
+15 Is Mary in the office?	yes
+16 Jeff travelled to the park.
+17 Bill dropped the football there.
+18 Mary is no longer in the school.
+19 Daniel took the football.
+20 Sandra is either in the garden or the hallway.
+21 Mary is either in the office or the park.
+22 Mary moved to the bathroom.
+23 Following that she travelled to the garden.
+24 Where is Jeff?	park
+1 Julie travelled to the cinema.
+2 Afterwards she went to the school.
+3 Daniel travelled to the office.
+4 Afterwards he moved to the cinema.
+5 Sandra is in the park.
+6 Julie grabbed the apple there.
+7 Is Sandra in the park?	yes
+8 Daniel went back to the bedroom.
+9 Daniel took the milk.
+10 Where is Sandra?	park
+11 Daniel dropped the milk.
+12 John and Julie went back to the garden.
+13 Following that they went to the cinema.
+14 Julie gave the apple to John.
+15 John dropped the apple there.
+16 After that he journeyed to the bathroom.
+17 Is John in the bathroom?	yes
+18 Fred and John moved to the school.
+19 Following that they journeyed to the office.
+20 Daniel took the milk there.
+21 After that he put down the milk.
+22 Where is Daniel?	bedroom
+23 Mary got the apple.
+24 After that she journeyed to the office.
+25 Is Fred in the office?	yes
+1 Mary is in the garden.
+2 Mary journeyed to the bathroom.
+3 After that she moved to the office.
+4 Julie grabbed the apple there.
+5 Julie dropped the apple.
+6 Bill went back to the hallway.
+7 Following that he journeyed to the garden.
+8 Is Mary in the office?	yes
+9 Fred is either in the kitchen or the office.
+10 Julie and Sandra journeyed to the park.
+11 Jeff is in the kitchen.
+12 Where is Julie?	park
+13 Fred journeyed to the hallway.
+14 Afterwards he went back to the cinema.
+15 Bill and Sandra moved to the kitchen.
+16 John grabbed the apple.
+17 Is Bill in the bathroom?	no
+18 Daniel is either in the office or the cinema.
+19 Bill went to the bedroom.
+20 Is Mary in the office?	yes
+21 John journeyed to the garden.
+22 John is either in the park or the bathroom.
+23 Sandra went to the bathroom.
+24 Is Sandra in the bathroom?	yes
+1 Julie moved to the bedroom.
+2 Bill is in the bedroom.
+3 Mary travelled to the park.
+4 Is Mary in the park?	yes
+5 Fred moved to the hallway.
+6 Daniel travelled to the hallway.
+7 Then he travelled to the office.
+8 Where is Mary?	park
+9 Bill is not in the school.
+10 Daniel is either in the hallway or the bedroom.
+11 Sandra took the football there.
+12 After that she went to the school.
+13 Sandra is either in the office or the cinema.
+14 Fred and Jeff went back to the kitchen.
+15 Then they went back to the hallway.
+16 Is Daniel in the garden?	no
+17 Mary went back to the hallway.
+18 Then she moved to the bathroom.
+19 Mary picked up the apple.
+20 Mary went to the cinema.
+21 How many objects is John carrying?	none
+22 Mary left the apple.
+23 Afterwards she went back to the school.
+24 Sandra discarded the football.
+25 Jeff went back to the bedroom.
+26 Is Julie in the office?	no
+1 Julie went back to the kitchen.
+2 After that she journeyed to the garden.
+3 Sandra moved to the park.
+4 Where is Julie?	garden
+5 John went to the cinema.
+6 Then he went to the office.
+7 Sandra picked up the apple.
+8 How many objects is Sandra carrying?	one
+9 Jeff and Sandra journeyed to the office.
+10 After that they journeyed to the school.
+11 How many objects is Sandra carrying?	one
+12 Sandra is either in the park or the bathroom.
+13 Daniel is not in the park.
+14 Julie is in the cinema.
+15 Sandra journeyed to the cinema.
+16 Afterwards she put down the apple.
+17 Where was the apple before the office?	park
+18 Julie is in the kitchen.
+19 Fred is not in the hallway.
+20 Where is Jeff?	school
+1 Daniel picked up the milk there.
+2 Afterwards he travelled to the office.
+3 Is Daniel in the office?	yes
+4 Daniel and Bill moved to the school.
+5 Julie travelled to the school.
+6 Where was the milk before the school?	office
+7 Fred is either in the garden or the office.
+8 Daniel left the milk there.
+9 Where is Bill?	school
+10 Bill is either in the office or the cinema.
+11 Julie is no longer in the bedroom.
+12 Daniel got the milk.
+13 Then he moved to the garden.
+14 Bill is either in the park or the cinema.
+15 Daniel is no longer in the cinema.
+16 Daniel dropped the milk.
+17 Sandra took the milk.
+18 Then she went to the bathroom.
+19 Where was the milk before the garden?	school
+20 Bill is either in the bedroom or the office.
+21 Sandra dropped the milk there.
+22 Julie moved to the bathroom.
+23 Where is the milk?	bathroom
+1 John is either in the office or the garden.
+2 Fred is not in the park.
+3 Fred picked up the apple.
+4 Is John in the bathroom?	no
+5 Sandra and Daniel journeyed to the garden.
+6 Julie is either in the school or the hallway.
+7 Julie moved to the bedroom.
+8 How many objects is Sandra carrying?	none
+9 Mary is in the bedroom.
+10 Mary travelled to the park.
+11 Where is Sandra?	garden
+12 Daniel went back to the bedroom.
+13 Bill went to the office.
+14 Then he moved to the garden.
+15 Is Fred in the park?	no
+16 Fred is either in the office or the cinema.
+17 Bill and Mary went back to the office.
+18 How many objects is Daniel carrying?	none
+1 John picked up the football there.
+2 Mary journeyed to the park.
+3 Where is Mary?	park
+4 John put down the football there.
+5 Jeff is either in the park or the cinema.
+6 John took the football.
+7 After that he left the football there.
+8 Is Mary in the cinema?	no
+9 Daniel is either in the hallway or the bathroom.
+10 Jeff is no longer in the park.
+11 Julie is either in the bathroom or the cinema.
+12 Where is Mary?	park
+13 Fred and Bill went to the bedroom.
+14 After that they moved to the park.
+15 Bill grabbed the milk there.
+16 Where is Fred?	park
+17 John grabbed the football.
+18 After that he moved to the bathroom.
+19 Daniel is either in the hallway or the bedroom.
+20 Fred and Sandra travelled to the kitchen.
+21 Following that they journeyed to the school.
+22 Where is the football?	bathroom
+1 Sandra went back to the park.
+2 After that she went back to the kitchen.
+3 Fred and Daniel journeyed to the bedroom.
+4 Sandra is either in the school or the garden.
+5 Jeff moved to the park.
+6 Then he travelled to the kitchen.
+7 Is Sandra in the bedroom?	no
+8 John took the milk.
+9 Sandra and Mary went back to the park.
+10 Afterwards they moved to the kitchen.
+11 Is Daniel in the bedroom?	yes
+12 Fred is either in the garden or the kitchen.
+13 Jeff and Fred moved to the park.
+14 Where is Jeff?	park
+15 Julie is no longer in the kitchen.
+16 Sandra journeyed to the bedroom.
+17 Is Sandra in the bedroom?	yes
+18 Julie and Fred went to the bedroom.
+19 Sandra and Julie travelled to the garden.
+20 How many objects is Bill carrying?	none
+1 Mary and Fred travelled to the office.
+2 Afterwards they journeyed to the park.
+3 Where is Fred?	park
+4 Bill travelled to the bathroom.
+5 Mary went to the office.
+6 Is Mary in the office?	yes
+7 Jeff travelled to the bathroom.
+8 Bill and John journeyed to the park.
+9 Following that they journeyed to the cinema.
+10 Jeff went to the kitchen.
+11 Julie took the milk.
+12 Then she travelled to the cinema.
+13 Julie put down the milk.
+14 Where is Fred?	park
+15 Julie got the milk.
+16 Sandra moved to the garden.
+17 Afterwards she went to the bathroom.
+18 Is Jeff in the bathroom?	no
+19 Mary is either in the park or the garden.
+20 Julie passed the milk to Bill.
+21 How many objects is Fred carrying?	none
+1 Fred went back to the office.
+2 Fred got the milk there.
+3 How many objects is Julie carrying?	none
+4 Daniel travelled to the park.
+5 John is either in the hallway or the school.
+6 Daniel went back to the kitchen.
+7 Where is Daniel?	kitchen
+8 Julie travelled to the park.
+9 Afterwards she got the apple.
+10 Fred left the milk.
+11 How many objects is Daniel carrying?	none
+12 Julie handed the apple to Bill.
+13 Sandra and John went back to the bedroom.
+14 Following that they went to the bathroom.
+15 Who received the apple?	Bill
+16 John is either in the cinema or the school.
+17 Sandra and Mary went to the kitchen.
+18 Afterwards they moved to the garden.
+19 Bill passed the apple to Julie.
+20 What did Julie give to Bill?	apple
+1 Sandra is in the kitchen.
+2 Daniel and Fred journeyed to the bedroom.
+3 Afterwards they went to the kitchen.
+4 Julie travelled to the bedroom.
+5 Is Sandra in the kitchen?	yes
+6 Fred moved to the garden.
+7 After that he moved to the school.
+8 Where is Julie?	bedroom
+9 Julie picked up the milk.
+10 After that she discarded the milk.
+11 Daniel is either in the bedroom or the cinema.
+12 Is Sandra in the bathroom?	no
+13 Jeff and Fred moved to the cinema.
+14 Sandra is either in the garden or the park.
+15 Where is Jeff?	cinema
+16 Julie grabbed the milk.
+17 John is either in the office or the bedroom.
+18 How many objects is Julie carrying?	one
+1 Julie is in the cinema.
+2 Jeff picked up the milk.
+3 Then he discarded the milk there.
+4 Where is Julie?	cinema
+5 Daniel got the football.
+6 Bill grabbed the apple.
+7 Fred journeyed to the garden.
+8 Afterwards he journeyed to the park.
+9 Is Fred in the park?	yes
+10 Bill journeyed to the park.
+11 Jeff got the milk.
+12 After that he dropped the milk there.
+13 How many objects is Daniel carrying?	one
+14 Bill gave the apple to Sandra.
+15 Sandra and Fred moved to the garden.
+16 Is Sandra in the garden?	yes
+17 John is either in the garden or the office.
+18 Julie went to the garden.
+19 What did Bill give to Sandra?	apple
+1 Daniel is in the garden.
+2 Bill went back to the kitchen.
+3 Jeff went back to the school.
+4 John grabbed the milk.
+5 Where is Bill?	kitchen
+6 Mary is either in the cinema or the bedroom.
+7 Sandra is either in the school or the garden.
+8 How many objects is Fred carrying?	none
+9 John left the milk there.
+10 Daniel and Fred went back to the hallway.
+11 Then they travelled to the kitchen.
+12 Is Daniel in the bedroom?	no
+13 Fred took the milk there.
+14 Following that he travelled to the bedroom.
+15 Julie journeyed to the school.
+16 Where was the milk before the bedroom?	kitchen
+17 Sandra and Julie moved to the office.
+18 Julie is either in the school or the kitchen.
+19 Sandra journeyed to the bedroom.
+20 Where is Jeff?	school
+1 Mary is either in the bathroom or the garden.
+2 Sandra took the football.
+3 Fred is in the cinema.
+4 Daniel took the milk.
+5 Then he picked up the apple there.
+6 Fred and Julie went back to the bedroom.
+7 How many objects is Daniel carrying?	two
+8 Julie is either in the hallway or the office.
+9 Julie and Sandra moved to the cinema.
+10 Where is the football?	cinema
+11 Sandra handed the football to Julie.
+12 Bill is either in the bedroom or the hallway.
+13 Jeff is either in the garden or the school.
+14 Mary moved to the bedroom.
+15 John moved to the bedroom.
+16 Is Fred in the bedroom?	yes
+17 Julie gave the football to Sandra.
+18 Sandra handed the football to Julie.
+19 Julie is no longer in the school.
+20 Daniel is in the office.
+21 Mary is in the garden.
+22 Mary journeyed to the park.
+23 Where is the apple?	office
+24 Mary went back to the school.
+25 Fred and Jeff went back to the hallway.
+26 Julie passed the football to Mary.
+27 Daniel left the apple.
+28 Afterwards he grabbed the apple there.
+29 Is John in the bedroom?	yes
+1 Sandra and John journeyed to the school.
+2 Then they journeyed to the office.
+3 Is John in the office?	yes
+4 Bill travelled to the hallway.
+5 Following that he went back to the bedroom.
+6 Where is John?	office
+7 Julie took the milk.
+8 Sandra is not in the hallway.
+9 How many objects is Mary carrying?	none
+10 Daniel travelled to the bathroom.
+11 John and Fred went to the cinema.
+12 After that they journeyed to the bedroom.
+13 Sandra is not in the school.
+14 Fred and Bill went to the bathroom.
+15 Sandra and Julie went to the office.
+16 Where is the milk?	office
+17 Julie dropped the milk there.
+18 Sandra is either in the school or the hallway.
+19 Is Julie in the office?	yes
+1 Fred is in the office.
+2 Jeff journeyed to the bedroom.
+3 Mary moved to the school.
+4 Is Fred in the bathroom?	no
+5 Fred is either in the bedroom or the kitchen.
+6 Bill went back to the park.
+7 Afterwards he travelled to the bedroom.
+8 Where is Bill?	bedroom
+9 Fred is no longer in the office.
+10 Mary grabbed the apple.
+11 Is Mary in the kitchen?	no
+12 Mary put down the apple.
+13 Fred travelled to the hallway.
+14 Mary got the apple there.
+15 Following that she dropped the apple.
+16 Where is the apple?	school
+17 Jeff went to the garden.
+18 Afterwards he went back to the park.
+19 Daniel moved to the park.
+20 Following that he went back to the kitchen.
+21 Jeff is not in the hallway.
+22 Where is the apple?	school
+1 Mary is either in the office or the bathroom.
+2 Mary picked up the apple.
+3 Is Mary in the bedroom?	no
+4 Mary handed the apple to Jeff.
+5 Jeff and Sandra went back to the school.
+6 After that they moved to the park.
+7 Where was the apple before the park?	school
+8 Jeff dropped the apple.
+9 Sandra and Mary travelled to the kitchen.
+10 Who did Mary give the apple to?	Jeff
+11 Fred is either in the hallway or the park.
+12 Mary travelled to the park.
+13 Jeff went to the cinema.
+14 Julie and Fred went to the school.
+15 Then they went to the cinema.
+16 Jeff is in the kitchen.
+17 Mary picked up the apple.
+18 After that she grabbed the football.
+19 Sandra is either in the cinema or the garden.
+20 Is Sandra in the bedroom?	no
+21 Mary is either in the garden or the hallway.
+22 Sandra grabbed the milk.
+23 Daniel went back to the bathroom.
+24 Where is Fred?	cinema
+1 John went back to the office.
+2 Daniel grabbed the apple.
+3 Following that he went back to the garden.
+4 Where is Daniel?	garden
+5 Daniel put down the apple there.
+6 Jeff went back to the park.
+7 After that he got the milk there.
+8 Where is Jeff?	park
+9 Jeff handed the milk to Sandra.
+10 Jeff went back to the bathroom.
+11 How many objects is Daniel carrying?	none
+12 Sandra is in the office.
+13 Julie is either in the cinema or the bathroom.
+14 Where was the milk before the office?	park
+15 Daniel grabbed the apple there.
+16 Afterwards he left the apple there.
+17 John went to the bathroom.
+18 After that he moved to the garden.
+19 Where is the apple?	garden
+1 Mary and Sandra went back to the hallway.
+2 Daniel and John moved to the bathroom.
+3 Where is Mary?	hallway
+4 Julie and John went to the hallway.
+5 Afterwards they went back to the school.
+6 Where is Julie?	school
+7 Mary is either in the bedroom or the bathroom.
+8 Julie picked up the apple.
+9 Afterwards she left the apple there.
+10 Where is the apple?	school
+11 Fred moved to the hallway.
+12 Julie took the apple.
+13 Julie gave the apple to John.
+14 Mary journeyed to the garden.
+15 Who gave the milk to Jeff?	John
+16 John gave the apple to Julie.
+17 Julie dropped the apple.
+18 Who gave the football to Bill?	Daniel
+1 John and Julie moved to the hallway.
+2 Jeff moved to the school.
+3 Afterwards he travelled to the garden.
+4 Where is Julie?	hallway
+5 John went back to the park.
+6 Jeff went back to the cinema.
+7 Where is John?	park
+8 Julie moved to the cinema.
+9 Sandra moved to the garden.
+10 Is Jeff in the cinema?	yes
+11 Fred and Mary moved to the garden.
+12 Fred travelled to the park.
+13 Fred went back to the school.
+14 Following that he took the football there.
+15 Where is Fred?	school
+16 Bill and Fred travelled to the bedroom.
+17 Afterwards they journeyed to the hallway.
+18 Where is Sandra?	garden
+1 Daniel is either in the bathroom or the park.
+2 Mary and Bill moved to the cinema.
+3 Jeff grabbed the milk there.
+4 Is Bill in the cinema?	yes
+5 Julie went back to the park.
+6 Daniel went back to the bathroom.
+7 Jeff dropped the milk there.
+8 Where is Daniel?	bathroom
+9 Sandra went back to the kitchen.
+10 Daniel travelled to the park.
+11 Where is Bill?	cinema
+12 Fred is either in the garden or the office.
+13 Sandra is either in the garden or the bedroom.
+14 Where is Mary?	cinema
+15 Jeff is in the garden.
+16 Fred took the apple there.
+17 Then he journeyed to the bedroom.
+18 Mary journeyed to the garden.
+19 Afterwards she got the football.
+20 Bill went to the bathroom.
+21 Where is Fred?	bedroom
+1 Fred is in the bedroom.
+2 John and Julie journeyed to the office.
+3 Then they travelled to the bedroom.
+4 Bill picked up the apple there.
+5 Bill put down the apple there.
+6 Is John in the bedroom?	yes
+7 Julie and Bill journeyed to the school.
+8 Afterwards they journeyed to the park.
+9 Where is Julie?	park
+10 Fred grabbed the apple.
+11 After that he went to the garden.
+12 Is John in the office?	no
+13 Julie and Jeff journeyed to the kitchen.
+14 Fred went to the hallway.
+15 Fred passed the apple to Daniel.
+16 How many objects is John carrying?	none
+17 Daniel moved to the kitchen.
+18 Mary journeyed to the kitchen.
+19 Bill is either in the hallway or the cinema.
+20 Who gave the apple?	Fred
+1 Julie moved to the bedroom.
+2 Daniel went back to the hallway.
+3 Julie went back to the cinema.
+4 After that she took the apple.
+5 Where is the apple?	cinema
+6 Sandra went to the bedroom.
+7 Julie left the apple.
+8 Sandra is in the bathroom.
+9 Where is Julie?	cinema
+10 Julie grabbed the apple.
+11 Bill took the football.
+12 Daniel went to the park.
+13 How many objects is Mary carrying?	none
+14 Daniel is in the cinema.
+15 John and Bill journeyed to the cinema.
+16 Julie dropped the apple there.
+17 Following that she picked up the apple there.
+18 Julie left the apple there.
+19 John is not in the hallway.
+20 Julie took the apple there.
+21 Is John in the hallway?	no
+22 Fred is no longer in the kitchen.
+23 Jeff and Sandra travelled to the school.
+24 Julie left the apple there.
+25 Julie and Jeff went to the hallway.
+26 After that they went to the kitchen.
+27 How many objects is Sandra carrying?	none
+1 Julie travelled to the hallway.
+2 Julie journeyed to the office.
+3 Bill is not in the kitchen.
+4 Jeff is in the park.
+5 Is Julie in the office?	yes
+6 Julie is either in the park or the garden.
+7 John is no longer in the garden.
+8 Is Jeff in the park?	yes
+9 Bill went back to the cinema.
+10 Afterwards he moved to the bathroom.
+11 Julie took the football there.
+12 Where is Jeff?	park
+13 Fred picked up the milk.
+14 Daniel is not in the cinema.
+15 How many objects is Bill carrying?	none
+16 Julie gave the football to Jeff.
+17 Sandra went to the school.
+18 Fred dropped the milk there.
+19 John picked up the apple.
+20 Following that he put down the apple there.
+21 Julie is either in the kitchen or the bathroom.
+22 Is Daniel in the cinema?	no
+1 Julie went to the garden.
+2 Julie and Daniel went back to the office.
+3 Is Julie in the office?	yes
+4 John got the football there.
+5 Julie is either in the school or the kitchen.
+6 Is Daniel in the hallway?	no
+7 Jeff is in the bedroom.
+8 John left the football there.
+9 After that he grabbed the football there.
+10 Bill is either in the bathroom or the hallway.
+11 Sandra travelled to the garden.
+12 Is Bill in the cinema?	no
+13 Mary and Bill travelled to the park.
+14 John is not in the school.
+15 Julie is either in the cinema or the garden.
+16 Mary and Fred went back to the office.
+17 Is John in the school?	no
+18 Jeff and Daniel travelled to the school.
+19 Jeff and Daniel moved to the cinema.
+20 Following that they went to the school.
+21 John handed the football to Daniel.
+22 Who gave the football?	John
+1 Julie and Mary went back to the bedroom.
+2 After that they travelled to the kitchen.
+3 Fred picked up the football.
+4 Fred discarded the football there.
+5 Where is Julie?	kitchen
+6 Bill and Julie travelled to the park.
+7 Afterwards they travelled to the hallway.
+8 Fred went to the kitchen.
+9 Then he journeyed to the bathroom.
+10 Julie travelled to the garden.
+11 Is Fred in the bathroom?	yes
+12 Sandra is either in the bathroom or the hallway.
+13 Julie went to the kitchen.
+14 After that she went to the garden.
+15 Where is Fred?	bathroom
+16 John and Sandra travelled to the garden.
+17 Bill moved to the bathroom.
+18 After that he moved to the school.
+19 Where is Bill?	school
+20 John went back to the cinema.
+21 Afterwards he travelled to the bathroom.
+22 Is John in the bathroom?	yes
+1 John and Jeff travelled to the bathroom.
+2 Sandra grabbed the milk there.
+3 How many objects is John carrying?	none
+4 Julie took the apple.
+5 Jeff is no longer in the cinema.
+6 Is John in the cinema?	no
+7 Sandra left the milk there.
+8 Sandra took the football.
+9 Then she discarded the football there.
+10 Where is John?	bathroom
+11 Fred went back to the bedroom.
+12 Julie dropped the apple there.
+13 Following that she went back to the bedroom.
+14 Is John in the bathroom?	yes
+15 Julie is in the park.
+16 Julie and Bill travelled to the school.
+17 After that they went back to the bedroom.
+18 Sandra took the milk there.
+19 Where is Bill?	bedroom
+1 Bill is in the cinema.
+2 Fred got the football there.
+3 Jeff is either in the bedroom or the school.
+4 Daniel moved to the garden.
+5 Then he went to the office.
+6 Where is Bill?	cinema
+7 Fred handed the football to John.
+8 John left the football there.
+9 Where is Bill?	cinema
+10 Julie and Sandra went back to the hallway.
+11 Julie and Mary travelled to the kitchen.
+12 Jeff grabbed the football there.
+13 Who did Fred give the football to?	John
+14 Mary is either in the garden or the bathroom.
+15 Daniel got the apple.
+16 Following that he travelled to the bathroom.
+17 Jeff gave the football to John.
+18 Sandra is either in the office or the garden.
+19 John is either in the bathroom or the garden.
+20 John is either in the school or the park.
+21 Who gave the apple to John?	Julie
+22 Bill moved to the school.
+23 After that he journeyed to the bathroom.
+24 Daniel and Mary went to the park.
+25 After that they travelled to the garden.
+26 Who did Jeff give the football to?	John
+1 Daniel is in the garden.
+2 Fred travelled to the office.
+3 Sandra took the milk.
+4 How many objects is Julie carrying?	none
+5 John journeyed to the bathroom.
+6 After that he moved to the bedroom.
+7 Sandra and Fred went back to the kitchen.
+8 Afterwards they travelled to the school.
+9 Julie is either in the office or the cinema.
+10 Fred is either in the hallway or the cinema.
+11 Where is Sandra?	school
+12 Sandra is no longer in the park.
+13 Mary and Daniel moved to the cinema.
+14 Where is Daniel?	cinema
+15 Bill and Fred moved to the bathroom.
+16 After that they moved to the kitchen.
+17 Where was the milk before the school?	kitchen
+18 Sandra is in the bathroom.
+19 Sandra put down the milk there.
+20 Where is John?	bedroom
+1 Bill grabbed the apple there.
+2 Bill gave the apple to Mary.
+3 What did Bill give to Mary?	apple
+4 Mary and Sandra moved to the hallway.
+5 Daniel went back to the bathroom.
+6 After that he moved to the bedroom.
+7 Daniel and John went back to the kitchen.
+8 Fred and Sandra journeyed to the bedroom.
+9 Jeff is either in the bathroom or the cinema.
+10 Is Jeff in the bedroom?	no
+11 Mary dropped the apple.
+12 Fred is either in the office or the cinema.
+13 Mary travelled to the kitchen.
+14 Where is Daniel?	kitchen
+15 Julie travelled to the kitchen.
+16 Julie is not in the hallway.
+17 Where is Mary?	kitchen
+18 Daniel went to the garden.
+19 Then he got the milk.
+20 How many objects is Jeff carrying?	none
+1 Julie went to the kitchen.
+2 Then she went to the garden.
+3 Jeff and Bill moved to the cinema.
+4 Then they journeyed to the office.
+5 Fred journeyed to the office.
+6 Is Bill in the office?	yes
+7 Fred went back to the cinema.
+8 Sandra is in the kitchen.
+9 Is Jeff in the office?	yes
+10 Jeff is no longer in the garden.
+11 John is either in the cinema or the hallway.
+12 Jeff is in the hallway.
+13 Is John in the bathroom?	no
+14 Sandra is either in the office or the bedroom.
+15 Bill went back to the bedroom.
+16 Then he moved to the school.
+17 Where is Jeff?	hallway
+18 Jeff is either in the office or the garden.
+19 Sandra and Julie travelled to the office.
+20 After that they went back to the cinema.
+21 Daniel is either in the bedroom or the bathroom.
+22 Fred went to the bedroom.
+23 Then he moved to the hallway.
+24 Is Julie in the cinema?	yes
+1 John went back to the garden.
+2 Then he took the football there.
+3 How many objects is Julie carrying?	none
+4 John left the football.
+5 John grabbed the football there.
+6 John left the football there.
+7 Fred and Mary travelled to the hallway.
+8 Following that they moved to the bathroom.
+9 Is John in the garden?	yes
+10 Daniel is either in the garden or the bathroom.
+11 Fred took the milk.
+12 How many objects is Daniel carrying?	none
+13 Fred discarded the milk.
+14 Fred is in the kitchen.
+15 Where is John?	garden
+16 Fred is either in the park or the hallway.
+17 Daniel journeyed to the school.
+18 Where is Mary?	bathroom
+1 Mary went back to the office.
+2 Bill picked up the milk there.
+3 Afterwards he went to the bedroom.
+4 Where is the milk?	bedroom
+5 Daniel journeyed to the garden.
+6 Bill discarded the milk there.
+7 Following that he took the milk there.
+8 Fred travelled to the school.
+9 Where is Fred?	school
+10 Bill and Julie went back to the hallway.
+11 Then they went to the park.
+12 Sandra went back to the hallway.
+13 Where was the milk before the park?	hallway
+14 Bill and John went to the cinema.
+15 Bill is no longer in the bathroom.
+16 How many objects is John carrying?	none
+17 John grabbed the football there.
+18 Sandra is either in the bathroom or the office.
+19 Is Bill in the bathroom?	no
+1 John and Mary travelled to the park.
+2 Then they travelled to the bathroom.
+3 Daniel travelled to the bathroom.
+4 Where is John?	bathroom
+5 John went back to the cinema.
+6 Bill and Daniel travelled to the bedroom.
+7 Bill is in the office.
+8 Mary went to the bedroom.
+9 Julie journeyed to the kitchen.
+10 Where is John?	cinema
+11 Fred moved to the kitchen.
+12 Afterwards he travelled to the school.
+13 Where is Mary?	bedroom
+14 John moved to the kitchen.
+15 Julie and Daniel moved to the school.
+16 John went to the park.
+17 John picked up the milk.
+18 John left the milk.
+19 Following that he got the milk there.
+20 Fred went to the office.
+21 Then he moved to the bathroom.
+22 Jeff and Bill moved to the garden.
+23 Following that they went to the bedroom.
+24 Mary travelled to the park.
+25 Fred and Jeff went back to the garden.
+26 Afterwards they went back to the park.
+27 Sandra is in the office.
+28 Where is the milk?	park
+29 Julie travelled to the kitchen.
+30 Afterwards she went back to the bathroom.
+31 Where is the milk?	park
+1 Fred journeyed to the bathroom.
+2 Afterwards he picked up the football.
+3 Daniel went back to the bedroom.
+4 After that he moved to the cinema.
+5 Fred discarded the football there.
+6 Where is the football?	bathroom
+7 Sandra is either in the bathroom or the bedroom.
+8 John is either in the hallway or the kitchen.
+9 Jeff travelled to the kitchen.
+10 Is Daniel in the kitchen?	no
+11 Jeff is either in the park or the office.
+12 Fred got the football.
+13 How many objects is Daniel carrying?	none
+14 Fred put down the football there.
+15 Afterwards he travelled to the cinema.
+16 Julie went back to the school.
+17 Afterwards she journeyed to the garden.
+18 Where is Julie?	garden
+19 Jeff went to the school.
+20 Afterwards he travelled to the kitchen.
+21 Sandra and Julie moved to the hallway.
+22 Afterwards they went back to the kitchen.
+23 Daniel and John travelled to the park.
+24 Afterwards they travelled to the kitchen.
+25 Daniel is in the school.
+26 John is no longer in the garden.
+27 Julie went to the bedroom.
+28 Jeff journeyed to the park.
+29 Then he grabbed the milk there.
+30 Is Julie in the bedroom?	yes
+1 Fred is in the garden.
+2 John picked up the milk there.
+3 Bill grabbed the football.
+4 Julie and Sandra moved to the park.
+5 After that they moved to the hallway.
+6 Is Sandra in the hallway?	yes
+7 John journeyed to the cinema.
+8 Then he dropped the milk there.
+9 Bill dropped the football there.
+10 Is Julie in the hallway?	yes
+11 Jeff went back to the cinema.
+12 Afterwards he picked up the football.
+13 Mary and Jeff went to the school.
+14 How many objects is John carrying?	none
+15 Jeff passed the football to Mary.
+16 Mary dropped the football.
+17 Is Jeff in the cinema?	no
+18 Bill picked up the milk.
+19 Jeff took the football there.
+20 Mary and Daniel went back to the bathroom.
+21 Afterwards they went back to the bedroom.
+22 How many objects is Sandra carrying?	none
+1 Sandra is either in the bedroom or the office.
+2 Julie is either in the office or the garden.
+3 Daniel got the football there.
+4 Then he dropped the football.
+5 Bill got the milk there.
+6 Is Sandra in the bedroom?	maybe
+7 Bill handed the milk to Mary.
+8 John picked up the football.
+9 Is Julie in the kitchen?	no
+10 Fred and Julie went to the cinema.
+11 Following that they travelled to the kitchen.
+12 John put down the football there.
+13 Is Julie in the kitchen?	yes
+14 Mary dropped the milk.
+15 Then she travelled to the cinema.
+16 Bill grabbed the milk there.
+17 Jeff and Sandra went back to the hallway.
+18 Who did Bill give the milk to?	Mary
+19 Daniel got the football there.
+20 John is no longer in the bathroom.
+21 Is Sandra in the cinema?	no
+1 Bill went to the school.
+2 Jeff grabbed the milk.
+3 Following that he put down the milk.
+4 Julie moved to the cinema.
+5 Then she went back to the school.
+6 Bill picked up the football.
+7 Where is Julie?	school
+8 Bill discarded the football there.
+9 Julie got the football.
+10 Mary and Sandra went back to the garden.
+11 Following that they moved to the school.
+12 Julie put down the football there.
+13 Daniel went back to the office.
+14 Where is Daniel?	office
+15 Fred journeyed to the bedroom.
+16 Bill journeyed to the kitchen.
+17 Fred is no longer in the cinema.
+18 Is Fred in the cinema?	no
+19 Mary got the football there.
+20 Sandra and Mary journeyed to the bedroom.
+21 Afterwards they went back to the kitchen.
+22 Bill went back to the school.
+23 Mary got the milk.
+24 Afterwards she left the milk.
+25 Where is the milk?	kitchen
+26 Mary passed the football to Jeff.
+27 Jeff grabbed the milk there.
+28 After that he discarded the milk.
+29 Where is Mary?	kitchen
+1 John is no longer in the hallway.
+2 Daniel took the apple there.
+3 Mary and John travelled to the office.
+4 Following that they journeyed to the hallway.
+5 Fred moved to the office.
+6 Bill is in the kitchen.
+7 Sandra took the football there.
+8 Sandra passed the football to Jeff.
+9 Is Bill in the kitchen?	yes
+10 Jeff handed the football to Sandra.
+11 Sandra moved to the school.
+12 Daniel went to the cinema.
+13 Following that he dropped the apple there.
+14 Where is Fred?	office
+15 Mary and Julie travelled to the kitchen.
+16 Mary is in the office.
+17 Sandra went back to the hallway.
+18 Julie and John went back to the garden.
+19 Where is the football?	hallway
+20 Sandra dropped the football.
+21 Sandra is in the garden.
+22 Jeff and Bill went to the bedroom.
+23 Afterwards they went back to the bathroom.
+24 Julie moved to the bedroom.
+25 Following that she went to the garden.
+26 John moved to the cinema.
+27 Then he got the apple.
+28 Mary and Sandra journeyed to the hallway.
+29 Then they moved to the kitchen.
+30 Where is the football?	hallway
+31 Sandra moved to the school.
+32 Daniel is either in the bedroom or the bathroom.
+33 John discarded the apple there.
+34 John took the milk.
+35 After that he left the milk.
+36 Where is the apple?	cinema
+1 Daniel and Julie went to the school.
+2 Daniel is either in the park or the hallway.
+3 Where is Julie?	school
+4 John grabbed the apple there.
+5 John gave the apple to Mary.
+6 Where is Julie?	school
+7 Mary discarded the apple.
+8 Sandra got the milk.
+9 Bill and Mary travelled to the garden.
+10 John is no longer in the bedroom.
+11 Bill journeyed to the kitchen.
+12 After that he travelled to the cinema.
+13 Mary is either in the hallway or the kitchen.
+14 Where is Julie?	school
+15 Sandra and Mary moved to the bathroom.
+16 Afterwards they journeyed to the garden.
+17 Bill is no longer in the kitchen.
+18 Daniel is no longer in the cinema.
+19 Bill is either in the school or the bedroom.
+20 Sandra gave the milk to Mary.
+21 How many objects is Daniel carrying?	none
+22 Fred is either in the school or the office.
+23 Mary left the milk there.
+24 Afterwards she grabbed the milk.
+25 Mary gave the milk to Sandra.
+26 Where is Mary?	garden
+1 Mary is either in the kitchen or the office.
+2 Bill moved to the bedroom.
+3 Where is Bill?	bedroom
+4 Julie is in the bedroom.
+5 Sandra and Daniel journeyed to the bedroom.
+6 Following that they journeyed to the park.
+7 Bill took the milk.
+8 Afterwards he left the milk.
+9 Where is the milk?	bedroom
+10 Jeff and Fred travelled to the bedroom.
+11 Sandra is in the cinema.
+12 Jeff took the milk there.
+13 After that he went to the kitchen.
+14 John went to the bedroom.
+15 Then he went to the school.
+16 John and Jeff travelled to the office.
+17 Jeff put down the milk there.
+18 Julie moved to the kitchen.
+19 After that she travelled to the school.
+20 Where is John?	office
+21 Daniel is either in the kitchen or the hallway.
+22 Julie took the apple.
+23 Where is the milk?	office
+24 Julie travelled to the garden.
+25 Julie dropped the apple there.
+26 Jeff took the milk.
+27 Afterwards he discarded the milk.
+28 Julie went back to the hallway.
+29 Mary moved to the office.
+30 Then she took the milk.
+31 Mary put down the milk.
+32 Is Daniel in the kitchen?	maybe
+1 John is either in the park or the garden.
+2 Fred is either in the cinema or the bathroom.
+3 Daniel took the apple.
+4 Mary is either in the garden or the park.
+5 Daniel discarded the apple.
+6 Is John in the bathroom?	no
+7 Sandra took the apple there.
+8 Following that she left the apple there.
+9 Sandra went to the cinema.
+10 Afterwards she went to the school.
+11 Is John in the hallway?	no
+12 John got the football.
+13 Bill and Mary travelled to the school.
+14 After that they journeyed to the bathroom.
+15 How many objects is Bill carrying?	none
+16 John put down the football there.
+17 Julie and Sandra travelled to the bathroom.
+18 John travelled to the park.
+19 Afterwards he journeyed to the school.
+20 Where is John?	school
+21 Jeff picked up the milk.
+22 After that he went back to the garden.
+23 Daniel and Jeff went back to the school.
+24 Where is Bill?	bathroom
+1 Fred and Sandra went back to the hallway.
+2 Bill is either in the school or the bathroom.
+3 Where is Fred?	hallway
+4 Fred travelled to the garden.
+5 After that he went to the bathroom.
+6 Is Sandra in the hallway?	yes
+7 Bill and Daniel moved to the kitchen.
+8 Afterwards they travelled to the park.
+9 Fred journeyed to the park.
+10 Mary is either in the garden or the bedroom.
+11 Daniel took the football there.
+12 Where is Daniel?	park
+13 Mary and Fred moved to the hallway.
+14 Afterwards they moved to the bathroom.
+15 Fred and Sandra went back to the cinema.
+16 Then they went back to the kitchen.
+17 Daniel put down the football there.
+18 Julie and John went back to the hallway.
+19 Then they travelled to the cinema.
+20 Daniel grabbed the football.
+21 Then he left the football.
+22 Sandra moved to the park.
+23 After that she took the football there.
+24 Where is Sandra?	park
+25 Bill and Daniel journeyed to the bathroom.
+26 Fred moved to the office.
+27 After that he moved to the school.
+28 Where is Sandra?	park
+1 Mary travelled to the school.
+2 Then she moved to the garden.
+3 Where is Mary?	garden
+4 Daniel is no longer in the kitchen.
+5 Julie took the apple there.
+6 John took the football.
+7 Afterwards he went to the hallway.
+8 Where is the football?	hallway
+9 Fred moved to the bedroom.
+10 Fred got the milk.
+11 Where is the milk?	bedroom
+12 Sandra is either in the hallway or the office.
+13 Julie handed the apple to Jeff.
+14 How many objects is Bill carrying?	none
+15 Jeff handed the apple to Julie.
+16 Fred is no longer in the bathroom.
+17 John is in the office.
+18 Is Fred in the bathroom?	no
+1 Jeff is either in the park or the hallway.
+2 Bill is in the cinema.
+3 Is Bill in the kitchen?	no
+4 Mary is either in the bathroom or the garden.
+5 John went to the kitchen.
+6 After that he journeyed to the bathroom.
+7 Where is Bill?	cinema
+8 Sandra went back to the hallway.
+9 Then she moved to the cinema.
+10 Mary grabbed the apple.
+11 John is either in the garden or the park.
+12 Is Jeff in the school?	no
+13 Sandra travelled to the bathroom.
+14 Jeff is either in the school or the cinema.
+15 How many objects is Julie carrying?	none
+16 Mary discarded the apple.
+17 Bill is either in the school or the hallway.
+18 Daniel went to the bedroom.
+19 Following that he went to the bathroom.
+20 Where is Daniel?	bathroom
+1 Julie and Bill journeyed to the school.
+2 Daniel picked up the milk there.
+3 How many objects is Bill carrying?	none
+4 John is in the bedroom.
+5 Mary went to the kitchen.
+6 After that she picked up the football.
+7 Where is John?	bedroom
+8 Jeff is no longer in the bedroom.
+9 Daniel gave the milk to Fred.
+10 Where is Bill?	school
+11 Bill is in the bathroom.
+12 Mary is no longer in the office.
+13 How many objects is Sandra carrying?	none
+14 Daniel and Mary journeyed to the cinema.
+15 John went to the park.
+16 Then he journeyed to the bathroom.
+17 Where is the football?	cinema
+1 Fred and Mary went back to the park.
+2 Julie picked up the milk.
+3 Julie left the milk there.
+4 After that she picked up the milk there.
+5 Is Fred in the park?	yes
+6 Julie put down the milk there.
+7 Fred picked up the milk there.
+8 Fred is in the bathroom.
+9 Daniel is not in the school.
+10 Daniel and John moved to the cinema.
+11 Where was the milk before the bathroom?	park
+12 Mary is in the office.
+13 Bill got the football.
+14 Is John in the cinema?	yes
+15 Sandra is either in the school or the garden.
+16 Bill discarded the football.
+17 Where is the milk?	bathroom
+18 Sandra is in the cinema.
+19 Bill moved to the office.
+20 John is in the school.
+21 Fred dropped the milk.
+22 Fred took the milk there.
+23 Where is Fred?	bathroom
+1 Fred got the football.
+2 Fred is no longer in the park.
+3 Is Fred in the park?	no
+4 Fred put down the football there.
+5 Following that he grabbed the football.
+6 Is Fred in the park?	no
+7 Daniel picked up the milk.
+8 Afterwards he went back to the office.
+9 Where is Daniel?	office
+10 Daniel left the milk there.
+11 After that he got the milk there.
+12 Where is Daniel?	office
+13 Sandra is either in the office or the bathroom.
+14 Fred discarded the football.
+15 Then he journeyed to the bedroom.
+16 How many objects is Daniel carrying?	one
+1 Julie is either in the hallway or the office.
+2 Sandra moved to the garden.
+3 Afterwards she journeyed to the bedroom.
+4 Where is Sandra?	bedroom
+5 Julie travelled to the bathroom.
+6 Julie is in the office.
+7 Sandra is either in the cinema or the garden.
+8 Where is Julie?	office
+9 Daniel is no longer in the bedroom.
+10 Sandra is either in the kitchen or the bathroom.
+11 John is either in the office or the school.
+12 John is either in the garden or the cinema.
+13 Is Julie in the hallway?	no
+14 Sandra took the apple there.
+15 Sandra left the apple there.
+16 Fred is not in the school.
+17 Is Julie in the garden?	no
+18 Fred grabbed the football there.
+19 After that he took the milk there.
+20 Mary is either in the cinema or the bathroom.
+21 Daniel travelled to the cinema.
+22 Is Fred in the school?	no
+1 Fred is either in the kitchen or the bedroom.
+2 Julie is in the cinema.
+3 Julie moved to the hallway.
+4 Is Fred in the hallway?	no
+5 Fred travelled to the school.
+6 Fred got the milk there.
+7 Bill is either in the bathroom or the hallway.
+8 Sandra is either in the kitchen or the park.
+9 How many objects is Bill carrying?	none
+10 Mary grabbed the apple there.
+11 Jeff is in the kitchen.
+12 Where is the milk?	school
+13 Sandra travelled to the school.
+14 Fred put down the milk.
+15 After that he picked up the milk.
+16 Mary discarded the apple.
+17 Then she got the apple.
+18 How many objects is Jeff carrying?	none
+19 Mary is either in the school or the cinema.
+20 Fred discarded the milk there.
+21 Then he grabbed the milk.
+22 Is Bill in the garden?	no
+1 Bill got the milk there.
+2 Following that he discarded the milk there.
+3 Mary is not in the bedroom.
+4 Is Mary in the bedroom?	no
+5 Jeff got the football.
+6 Jeff handed the football to Julie.
+7 How many objects is Jeff carrying?	none
+8 Julie put down the football there.
+9 Bill got the milk there.
+10 Is Mary in the bedroom?	no
+11 Sandra travelled to the bedroom.
+12 Fred is in the bathroom.
+13 Is Fred in the bathroom?	yes
+14 Julie got the football.
+15 Then she dropped the football there.
+16 Is Mary in the bedroom?	no
+1 Bill and Julie went back to the office.
+2 Then they journeyed to the kitchen.
+3 Bill went back to the garden.
+4 Then he travelled to the bathroom.
+5 Is Bill in the bathroom?	yes
+6 Jeff went to the office.
+7 Julie is in the office.
+8 Where is Jeff?	office
+9 Mary journeyed to the cinema.
+10 Bill is either in the office or the park.
+11 Mary grabbed the football.
+12 Mary and Daniel travelled to the kitchen.
+13 After that they went to the cinema.
+14 Mary is either in the school or the park.
+15 Mary went back to the hallway.
+16 Then she discarded the football there.
+17 Where was the football before the kitchen?	cinema
+18 Sandra is either in the bedroom or the school.
+19 Sandra is either in the park or the garden.
+20 Daniel got the apple there.
+21 Mary and John journeyed to the office.
+22 Is Bill in the school?	no
+23 Sandra and Fred went to the kitchen.
+24 Daniel is no longer in the kitchen.
+25 Is Daniel in the kitchen?	no
+1 John is in the office.
+2 Mary and Daniel went back to the bathroom.
+3 Afterwards they went back to the office.
+4 Where is John?	office
+5 John is either in the cinema or the bedroom.
+6 Bill and John travelled to the office.
+7 Then they journeyed to the kitchen.
+8 Is Daniel in the office?	yes
+9 Daniel moved to the bedroom.
+10 Daniel travelled to the cinema.
+11 Following that he journeyed to the school.
+12 Daniel is not in the office.
+13 Daniel is either in the kitchen or the garden.
+14 Mary picked up the football.
+15 Fred grabbed the milk there.
+16 Afterwards he journeyed to the cinema.
+17 Where is Bill?	kitchen
+18 Jeff is either in the kitchen or the cinema.
+19 Mary is in the bedroom.
+20 Jeff is in the cinema.
+21 Where was the football before the bedroom?	office
+22 Julie is either in the garden or the park.
+23 John is either in the office or the park.
+24 Where is the football?	bedroom
+1 Bill is either in the hallway or the cinema.
+2 John is either in the office or the hallway.
+3 Bill got the apple.
+4 How many objects is Bill carrying?	one
+5 Jeff grabbed the milk.
+6 Sandra journeyed to the bathroom.
+7 After that she moved to the school.
+8 Where is Sandra?	school
+9 John journeyed to the kitchen.
+10 Following that he moved to the bathroom.
+11 John took the football.
+12 Where is John?	bathroom
+13 Fred is either in the cinema or the bathroom.
+14 John and Fred journeyed to the cinema.
+15 After that they went to the office.
+16 Where is the football?	office
+17 Daniel and Sandra travelled to the cinema.
+18 Julie and Daniel journeyed to the office.
+19 Bill put down the apple there.
+20 How many objects is Daniel carrying?	none
+1 John went to the office.
+2 Sandra went back to the garden.
+3 Jeff picked up the apple there.
+4 Then he travelled to the bathroom.
+5 Where is the apple?	bathroom
+6 Daniel is either in the garden or the hallway.
+7 John and Julie went to the school.
+8 After that they moved to the park.
+9 Mary moved to the garden.
+10 Julie is not in the bedroom.
+11 How many objects is Bill carrying?	none
+12 Jeff got the football.
+13 Daniel journeyed to the office.
+14 Daniel is no longer in the kitchen.
+15 Daniel journeyed to the garden.
+16 Julie moved to the office.
+17 Julie travelled to the cinema.
+18 How many objects is John carrying?	none
+19 Jeff left the apple there.
+20 Jeff took the apple there.
+21 Fred and Mary went to the bathroom.
+22 Following that they moved to the office.
+23 Mary is not in the bathroom.
+24 Is Daniel in the school?	no
+25 Jeff dropped the football there.
+26 Bill and Mary journeyed to the office.
+27 Where is John?	park
+1 Mary and John travelled to the hallway.
+2 Then they journeyed to the bathroom.
+3 Jeff and Bill went to the school.
+4 After that they travelled to the cinema.
+5 John picked up the milk.
+6 Then he went back to the cinema.
+7 Julie took the football.
+8 Afterwards she put down the football there.
+9 Where was the milk before the cinema?	bathroom
+10 Bill is either in the bathroom or the park.
+11 Julie got the football.
+12 John gave the milk to Jeff.
+13 Bill travelled to the park.
+14 Is Jeff in the cinema?	yes
+15 Jeff left the milk there.
+16 John grabbed the milk there.
+17 Afterwards he dropped the milk there.
+18 Mary and Daniel journeyed to the school.
+19 Then they journeyed to the bedroom.
+20 Jeff picked up the milk.
+21 Julie is either in the garden or the kitchen.
+22 Julie handed the football to Fred.
+23 Mary went back to the park.
+24 Who gave the football to John?	Jeff
+25 Mary travelled to the garden.
+26 Mary moved to the office.
+27 Afterwards she journeyed to the cinema.
+28 Who received the football?	Fred
+29 Fred is not in the hallway.
+30 Fred dropped the football there.
+31 Mary went back to the garden.
+32 Following that she went back to the kitchen.
+33 Sandra went back to the hallway.
+34 Afterwards she went to the cinema.
+35 Where is the milk?	cinema
