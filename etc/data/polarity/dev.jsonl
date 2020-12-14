@@ -1,0 +1,966 @@
+{"id": "22865_sick.matched.txt_first_arrows", "question": {"stem": "There is no woman slicing tofu"}, "output": "u d u d d d"}
+{"id": "2201_monotonicity_simple.matched.txt_first_arrows", "question": {"stem": "No mammals scratched no good wagons"}, "output": "u d u d u u"}
+{"id": "4556_sick.matched.txt_first_arrows", "question": {"stem": "A person is not quickly chopping mushrooms with a knife"}, "output": "u u d u d d d d d d"}
+{"id": "3011_monotonicity_simple.matched.txt_first_arrows", "question": {"stem": "most very bad stallions moved away from most newborn dogs who sniffed most wheelbarrows"}, "output": "u = = = u u u u = = = = = ="}
+{"id": "4730_sick.matched.txt_first_arrows", "question": {"stem": "A guy is not riding a horse"}, "output": "u u d u d d d"}
+{"id": "794_sick.matched.txt_first_arrows", "question": {"stem": "one white dog are cheerfully running side by side on the grass"}, "output": "u u u u u u u u u u u ="}
+{"id": "2825_sick.matched.txt_first_arrows", "question": {"stem": "The woman is playing a guitar which is electric"}, "output": "u = u u u u u u u"}
+{"id": "10487_sick.matched.txt_first_arrows", "question": {"stem": "A black and white dog is carrying a big stick on the green grass"}, "output": "u u u u u u u u u u u u = ="}
+{"id": "14462_sick.matched.txt_first_arrows", "question": {"stem": "There is no man chopping a log with an axe"}, "output": "u d u d d d d d d d"}
+{"id": "12215_sick.matched.txt_first_arrows", "question": {"stem": "A prawn is being cut by a woman"}, "output": "u u u u u u u u"}
+{"id": "20336_sick.matched.txt_first_arrows", "question": {"stem": "A black and orange bird is not standing in the grass"}, "output": "u u u u u d u d d d ="}
+{"id": "4376_monotonicity_hard.matched.txt_first_arrows", "question": {"stem": "Each brown or black horse sniffed a chair"}, "output": "u d u d d u u u"}
+{"id": "22112_sick.matched.txt_first_arrows", "question": {"stem": "There is no woman dancing near a fire"}, "output": "u d u d d d d d"}
+{"id": "17126_sick.matched.txt_first_arrows", "question": {"stem": "The dog is licking a bottle"}, "output": "u = u u u u"}
+{"id": "11522_sick.matched.txt_first_arrows", "question": {"stem": "The dog is not snapping at some droplets of water"}, "output": "u = d u d d d d d d"}
+{"id": "18146_sick.matched.txt_first_arrows", "question": {"stem": "The bicyclist is not riding on a city street"}, "output": "u = d u d d d d d"}
+{"id": "22796_sick.matched.txt_first_arrows", "question": {"stem": "There is no boy playing guitar"}, "output": "u d u d d d"}
+{"id": "13625_sick.matched.txt_first_arrows", "question": {"stem": "The man is kick boxing with a trainer"}, "output": "u = u u u u u u"}
+{"id": "15920_sick.matched.txt_first_arrows", "question": {"stem": "A little girl is playing a guitar"}, "output": "u u u u u u u"}
+{"id": "9182_sick.matched.txt_first_arrows", "question": {"stem": "A black dog is jumping off a dock into a pond"}, "output": "u u u u u u u u u u u"}
+{"id": "18728_sick.matched.txt_first_arrows", "question": {"stem": "A dog with a blue muzzle is running around the yard with a jacket"}, "output": "u u u u u u u u u u = u u u"}
+{"id": "6395_sick.matched.txt_first_arrows", "question": {"stem": "A man is firing a shotgun"}, "output": "u u u u u u"}
+{"id": "7931_sick.matched.txt_first_arrows", "question": {"stem": "A dog with a muzzle and a blue jacket is running around the court"}, "output": "u u u u u u u u u u u u u ="}
+{"id": "4361_monotonicity_simple.matched.txt_first_arrows", "question": {"stem": "Every mammal swam"}, "output": "u d u"}
+{"id": "9149_sick.matched.txt_first_arrows", "question": {"stem": "A boy is jumping off the side of a water fountain made of stone in front of a building"}, "output": "u u u u u u = = = = = = = = = = = = ="}
+{"id": "3203_monotonicity_hard.matched.txt_first_arrows", "question": {"stem": "No dog moved towards at-least 5 old rabbits who a cat saw"}, "output": "u d d d d u d d d d d d"}
+{"id": "8483_sick.matched.txt_first_arrows", "question": {"stem": "A dog is playing alone on a beach covered by snow"}, "output": "u u u u u u u u u u u"}
+{"id": "23030_sick.matched.txt_first_arrows", "question": {"stem": "The man surrounded by men with a camera is wearing a gray suit and glasses"}, "output": "u = = = = = = = u u u u u u u"}
+{"id": "3173_diagnostic.matched.txt_first_arrows", "question": {"stem": "You know that some life-changing actions must be taken when grandma reacts with emoji."}, "output": "d d d d d d d d d d d d d d"}
+{"id": "1106_diagnostic.matched.txt_first_arrows", "question": {"stem": "Unshielded radiation from a nuclear core could kill you in a matter of hours."}, "output": "u u u u u u u u u u u u u u"}
+{"id": "13379_sick.matched.txt_first_arrows", "question": {"stem": "A baby and an adult are being followed by a rhino"}, "output": "u u u u u u u u u u u"}
+{"id": "10490_sick.matched.txt_first_arrows", "question": {"stem": "A black and white dog is carrying a small stick on the green grass"}, "output": "u u u u u u u u u u u u = ="}
+{"id": "4307_monotonicity_hard.matched.txt_first_arrows", "question": {"stem": "A newborn bulldog who slept moved towards at-least 6 young animals with strong odor"}, "output": "u u u u u u u u d u u u u u"}
+{"id": "8633_sick.matched.txt_first_arrows", "question": {"stem": "A man is riding a dirt bike down a dirt hill"}, "output": "u u u u u u u u u u u"}
+{"id": "89_monotonicity_simple.matched.txt_first_arrows", "question": {"stem": "most quadrupeds moved"}, "output": "u = u"}
+{"id": "3485_monotonicity_simple.matched.txt_first_arrows", "question": {"stem": "A good animal stared at some very newborn beagle"}, "output": "u u u u u u u u u"}
+{"id": "3500_sick.matched.txt_first_arrows", "question": {"stem": "There is no woman riding a water scooter"}, "output": "u d u d d d d d"}
+{"id": "2771_monotonicity_hard.matched.txt_first_arrows", "question": {"stem": "Each horse who at-most 6 old animals who at-least 4 bulldogs saw stared at stared at at-most 4 wheels"}, "output": "u d d d d u u u u d u u d d u d u u d"}
+{"id": "9626_sick.matched.txt_first_arrows", "question": {"stem": "A black dog on a leash is walking in the water"}, "output": "u u u u u u u u u u ="}
+{"id": "626_diagnostic.matched.txt_first_arrows", "question": {"stem": "TIL David Attenborough and the Queen of England are roughly the same age."}, "output": "u u u u u = = = u u u = ="}
+{"id": "2945_sick.matched.txt_first_arrows", "question": {"stem": "A girl who is little is playing a grand piano on stage"}, "output": "u u u u u u u u u u u u"}
+{"id": "20675_sick.matched.txt_first_arrows", "question": {"stem": "A large white dog is jumping up in the snow"}, "output": "u u u u u u u u u ="}
+{"id": "20483_sick.matched.txt_first_arrows", "question": {"stem": "A dog is biting a black frisbee"}, "output": "u u u u u u u"}
+{"id": "15671_sick.matched.txt_first_arrows", "question": {"stem": "Some men is fighting"}, "output": "u u u u"}
+{"id": "19634_sick.matched.txt_first_arrows", "question": {"stem": "A young girl is wearing a blue patterned swim suit a black and yellow swim cap and has blue swimming goggles on her head"}, "output": "u u u u u u u u u u u u u u u u u u u u u = u u"}
+{"id": "19874_sick.matched.txt_first_arrows", "question": {"stem": "A woman is sitting on the grass and is drinking from a water bottle"}, "output": "u u u u u u = u u u u u u u"}
+{"id": "21890_sick.matched.txt_first_arrows", "question": {"stem": "There is no panda bear eating some bamboo"}, "output": "u d u d d d d d"}
+{"id": "1988_diagnostic.unmatched.txt_first_arrows", "question": {"stem": "The 15th Tank Corps was a tank corps of the Soviet Union 's Red Army."}, "output": "u = = = u u u u = u = = u u u"}
+{"id": "3128_monotonicity_simple.matched.txt_first_arrows", "question": {"stem": "No old stallions who were happy moved away from a plastic table"}, "output": "u d d d d d d d d d d d"}
+{"id": "8861_sick.matched.txt_first_arrows", "question": {"stem": "A black and white dog is playing with a tattered volleyball in a brown field"}, "output": "u u u u u u u u u u u u u u u"}
+{"id": "3305_monotonicity_hard.matched.txt_first_arrows", "question": {"stem": "A bulldog with strong odor saw a beagle"}, "output": "u u u u u u u u"}
+{"id": "1145_sick.matched.txt_first_arrows", "question": {"stem": "A woman is not boiling shrimps"}, "output": "u u d u d d"}
+{"id": "10172_sick.matched.txt_first_arrows", "question": {"stem": "The black and white dog is running indoors"}, "output": "u = u = = u u u"}
+{"id": "13040_sick.matched.txt_first_arrows", "question": {"stem": "There is no woman using a sewing machine"}, "output": "u d u d d d d d"}
+{"id": "7091_sick.matched.txt_first_arrows", "question": {"stem": "A yellow dog is running on white snow on a very sunny day"}, "output": "u u u u u u u u u u u u u"}
+{"id": "2471_monotonicity_simple.matched.txt_first_arrows", "question": {"stem": "Every old mammal did touched some wheelbarrow"}, "output": "u d d u u u u"}
+{"id": "1196_sick.matched.txt_first_arrows", "question": {"stem": "A small monkey is walking in the river"}, "output": "u u u u u u u ="}
+{"id": "2711_diagnostic.matched.txt_first_arrows", "question": {"stem": "Every other existing resource is smaller than this dataset."}, "output": "u d d d u u u u ="}
+{"id": "3497_monotonicity_hard.matched.txt_first_arrows", "question": {"stem": "No bulldog who touched some fence was sad"}, "output": "u d d d d d d d"}
+{"id": "4148_sick.matched.txt_first_arrows", "question": {"stem": "The women are divinely dancing outside"}, "output": "u = u u u u"}
+{"id": "8030_sick.matched.txt_first_arrows", "question": {"stem": "The furry brown dog is not running through the grassy area"}, "output": "u = = = d u d d d = ="}
+{"id": "3800_monotonicity_hard.matched.txt_first_arrows", "question": {"stem": "Some bulldog who touched some wagon was sad"}, "output": "u u u u u u u u"}
+{"id": "19598_sick.matched.txt_first_arrows", "question": {"stem": "A dog is playing in the green field"}, "output": "u u u u u u = ="}
+{"id": "10691_sick.matched.txt_first_arrows", "question": {"stem": "3 small dogs are sniffing at some thing"}, "output": "u = = = = = = ="}
+{"id": "2942_sick.matched.txt_first_arrows", "question": {"stem": "There is no girl playing the piano"}, "output": "u d u d d d ="}
+{"id": "4004_monotonicity_simple.matched.txt_first_arrows", "question": {"stem": "No old rabbits who were happy moved away from a plastic box"}, "output": "u d d d d d d d d d d d"}
+{"id": "12347_sick.matched.txt_first_arrows", "question": {"stem": "A tree is being picked up by a man"}, "output": "u u u u u u u u u"}
+{"id": "16406_sick.matched.txt_first_arrows", "question": {"stem": "A man is sprinkling shredded cheese on a pizza"}, "output": "u u u u u u u u u"}
+{"id": "2666_monotonicity_hard.matched.txt_first_arrows", "question": {"stem": "Some young beagle with smell saw a cat without strong smell"}, "output": "u u u u u u u u u d d"}
+{"id": "5840_sick.matched.txt_first_arrows", "question": {"stem": "The man is not slicing a potato"}, "output": "u = d u d d d"}
+{"id": "8975_sick.matched.txt_first_arrows", "question": {"stem": "Adults and children standing and playing in front of steps near a wooded area"}, "output": "u u u u u u u u u u u u u u"}
+{"id": "6242_sick.matched.txt_first_arrows", "question": {"stem": "There is no girl riding a horse"}, "output": "u d u d d d d"}
+{"id": "20720_sick.matched.txt_first_arrows", "question": {"stem": "A boy next to some buckets of rags is not holding an object"}, "output": "u u u u u u u u d u d d d"}
+{"id": "19418_sick.matched.txt_first_arrows", "question": {"stem": "The person on the motorcycle is holding up his arm"}, "output": "u = = = = u u u u u"}
+{"id": "10745_sick.matched.txt_first_arrows", "question": {"stem": "There is no man slicing potatoes"}, "output": "u d u d d d"}
+{"id": "3902_monotonicity_simple.matched.txt_first_arrows", "question": {"stem": "Some newborn animal was happy"}, "output": "u u u u u"}
+{"id": "15875_sick.matched.txt_first_arrows", "question": {"stem": "A person is not performing tricks on a motorcycle"}, "output": "u u d u d d d d d"}
+{"id": "2519_monotonicity_simple.matched.txt_first_arrows", "question": {"stem": "most old beagles who no poodles hit touched some very newborn cats"}, "output": "u = = = = = = u u u u u"}
+{"id": "365_sick.matched.txt_first_arrows", "question": {"stem": "A sitting man is busy writing some thing in an area covered by paint"}, "output": "u u u u u u u u u u u u u u"}
+{"id": "4613_monotonicity_hard.matched.txt_first_arrows", "question": {"stem": "Some newborn bulldog who moved moved towards at-least 6 young cats with strong smell"}, "output": "u u u u u u u u d u u u u u"}
+{"id": "3443_monotonicity_simple.matched.txt_first_arrows", "question": {"stem": "Some newborn rabbit touched a bat"}, "output": "u u u u u u"}
+{"id": "12527_sick.matched.txt_first_arrows", "question": {"stem": "A man is slicing an onion"}, "output": "u u u u u u"}
+{"id": "12146_sick.matched.txt_first_arrows", "question": {"stem": "An animal is rolling from side to side in a garden"}, "output": "u u u u u u u u u u u"}
+{"id": "3002_diagnostic.matched.txt_first_arrows", "question": {"stem": "A Tennessee House subcommittee has approved legislation to offer in-state tuition to public college students whose parents kept them in the country illegally."}, "output": "u u u u u u u u u u u u u u = u = = = = = = ="}
+{"id": "3902_monotonicity_hard.matched.txt_first_arrows", "question": {"stem": "Each newborn bulldog who swam moved towards at-least 4 young mammals with odor"}, "output": "u d d d d u u u d u u u u"}
+{"id": "4322_monotonicity_hard.matched.txt_first_arrows", "question": {"stem": "All horses who at-most 6 old poodles who at-least 3 bulldogs stared at stared at saw at-most 5 objects"}, "output": "u d d d d u u u u d u u u d d d u u d"}
+{"id": "920_diagnostic.unmatched.txt_first_arrows", "question": {"stem": "To compute the perplexity numbers on the test data our model only takes account of log probabilities on word prediction."}, "output": "u u u = = = = = = u u = = = = = = = = ="}
+{"id": "19337_sick.matched.txt_first_arrows", "question": {"stem": "The muscular man is dancing and the man behind him is wearing green beads"}, "output": "u = = u u u u = = = u u u u"}
+{"id": "5576_sick.matched.txt_first_arrows", "question": {"stem": "A man is singing and walking down the road"}, "output": "u u u u u u u u ="}
+{"id": "4328_monotonicity_simple.matched.txt_first_arrows", "question": {"stem": "No black dog who every quadruped moved away from moved"}, "output": "u d d d d u d d d d"}
+{"id": "953_diagnostic.matched.txt_first_arrows", "question": {"stem": "Future legislators should focus on -LSB- low taxes limited regulation and local control -RSB- to maintain a predictable and reliable business climate avoiding legislation that distracts from critical priorities and is viewed by many as enabling discrimination against certain groups or classes of Texans."}, "output": "u u u u u u u u u u u u u u u u u u u u u u u u u = = = = u = = = = = = = = = = u = = ="}
+{"id": "15545_sick.matched.txt_first_arrows", "question": {"stem": "A man is not talking on the phone"}, "output": "u u d u d d d ="}
+{"id": "3401_monotonicity_simple.matched.txt_first_arrows", "question": {"stem": "Some young animal scratched most boxes"}, "output": "u u u u u ="}
+{"id": "7397_sick.matched.txt_first_arrows", "question": {"stem": "The young kids are posing with a green soccer ball in a park"}, "output": "u = = u u u u u u u u u u"}
+{"id": "9878_sick.matched.txt_first_arrows", "question": {"stem": "A large man is sitting in a military accessories store"}, "output": "u u u u u u u u u u"}
+{"id": "3560_sick.matched.txt_first_arrows", "question": {"stem": "A man is packing a violin"}, "output": "u u u u u u"}
+{"id": "3023_monotonicity_hard.matched.txt_first_arrows", "question": {"stem": "Some bulldog who touched most fence was not sad"}, "output": "u u u u u = d u d"}
+{"id": "140_sick.matched.txt_first_arrows", "question": {"stem": "A large group of Asian people is eating at a restaurant"}, "output": "u u u u u u u u u u u"}
+{"id": "23027_sick.matched.txt_first_arrows", "question": {"stem": "There is no dog jumping at a shiny blue soccer ball in a field of dry leaves"}, "output": "u d u d d d d d d d d d d d d d d"}
+{"id": "3272_monotonicity_simple.matched.txt_first_arrows", "question": {"stem": "Every bad bat was happy"}, "output": "u d d u u"}
+{"id": "1811_diagnostic.unmatched.txt_first_arrows", "question": {"stem": "Their loading capacity was about 58 tonnes."}, "output": "u u u = = = ="}
+{"id": "12005_sick.matched.txt_first_arrows", "question": {"stem": "A man is slicing a bun"}, "output": "u u u u u u"}
+{"id": "3980_monotonicity_hard.matched.txt_first_arrows", "question": {"stem": "Every horse who at-most 6 old horses who at-least 3 bulldogs stared at stared at stared at at-most 5 wheels"}, "output": "u d d d d u u u u d u u u d d u d u u d"}
+{"id": "20429_sick.matched.txt_first_arrows", "question": {"stem": "A boy is wearing all black and is sliding down a blow up yellow slide"}, "output": "u u u u u d u u u u u u u u u"}
+{"id": "2378_monotonicity_simple.matched.txt_first_arrows", "question": {"stem": "most bulldog was not happy"}, "output": "u = d u d"}
+{"id": "15524_sick.matched.txt_first_arrows", "question": {"stem": "The men are having a conversation"}, "output": "u = u u u u"}
+{"id": "10238_sick.matched.txt_first_arrows", "question": {"stem": "A small brown and white spotted dog is lying on a jacket on the street"}, "output": "u u u u u u u u u u u u u u ="}
+{"id": "17714_sick.matched.txt_first_arrows", "question": {"stem": "A race car driver is sitting down and is motionless"}, "output": "u u u u u u u u u u"}
+{"id": "6989_sick.matched.txt_first_arrows", "question": {"stem": "Some thing is being celebrated by a cold cyclist"}, "output": "u u u u u u u u u"}
+{"id": "17597_sick.matched.txt_first_arrows", "question": {"stem": "The little dog is dropping the bedroom slipper from its mouth"}, "output": "u = = u u u = = = u u"}
+{"id": "2615_monotonicity_hard.matched.txt_first_arrows", "question": {"stem": "All bulldogs who hit most wheelbarrows were sad"}, "output": "u d d d d = u u"}
+{"id": "2810_monotonicity_hard.matched.txt_first_arrows", "question": {"stem": "Every old quadruped who each brown or black animal with faint odor sniffed was happy"}, "output": "u d d d d u u u u u u u d u u"}
+{"id": "10751_sick.matched.txt_first_arrows", "question": {"stem": "The man is doing a wheelie on a mountain bike"}, "output": "u = u u u u u u u u"}
+{"id": "18761_sick.matched.txt_first_arrows", "question": {"stem": "A young boy is jumping in the air with his knees bent and arms spread"}, "output": "u u u u u u u = u u u = u u u"}
+{"id": "9740_sick.matched.txt_first_arrows", "question": {"stem": "5 young adults are lounging in the room"}, "output": "u = = = = = = ="}
+{"id": "17834_sick.matched.txt_first_arrows", "question": {"stem": "There are no women wearing bikinis on the sandy beach"}, "output": "u d u d d d d d = ="}
+{"id": "14507_sick.matched.txt_first_arrows", "question": {"stem": "Garlic is being diced by the woman"}, "output": "u u u u u u ="}
+{"id": "19931_sick.matched.txt_first_arrows", "question": {"stem": "A man is doing a trick on a bike"}, "output": "u u u u u u u u u"}
+{"id": "4598_monotonicity_hard.matched.txt_first_arrows", "question": {"stem": "No dog who a young horse touched was sad"}, "output": "u d d d d d d d d"}
+{"id": "17888_sick.matched.txt_first_arrows", "question": {"stem": "A little girl in a pink shirt is running under a tree in the desert"}, "output": "u u u u u u u u u u u u u u ="}
+{"id": "16961_sick.matched.txt_first_arrows", "question": {"stem": "Some people are standing"}, "output": "u u u u"}
+{"id": "4097_monotonicity_simple.matched.txt_first_arrows", "question": {"stem": "A good rabbit swam"}, "output": "u u u u"}
+{"id": "3233_sick.matched.txt_first_arrows", "question": {"stem": "The monkey is not practicing martial arts"}, "output": "u = d u d d d"}
+{"id": "3020_monotonicity_simple.matched.txt_first_arrows", "question": {"stem": "Every brown or black mammal slept"}, "output": "u d u d d u"}
+{"id": "17096_sick.matched.txt_first_arrows", "question": {"stem": "A kid is playing the guitar"}, "output": "u u u u u ="}
+{"id": "11063_sick.matched.txt_first_arrows", "question": {"stem": "Some children wearing the same clothes is waiting at a gate and one is kissing the mother"}, "output": "u u u u = = u u u u u u u u u u ="}
+{"id": "2192_monotonicity_simple.matched.txt_first_arrows", "question": {"stem": "Some quadrupeds slept"}, "output": "u u u"}
+{"id": "470_diagnostic.matched.txt_first_arrows", "question": {"stem": "I ate pizza with olives."}, "output": "u u u u u"}
+{"id": "14705_sick.matched.txt_first_arrows", "question": {"stem": "The woman is removing make-up"}, "output": "u = u u u"}
+{"id": "3686_monotonicity_hard.matched.txt_first_arrows", "question": {"stem": "All horses who at-most 3 old poodles who at-least 4 bulldogs saw stared at stared at at-most 4 wheels"}, "output": "u d d d d u u u u d u u d d d u d d u"}
+{"id": "21194_sick.matched.txt_first_arrows", "question": {"stem": "A shirtless man is escorting a horse that is pulling a carriage along a road"}, "output": "u u u u u u u u = = = = = = ="}
+{"id": "8288_sick.matched.txt_first_arrows", "question": {"stem": "A young girl in blue is jumping in the air"}, "output": "u u u u u u u u u ="}
+{"id": "4082_monotonicity_hard.matched.txt_first_arrows", "question": {"stem": "most old quadrupeds who each brown or black animal with faint odor sniffed were happy"}, "output": "u = = = = = u = = = = = = u u"}
+{"id": "22421_sick.matched.txt_first_arrows", "question": {"stem": "A man is crying"}, "output": "u u u u"}
+{"id": "3443_sick.matched.txt_first_arrows", "question": {"stem": "Bread is being sliced by the man"}, "output": "u u u u u u ="}
+{"id": "3395_monotonicity_hard.matched.txt_first_arrows", "question": {"stem": "at-least 4 poodles did not move away from most steel chairs"}, "output": "u d u u u d d d d = ="}
+{"id": "14630_sick.matched.txt_first_arrows", "question": {"stem": "The boys are standing in front of the burning car"}, "output": "u = u u u u u u = ="}
+{"id": "18680_sick.matched.txt_first_arrows", "question": {"stem": "A brown dog and a black dog are playing in the sand"}, "output": "u u u u u u u u u u u ="}
+{"id": "4799_monotonicity_hard.matched.txt_first_arrows", "question": {"stem": "Some dog moved towards at-least 4 old rabbits who a cat saw"}, "output": "u u u u u d u u u u u u"}
+{"id": "2723_sick.matched.txt_first_arrows", "question": {"stem": "The lady is carefully slicing up the meat"}, "output": "u = u u u u u ="}
+{"id": "2756_monotonicity_simple.matched.txt_first_arrows", "question": {"stem": "No dogs who were happy scratched every hardwood box"}, "output": "u d d d d d d u u"}
+{"id": "20816_sick.matched.txt_first_arrows", "question": {"stem": "A shirtless man is jumping over a log"}, "output": "u u u u u u u u"}
+{"id": "12116_sick.matched.txt_first_arrows", "question": {"stem": "A man is spanking a boy with a plastic sword"}, "output": "u u u u u u u u u u"}
+{"id": "22679_sick.matched.txt_first_arrows", "question": {"stem": "There is no child waking up"}, "output": "u d u d d d"}
+{"id": "2363_monotonicity_simple.matched.txt_first_arrows", "question": {"stem": "A black dog moved"}, "output": "u u u u"}
+{"id": "3455_monotonicity_hard.matched.txt_first_arrows", "question": {"stem": "A newborn mammal who most brown stallions moved towards moved"}, "output": "u u u u u = = u u u"}
+{"id": "15716_sick.matched.txt_first_arrows", "question": {"stem": "A boy is cutting grass with scissors"}, "output": "u u u u u u u"}
+{"id": "15923_sick.matched.txt_first_arrows", "question": {"stem": "A woman is opening a soda and drinking it"}, "output": "u u u u u u u u u"}
+{"id": "1064_diagnostic.matched.txt_first_arrows", "question": {"stem": "David Tennant 's episodes were definitely the scariest -LRB- and best -RRB- in years."}, "output": "u u u u = = = = = = = = = ="}
+{"id": "4337_monotonicity_hard.matched.txt_first_arrows", "question": {"stem": "Each bulldog with strong odor saw a beagle"}, "output": "u d d d d u u u"}
+{"id": "4259_monotonicity_hard.matched.txt_first_arrows", "question": {"stem": "most brown animals moved towards all stallions"}, "output": "u = = u u u d"}
+{"id": "10166_sick.matched.txt_first_arrows", "question": {"stem": "The black and white dog is sitting on a green yard"}, "output": "u = u = = u u u u u u"}
+{"id": "2999_monotonicity_simple.matched.txt_first_arrows", "question": {"stem": "No brown rabbits sniffed some young mammals"}, "output": "u d d d d d d"}
+{"id": "3218_sick.matched.txt_first_arrows", "question": {"stem": "There is no woman using an eye pencil and applying eye liner to her eyelid"}, "output": "u d u d d d d d u d d d = d d"}
+{"id": "3182_monotonicity_hard.matched.txt_first_arrows", "question": {"stem": "Each horse who at-most 6 old poodles who at-least 3 dogs stared at stared at stared at at-most 5 wheels"}, "output": "u d u d d u u u u d u u u u u u d u u d"}
+{"id": "22610_sick.matched.txt_first_arrows", "question": {"stem": "The person is writing"}, "output": "u = u u"}
+{"id": "11960_sick.matched.txt_first_arrows", "question": {"stem": "A man and a woman are walking through a wooded area"}, "output": "u u u u u u u u u u u"}
+{"id": "18371_sick.matched.txt_first_arrows", "question": {"stem": "A seabird is flying over some rocks"}, "output": "u u u u u u u"}
+{"id": "21158_sick.matched.txt_first_arrows", "question": {"stem": "The man is swimming in a body of water near a waterfall"}, "output": "u = u u u u u u u u u u"}
+{"id": "22637_sick.matched.txt_first_arrows", "question": {"stem": "A fish is swimming"}, "output": "u u u u"}
+{"id": "956_monotonicity_simple.matched.txt_first_arrows", "question": {"stem": "A cat was happy"}, "output": "u u u u"}
+{"id": "4016_monotonicity_simple.matched.txt_first_arrows", "question": {"stem": "Some quadruped sniffed a bad bulldog"}, "output": "u u u u u u"}
+{"id": "3029_monotonicity_hard.matched.txt_first_arrows", "question": {"stem": "Every horse who at-most 6 old animals who at-least 3 dogs saw stared at stared at at-most 5 objects"}, "output": "u d d d d u u u u d u u d d u d u u d"}
+{"id": "4250_monotonicity_hard.matched.txt_first_arrows", "question": {"stem": "Some horse who at-most 4 old poodles who at-least 3 bulldogs saw stared at stared at at-most 5 objects"}, "output": "u u u u u d d d d u d d u u u d u u d"}
+{"id": "21698_sick.matched.txt_first_arrows", "question": {"stem": "There is no woman dancing and singing in the rain"}, "output": "u d u d d u d d d ="}
+{"id": "2132_monotonicity_simple.matched.txt_first_arrows", "question": {"stem": "most nice rabbits were sad"}, "output": "u = = u u"}
+{"id": "18983_sick.matched.txt_first_arrows", "question": {"stem": "The bearded man is not sitting on a train"}, "output": "u = = d u d d d d"}
+{"id": "4646_monotonicity_hard.matched.txt_first_arrows", "question": {"stem": "at-least 3 dogs who at-least 6 cats moved away from swam"}, "output": "d d d d d d d d d d d"}
+{"id": "2240_diagnostic.unmatched.txt_first_arrows", "question": {"stem": "Some of the orator 's statements were comprehensible but the crowd loved them."}, "output": "u = u = u u u u u u = u u"}
+{"id": "3275_monotonicity_simple.matched.txt_first_arrows", "question": {"stem": "Every old horse inspected no very good quadrupeds"}, "output": "u d d d u d d d"}
+{"id": "2687_monotonicity_simple.matched.txt_first_arrows", "question": {"stem": "No very old animals who were happy moved away from a plastic table"}, "output": "u d d d d d d d d d d d d"}
+{"id": "7910_sick.matched.txt_first_arrows", "question": {"stem": "A black dog is walking through some tall grass"}, "output": "u u u u u u u u u"}
+{"id": "5393_sick.matched.txt_first_arrows", "question": {"stem": "A man in a car is not pulling up beside a woman who is walking along a road"}, "output": "u u u u u d u d d d d d d d d d d d"}
+{"id": "4538_monotonicity_hard.matched.txt_first_arrows", "question": {"stem": "An old quadruped who all brown or black dogs with faint odor sniffed was happy"}, "output": "u u u u u d u d d d d d u u u"}
+{"id": "4181_diagnostic.matched.txt_first_arrows", "question": {"stem": "Even after now finding out that it 's animal feed I wo not ever stop being addicted to Flamin ' Hot Cheetos."}, "output": "d d d d d d d d d d d d d d d d d d d d d d"}
+{"id": "155_diagnostic.unmatched.txt_first_arrows", "question": {"stem": "She is skilled."}, "output": "d d d"}
+{"id": "15302_sick.matched.txt_first_arrows", "question": {"stem": "Some person is scratching the back of an animal"}, "output": "u u u u u = = = ="}
+{"id": "13964_sick.matched.txt_first_arrows", "question": {"stem": "Some teenage girls are standing still in front of the camera"}, "output": "u u u u u u u u u u ="}
+{"id": "4943_monotonicity_hard.matched.txt_first_arrows", "question": {"stem": "Some bulldog who touched some chair was sad"}, "output": "u u u u u u u u"}
+{"id": "2075_monotonicity_simple.matched.txt_first_arrows", "question": {"stem": "A very black quadruped touched every black stallion"}, "output": "u u u u u u d d"}
+{"id": "1325_diagnostic.matched.txt_first_arrows", "question": {"stem": "Lacaille and Gould disagreed about the designation of Kappa Pyxidis."}, "output": "u u u u u u = = = ="}
+{"id": "17525_sick.matched.txt_first_arrows", "question": {"stem": "A white bird is swiftly taking off from the water"}, "output": "u u u u u u u u u ="}
+{"id": "3137_monotonicity_hard.matched.txt_first_arrows", "question": {"stem": "at-least 4 poodles did not move away from a metal chair"}, "output": "u d u u u d d d d d d"}
+{"id": "4025_monotonicity_simple.matched.txt_first_arrows", "question": {"stem": "Every animal stared at some very newborn animal"}, "output": "u d u u u u u u"}
+{"id": "3263_monotonicity_hard.matched.txt_first_arrows", "question": {"stem": "No bulldog with odor stared at a beagle"}, "output": "u d d d d d d d"}
+{"id": "8153_sick.matched.txt_first_arrows", "question": {"stem": "An American footballer is wearing the red and white strip"}, "output": "u u u u u u = u = ="}
+{"id": "3029_monotonicity_simple.matched.txt_first_arrows", "question": {"stem": "A very brown mammal scratched a steel door"}, "output": "u u u u u u u u"}
+{"id": "17135_sick.matched.txt_first_arrows", "question": {"stem": "A small animal is lying on the bed"}, "output": "u u u u u u u ="}
+{"id": "9797_sick.matched.txt_first_arrows", "question": {"stem": "A boy is wearing a white hat and is walking on the beach"}, "output": "u u u u u u u u u u u u ="}
+{"id": "5804_sick.matched.txt_first_arrows", "question": {"stem": "A person is folding a sheet"}, "output": "u u u u u u"}
+{"id": "18287_sick.matched.txt_first_arrows", "question": {"stem": "A kid in orange is playing outside with a snowball"}, "output": "u u u u u u u u u u"}
+{"id": "5888_sick.matched.txt_first_arrows", "question": {"stem": "The man is adding seasoning to the water in a bowl"}, "output": "u = u u u u u = u u u"}
+{"id": "21452_sick.matched.txt_first_arrows", "question": {"stem": "A lady is mixing a meat mixture in a bowl"}, "output": "u u u u u u u u u u"}
+{"id": "15113_sick.matched.txt_first_arrows", "question": {"stem": "The person is riding a jetski in the waves"}, "output": "u = u u u u u u ="}
+{"id": "3410_sick.matched.txt_first_arrows", "question": {"stem": "The south African plane is not flying in a blue sky"}, "output": "u = = = d u d d d d d"}
+{"id": "3863_diagnostic.matched.txt_first_arrows", "question": {"stem": "He has a beard."}, "output": "u u u u"}
+{"id": "4265_sick.matched.txt_first_arrows", "question": {"stem": "A man is climbing up a rope"}, "output": "u u u u u u u"}
+{"id": "5102_sick.matched.txt_first_arrows", "question": {"stem": "A little girl is playing the violin on a beach"}, "output": "u u u u u u = u u u"}
+{"id": "3464_monotonicity_simple.matched.txt_first_arrows", "question": {"stem": "No old bulldogs who were happy moved away from no plastic object"}, "output": "u d d d d d d d u d u u"}
+{"id": "3404_monotonicity_simple.matched.txt_first_arrows", "question": {"stem": "Some old animals who were happy moved away from a plastic mailbox"}, "output": "u u u u u u u u u u u u"}
+{"id": "7802_sick.matched.txt_first_arrows", "question": {"stem": "A female wearing pink gloves and a brown jacket is smiling in the snow"}, "output": "u u u u u u u u u u u u u ="}
+{"id": "21164_sick.matched.txt_first_arrows", "question": {"stem": "A brown and white dog is not running through the river"}, "output": "u u u u u d u d d d ="}
+{"id": "13718_sick.matched.txt_first_arrows", "question": {"stem": "The dog is being walked by the woman"}, "output": "u = u u u u u ="}
+{"id": "22883_sick.matched.txt_first_arrows", "question": {"stem": "There is no woman slicing potatoes"}, "output": "u d u d d d"}
+{"id": "3680_monotonicity_hard.matched.txt_first_arrows", "question": {"stem": "Some beagle who a newborn dogs stared at was not sad"}, "output": "u u u u u u u u d u d"}
+{"id": "2828_monotonicity_simple.matched.txt_first_arrows", "question": {"stem": "No old animals who were happy moved away from every plastic wheelbarrow"}, "output": "u d d d d d d d d d u u"}
+{"id": "4037_monotonicity_hard.matched.txt_first_arrows", "question": {"stem": "most horses who at-most 4 old mammals who a bulldog saw stared at stared at at-most 5 wheels"}, "output": "u = = = = = = = = = = u u u d u u d"}
+{"id": "5198_sick.matched.txt_first_arrows", "question": {"stem": "A dog is teasing a monkey at the zoo"}, "output": "u u u u u u u u ="}
+{"id": "4334_sick.matched.txt_first_arrows", "question": {"stem": "A dog is running on the road"}, "output": "u u u u u u ="}
+{"id": "7658_sick.matched.txt_first_arrows", "question": {"stem": "A young man with brown hair and shades is sitting in front of some cans of soda"}, "output": "u u u u u u u u u u u u u u u u u"}
+{"id": "14960_sick.matched.txt_first_arrows", "question": {"stem": "A man is idling on the floor"}, "output": "u u u u u u ="}
+{"id": "19493_sick.matched.txt_first_arrows", "question": {"stem": "An animal is jumping at a shiny blue soccer ball in a field of dry leaves"}, "output": "u u u u u u u u u u u u u u u u"}
+{"id": "2318_monotonicity_hard.matched.txt_first_arrows", "question": {"stem": "The black bat waltzed"}, "output": "u = = u"}
+{"id": "5258_sick.matched.txt_first_arrows", "question": {"stem": "Some instruments are being played by a band"}, "output": "u u u u u u u u"}
+{"id": "7043_sick.matched.txt_first_arrows", "question": {"stem": "The cheerleaders are parading and wearing uniforms which are black pink and white"}, "output": "u = u u u u u u u u u u u"}
+{"id": "14120_sick.matched.txt_first_arrows", "question": {"stem": "A lady is mixing a mixture of meat in a bowl"}, "output": "u u u u u u u u u u u"}
+{"id": "2543_monotonicity_simple.matched.txt_first_arrows", "question": {"stem": "No dogs were sad"}, "output": "u d d d"}
+{"id": "2801_monotonicity_hard.matched.txt_first_arrows", "question": {"stem": "No brown or black horse sniffed at-least 3 chairs"}, "output": "u d u d d d d u d"}
+{"id": "20531_sick.matched.txt_first_arrows", "question": {"stem": "No little dog is running on the sand"}, "output": "u d d d d d d ="}
+{"id": "10061_sick.matched.txt_first_arrows", "question": {"stem": "A black dog and a yellow dog are playing with each other"}, "output": "u u u u u u u u u u u d"}
+{"id": "3467_monotonicity_hard.matched.txt_first_arrows", "question": {"stem": "at-least 6 old poodles who were not sad did not stare at an object"}, "output": "u d u u u d u d u u d d d d"}
+{"id": "19811_sick.matched.txt_first_arrows", "question": {"stem": "A woman is looking down and is wearing a wedding veil"}, "output": "u u u u u u u u u u u"}
+{"id": "3764_monotonicity_simple.matched.txt_first_arrows", "question": {"stem": "Every quadruped stared at no metal wheels"}, "output": "u d u d u d d"}
+{"id": "2636_diagnostic.matched.txt_first_arrows", "question": {"stem": "TIL David Attenborough and the Queen of Denmark are roughly the same age."}, "output": "u u u u u = = = u u u = ="}
+{"id": "4319_monotonicity_simple.matched.txt_first_arrows", "question": {"stem": "most brown or black cats who most old bulldogs sniffed stared at most steel fences"}, "output": "u = u = = = = = = = u u u = ="}
+{"id": "110_diagnostic.matched.txt_first_arrows", "question": {"stem": "Tom and Adam were whispering quietly in the theater."}, "output": "u u u u u u u u ="}
+{"id": "19304_sick.matched.txt_first_arrows", "question": {"stem": "A man and a woman are walking down a city street"}, "output": "u u u u u u u u u u u"}
+{"id": "3785_monotonicity_hard.matched.txt_first_arrows", "question": {"stem": "most old quadrupeds who each brown or black bat with odor sniffed were happy"}, "output": "u = = = = = u = = = = = u u"}
+{"id": "18626_sick.matched.txt_first_arrows", "question": {"stem": "Some football players is standing still in the field"}, "output": "u u u u u u u u ="}
+{"id": "11834_sick.matched.txt_first_arrows", "question": {"stem": "A girl is naked and is standing on the grass"}, "output": "u u u u u u u u u ="}
+{"id": "3140_monotonicity_simple.matched.txt_first_arrows", "question": {"stem": "No brown or black horses did saw every bad wheel"}, "output": "u d u d d d d d u u"}
+{"id": "17462_sick.matched.txt_first_arrows", "question": {"stem": "The man is standing on a mountain which is rocky and gray clouds are in the background"}, "output": "u = u u u u u u u u u u u u u u ="}
+{"id": "983_sick.matched.txt_first_arrows", "question": {"stem": "A dog is jumping in the air to catch a red ball"}, "output": "u u u u u u = u u u u u"}
+{"id": "12422_sick.matched.txt_first_arrows", "question": {"stem": "The man is playing a piano"}, "output": "u = u u u u"}
+{"id": "3647_monotonicity_simple.matched.txt_first_arrows", "question": {"stem": "Some mammals who some beagle stared at touched a brown cat"}, "output": "u u u u u u u u u u u"}
+{"id": "11813_sick.matched.txt_first_arrows", "question": {"stem": "A dog is near a ball colored in red which is in the air"}, "output": "u u u u u u u u u u u u u ="}
+{"id": "6143_sick.matched.txt_first_arrows", "question": {"stem": "A man is cutting a lemon"}, "output": "u u u u u u"}
+{"id": "7583_sick.matched.txt_first_arrows", "question": {"stem": "A seabird is slowly flying over some rocks"}, "output": "u u u u u u u u"}
+{"id": "6194_sick.matched.txt_first_arrows", "question": {"stem": "Some people are marching"}, "output": "u u u u"}
+{"id": "4325_monotonicity_simple.matched.txt_first_arrows", "question": {"stem": "Every animal who every brown bat hit was not sad"}, "output": "u d d d u u d d u d"}
+{"id": "4514_monotonicity_hard.matched.txt_first_arrows", "question": {"stem": "No young dog moved"}, "output": "u d d d"}
+{"id": "527_diagnostic.matched.txt_first_arrows", "question": {"stem": "Tanks were developed by Britain and France and were first used with only partial success."}, "output": "u u u u u u u u u u u u u u u"}
+{"id": "11240_sick.matched.txt_first_arrows", "question": {"stem": "A black shirt is being worn by a man who is sitting at the table and laughing"}, "output": "u u u u u u u u u u u u u u = u u"}
+{"id": "4055_monotonicity_hard.matched.txt_first_arrows", "question": {"stem": "All horses who at-most 6 old animals who at-least 3 mammals saw stared at stared at at-most 5 wheels"}, "output": "u d d d d u u u u d u u d d d u d d u"}
+{"id": "12041_sick.matched.txt_first_arrows", "question": {"stem": "A band is playing onstage"}, "output": "u u u u u"}
+{"id": "15290_sick.matched.txt_first_arrows", "question": {"stem": "A man is cutting a slice of bread"}, "output": "u u u u u u u u"}
+{"id": "3086_monotonicity_hard.matched.txt_first_arrows", "question": {"stem": "Many horses who at-most 6 old animals who some bulldog saw stared at stared at at-most 3 wheels"}, "output": "u = = = = = = = = = = u u u d u u d"}
+{"id": "11831_sick.matched.txt_first_arrows", "question": {"stem": "The young girl with a shirt dyed pink is peacefully lying on the grass"}, "output": "u = = = = = = = u u u u u ="}
+{"id": "17543_sick.matched.txt_first_arrows", "question": {"stem": "The girl is carrying a sign and is being followed by some people"}, "output": "u = u u u u u u u u u u u"}
+{"id": "17945_sick.matched.txt_first_arrows", "question": {"stem": "A child who is young is wearing a white coat and playing a game"}, "output": "u u u u u u u u u u u u u u"}
+{"id": "20699_sick.matched.txt_first_arrows", "question": {"stem": "A small man is sitting in a military accessories store"}, "output": "u u u u u u u u u u"}
+{"id": "22412_sick.matched.txt_first_arrows", "question": {"stem": "There is no monkey wading through a marsh"}, "output": "u d u d d d d d"}
+{"id": "18014_sick.matched.txt_first_arrows", "question": {"stem": "A person is riding a bike"}, "output": "u u u u u u"}
+{"id": "13946_sick.matched.txt_first_arrows", "question": {"stem": "A woman is playing a guitar which is electric"}, "output": "u u u u u u u u u"}
+{"id": "20468_sick.matched.txt_first_arrows", "question": {"stem": "A child is wearing a coat and is carrying a red sled near a child in a green and black coat"}, "output": "u u u u u u u u u u u u u u u u u u u u u"}
+{"id": "2069_monotonicity_simple.matched.txt_first_arrows", "question": {"stem": "Some poodle slept"}, "output": "u u u"}
+{"id": "2774_monotonicity_simple.matched.txt_first_arrows", "question": {"stem": "Every rabbit ran"}, "output": "u d u"}
+{"id": "3908_monotonicity_simple.matched.txt_first_arrows", "question": {"stem": "Some dog moved towards a beagle"}, "output": "u u u u u u"}
+{"id": "21992_sick.matched.txt_first_arrows", "question": {"stem": "There is no woman chopping up an octopus"}, "output": "u d u d d d d d"}
+{"id": "11201_sick.matched.txt_first_arrows", "question": {"stem": "A boy is surfing and riding a wave"}, "output": "u u u u u u u u"}
+{"id": "15281_sick.matched.txt_first_arrows", "question": {"stem": "A dog is having fun with a toy"}, "output": "u u u u u u u u"}
+{"id": "5903_sick.matched.txt_first_arrows", "question": {"stem": "A man is playing a large flute"}, "output": "u u u u u u u"}
+{"id": "23012_sick.matched.txt_first_arrows", "question": {"stem": "The blonde girl with the pink top is not smiling and not wearing funny glasses with a large nose attached"}, "output": "u = = = = = = d u d u d u u u u u u u u"}
+{"id": "21296_sick.matched.txt_first_arrows", "question": {"stem": "A woman is leaning on a racing motorcycle"}, "output": "u u u u u u u u"}
+{"id": "4289_monotonicity_hard.matched.txt_first_arrows", "question": {"stem": "No newborn bulldog who swam moved towards at-least 6 young animals with strong odor"}, "output": "u d d d d d d d u d d d d d"}
+{"id": "7109_sick.matched.txt_first_arrows", "question": {"stem": "A white dog is wearing a Christmas reindeer headband and is playing with a brown dog in the grass"}, "output": "u u u u u u u u u u u u u u u u u u ="}
+{"id": "6518_sick.matched.txt_first_arrows", "question": {"stem": "A man is shooting with a gun"}, "output": "u u u u u u u"}
+{"id": "6380_sick.matched.txt_first_arrows", "question": {"stem": "The person is playing with a skull"}, "output": "u = u u u u u"}
+{"id": "7523_sick.matched.txt_first_arrows", "question": {"stem": "The back of a small black dog is being sniffed by the brown dog"}, "output": "u = = = = = = u u u u u = ="}
+{"id": "4580_monotonicity_hard.matched.txt_first_arrows", "question": {"stem": "at-most 3 animals who some-but-not-all rabbits who an animal who was happy touched sniffed were not happy"}, "output": "u u d d d d d d d d d d d d u d u"}
+{"id": "173_sick.matched.txt_first_arrows", "question": {"stem": "The children of a family are patiently playing and waiting"}, "output": "u = = = = u u u u u"}
+{"id": "20912_sick.matched.txt_first_arrows", "question": {"stem": "A surfer is surfing a big wave"}, "output": "u u u u u u u"}
+{"id": "13991_sick.matched.txt_first_arrows", "question": {"stem": "A man is jumping onto a wall which is low"}, "output": "u u u u u u u u u u"}
+{"id": "10679_sick.matched.txt_first_arrows", "question": {"stem": "A young boy wearing a red swimsuit is jumping into a blue kiddies pool"}, "output": "u u u u u u u u u u u u u u"}
+{"id": "4463_monotonicity_hard.matched.txt_first_arrows", "question": {"stem": "A bulldog with odor stared at no beagle"}, "output": "u u u u u d u d"}
+{"id": "4079_monotonicity_simple.matched.txt_first_arrows", "question": {"stem": "most old quadrupeds inspected every good wheel"}, "output": "u = = u u d d"}
+{"id": "17957_sick.matched.txt_first_arrows", "question": {"stem": "The child is playing with toys indoors"}, "output": "u = u u u u u"}
+{"id": "4103_sick.matched.txt_first_arrows", "question": {"stem": "The man is dipping into a swamp"}, "output": "u = u u u u u"}
+{"id": "13079_sick.matched.txt_first_arrows", "question": {"stem": "A person is sprinkling seasoning on several sliced and buttered loaves of bread"}, "output": "u u u u u u u u u u u u u"}
+{"id": "2489_monotonicity_hard.matched.txt_first_arrows", "question": {"stem": "several horses who at-most 6 old dogs who at-least 3 mammals saw stared at stared at at-most 5 wheels"}, "output": "u u d u u d d d d u d d u u u d u u d"}
+{"id": "4001_monotonicity_hard.matched.txt_first_arrows", "question": {"stem": "All beagles moved"}, "output": "u d u"}
+{"id": "17078_sick.matched.txt_first_arrows", "question": {"stem": "There is no man wiping the edge of a bowl"}, "output": "u d u d d d = = = ="}
+{"id": "2681_monotonicity_simple.matched.txt_first_arrows", "question": {"stem": "most black mammal was not sad"}, "output": "u = = d u d"}
+{"id": "1871_sick.matched.txt_first_arrows", "question": {"stem": "A man is eating near the kittens"}, "output": "u u u u u u ="}
+{"id": "7430_sick.matched.txt_first_arrows", "question": {"stem": "A white woman is standing on a woman dressed in blue on a stage"}, "output": "u u u u u u u u u u u u u u"}
+{"id": "13526_sick.matched.txt_first_arrows", "question": {"stem": "The monkey is not brushing a bull dog"}, "output": "u = d u d d d d"}
+{"id": "3224_monotonicity_simple.matched.txt_first_arrows", "question": {"stem": "most brown bats who most quadrupeds hit scratched some very steal chair"}, "output": "u = = = = = = u u u u u"}
+{"id": "11540_sick.matched.txt_first_arrows", "question": {"stem": "A girl from Asia in front of a brick window looks surprised"}, "output": "u u u u u u u u u u u u"}
+{"id": "3398_monotonicity_simple.matched.txt_first_arrows", "question": {"stem": "No old animals who were happy scratched an object"}, "output": "u d d d d d d d d"}
+{"id": "2129_monotonicity_simple.matched.txt_first_arrows", "question": {"stem": "A bad dog waltzed"}, "output": "u u u u"}
+{"id": "3446_monotonicity_hard.matched.txt_first_arrows", "question": {"stem": "The horse who at-most 6 old dogs who at-least 3 dogs saw stared at saw at-most 5 wheels"}, "output": "u = = = = = = = = = = = = = d u u d"}
+{"id": "4148_monotonicity_hard.matched.txt_first_arrows", "question": {"stem": "Some old cat with odor inspected each chair"}, "output": "u u u u u u u d"}
+{"id": "3281_monotonicity_hard.matched.txt_first_arrows", "question": {"stem": "Each horse who at-most 3 old mammals who some bulldog saw stared at stared at at-most 5 wheels"}, "output": "u d d d d u u u u u u d d u d u u d"}
+{"id": "7418_sick.matched.txt_first_arrows", "question": {"stem": "Some football players in red and white are jumping and hugging"}, "output": "u u u u u u u u u u u"}
+{"id": "4733_monotonicity_hard.matched.txt_first_arrows", "question": {"stem": "at-most 6 old dogs who swam did sniffed some black quadrupeds"}, "output": "u u d d d d d d d d d"}
+{"id": "3710_monotonicity_simple.matched.txt_first_arrows", "question": {"stem": "No old animals who were happy moved away from every plastic door"}, "output": "u d d d d d d d d d u u"}
+{"id": "4892_monotonicity_hard.matched.txt_first_arrows", "question": {"stem": "at-most 6 old stallions who swam did sniffed all black quadrupeds"}, "output": "u u d d d d d d d u u"}
+{"id": "3512_sick.matched.txt_first_arrows", "question": {"stem": "The boy is riding a tricycle"}, "output": "u = u u u u"}
+{"id": "18065_sick.matched.txt_first_arrows", "question": {"stem": "There is no person standing in a vast field of glacial ice"}, "output": "u d u d d d d d d d d d"}
+{"id": "8372_sick.matched.txt_first_arrows", "question": {"stem": "A man is wearing a red jacket and standing beside a yellow canoe on some boulders with water in the background"}, "output": "u u u u u u u u u u u u u u u u u u u u ="}
+{"id": "2924_monotonicity_simple.matched.txt_first_arrows", "question": {"stem": "most brown bats who most quadrupeds hit scratched some steel chair"}, "output": "u = = = = = = u u u u"}
+{"id": "12575_sick.matched.txt_first_arrows", "question": {"stem": "A piano is not being played by a man"}, "output": "u u d u d d d d d"}
+{"id": "9308_sick.matched.txt_first_arrows", "question": {"stem": "A rainbow afghan is being held by a girl in gold and purple"}, "output": "u u u u u u u u u u u u u"}
+{"id": "22580_sick.matched.txt_first_arrows", "question": {"stem": "There is no lady mixing a meat mixture in a bowl"}, "output": "u d u d d d d d d d d"}
+{"id": "2729_monotonicity_simple.matched.txt_first_arrows", "question": {"stem": "No good bats were happy"}, "output": "u d d d d"}
+{"id": "4214_sick.matched.txt_first_arrows", "question": {"stem": "A biker is riding away from a fence"}, "output": "u u u u u u u u"}
+{"id": "19481_sick.matched.txt_first_arrows", "question": {"stem": "A black rally car is throwing mud into the air and is approaching a bend in the track"}, "output": "u u u u u u u u u = u u u u u u u ="}
+{"id": "20447_sick.matched.txt_first_arrows", "question": {"stem": "A small white dog is running in a lawn"}, "output": "u u u u u u u u u"}
+{"id": "1190_sick.matched.txt_first_arrows", "question": {"stem": "A woman is talking on a telephone"}, "output": "u u u u u u u"}
+{"id": "10004_sick.matched.txt_first_arrows", "question": {"stem": "The bike is being ridden by a girl in a strange outfit"}, "output": "u = u u u u u u u u u u"}
+{"id": "1397_sick.matched.txt_first_arrows", "question": {"stem": "A woman is not cutting shrimps"}, "output": "u u d u d d"}
+{"id": "3452_monotonicity_simple.matched.txt_first_arrows", "question": {"stem": "Some good poodle moved"}, "output": "u u u u"}
+{"id": "4637_monotonicity_hard.matched.txt_first_arrows", "question": {"stem": "A newborn bulldog who swam moved away from at-least 6 young cats with strong odor"}, "output": "u u u u u u u u u d u u u u u"}
+{"id": "11915_sick.matched.txt_first_arrows", "question": {"stem": "The car is being driven by a man"}, "output": "u = u u u u u u"}
+{"id": "3443_monotonicity_hard.matched.txt_first_arrows", "question": {"stem": "at-most 3 old dogs who were not sad did not stare at the table"}, "output": "u u d d d u d u d d u u u ="}
+{"id": "20951_sick.matched.txt_first_arrows", "question": {"stem": "People in costumes are walking around in the street"}, "output": "u u u u u u u u ="}
+{"id": "22655_sick.matched.txt_first_arrows", "question": {"stem": "A male is dancing"}, "output": "u u u u"}
+{"id": "3149_monotonicity_hard.matched.txt_first_arrows", "question": {"stem": "Some black horse sniffed at-least 3 chairs"}, "output": "u u u u u d u"}
+{"id": "10838_sick.matched.txt_first_arrows", "question": {"stem": "The little girl is looking at a man in costume"}, "output": "u = = u u u u u u u"}
+{"id": "4364_monotonicity_simple.matched.txt_first_arrows", "question": {"stem": "Every nice animal who a brown bat hit was sad"}, "output": "u d d d d d d d u u"}
+{"id": "2723_monotonicity_hard.matched.txt_first_arrows", "question": {"stem": "All horses who at-most 6 old poodles who at-least 4 bulldogs saw saw saw at-most 5 wheels"}, "output": "u d d d d u u u u d u u d d u u d"}
+{"id": "3863_monotonicity_hard.matched.txt_first_arrows", "question": {"stem": "most newborn bulldogs who swam moved towards at-least 6 young cats with strong odor"}, "output": "u = = = = u u u d u u u u u"}
+{"id": "3617_diagnostic.matched.txt_first_arrows", "question": {"stem": "They then use a discriminative model to rerank the translation output using additional nonworld level features."}, "output": "= u u u u u u u u = = = = = = u"}
+{"id": "4322_monotonicity_simple.matched.txt_first_arrows", "question": {"stem": "Every bad dog who a bulldog stared at was not happy"}, "output": "u d d d d d d d d u d"}
+{"id": "4925_sick.matched.txt_first_arrows", "question": {"stem": "There is no boy cutting grass with scissors"}, "output": "u d u d d d d d"}
+{"id": "6638_sick.matched.txt_first_arrows", "question": {"stem": "A dog is running on the ground"}, "output": "u u u u u u ="}
+{"id": "2792_monotonicity_simple.matched.txt_first_arrows", "question": {"stem": "No quadruped sniffed every good bulldog"}, "output": "u d d d u u"}
+{"id": "1325_sick.matched.txt_first_arrows", "question": {"stem": "A puppy is repeatedly rolling from side to side on its back"}, "output": "u u u u u u u u u = u u"}
+{"id": "8150_sick.matched.txt_first_arrows", "question": {"stem": "A man and a child are kayaking through gentle waters"}, "output": "u u u u u u u u u u"}
+{"id": "12230_sick.matched.txt_first_arrows", "question": {"stem": "A woman is brushing her feet"}, "output": "u u u u u u"}
+{"id": "16610_sick.matched.txt_first_arrows", "question": {"stem": "A woman is jumping rope outside"}, "output": "u u u u u u"}
+{"id": "10253_sick.matched.txt_first_arrows", "question": {"stem": "A woman is petting a dog near a stone trail"}, "output": "u u u u u u u u u u"}
+{"id": "6854_sick.matched.txt_first_arrows", "question": {"stem": "There is no man standing beside a large and colorful birdcage"}, "output": "u d u d d d d d u d d"}
+{"id": "4238_monotonicity_hard.matched.txt_first_arrows", "question": {"stem": "at-most 6 rabbits who some-but-not-all rabbits who every bulldogs who were happy hit sniffed were happy"}, "output": "u u d d d d d d u u u u d d d d"}
+{"id": "3737_sick.matched.txt_first_arrows", "question": {"stem": "The man is skillfully playing the guitar"}, "output": "u = u u u u ="}
+{"id": "2699_monotonicity_hard.matched.txt_first_arrows", "question": {"stem": "All bulldogs who hit most mailboxes were sad"}, "output": "u d d d d = u u"}
+{"id": "18641_sick.matched.txt_first_arrows", "question": {"stem": "The group of people is standing together and looking at the camera"}, "output": "u = = = u u u u u u u ="}
+{"id": "731_diagnostic.matched.txt_first_arrows", "question": {"stem": "He has a blind trust."}, "output": "u u u u u"}
+{"id": "23048_sick.matched.txt_first_arrows", "question": {"stem": "A young girl with a heart tank top is raising her hands as she is sliding"}, "output": "u u u u u u u u u u u u u u u u"}
+{"id": "581_diagnostic.unmatched.txt_first_arrows", "question": {"stem": "Every night I make it my goal to sift through one research paper."}, "output": "u d u u u u u u u u u u u"}
+{"id": "16874_sick.matched.txt_first_arrows", "question": {"stem": "The lady is cracking an egg into a dish"}, "output": "u = u u u u u u u"}
+{"id": "20534_sick.matched.txt_first_arrows", "question": {"stem": "The dog is running across the gravel"}, "output": "u = u u u u ="}
+{"id": "4631_monotonicity_hard.matched.txt_first_arrows", "question": {"stem": "Each newborn bulldog who swam did not move towards at-least 5 young cats with odor"}, "output": "u d d d d u u d d d u d d d d"}
+{"id": "2801_monotonicity_simple.matched.txt_first_arrows", "question": {"stem": "No old mammals scratched most wooden objects"}, "output": "u d d d d = ="}
+{"id": "4364_monotonicity_hard.matched.txt_first_arrows", "question": {"stem": "All brown or black dogs moved"}, "output": "u d u d d u"}
+{"id": "3056_monotonicity_hard.matched.txt_first_arrows", "question": {"stem": "Each bat did not sniff at-least 4 mammals"}, "output": "u d u u d d u d"}
+{"id": "3461_sick.matched.txt_first_arrows", "question": {"stem": "Some person is writing"}, "output": "u u u u"}
+{"id": "2810_monotonicity_simple.matched.txt_first_arrows", "question": {"stem": "Some cats were not happy"}, "output": "u u d u d"}
+{"id": "17_diagnostic.matched.txt_first_arrows", "question": {"stem": "The new gaming console is affordable."}, "output": "u = = = u u"}
+{"id": "13532_sick.matched.txt_first_arrows", "question": {"stem": "A woman is swiftly cutting an onion"}, "output": "u u u u u u u"}
+{"id": "146_diagnostic.matched.txt_first_arrows", "question": {"stem": "I can actually see him getting into a Lincoln saying this."}, "output": "u u u u u u u u u u u"}
+{"id": "4802_monotonicity_hard.matched.txt_first_arrows", "question": {"stem": "A brown or black animal moved towards each stallion"}, "output": "u u u u u u u u d"}
+{"id": "10538_sick.matched.txt_first_arrows", "question": {"stem": "The small dog is walking outside and is carrying a colorful toy in its mouth"}, "output": "u = = u u u u u u u u u = u u"}
+{"id": "21332_sick.matched.txt_first_arrows", "question": {"stem": "There is no man holding a mask in his raised hand"}, "output": "u d u d d d d = d d d"}
+{"id": "6206_sick.matched.txt_first_arrows", "question": {"stem": "A man is working on the laptop"}, "output": "u u u u u u ="}
+{"id": "986_diagnostic.unmatched.txt_first_arrows", "question": {"stem": "In practice our proposed extractive evaluation will pick up on few errors in this passage."}, "output": "u u u u u u = = = = = = = = ="}
+{"id": "19448_sick.matched.txt_first_arrows", "question": {"stem": "A woman in blue is riding a horse on a dirt road"}, "output": "u u u u u u u u u u u u"}
+{"id": "3131_monotonicity_simple.matched.txt_first_arrows", "question": {"stem": "A brown or black rabbits waltzed"}, "output": "u u u u u u"}
+{"id": "15791_sick.matched.txt_first_arrows", "question": {"stem": "Some person is making a hole in a strip of wood with a drill"}, "output": "u u u u u u u u u u u u u u"}
+{"id": "5102_monotonicity_hard.matched.txt_first_arrows", "question": {"stem": "Every brown or black bulldog swam"}, "output": "u d u d d u"}
+{"id": "2990_sick.matched.txt_first_arrows", "question": {"stem": "The woman is playing the flute"}, "output": "u = u u u ="}
+{"id": "899_monotonicity_simple.matched.txt_first_arrows", "question": {"stem": "No brown or black quadrupeds were happy"}, "output": "u d u d d d d"}
+{"id": "4559_monotonicity_hard.matched.txt_first_arrows", "question": {"stem": "An old dog with faint odor was not happy"}, "output": "u u u u u u d u d"}
+{"id": "2870_diagnostic.matched.txt_first_arrows", "question": {"stem": "Police also responded around 11 : 50 a.m. Monday to the report of an explosion in southeast Austin in which a woman was badly injured."}, "output": "u u u u = u = = u u u = = = = = = = = = = = = = ="}
+{"id": "668_sick.matched.txt_first_arrows", "question": {"stem": "A married couple is walking up the aisle"}, "output": "u u u u u u u ="}
+{"id": "9959_sick.matched.txt_first_arrows", "question": {"stem": "A boy in a swimsuit is sitting on top of a circular fountain"}, "output": "u u u u u u u u u u u u u"}
+{"id": "19052_sick.matched.txt_first_arrows", "question": {"stem": "A person is wearing a red jacket and carefully holding a beer"}, "output": "u u u u u u u u u u u u"}
+{"id": "3209_monotonicity_hard.matched.txt_first_arrows", "question": {"stem": "Each bulldog who touched a wheel was sad"}, "output": "u d d d d d u u"}
+{"id": "2510_monotonicity_hard.matched.txt_first_arrows", "question": {"stem": "at-most 6 rabbits who some-but-not-all rabbits who each animal who was happy touched sniffed were not happy"}, "output": "u u d d d d d d u u u u d d u d u"}
+{"id": "7187_sick.matched.txt_first_arrows", "question": {"stem": "A dog is herding some white sheep on a dusty farm"}, "output": "u u u u u u u u u u u"}
+{"id": "3356_monotonicity_simple.matched.txt_first_arrows", "question": {"stem": "A bulldog was happy"}, "output": "u u u u"}
+{"id": "4253_monotonicity_hard.matched.txt_first_arrows", "question": {"stem": "A newborn bulldog who swam moved towards at-least 4 young cats with odor"}, "output": "u u u u u u u u d u u u u"}
+{"id": "2744_sick.matched.txt_first_arrows", "question": {"stem": "A man is getting into an automobile"}, "output": "u u u u u u u"}
+{"id": "7934_sick.matched.txt_first_arrows", "question": {"stem": "A dog with a muzzle and a blue jacket is resting in the yard"}, "output": "u u u u u u u u u u u u u ="}
+{"id": "7535_sick.matched.txt_first_arrows", "question": {"stem": "The brown dog is not sniffing the back of a small black dog"}, "output": "u = = d u d d = = = = = ="}
+{"id": "3590_sick.matched.txt_first_arrows", "question": {"stem": "A woman is receiving volleyballs"}, "output": "u u u u u"}
+{"id": "20612_sick.matched.txt_first_arrows", "question": {"stem": "A young girl in a bikini is sitting on the beach"}, "output": "u u u u u u u u u u ="}
+{"id": "21014_sick.matched.txt_first_arrows", "question": {"stem": "A man on a green car is performing tricks on a dirt ramp"}, "output": "u u u u u u u u u u u u u"}
+{"id": "21755_sick.matched.txt_first_arrows", "question": {"stem": "The kittens are eating the food on the trays"}, "output": "u = u u u = = = ="}
+{"id": "11018_sick.matched.txt_first_arrows", "question": {"stem": "The kid is swimming through the blue ocean"}, "output": "u = u u u u = ="}
+{"id": "116_diagnostic.unmatched.txt_first_arrows", "question": {"stem": "Prior to the dance which is voluntary students are told to fill out a card by selecting 5 different people they want to dance with."}, "output": "d d d d d d d d d d d d d d d d d d d d d d d d d"}
+{"id": "10853_sick.matched.txt_first_arrows", "question": {"stem": "A man is jumping into a full pool"}, "output": "u u u u u u u u"}
+{"id": "4373_monotonicity_simple.matched.txt_first_arrows", "question": {"stem": "Every quadruped who stared at no nice tables waltzed"}, "output": "u d d d u d u u u"}
+{"id": "19889_sick.matched.txt_first_arrows", "question": {"stem": "A chubby faced boy is wearing dark glasses"}, "output": "u u u u u u u u"}
+{"id": "3188_monotonicity_hard.matched.txt_first_arrows", "question": {"stem": "Some animal was not happy"}, "output": "u u d u d"}
+{"id": "16088_sick.matched.txt_first_arrows", "question": {"stem": "There is no man carrying a woman"}, "output": "u d u d d d d"}
+{"id": "2276_monotonicity_simple.matched.txt_first_arrows", "question": {"stem": "Every old beagle who no very nice bats moved away from moved"}, "output": "u d d d d u u u u u u u"}
+{"id": "4712_sick.matched.txt_first_arrows", "question": {"stem": "A man is untying a shoe"}, "output": "u u u u u u"}
+{"id": "2885_monotonicity_hard.matched.txt_first_arrows", "question": {"stem": "Some brown or black rabbits slept"}, "output": "u u u u u u"}
+{"id": "2675_monotonicity_simple.matched.txt_first_arrows", "question": {"stem": "Every old beagle moved towards every old mailbox"}, "output": "u d d u u u d d"}
+{"id": "2717_monotonicity_simple.matched.txt_first_arrows", "question": {"stem": "most very nice rabbits swam"}, "output": "u = = = u"}
+{"id": "3623_monotonicity_simple.matched.txt_first_arrows", "question": {"stem": "most very brown mammals scratched every steel door"}, "output": "u = = = u u d d"}
+{"id": "2606_diagnostic.matched.txt_first_arrows", "question": {"stem": "The sides came to an agreement after their meeting in Europe."}, "output": "u = u u u u = u u u u"}
+{"id": "3287_monotonicity_simple.matched.txt_first_arrows", "question": {"stem": "most bad bats stared at every stallion"}, "output": "u = = u u u d"}
+{"id": "4196_monotonicity_hard.matched.txt_first_arrows", "question": {"stem": "A horse who at-most 4 old dogs who at-least 3 dogs saw stared at stared at at-most 5 objects"}, "output": "u u u u u d d d d u d d u u u d u u d"}
+{"id": "4940_monotonicity_hard.matched.txt_first_arrows", "question": {"stem": "most bulldog with strong odor saw no beagle"}, "output": "u = = = = d u d"}
+{"id": "3446_diagnostic.matched.txt_first_arrows", "question": {"stem": "Albertosaurus and other tyrannosaurids were heterodont with lots of teeth."}, "output": "u u u u u u u u u u"}
+{"id": "7904_sick.matched.txt_first_arrows", "question": {"stem": "A wet boy is cheerfully jumping around on dirty and wet grass"}, "output": "u u u u u u u u u u u u"}
+{"id": "19067_sick.matched.txt_first_arrows", "question": {"stem": "A person playing football is running past an official carrying a football"}, "output": "u u u u u u u u u u u u"}
+{"id": "16991_sick.matched.txt_first_arrows", "question": {"stem": "The man is handling a gun"}, "output": "u = u u u u"}
+{"id": "1943_monotonicity_simple.matched.txt_first_arrows", "question": {"stem": "most stallions were not happy"}, "output": "u = d u d"}
+{"id": "10016_sick.matched.txt_first_arrows", "question": {"stem": "There is no dog running with a volleyball"}, "output": "u d u d d d d d"}
+{"id": "11306_sick.matched.txt_first_arrows", "question": {"stem": "A black man is running in brown grass and racing a dog"}, "output": "u u u u u u u u u u u u"}
+{"id": "11027_sick.matched.txt_first_arrows", "question": {"stem": "A guitarist has blonde and flyaway hair"}, "output": "u u u u u u u"}
+{"id": "2933_monotonicity_simple.matched.txt_first_arrows", "question": {"stem": "No stallion moved away from most newborn dogs who sniffed most wheelbarrows"}, "output": "u d d d d d = = = = = ="}
+{"id": "20420_sick.matched.txt_first_arrows", "question": {"stem": "A brown dog is standing in a lake"}, "output": "u u u u u u u u"}
+{"id": "22217_sick.matched.txt_first_arrows", "question": {"stem": "The boy in blue is running away from the woman in blue"}, "output": "u = = = u u u u u = = ="}
+{"id": "19850_sick.matched.txt_first_arrows", "question": {"stem": "Some old dirt bikers are getting a dirt bike up a sandy hill"}, "output": "u u u u u u u u u u u u u"}
+{"id": "12479_sick.matched.txt_first_arrows", "question": {"stem": "A boat is sailing peacefully over the water"}, "output": "u u u u u u u ="}
+{"id": "1205_sick.matched.txt_first_arrows", "question": {"stem": "A man is slicing a tomato"}, "output": "u u u u u u"}
+{"id": "3614_monotonicity_hard.matched.txt_first_arrows", "question": {"stem": "A brown or black mammal did not touch some-but-not-all stallions without faint odor"}, "output": "u u u u u u u d d d d u u"}
+{"id": "4070_monotonicity_simple.matched.txt_first_arrows", "question": {"stem": "Every mammal scratched a brown horse"}, "output": "u d u u u u"}
+{"id": "1367_diagnostic.matched.txt_first_arrows", "question": {"stem": "After quoting Abraham Lincoln he portrayed the American public as a people that undermined its national ideals."}, "output": "u u u u u u u = = u u u u = = = ="}
+{"id": "18515_sick.matched.txt_first_arrows", "question": {"stem": "A family which looks happy is posing by the fireplace"}, "output": "u u u u u u u u u ="}
+{"id": "2546_monotonicity_hard.matched.txt_first_arrows", "question": {"stem": "Each newborn bulldog who swam moved towards at-most 4 young mammals with odor"}, "output": "u d d d d u d u u d d d d"}
+{"id": "3578_monotonicity_simple.matched.txt_first_arrows", "question": {"stem": "Some black dogs slept"}, "output": "u u u u"}
+{"id": "11705_sick.matched.txt_first_arrows", "question": {"stem": "A man in a shirt dyed purple is looking at a man in a black shirt who is doing a face which looks funny"}, "output": "u u u u u u u u u u u u u u u u u u u u u u u u"}
+{"id": "16781_sick.matched.txt_first_arrows", "question": {"stem": "The little boy is not singing and playing the guitar"}, "output": "u = = d u d u d d ="}
+{"id": "10841_sick.matched.txt_first_arrows", "question": {"stem": "A little girl in costume looks like a woman"}, "output": "u u u u u u u u u"}
+{"id": "3452_monotonicity_hard.matched.txt_first_arrows", "question": {"stem": "The old cat with faint odor inspected no object"}, "output": "u = = = = = d u d"}
+{"id": "18101_sick.matched.txt_first_arrows", "question": {"stem": "The sun is not shining on the face of the girl who is in a yellow dress"}, "output": "u = d u d d d = = = = = = = = = ="}
+{"id": "5066_sick.matched.txt_first_arrows", "question": {"stem": "There is no monkey kicking a person"}, "output": "u d u d d d d"}
+{"id": "4688_monotonicity_hard.matched.txt_first_arrows", "question": {"stem": "An old quadruped who a brown or black animal with faint odor sniffed was happy"}, "output": "u u u u u u u u u u u u u u u"}
+{"id": "4271_monotonicity_hard.matched.txt_first_arrows", "question": {"stem": "A bat with odor did hit several dogs"}, "output": "u u u u u u u u"}
+{"id": "18878_sick.matched.txt_first_arrows", "question": {"stem": "Some children are playing on a statue"}, "output": "u u u u u u u"}
+{"id": "8585_sick.matched.txt_first_arrows", "question": {"stem": "A man is squatting in brush and taking a photo"}, "output": "u u u u u u u u u u"}
+{"id": "21665_sick.matched.txt_first_arrows", "question": {"stem": "There is no little kid playing football and falling into the grass"}, "output": "u d u d d d d u d d d ="}
+{"id": "9716_sick.matched.txt_first_arrows", "question": {"stem": "A boy is playing a game with blocks made of wood"}, "output": "u u u u u u u u u u u"}
+{"id": "14582_sick.matched.txt_first_arrows", "question": {"stem": "A man is disassembling the drum"}, "output": "u u u u u ="}
+{"id": "11495_sick.matched.txt_first_arrows", "question": {"stem": "A boy on a red and black slide is wearing a jacket and a hat and has knees which are covered in snow"}, "output": "u u u u u u u u u u u u u u u u u u u u u u u"}
+{"id": "3479_monotonicity_hard.matched.txt_first_arrows", "question": {"stem": "at-least 5 brown or black dogs danced"}, "output": "u d u u u u u"}
+{"id": "12791_sick.matched.txt_first_arrows", "question": {"stem": "The man is not intensely playing the guitar"}, "output": "u = d u d d d ="}
+{"id": "10109_sick.matched.txt_first_arrows", "question": {"stem": "A man is standing at dusk on an almost pristine road covered by snow that is lit only by headlights"}, "output": "u u u u u u u u u u u u u u u = = = = ="}
+{"id": "17015_sick.matched.txt_first_arrows", "question": {"stem": "The woman is using a sledgehammer to break a concrete block that is on another man"}, "output": "u = u u u u u u u u u u = = = ="}
+{"id": "4136_monotonicity_hard.matched.txt_first_arrows", "question": {"stem": "The dog moved towards at-least 4 old rabbits who some cat saw"}, "output": "u = u u u d u u u u u u"}
+{"id": "17720_sick.matched.txt_first_arrows", "question": {"stem": "The boy and the girl are not playing and wearing arm floats"}, "output": "u = u u = d u d u d d d"}
+{"id": "9707_sick.matched.txt_first_arrows", "question": {"stem": "A boy in blue shirt is looking at his hand near a stack of blocks on table"}, "output": "u u u u u u u = u u u u u u u u u"}
+{"id": "8960_sick.matched.txt_first_arrows", "question": {"stem": "The yellow dog is drinking water from a container"}, "output": "u = = u u u u u u"}
+{"id": "4184_sick.matched.txt_first_arrows", "question": {"stem": "The boy is checking a calendar"}, "output": "u = u u u u"}
+{"id": "4073_diagnostic.matched.txt_first_arrows", "question": {"stem": "Only members of the public attended B.I.G. 's funeral procession was restricted to an exclusive club of associates."}, "output": "u u u u = u u u u u u u u u u u u u"}
+{"id": "19607_sick.matched.txt_first_arrows", "question": {"stem": "A little boy with a bib is watching the camera"}, "output": "u u u u u u u u u ="}
+{"id": "17075_sick.matched.txt_first_arrows", "question": {"stem": "A bowl of soup is being cleaned by a chef"}, "output": "u u u u u u u u u u"}
+{"id": "12173_sick.matched.txt_first_arrows", "question": {"stem": "A man is rinsing a large piece of meat"}, "output": "u u u u u u u u u"}
+{"id": "13133_sick.matched.txt_first_arrows", "question": {"stem": "A boy is knocking a dog with a bottle of water"}, "output": "u u u u u u u u u u u"}
+{"id": "3575_monotonicity_simple.matched.txt_first_arrows", "question": {"stem": "Every black quadruped touched every stallion"}, "output": "u d d u u d"}
+{"id": "19331_sick.matched.txt_first_arrows", "question": {"stem": "The shirtless man in striped shorts and sunglasses is standing near a person in a white shirt and sunglasses"}, "output": "u = = = = = u = u u u u u u u u u u u"}
+{"id": "4064_monotonicity_simple.matched.txt_first_arrows", "question": {"stem": "Some nice beagle swam"}, "output": "u u u u"}
+{"id": "3110_monotonicity_simple.matched.txt_first_arrows", "question": {"stem": "Some quadruped stared at no steel wheels"}, "output": "u u u d u d d"}
+{"id": "95_diagnostic.matched.txt_first_arrows", "question": {"stem": "All dogs like to scratch their ears."}, "output": "u d u u u u u"}
+{"id": "3341_diagnostic.matched.txt_first_arrows", "question": {"stem": "Threatened by habitat loss and hunting ruffed lemurs are facing extinction in the wild."}, "output": "u u u u u u u u u u u u u ="}
+{"id": "10217_sick.matched.txt_first_arrows", "question": {"stem": "A black dog and a tan dog are fighting"}, "output": "u u u u u u u u u"}
+{"id": "2174_monotonicity_simple.matched.txt_first_arrows", "question": {"stem": "Every black bat did stared at some very brown mammal who was sad"}, "output": "u d d u u u u u u u u u u"}
+{"id": "3023_monotonicity_simple.matched.txt_first_arrows", "question": {"stem": "Some beagle stared at no nice fences"}, "output": "u u u d u d d"}
+{"id": "3794_monotonicity_hard.matched.txt_first_arrows", "question": {"stem": "at-least 5 brown or black mammals moved"}, "output": "u d u u u u u"}
+{"id": "15191_sick.matched.txt_first_arrows", "question": {"stem": "A pizza is being eaten by a man"}, "output": "u u u u u u u u"}
+{"id": "3302_monotonicity_hard.matched.txt_first_arrows", "question": {"stem": "A stallion without faint odor moved"}, "output": "u u u d d u"}
+{"id": "7046_sick.matched.txt_first_arrows", "question": {"stem": "A large group of cheerleaders is walking in a parade"}, "output": "u u u u u u u u u u"}
+{"id": "4373_monotonicity_hard.matched.txt_first_arrows", "question": {"stem": "An old cat with faint smell moved towards a beagle"}, "output": "u u u u u u u u u u"}
+{"id": "12989_sick.matched.txt_first_arrows", "question": {"stem": "The cat is licking milk from a saucer"}, "output": "u = u u u u u u"}
+{"id": "18596_sick.matched.txt_first_arrows", "question": {"stem": "A person is drinking orange juice and walking"}, "output": "u u u u u u u u"}
+{"id": "18971_sick.matched.txt_first_arrows", "question": {"stem": "A dog with a tan coat is jumping up and catching a tennis ball"}, "output": "u u u u u u u u u u u u u u"}
+{"id": "2912_monotonicity_simple.matched.txt_first_arrows", "question": {"stem": "An old animal who danced moved"}, "output": "u u u u u u"}
+{"id": "2747_sick.matched.txt_first_arrows", "question": {"stem": "A man is hurriedly getting into a car in a garage"}, "output": "u u u u u u u u u u u"}
+{"id": "2822_monotonicity_simple.matched.txt_first_arrows", "question": {"stem": "No animals who some bad beagle stared at touched most brown cats"}, "output": "u d d d d d d d d d = ="}
+{"id": "3404_monotonicity_hard.matched.txt_first_arrows", "question": {"stem": "Some beagle who several newborn dogs stared at was sad"}, "output": "u u u u u u u u u u"}
+{"id": "4031_monotonicity_hard.matched.txt_first_arrows", "question": {"stem": "at-most 4 young animals danced"}, "output": "u u d d d"}
+{"id": "3557_monotonicity_hard.matched.txt_first_arrows", "question": {"stem": "Some dog did not move towards at-least 4 old rabbits who some cat saw"}, "output": "u u u u d d d u d d d d d d"}
+{"id": "10082_sick.matched.txt_first_arrows", "question": {"stem": "The skateboarder is jumping in the air"}, "output": "u = u u u u ="}
+{"id": "4883_sick.matched.txt_first_arrows", "question": {"stem": "There is no man shaking a container over a sink in the kitchen"}, "output": "u d u d d d d d d d d d ="}
+{"id": "3332_monotonicity_simple.matched.txt_first_arrows", "question": {"stem": "Some newborn beagle was not happy"}, "output": "u u u d u d"}
+{"id": "3761_monotonicity_simple.matched.txt_first_arrows", "question": {"stem": "Every black animal moved"}, "output": "u d d u"}
+{"id": "4949_sick.matched.txt_first_arrows", "question": {"stem": "There is no man playing a keyboard"}, "output": "u d u d d d d"}
+{"id": "10766_sick.matched.txt_first_arrows", "question": {"stem": "A man is being curiously looked at by a woman"}, "output": "u u u u u u u u u u"}
+{"id": "2618_monotonicity_hard.matched.txt_first_arrows", "question": {"stem": "Some old quadruped who all brown or black animals with odor sniffed was happy"}, "output": "u u u u u d u d d d d u u u"}
+{"id": "22355_sick.matched.txt_first_arrows", "question": {"stem": "A boy is effortlessly climbing up a wall artificially built for climbing and is attached to a rope"}, "output": "u u u u u u u u u u u u u u u u u u"}
+{"id": "9188_sick.matched.txt_first_arrows", "question": {"stem": "A black dog is jumping off a dock into water"}, "output": "u u u u u u u u u u"}
+{"id": "2465_sick.matched.txt_first_arrows", "question": {"stem": "The tall person is setting fire to the cameras"}, "output": "u = = u u u u u ="}
+{"id": "12803_sick.matched.txt_first_arrows", "question": {"stem": "A man is driving a motorbike"}, "output": "u u u u u u"}
+{"id": "21032_sick.matched.txt_first_arrows", "question": {"stem": "A big brown and white spotted dog is lying on a cloth on the street"}, "output": "u u u u u u u u u u u u u u ="}
+{"id": "6833_sick.matched.txt_first_arrows", "question": {"stem": "The brown dog and the red dog are frolicking on the beach"}, "output": "u = = u u = = u u u u ="}
+{"id": "698_diagnostic.matched.txt_first_arrows", "question": {"stem": "The problem in Ireland was the price of food."}, "output": "u = = = u u = = ="}
+{"id": "19943_sick.matched.txt_first_arrows", "question": {"stem": "A person is doing a trick on a skateboard"}, "output": "u u u u u u u u u"}
+{"id": "6446_sick.matched.txt_first_arrows", "question": {"stem": "The man is playing a game on a lawn"}, "output": "u = u u u u u u u"}
+{"id": "5777_sick.matched.txt_first_arrows", "question": {"stem": "No person is playing with a toad"}, "output": "u d d d d d d"}
+{"id": "7214_sick.matched.txt_first_arrows", "question": {"stem": "There is no person riding a bike"}, "output": "u d u d d d d"}
+{"id": "15893_sick.matched.txt_first_arrows", "question": {"stem": "A man is singing into an old microphone"}, "output": "u u u u u u u u"}
+{"id": "4589_sick.matched.txt_first_arrows", "question": {"stem": "The man is cutting cooked octopus"}, "output": "u = u u u u"}
+{"id": "2450_monotonicity_simple.matched.txt_first_arrows", "question": {"stem": "A very young bulldog scratched every good chair"}, "output": "u u u u u u d d"}
+{"id": "16922_sick.matched.txt_first_arrows", "question": {"stem": "A woman is playing the drums"}, "output": "u u u u u ="}
+{"id": "15761_sick.matched.txt_first_arrows", "question": {"stem": "A man is peeling an onion"}, "output": "u u u u u u"}
+{"id": "9635_sick.matched.txt_first_arrows", "question": {"stem": "A red sled is being held by a little girl in a green coat and a boy walking in the snow"}, "output": "u u u u u u u u u u u u u u u u u u u u ="}
+{"id": "7529_sick.matched.txt_first_arrows", "question": {"stem": "A big brown dog and a small grey dog are standing on a rocky surface"}, "output": "u u u u u u u u u u u u u u u"}
+{"id": "21596_sick.matched.txt_first_arrows", "question": {"stem": "The player is dunking the basketball into the net and a crowd is in background"}, "output": "u = u u u = u u = u u u u u u"}
+{"id": "4667_sick.matched.txt_first_arrows", "question": {"stem": "A dog is barking noisily"}, "output": "u u u u u"}
+{"id": "21788_sick.matched.txt_first_arrows", "question": {"stem": "There is no woman tapping her fingers"}, "output": "u d u d d d d"}
+{"id": "2864_monotonicity_simple.matched.txt_first_arrows", "question": {"stem": "No cats scratched no very nice mailboxes"}, "output": "u d u d u u u"}
+{"id": "3854_monotonicity_simple.matched.txt_first_arrows", "question": {"stem": "No old cats who were happy moved away from a plastic mailbox"}, "output": "u d d d d d d d d d d d"}
+{"id": "2102_monotonicity_simple.matched.txt_first_arrows", "question": {"stem": "Every bat stared at every good stallion"}, "output": "u d u u u d d"}
+{"id": "2240_diagnostic.matched.txt_first_arrows", "question": {"stem": "Soft plant parts and insects are eaten."}, "output": "u u u u u u u"}
+{"id": "22127_sick.matched.txt_first_arrows", "question": {"stem": "There is no girl laughing and there is no other girl watching"}, "output": "u d u d d u u d u d d d"}
+{"id": "16280_sick.matched.txt_first_arrows", "question": {"stem": "A man is cutting onions"}, "output": "u u u u u"}
+{"id": "2741_monotonicity_simple.matched.txt_first_arrows", "question": {"stem": "Every bad poodle moved"}, "output": "u d d u"}
+{"id": "8390_sick.matched.txt_first_arrows", "question": {"stem": "The dog with the black coat is walking along a tree trunk bridge over water"}, "output": "u = = = = = u u u u u u u u u"}
+{"id": "4349_monotonicity_hard.matched.txt_first_arrows", "question": {"stem": "All horses who at-most 6 old poodles who at-least 3 badgers saw stared at stared at at-most 5 wheels"}, "output": "u d d d d u u u u d u u d d d u d d u"}
+{"id": "3521_monotonicity_simple.matched.txt_first_arrows", "question": {"stem": "Every old beagle who no bad bats moved away from danced"}, "output": "u d d d d u u u u u u"}
+{"id": "4094_monotonicity_simple.matched.txt_first_arrows", "question": {"stem": "A very old quadruped who stared at no tables waltzed"}, "output": "u u u u u u d u d u"}
+{"id": "4133_monotonicity_hard.matched.txt_first_arrows", "question": {"stem": "All horses who at-most 3 old poodles who at-least 5 mammals saw stared at stared at at-most 5 wheels"}, "output": "u d u d d u u u u d u u u u u d u u d"}
+{"id": "10877_sick.matched.txt_first_arrows", "question": {"stem": "A man is running in a field"}, "output": "u u u u u u u"}
+{"id": "13676_sick.matched.txt_first_arrows", "question": {"stem": "Soccer players are kicking a soccer ball into the goal"}, "output": "u u u u u u u u u ="}
+{"id": "9065_sick.matched.txt_first_arrows", "question": {"stem": "The dog is running through the dry sand"}, "output": "u = u u u u = ="}
+{"id": "5231_sick.matched.txt_first_arrows", "question": {"stem": "A girl is doing a manicure"}, "output": "u u u u u u"}
+{"id": "21455_sick.matched.txt_first_arrows", "question": {"stem": "An animal is barking at a ball"}, "output": "u u u u u u u"}
+{"id": "2909_sick.matched.txt_first_arrows", "question": {"stem": "A guinea pig is devouring a carrot"}, "output": "u u u u u u u"}
+{"id": "548_monotonicity_simple.matched.txt_first_arrows", "question": {"stem": "No quadrupeds were sad"}, "output": "u d d d"}
+{"id": "21551_sick.matched.txt_first_arrows", "question": {"stem": "A man is standing on a dirt hill next to a black car"}, "output": "u u u u u u u u u u u u u"}
+{"id": "4190_monotonicity_hard.matched.txt_first_arrows", "question": {"stem": "A horse who at-most 5 old poodles who a dog saw stared at stared at at-most 5 wheels"}, "output": "u u u u u d d d d d d u u u d u u d"}
+{"id": "20375_sick.matched.txt_first_arrows", "question": {"stem": "several people are not walking in line across a bridge"}, "output": "u u d u d d d d d d"}
+{"id": "4310_diagnostic.matched.txt_first_arrows", "question": {"stem": "Long before May 13 Major General Benjamin F. Butler occupied the city with several Union regiments in anticipation of a Confederate attack on Baltimore which never developed."}, "output": "u u u u u u u u u u u = u u u u u u u u u u u u u u u"}
+{"id": "2330_monotonicity_simple.matched.txt_first_arrows", "question": {"stem": "No beagles who most beagles stared at touched a brown cat"}, "output": "u d d d = d d d d d d"}
+{"id": "3194_monotonicity_hard.matched.txt_first_arrows", "question": {"stem": "most old cats with faint odor moved towards the beagle"}, "output": "u = = = = = u u u ="}
+{"id": "4511_monotonicity_hard.matched.txt_first_arrows", "question": {"stem": "A mammals were happy"}, "output": "u u u u"}
+{"id": "4646_sick.matched.txt_first_arrows", "question": {"stem": "A man is picking a can"}, "output": "u u u u u u"}
+{"id": "4685_monotonicity_hard.matched.txt_first_arrows", "question": {"stem": "A young bat was sad"}, "output": "u u u u u"}
+{"id": "3362_diagnostic.matched.txt_first_arrows", "question": {"stem": "The battlecruiser Seydlitz struck a mine while en route to the target and was damaged."}, "output": "u = = u u u u u u u u = u u u"}
+{"id": "15077_sick.matched.txt_first_arrows", "question": {"stem": "There is no boy playing a piano"}, "output": "u d u d d d d"}
+{"id": "17843_sick.matched.txt_first_arrows", "question": {"stem": "A black dog is running in the grass"}, "output": "u u u u u u u ="}
+{"id": "3230_monotonicity_simple.matched.txt_first_arrows", "question": {"stem": "No brown or black mammal was happy"}, "output": "u d u d d d d"}
+{"id": "13943_sick.matched.txt_first_arrows", "question": {"stem": "A boy is playing a keyboard"}, "output": "u u u u u u"}
+{"id": "22073_sick.matched.txt_first_arrows", "question": {"stem": "A baby is talking"}, "output": "u u u u"}
+{"id": "4829_sick.matched.txt_first_arrows", "question": {"stem": "A woman is being massaged by a man"}, "output": "u u u u u u u u"}
+{"id": "10502_sick.matched.txt_first_arrows", "question": {"stem": "A boy is running through the grass"}, "output": "u u u u u u ="}
+{"id": "8357_sick.matched.txt_first_arrows", "question": {"stem": "A girl dressed in purple and blue is slowly walking beside her bike at night"}, "output": "u u u u u u u u u u = u u u u"}
+{"id": "13523_sick.matched.txt_first_arrows", "question": {"stem": "The monkey is brushing the dog"}, "output": "u = u u u ="}
+{"id": "6743_sick.matched.txt_first_arrows", "question": {"stem": "The white bird is landing swiftly in the water"}, "output": "u = = u u u u u ="}
+{"id": "13028_sick.matched.txt_first_arrows", "question": {"stem": "The man is putting away the camera and walks away from the beach"}, "output": "u = u u u u = u u u u u ="}
+{"id": "2123_monotonicity_simple.matched.txt_first_arrows", "question": {"stem": "Some stallion moved away from most newborn dogs who sniffed most wheelbarrows"}, "output": "u u u u u u = = = = = ="}
+{"id": "15962_sick.matched.txt_first_arrows", "question": {"stem": "A dog is pulling a monkey 's tail"}, "output": "u u u u u u u u"}
+{"id": "3173_monotonicity_hard.matched.txt_first_arrows", "question": {"stem": "Every old quadruped who all brown or black mammals with odor sniffed was happy"}, "output": "u d d d d u u u u u u d u u"}
+{"id": "4586_monotonicity_hard.matched.txt_first_arrows", "question": {"stem": "All newborn bulldogs who swam moved towards at-least 4 young cats with odor"}, "output": "u d d d d d d d u d d d d"}
+{"id": "22079_sick.matched.txt_first_arrows", "question": {"stem": "A man is drawing on a digital dry erase board"}, "output": "u u u u u u u u u u"}
+{"id": "16484_sick.matched.txt_first_arrows", "question": {"stem": "The child is silent"}, "output": "u = u u"}
+{"id": "21407_sick.matched.txt_first_arrows", "question": {"stem": "There is no child holding a squirt gun"}, "output": "u d u d d d d d"}
+{"id": "1535_diagnostic.matched.txt_first_arrows", "question": {"stem": "Eliminating the influence of the language model yields the following coherence score."}, "output": "u u = = = = = u u = = ="}
+{"id": "4595_monotonicity_hard.matched.txt_first_arrows", "question": {"stem": "All newborn bulldog who swam moved towards at-most 3 young cats with strong odor"}, "output": "u d d d d d u d d u u u u u"}
+{"id": "19574_sick.matched.txt_first_arrows", "question": {"stem": "No person is dangling from straps and kicking at each other"}, "output": "u d d d d d u d d d u"}
+{"id": "4340_monotonicity_simple.matched.txt_first_arrows", "question": {"stem": "most brown or black cats who most old bulldogs sniffed stared at most metal fences"}, "output": "u = u = = = = = = = u u u = ="}
+{"id": "16190_sick.matched.txt_first_arrows", "question": {"stem": "Some person is holding a small animal"}, "output": "u u u u u u u"}
+{"id": "1466_diagnostic.matched.txt_first_arrows", "question": {"stem": "There are 4 supraocular scales -LRB- above the eyes -RRB- in most specimens and 5 supraciliary scales -LRB- immediately above the eyes below the supraoculars -RRB-"}, "output": "u u u = = = = = = = = = = u u = = = = = = = = = = ="}
+{"id": "749_diagnostic.matched.txt_first_arrows", "question": {"stem": "Some person knows how turtles reproduce."}, "output": "u u u u = ="}
+{"id": "761_sick.matched.txt_first_arrows", "question": {"stem": "Some people is equipped with gear used for protection"}, "output": "u u u u u u u u u"}
+{"id": "851_sick.matched.txt_first_arrows", "question": {"stem": "The man is doing a wheelie with a motorbike in a field which is mostly barren"}, "output": "u = u u u u u u u u u u u u u u"}
+{"id": "3176_sick.matched.txt_first_arrows", "question": {"stem": "A man is pouring oil into a pan"}, "output": "u u u u u u u u"}
+{"id": "3182_monotonicity_simple.matched.txt_first_arrows", "question": {"stem": "No young cats slept"}, "output": "u d d d"}
+{"id": "13550_sick.matched.txt_first_arrows", "question": {"stem": "The lady is not slicing up the meat"}, "output": "u = d u d d d ="}
+{"id": "12641_sick.matched.txt_first_arrows", "question": {"stem": "Tofu is being sliced by a woman"}, "output": "u u u u u u u"}
+{"id": "4445_monotonicity_hard.matched.txt_first_arrows", "question": {"stem": "All brown animals moved towards each stallion"}, "output": "u d d u u u d"}
+{"id": "15638_sick.matched.txt_first_arrows", "question": {"stem": "A man is driving a vehicle"}, "output": "u u u u u u"}
+{"id": "6116_sick.matched.txt_first_arrows", "question": {"stem": "A woman is not cutting broccoli"}, "output": "u u d u d d"}
+{"id": "8630_sick.matched.txt_first_arrows", "question": {"stem": "A person is riding a dirt bike up a dirt hill"}, "output": "u u u u u u u u u u u"}
+{"id": "22964_sick.matched.txt_first_arrows", "question": {"stem": "A woman is posing for 3 men for a photo"}, "output": "u u u u = u = = = ="}
+{"id": "3476_monotonicity_hard.matched.txt_first_arrows", "question": {"stem": "Some horse who at-most 6 old dogs who an animal saw stared at stared at at-most 5 wheels"}, "output": "u u u u u d d d d d d u u u d u u d"}
+{"id": "21545_sick.matched.txt_first_arrows", "question": {"stem": "A rabbit is playing with a toy rabbit"}, "output": "u u u u u u u u"}
+{"id": "3140_sick.matched.txt_first_arrows", "question": {"stem": "several children are jumping on a trampoline"}, "output": "u u u u u u u"}
+{"id": "6338_sick.matched.txt_first_arrows", "question": {"stem": "A man is making a bed"}, "output": "u u u u u u"}
+{"id": "3524_sick.matched.txt_first_arrows", "question": {"stem": "Some person is beating an egg"}, "output": "u u u u u u"}
+{"id": "20723_sick.matched.txt_first_arrows", "question": {"stem": "A man with Indian clothing and henna on his hand is going through paperwork"}, "output": "u u u u u u u = u u u u u u"}
+{"id": "7703_sick.matched.txt_first_arrows", "question": {"stem": "A blond kid in green is sitting on a swing"}, "output": "u u u u u u u u u u"}
+{"id": "19238_sick.matched.txt_first_arrows", "question": {"stem": "There is no little boy with brown hair jumping off of a brown chair onto the floor"}, "output": "u d u d d d d d d d d d d d d d ="}
+{"id": "8315_sick.matched.txt_first_arrows", "question": {"stem": "The person is flying through the air on a bicycle"}, "output": "u = u u u u = u u u"}
+{"id": "2807_monotonicity_simple.matched.txt_first_arrows", "question": {"stem": "No young animal was happy"}, "output": "u d d d d"}
+{"id": "1022_sick.matched.txt_first_arrows", "question": {"stem": "The young girl with a pink shirt is peacefully lying on the grass"}, "output": "u = = = = = = u u u u u ="}
+{"id": "518_sick.matched.txt_first_arrows", "question": {"stem": "A dog that has a brown and white coat is sitting in shallow water"}, "output": "u u u = = = u = = u u u u u"}
+{"id": "1856_sick.matched.txt_first_arrows", "question": {"stem": "A man is spreading butter on a piece of bread which is big"}, "output": "u u u u u u u u u u u u u"}
+{"id": "23042_sick.matched.txt_first_arrows", "question": {"stem": "A bride in a white dress is running"}, "output": "u u u u u u u u"}
+{"id": "18875_sick.matched.txt_first_arrows", "question": {"stem": "The men are not climbing a mountain"}, "output": "u = d u d d d"}
+{"id": "2219_monotonicity_simple.matched.txt_first_arrows", "question": {"stem": "No mammals sniffed no young stallions"}, "output": "u d u d u u"}
+{"id": "11432_sick.matched.txt_first_arrows", "question": {"stem": "There is no man with a camera studying the subject"}, "output": "u d u d d d d d d ="}
+{"id": "8684_sick.matched.txt_first_arrows", "question": {"stem": "A big black dog is wearing a red collar and is in the leaves with a blue ball"}, "output": "u u u u u u u u u u u u u = = = = ="}
+{"id": "4043_monotonicity_hard.matched.txt_first_arrows", "question": {"stem": "most dogs who at-least 6 bulldogs moved away from swam"}, "output": "= = = = = = = = u ="}
+{"id": "50_sick.matched.txt_first_arrows", "question": {"stem": "A young girl is looking at a woman in costume"}, "output": "u u u u u u u u u u"}
+{"id": "19592_sick.matched.txt_first_arrows", "question": {"stem": "A brown and white dog is playing on the lawn"}, "output": "u u u u u u u u u ="}
+{"id": "1442_sick.matched.txt_first_arrows", "question": {"stem": "A man is spreading dough"}, "output": "u u u u u"}
+{"id": "746_monotonicity_simple.matched.txt_first_arrows", "question": {"stem": "No black poodles were happy"}, "output": "u d d d d"}
+{"id": "12725_sick.matched.txt_first_arrows", "question": {"stem": "The skillet is being oiled by a woman who is pouring some water"}, "output": "u = u u u u u u u u u u u"}
+{"id": "2840_monotonicity_simple.matched.txt_first_arrows", "question": {"stem": "No old dogs scratched most wooden mailboxes"}, "output": "u d d d d = ="}
+{"id": "9470_sick.matched.txt_first_arrows", "question": {"stem": "A little girl is missing a baseball on a tee"}, "output": "u u u u u u u u u u"}
+{"id": "3812_diagnostic.matched.txt_first_arrows", "question": {"stem": "Jake broke the vase."}, "output": "u u u ="}
+{"id": "4157_diagnostic.matched.txt_first_arrows", "question": {"stem": "In a coherent context a machine should be able to guess the next utterance given the preceding ones."}, "output": "u u u u u u u u u u u u = = = = = ="}
+{"id": "7979_sick.matched.txt_first_arrows", "question": {"stem": "A dog is missing the ball in mid air"}, "output": "u u u u u = u u u"}
+{"id": "12785_sick.matched.txt_first_arrows", "question": {"stem": "A girl is not playing the guitar"}, "output": "u u d u d d ="}
+{"id": "4931_monotonicity_hard.matched.txt_first_arrows", "question": {"stem": "at-least 3 dogs who at-least 6 bats moved away from danced"}, "output": "d d d d d d d d d d d"}
+{"id": "10910_sick.matched.txt_first_arrows", "question": {"stem": "No person is in front of the colorful building"}, "output": "u d d d d d d = ="}
+{"id": "5375_sick.matched.txt_first_arrows", "question": {"stem": "There is no little girl peddling a scooter"}, "output": "u d u d d d d d"}
+{"id": "6512_sick.matched.txt_first_arrows", "question": {"stem": "A man is shooting with a bow"}, "output": "u u u u u u u"}
+{"id": "19859_sick.matched.txt_first_arrows", "question": {"stem": "Pedestrians and cars are moving through a traffic jam in the big city"}, "output": "u u u u u u u u u u u = ="}
+{"id": "2693_monotonicity_simple.matched.txt_first_arrows", "question": {"stem": "Some nice bat swam"}, "output": "u u u u"}
+{"id": "9434_sick.matched.txt_first_arrows", "question": {"stem": "The bicycle is being ridden by a man wearing a beret on a recreation trail"}, "output": "u = u u u u u u u u u u u u u"}
+{"id": "3170_monotonicity_simple.matched.txt_first_arrows", "question": {"stem": "A newborn rabbits hit no bat"}, "output": "u u u d u d"}
+{"id": "4367_monotonicity_hard.matched.txt_first_arrows", "question": {"stem": "No bulldog who touched each wagon was sad"}, "output": "u d d d d u d d"}
+{"id": "12473_sick.matched.txt_first_arrows", "question": {"stem": "The man is a guitar player"}, "output": "u = u u u u"}
+{"id": "3596_monotonicity_simple.matched.txt_first_arrows", "question": {"stem": "Some bat waltzed"}, "output": "u u u"}
+{"id": "3698_monotonicity_hard.matched.txt_first_arrows", "question": {"stem": "The dog moved towards some old rabbit who a cat saw"}, "output": "u = u u u u u u u u u"}
+{"id": "13226_sick.matched.txt_first_arrows", "question": {"stem": "The man is not hammering a nail with a camera"}, "output": "u = d u d d d d d d"}
+{"id": "15896_sick.matched.txt_first_arrows", "question": {"stem": "A woman is singing into a microphone"}, "output": "u u u u u u u"}
+{"id": "20858_sick.matched.txt_first_arrows", "question": {"stem": "A man is wearing a clear plastic cap and a face mask"}, "output": "u u u u u u u u u u u u"}
+{"id": "2393_monotonicity_simple.matched.txt_first_arrows", "question": {"stem": "An old dog moved"}, "output": "u u u u"}
+{"id": "4352_sick.matched.txt_first_arrows", "question": {"stem": "A man is stopping a horse"}, "output": "u u u u u u"}
+{"id": "14621_sick.matched.txt_first_arrows", "question": {"stem": "A frog is being handled by the woman"}, "output": "u u u u u u u ="}
+{"id": "11081_sick.matched.txt_first_arrows", "question": {"stem": "Some people is on a mountain"}, "output": "u u u u u u"}
+{"id": "3854_monotonicity_hard.matched.txt_first_arrows", "question": {"stem": "A horse who at-most 6 old mammals who some bulldog saw stared at saw at-most 4 wheels"}, "output": "u u u u u d d d d d d u u d u u d"}
+{"id": "8783_sick.matched.txt_first_arrows", "question": {"stem": "A brown and white dog is playing on the grass"}, "output": "u u u u u u u u u ="}
+{"id": "4400_monotonicity_hard.matched.txt_first_arrows", "question": {"stem": "Some-but-not-all old cat with faint odor moved towards a beagle"}, "output": "u u u u u u u u u u"}
+{"id": "2090_monotonicity_simple.matched.txt_first_arrows", "question": {"stem": "No bulldogs inspected some young poodle"}, "output": "u d d d d d"}
+{"id": "4535_monotonicity_hard.matched.txt_first_arrows", "question": {"stem": "Each mammal who danced inspected every wooden wheel"}, "output": "u d d d u u d d"}
+{"id": "2057_diagnostic.matched.txt_first_arrows", "question": {"stem": "The water is too hot."}, "output": "u = u u u"}
+{"id": "10157_sick.matched.txt_first_arrows", "question": {"stem": "People in costumes are sitting in the street"}, "output": "u u u u u u u ="}
+{"id": "16880_sick.matched.txt_first_arrows", "question": {"stem": "The man is cracking eggs into a bowl"}, "output": "u = u u u u u u"}
+{"id": "3368_monotonicity_hard.matched.txt_first_arrows", "question": {"stem": "A horse who at-most 6 old poodles who a dog saw stared at saw at-most 5 objects"}, "output": "u u u u u d d d d d d u u d u u d"}
+{"id": "209_sick.matched.txt_first_arrows", "question": {"stem": "The boy is sitting near the blue ocean"}, "output": "u = u u u u = ="}
+{"id": "17132_sick.matched.txt_first_arrows", "question": {"stem": "A cat is playing with a small bottle"}, "output": "u u u u u u u u"}
+{"id": "3674_monotonicity_hard.matched.txt_first_arrows", "question": {"stem": "at-least 5 old mammals who were sad did stared at the table"}, "output": "u d u u u u u u u u u ="}
+{"id": "2327_monotonicity_simple.matched.txt_first_arrows", "question": {"stem": "No horse was not happy"}, "output": "u d u d u"}
+{"id": "17021_sick.matched.txt_first_arrows", "question": {"stem": "A cat is swimming after a tennis ball"}, "output": "u u u u u u u u"}
+{"id": "17147_sick.matched.txt_first_arrows", "question": {"stem": "A man is slicing butter"}, "output": "u u u u u"}
+{"id": "2651_monotonicity_hard.matched.txt_first_arrows", "question": {"stem": "Every dog who at-least 3 horses moved away from danced"}, "output": "d d d d d d d d d d"}
+{"id": "3146_monotonicity_simple.matched.txt_first_arrows", "question": {"stem": "A good beagle saw no objects"}, "output": "u u u d u d"}
+{"id": "6938_sick.matched.txt_first_arrows", "question": {"stem": "A surfer is falling off the wave"}, "output": "u u u u u u ="}
+{"id": "10442_sick.matched.txt_first_arrows", "question": {"stem": "A woman in an orange shirt and clown makeup is standing in a park and others are looking on"}, "output": "u u u u u u u u u u u u u u u u u u u"}
+{"id": "21278_sick.matched.txt_first_arrows", "question": {"stem": "A boy is running on the beach"}, "output": "u u u u u u ="}
+{"id": "19823_sick.matched.txt_first_arrows", "question": {"stem": "A girl is standing alone and wears a black shirt and pink beads"}, "output": "u u u u u u u u u u u u u"}
+{"id": "3482_monotonicity_simple.matched.txt_first_arrows", "question": {"stem": "A young quadruped who some bad mammal stared at swam"}, "output": "u u u u u u u u u u"}
+{"id": "18605_sick.matched.txt_first_arrows", "question": {"stem": "A black dog is standing in deep water"}, "output": "u u u u u u u u"}
+{"id": "9809_sick.matched.txt_first_arrows", "question": {"stem": "A man in a white hat is touching a cardboard box"}, "output": "u u u u u u u u u u u"}
+{"id": "3533_monotonicity_hard.matched.txt_first_arrows", "question": {"stem": "Some newborn bulldog who slept moved towards at-least 3 young cats with strong odor"}, "output": "u u u u u u u u d u u u u u"}
+{"id": "15266_sick.matched.txt_first_arrows", "question": {"stem": "A woman is cutting a vegetable"}, "output": "u u u u u u"}
+{"id": "4094_monotonicity_hard.matched.txt_first_arrows", "question": {"stem": "No bat sniffed at-least 4 bats"}, "output": "u d d d u d"}
+{"id": "12731_sick.matched.txt_first_arrows", "question": {"stem": "A woman is putting the baby into a trash can"}, "output": "u u u u u = u u u u"}
+{"id": "5468_sick.matched.txt_first_arrows", "question": {"stem": "A big cat is opening a plastic drawer with its paws and is jumping inside"}, "output": "u u u u u u u u = u u u u u u"}
+{"id": "4142_monotonicity_hard.matched.txt_first_arrows", "question": {"stem": "Each mammal who moved inspected at-least 4 wooden fences"}, "output": "u d d d u u d u u"}
+{"id": "2867_monotonicity_hard.matched.txt_first_arrows", "question": {"stem": "at-least 4 black animals who exactly 3 rabbits without strong odor sniffed did not sleep"}, "output": "u d u u u u = = = = = u u u d"}
+{"id": "19883_sick.matched.txt_first_arrows", "question": {"stem": "A dog is running on the beach"}, "output": "u u u u u u ="}
+{"id": "20810_sick.matched.txt_first_arrows", "question": {"stem": "A woman is wearing paint and costume pieces and is riding a bike on a busy street"}, "output": "u u u u u u u u u u u u u u u u u"}
+{"id": "2843_monotonicity_simple.matched.txt_first_arrows", "question": {"stem": "No old cats who were happy moved away from a plastic wagon"}, "output": "u d d d d d d d d d d d"}
+{"id": "11714_sick.matched.txt_first_arrows", "question": {"stem": "The cowboy in blue and red pants is being tossed by a horse"}, "output": "u = = = u = = u u u u u u"}
+{"id": "17276_sick.matched.txt_first_arrows", "question": {"stem": "A person is cooking some food"}, "output": "u u u u u u"}
+{"id": "9476_sick.matched.txt_first_arrows", "question": {"stem": "A little girl is hitting a baseball off a tee"}, "output": "u u u u u u u u u u"}
+{"id": "17330_sick.matched.txt_first_arrows", "question": {"stem": "A motorcycle is being ridden by a man"}, "output": "u u u u u u u u"}
+{"id": "3566_monotonicity_simple.matched.txt_first_arrows", "question": {"stem": "Every brown bulldog who some young poodle inspected slept"}, "output": "u d d d d d d d u"}
+{"id": "22898_sick.matched.txt_first_arrows", "question": {"stem": "There is no dog in a colored coat running across the yard"}, "output": "u d u d d d d d d d d ="}
+{"id": "18686_sick.matched.txt_first_arrows", "question": {"stem": "A black dog is playing with a brown dog on the sand"}, "output": "u u u u u u u u u u u ="}
+{"id": "20054_sick.matched.txt_first_arrows", "question": {"stem": "A young person in a white shirt and gold and black hat is sitting with crossed legs"}, "output": "u u u u u u u u u u u u u u u u u"}
+{"id": "3839_monotonicity_simple.matched.txt_first_arrows", "question": {"stem": "Every animal scratched every brown or black horse"}, "output": "u d u u d u d d"}
+{"id": "16358_sick.matched.txt_first_arrows", "question": {"stem": "A woman is seasoning a ham"}, "output": "u u u u u u"}
+{"id": "8792_sick.matched.txt_first_arrows", "question": {"stem": "A tan skinned kid is looking at the camera"}, "output": "u u u u u u u u ="}
+{"id": "3599_sick.matched.txt_first_arrows", "question": {"stem": "The man is chopping the trunk of a tree with an axe"}, "output": "u = u u u = = = = u u u"}
+{"id": "2870_monotonicity_simple.matched.txt_first_arrows", "question": {"stem": "Some good beagles were sad"}, "output": "u u u u u"}
+{"id": "6488_sick.matched.txt_first_arrows", "question": {"stem": "A cat is jumping into a box"}, "output": "u u u u u u u"}
+{"id": "4319_monotonicity_hard.matched.txt_first_arrows", "question": {"stem": "Each mammal who moved inspected at-least 3 wooden doors"}, "output": "u d d d u u d u u"}
+{"id": "7196_sick.matched.txt_first_arrows", "question": {"stem": "A black man is skillfully break dancing on the pavement"}, "output": "u u u u u u u u u ="}
+{"id": "19157_sick.matched.txt_first_arrows", "question": {"stem": "A naked girl is walking beside her bike at night"}, "output": "u u u u u = u u u u"}
+{"id": "9986_sick.matched.txt_first_arrows", "question": {"stem": "A dog is turning on the grass and pursuing a flying tennis ball"}, "output": "u u u u u u = u u u u u u"}
+{"id": "11066_sick.matched.txt_first_arrows", "question": {"stem": "Some children in uniforms is standing at a gate and one is kissing the mother"}, "output": "u u u u u u u u u u u u u u ="}
+{"id": "3629_monotonicity_hard.matched.txt_first_arrows", "question": {"stem": "An old cat with faint smell moved towards no beagle"}, "output": "u u u u u u u d u d"}
+{"id": "7913_sick.matched.txt_first_arrows", "question": {"stem": "The black dog is sprinting through the grass"}, "output": "u = = u u u u ="}
+{"id": "2366_monotonicity_simple.matched.txt_first_arrows", "question": {"stem": "No animals who some good beagle stared at touched some brown cat"}, "output": "u d d d d d d d d d d d"}
+{"id": "2732_monotonicity_hard.matched.txt_first_arrows", "question": {"stem": "Each horse who at-most 5 old poodles who at-least 4 mammals saw stared at stared at at-most 5 wheels"}, "output": "u d d d d u u u u d u u d d d u d d u"}
+{"id": "2684_monotonicity_simple.matched.txt_first_arrows", "question": {"stem": "A good beagle stared at no objects"}, "output": "u u u u d u d"}
+{"id": "2621_monotonicity_simple.matched.txt_first_arrows", "question": {"stem": "Every newborn bat did hit a brown bat"}, "output": "u d d u u u u u"}
+{"id": "16619_sick.matched.txt_first_arrows", "question": {"stem": "Potatoes are being sliced by a man"}, "output": "u u u u u u u"}
+{"id": "2207_monotonicity_simple.matched.txt_first_arrows", "question": {"stem": "No animals scratched no nice boxes"}, "output": "u d u d u u"}
+{"id": "1976_monotonicity_hard.matched.txt_first_arrows", "question": {"stem": "The bulldog with strong smell was sad"}, "output": "u = = = = u u"}
+{"id": "4010_monotonicity_hard.matched.txt_first_arrows", "question": {"stem": "All bats sniffed at-least 5 animals"}, "output": "u d u u d u"}
+{"id": "3827_monotonicity_hard.matched.txt_first_arrows", "question": {"stem": "Every horse who at-most 6 old beagles who at-least 3 mammals saw stared at stared at at-most 5 wheels"}, "output": "u d d d d u u u u d u u d d d u d d u"}
+{"id": "4124_sick.matched.txt_first_arrows", "question": {"stem": "A man is dangerously dancing on the ceiling of a room"}, "output": "u u u u u u u = = = ="}
+{"id": "8978_sick.matched.txt_first_arrows", "question": {"stem": "The adults and children are not gathered near an outdoor seating arrangement"}, "output": "u = u = d u d d d d d d"}
+{"id": "2438_monotonicity_simple.matched.txt_first_arrows", "question": {"stem": "No rabbit was sad"}, "output": "u d d d"}
+{"id": "16988_sick.matched.txt_first_arrows", "question": {"stem": "The man is drawing a gun"}, "output": "u = u u u u"}
+{"id": "3254_sick.matched.txt_first_arrows", "question": {"stem": "There is no young boy playing a wind instrument"}, "output": "u d u d d d d d d"}
+{"id": "10247_sick.matched.txt_first_arrows", "question": {"stem": "A white puppy is biting a pole"}, "output": "u u u u u u u"}
+{"id": "2921_sick.matched.txt_first_arrows", "question": {"stem": "The woman is slicing an onion"}, "output": "u = u u u u"}
+{"id": "314_sick.matched.txt_first_arrows", "question": {"stem": "A soccer ball is not rolling into a goal net"}, "output": "u u u d u d d d d d"}
+{"id": "17774_sick.matched.txt_first_arrows", "question": {"stem": "A bike is being held over his head by a bicyclist in some people"}, "output": "u u u u u = u u u u u u u u"}
+{"id": "3731_monotonicity_simple.matched.txt_first_arrows", "question": {"stem": "A young animal waltzed"}, "output": "u u u u"}
+{"id": "4067_monotonicity_hard.matched.txt_first_arrows", "question": {"stem": "Some newborn poodle who was happy touched a box"}, "output": "u u u u u u u u u"}
+{"id": "20063_sick.matched.txt_first_arrows", "question": {"stem": "A girl in blue sweater is holding a multicolor toy and is sitting on the shoulders of a woman with grey hair"}, "output": "u u u u u u u u u u u u u u u = = = = = = ="}
+{"id": "2939_monotonicity_hard.matched.txt_first_arrows", "question": {"stem": "at-least 3 black animals who exactly 6 rabbits without strong odor sniffed did not sleep"}, "output": "u d u u u u = = = = = u u u d"}
+{"id": "4856_monotonicity_hard.matched.txt_first_arrows", "question": {"stem": "An old quadruped who every brown or black bat with odor sniffed was happy"}, "output": "u u u u u d u d d d d u u u"}
+{"id": "20027_sick.matched.txt_first_arrows", "question": {"stem": "A child is not playing slip and slide in the grass"}, "output": "u u d u d d u d d d ="}
+{"id": "8777_sick.matched.txt_first_arrows", "question": {"stem": "A blonde man is hanging by gymnastic ropes"}, "output": "u u u u u u u u"}
+{"id": "13181_sick.matched.txt_first_arrows", "question": {"stem": "The cat is not playing with a watermelon"}, "output": "u = d u d d d d"}
+{"id": "2894_monotonicity_simple.matched.txt_first_arrows", "question": {"stem": "most nice cats inspected most wheelbarrows"}, "output": "u = = u u ="}
+{"id": "3620_monotonicity_simple.matched.txt_first_arrows", "question": {"stem": "A very old cat stared at most wheelbarrows"}, "output": "u u u u u u u ="}
+{"id": "3926_monotonicity_simple.matched.txt_first_arrows", "question": {"stem": "No old rabbits who were happy moved away from a plastic mailbox"}, "output": "u d d d d d d d d d d d"}
+{"id": "22157_sick.matched.txt_first_arrows", "question": {"stem": "There is no surfer leaning on a surfboard"}, "output": "u d u d d d d d"}
+{"id": "5426_sick.matched.txt_first_arrows", "question": {"stem": "An onion is being chopped"}, "output": "u u u u u"}
+{"id": "22259_sick.matched.txt_first_arrows", "question": {"stem": "A man with a shirt is posing with the arms spread next to a woman"}, "output": "u u u u u u u u u = = = = = ="}
+{"id": "12236_sick.matched.txt_first_arrows", "question": {"stem": "A woman is chopping an onion"}, "output": "u u u u u u"}
+{"id": "4073_monotonicity_simple.matched.txt_first_arrows", "question": {"stem": "Some bat was not happy"}, "output": "u u d u d"}
+{"id": "4367_monotonicity_simple.matched.txt_first_arrows", "question": {"stem": "Some animal who most brown bats hit was sad"}, "output": "u u u u = = u u u"}
+{"id": "3887_monotonicity_simple.matched.txt_first_arrows", "question": {"stem": "most newborn rabbits hit some bat"}, "output": "u = = u u u"}
+{"id": "4526_sick.matched.txt_first_arrows", "question": {"stem": "There is no clown singing"}, "output": "u d u d d"}
+{"id": "10307_sick.matched.txt_first_arrows", "question": {"stem": "A black dog is running in the snow"}, "output": "u u u u u u u ="}
+{"id": "3551_monotonicity_hard.matched.txt_first_arrows", "question": {"stem": "Each horse who at-most 6 old animals who some mammal saw stared at stared at at-most 5 wheels"}, "output": "u d d d d u u u u u u d d u d u u d"}
+{"id": "3161_monotonicity_simple.matched.txt_first_arrows", "question": {"stem": "Every wooden horse did saw no wooden mailboxes"}, "output": "u d d u d u d d"}
+{"id": "12149_sick.matched.txt_first_arrows", "question": {"stem": "A pencil is being sharpened"}, "output": "u u u u u"}
+{"id": "3032_monotonicity_simple.matched.txt_first_arrows", "question": {"stem": "Some stallions ran"}, "output": "u u u"}
+{"id": "9611_sick.matched.txt_first_arrows", "question": {"stem": "A woman is leaning on the ledge of a balcony"}, "output": "u u u u u u = = = ="}
+{"id": "5153_sick.matched.txt_first_arrows", "question": {"stem": "A woman is riding on an elephant"}, "output": "u u u u u u u"}
+{"id": "620_sick.matched.txt_first_arrows", "question": {"stem": "A man and a woman are sitting comfortably on the bench"}, "output": "u u u u u u u u u u ="}
+{"id": "8135_sick.matched.txt_first_arrows", "question": {"stem": "A child is playfully swimming underwater in a pool"}, "output": "u u u u u u u u u"}
+{"id": "17_sick.matched.txt_first_arrows", "question": {"stem": "No person is riding the bicycle on one wheel"}, "output": "u d d d d = d d d"}
+{"id": "248_diagnostic.matched.txt_first_arrows", "question": {"stem": "Knowledge bases are populated by relation extraction systems with facts from unstructured text corpora."}, "output": "u u u u u u u u u u u u u u"}
+{"id": "4505_sick.matched.txt_first_arrows", "question": {"stem": "The animal with big eyes is voraciously eating"}, "output": "u = = = = u u u"}
+{"id": "2516_monotonicity_simple.matched.txt_first_arrows", "question": {"stem": "Every nice mammal was not sad"}, "output": "u d d d u d"}
+{"id": "1163_diagnostic.matched.txt_first_arrows", "question": {"stem": "I couldn\u2019t bring myself to throw it away out of the fondness of all the memories surrounding the time period."}, "output": "u = = = = = = = = = = = = = = = = = = ="}
+{"id": "16565_sick.matched.txt_first_arrows", "question": {"stem": "The person is not riding the horse"}, "output": "u = d u d d ="}
+{"id": "8801_sick.matched.txt_first_arrows", "question": {"stem": "A young boy with a bib is watching the camera"}, "output": "u u u u u u u u u ="}
+{"id": "20363_sick.matched.txt_first_arrows", "question": {"stem": "A young couple is not lying in bed"}, "output": "u u u d u d d d"}
+{"id": "22793_sick.matched.txt_first_arrows", "question": {"stem": "The girl is sitting on the couch and is crocheting"}, "output": "u = u u u u = u u u"}
+{"id": "2408_monotonicity_simple.matched.txt_first_arrows", "question": {"stem": "No old beagles who were happy moved away from a plastic door"}, "output": "u d d d d d d d d d d d"}
+{"id": "1910_diagnostic.matched.txt_first_arrows", "question": {"stem": "The leading car slowly shifted to the left lane."}, "output": "u = = u u u u = ="}
+{"id": "17756_sick.matched.txt_first_arrows", "question": {"stem": "The group of people is not sitting on a rocky ledge with a scenic view behind them"}, "output": "u = = = d u d d d d d d d d d d d"}
+{"id": "4118_monotonicity_hard.matched.txt_first_arrows", "question": {"stem": "No brown or black horse sniffed at-least 5 objects"}, "output": "u d u d d d d u d"}
+{"id": "3458_monotonicity_hard.matched.txt_first_arrows", "question": {"stem": "A newborn bulldog who moved moved towards at-most 3 young cats with strong odor"}, "output": "u u u u u u d u u d d d d d"}
+{"id": "19487_sick.matched.txt_first_arrows", "question": {"stem": "A white racing vehicle is driving through a puddle"}, "output": "u u u u u u u u u"}
+{"id": "2840_monotonicity_hard.matched.txt_first_arrows", "question": {"stem": "Some bat sniffed at-most 4 animals"}, "output": "u u d u u d"}
+{"id": "2777_monotonicity_hard.matched.txt_first_arrows", "question": {"stem": "Every horse who at-most 6 old dogs who at-least 3 bulldogs saw stared at stared at at-most 5 wheels"}, "output": "u d d d d u u u u d u u d d u d u u d"}
+{"id": "22022_sick.matched.txt_first_arrows", "question": {"stem": "A small animal is singing"}, "output": "u u u u u"}
+{"id": "22226_sick.matched.txt_first_arrows", "question": {"stem": "A dog is playing alone on the shore covered by snow"}, "output": "u u u u u u u = = = ="}
+{"id": "2219_monotonicity_hard.matched.txt_first_arrows", "question": {"stem": "Each young bat was not sad"}, "output": "u d d d u d"}
+{"id": "12965_sick.matched.txt_first_arrows", "question": {"stem": "A man is eating a carrot sliced by a machine"}, "output": "u u u u u u u u u u"}
+{"id": "7490_sick.matched.txt_first_arrows", "question": {"stem": "A dead bird is near a black man sitting on a tree"}, "output": "u u u u u u u u u u u u"}
+{"id": "10970_sick.matched.txt_first_arrows", "question": {"stem": "There is no girl in white dancing"}, "output": "u d u d d d d"}
+{"id": "2111_diagnostic.matched.txt_first_arrows", "question": {"stem": "Cruz has frequently derided as `` amnesty '' any plan that confers legal status or citizenship on people living in the country illegally."}, "output": "u u u u = u u u u u u = = = u = = = = = = = ="}
+{"id": "21074_sick.matched.txt_first_arrows", "question": {"stem": "A biker on a yellow sport bike is doing a wheelie and a friend on a black bike is catching up"}, "output": "u u u u u u u u u u u u u u u u u u u u u"}
+{"id": "11126_sick.matched.txt_first_arrows", "question": {"stem": "A tattooed man is on a sofa and is holding a pencil"}, "output": "u u u u u u u u u u u u"}
+{"id": "3818_monotonicity_simple.matched.txt_first_arrows", "question": {"stem": "No animals who some beagle stared at hit a brown cat"}, "output": "u d d d d d d d d d d"}
+{"id": "6482_sick.matched.txt_first_arrows", "question": {"stem": "A cat is jumping into a container"}, "output": "u u u u u u u"}
+{"id": "6611_sick.matched.txt_first_arrows", "question": {"stem": "A lemur is licking a person 's finger"}, "output": "u u u u u u u u"}
+{"id": "2189_monotonicity_simple.matched.txt_first_arrows", "question": {"stem": "most animals saw some animal"}, "output": "u = u u u"}
+{"id": "2966_sick.matched.txt_first_arrows", "question": {"stem": "Some cats are playing with each other"}, "output": "u u u u u u d"}
+{"id": "4625_monotonicity_hard.matched.txt_first_arrows", "question": {"stem": "Some brown or black animal waltzed"}, "output": "u u u u u u"}
+{"id": "20756_sick.matched.txt_first_arrows", "question": {"stem": "A boy is wearing a black dress and is carrying a white cross"}, "output": "u u u u u u u u u u u u u"}
+{"id": "10964_sick.matched.txt_first_arrows", "question": {"stem": "The blond girl is dancing behind the sound equipment"}, "output": "u = = u u u u = ="}
+{"id": "2324_monotonicity_simple.matched.txt_first_arrows", "question": {"stem": "A good stallion moved away from every newborn dog who sniffed a wheelbarrow"}, "output": "u u u u u u u d d d d d d"}
+{"id": "3080_monotonicity_hard.matched.txt_first_arrows", "question": {"stem": "at-least 4 horses who at-most 6 old poodles who at-least 3 bulldogs saw stared at saw at-most 5 objects"}, "output": "u d u u u u d d d d u d d u u d u u d"}
+{"id": "16343_sick.matched.txt_first_arrows", "question": {"stem": "A man is singing and walking down the sidewalk"}, "output": "u u u u u u u u ="}
+{"id": "3296_monotonicity_hard.matched.txt_first_arrows", "question": {"stem": "several horses who at-most 3 old mammals who at-least 3 dogs saw stared at stared at at-most 5 wheels"}, "output": "u u d u u d d d d u d d u u u d u u d"}
+{"id": "2594_monotonicity_hard.matched.txt_first_arrows", "question": {"stem": "A dog who at-least 6 mammals moved away from moved"}, "output": "u u u u d u u u u ="}
+{"id": "11093_sick.matched.txt_first_arrows", "question": {"stem": "A cramped black train is on the bag of a girl"}, "output": "u u u u u u u = = = ="}
+{"id": "14489_sick.matched.txt_first_arrows", "question": {"stem": "Some person on a perch is looking at a small wooden cat that is on a white cabinet outside the window"}, "output": "u u u u u u u u u u u u u = = = = = = = ="}
+{"id": "3944_sick.matched.txt_first_arrows", "question": {"stem": "A boy is shredding a calendar"}, "output": "u u u u u u"}
+{"id": "1805_diagnostic.matched.txt_first_arrows", "question": {"stem": "The vase broke."}, "output": "u = u"}
+{"id": "4499_monotonicity_hard.matched.txt_first_arrows", "question": {"stem": "A horse who at-most 6 old poodles who many bulldogs stared at stared at stared at at-least 6 wheels"}, "output": "u u d u u d d d d = d d u u u u u d u"}
+{"id": "626_sick.matched.txt_first_arrows", "question": {"stem": "A man is bringing up the rear of the race"}, "output": "u u u u u u = = = ="}
+{"id": "3176_monotonicity_simple.matched.txt_first_arrows", "question": {"stem": "No brown animal waltzed"}, "output": "u d d d"}
+{"id": "6305_sick.matched.txt_first_arrows", "question": {"stem": "The guitar is being played by a kid"}, "output": "u = u u u u u u"}
+{"id": "4028_monotonicity_simple.matched.txt_first_arrows", "question": {"stem": "No old dogs who were happy scratched a hardwood mailbox"}, "output": "u d d d d d d d d d"}
+{"id": "3716_monotonicity_simple.matched.txt_first_arrows", "question": {"stem": "most young animals danced"}, "output": "u = = u"}
+{"id": "11681_sick.matched.txt_first_arrows", "question": {"stem": "The girl in a dyed red shirt is not blowing a bubble"}, "output": "u = = = = = = d u d d d"}
+{"id": "6158_sick.matched.txt_first_arrows", "question": {"stem": "There is no man playing guitar"}, "output": "u d u d d d"}
+{"id": "20762_sick.matched.txt_first_arrows", "question": {"stem": "A girl is standing next to the opening of a fountain"}, "output": "u u u u u u u = = = ="}
+{"id": "3326_monotonicity_hard.matched.txt_first_arrows", "question": {"stem": "Each horse who at-most 6 old poodles who many bulldogs saw stared at stared at at-most 5 wheels"}, "output": "u d d d d u u u u = u d d d u d d u"}
+{"id": "3407_diagnostic.matched.txt_first_arrows", "question": {"stem": "Prismatic blades appeared in high frequencies during the Upper Paleolithic."}, "output": "u u u u u u u u = ="}
+{"id": "21467_sick.matched.txt_first_arrows", "question": {"stem": "A man is standing beside a birdcage which is large and colorful"}, "output": "u u u u u u u u u u u u"}
+{"id": "5006_sick.matched.txt_first_arrows", "question": {"stem": "A man is drilling a hole with a piece of wood"}, "output": "u u u u u u u u u u u"}
+{"id": "3470_monotonicity_hard.matched.txt_first_arrows", "question": {"stem": "at-most 3 brown or black rabbits moved"}, "output": "u u d u d d d"}
+{"id": "3377_monotonicity_hard.matched.txt_first_arrows", "question": {"stem": "Some-but-not-all bulldog with strong odor stared at a beagle"}, "output": "u u u u u u u u u"}
+{"id": "3155_monotonicity_hard.matched.txt_first_arrows", "question": {"stem": "at-most 6 old mammals who swam did not sniff most black quadrupeds"}, "output": "u u d d d d d d u u = ="}
+{"id": "21689_sick.matched.txt_first_arrows", "question": {"stem": "There is no person riding a motorbike in the event related to motocross"}, "output": "u d u d d d d d d = = = ="}
+{"id": "10730_sick.matched.txt_first_arrows", "question": {"stem": "Different things from a war are being shown to some people by a veteran"}, "output": "u u u u u u u u u u u u u u"}
+{"id": "8690_sick.matched.txt_first_arrows", "question": {"stem": "A dog is not running towards a ball"}, "output": "u u d u d d d d"}
+{"id": "21311_sick.matched.txt_first_arrows", "question": {"stem": "A dog is running on concrete and is holding a ball"}, "output": "u u u u u u u u u u u"}
+{"id": "13970_sick.matched.txt_first_arrows", "question": {"stem": "Some children are jumping on a trampoline"}, "output": "u u u u u u u"}
+{"id": "3641_monotonicity_simple.matched.txt_first_arrows", "question": {"stem": "Some animals who some beagle stared at touched a very brown cat"}, "output": "u u u u u u u u u u u u"}
+{"id": "21554_sick.matched.txt_first_arrows", "question": {"stem": "A woman is rocking over a blanket lying on some person reading a book"}, "output": "u u u u u u u u u u u u u u"}
+{"id": "6398_sick.matched.txt_first_arrows", "question": {"stem": "A man is reloading a shotgun"}, "output": "u u u u u u"}
+{"id": "2402_diagnostic.matched.txt_first_arrows", "question": {"stem": "Bees fly using a different mechanism from airplanes."}, "output": "u u u u u u u u"}
+{"id": "4907_monotonicity_hard.matched.txt_first_arrows", "question": {"stem": "No bulldog who touched each mailbox was sad"}, "output": "u d d d d u d d"}
+{"id": "20177_sick.matched.txt_first_arrows", "question": {"stem": "A large dog and a small dog are standing next to the kitchen counter and are sniffing"}, "output": "u u u u u u u u u u u u = = u u u"}
+{"id": "9908_sick.matched.txt_first_arrows", "question": {"stem": "There are no little boys playing outside with a soccer ball on the green grass"}, "output": "u d u d d d d d d d d d d = ="}
+{"id": "344_sick.matched.txt_first_arrows", "question": {"stem": "A man is resting on a chair and rubbing his eyes"}, "output": "u u u u u u u u u u u"}
+{"id": "12050_sick.matched.txt_first_arrows", "question": {"stem": "A man is not mowing a lawn"}, "output": "u u d u d d d"}
+{"id": "20102_sick.matched.txt_first_arrows", "question": {"stem": "A shirtless man is playing football in a gym"}, "output": "u u u u u u u u u"}
+{"id": "1181_sick.matched.txt_first_arrows", "question": {"stem": "A woman is not talking on a telephone"}, "output": "u u d u d d d d"}
+{"id": "22979_sick.matched.txt_first_arrows", "question": {"stem": "There is no tan dog jumping up and catching a tennis ball"}, "output": "u d u d d d d u d d d d"}
+{"id": "2705_monotonicity_hard.matched.txt_first_arrows", "question": {"stem": "Some old dog with smell was not happy"}, "output": "u u u u u d u d"}
+{"id": "3887_monotonicity_hard.matched.txt_first_arrows", "question": {"stem": "Each newborn bulldog who swam did not move towards at-least 3 young mammals with strong odor"}, "output": "u d d d d u u d d d u d d d d d"}
+{"id": "14390_sick.matched.txt_first_arrows", "question": {"stem": "A person is folding a tortilla"}, "output": "u u u u u u"}
+{"id": "3056_diagnostic.matched.txt_first_arrows", "question": {"stem": "There will be a comprehensive investigation involving authorities."}, "output": "u u u u u u u u"}
+{"id": "13256_sick.matched.txt_first_arrows", "question": {"stem": "The oriental lady is not cutting a carrot into thin pieces"}, "output": "u = = d u d d d d d d"}
+{"id": "18392_sick.matched.txt_first_arrows", "question": {"stem": "A girl is pushing a go-kart and a daughter is watching her father"}, "output": "u u u u u u u u u u u u u"}
+{"id": "21470_sick.matched.txt_first_arrows", "question": {"stem": "A man and a woman are walking together through the woods"}, "output": "u u u u u u u u u u ="}
+{"id": "12728_sick.matched.txt_first_arrows", "question": {"stem": "A chimp is angrily kicking a target"}, "output": "u u u u u u u"}
+{"id": "2906_monotonicity_simple.matched.txt_first_arrows", "question": {"stem": "A very good animal stared at most newborn beagles"}, "output": "u u u u u u u = ="}
+{"id": "21203_sick.matched.txt_first_arrows", "question": {"stem": "A shirtless woman is leading a horse that is pulling a carriage"}, "output": "u u u u u u u u = = = ="}
+{"id": "3227_monotonicity_simple.matched.txt_first_arrows", "question": {"stem": "Every stallion moved away from every newborn dog who sniffed some wheelbarrow"}, "output": "u d u u u u d d d d d d"}
+{"id": "4277_monotonicity_hard.matched.txt_first_arrows", "question": {"stem": "An old quadruped who each brown or black bats with faint odor sniffed was not happy"}, "output": "u u u u u d u d d d d d u d u d"}
+{"id": "830_sick.matched.txt_first_arrows", "question": {"stem": "The girl in the blue and white uniform is not cheering"}, "output": "u = = = = u = = d u d"}
+{"id": "16487_sick.matched.txt_first_arrows", "question": {"stem": "A woman is pulling some sticky goo out of a bowl"}, "output": "u u u u u u u u u u u"}
+{"id": "15455_sick.matched.txt_first_arrows", "question": {"stem": "A person is tearing sheets"}, "output": "u u u u u"}
+{"id": "2825_monotonicity_hard.matched.txt_first_arrows", "question": {"stem": "most brown or black horses sniffed at-least 4 objects"}, "output": "u = u = = u u d u"}
+{"id": "4040_monotonicity_hard.matched.txt_first_arrows", "question": {"stem": "at-least 4 horses who at-most 6 old poodles who at-least 3 animals saw stared at stared at at-most 4 wheels"}, "output": "u d u u u u d d d d u d d u u u d u u d"}
+{"id": "12776_sick.matched.txt_first_arrows", "question": {"stem": "Some water is being casually drunk by a cat"}, "output": "u u u u u u u u u"}
+{"id": "13664_sick.matched.txt_first_arrows", "question": {"stem": "A soccer player is missing a goal"}, "output": "u u u u u u u"}
+{"id": "20822_sick.matched.txt_first_arrows", "question": {"stem": "A dog is running with a ball"}, "output": "u u u u u u u"}
+{"id": "116_sick.matched.txt_first_arrows", "question": {"stem": "People are walking inside a building that has many murals on it"}, "output": "u u u u u u u = = = = ="}
+{"id": "18254_sick.matched.txt_first_arrows", "question": {"stem": "Some people is standing on both sides of a red stone structure"}, "output": "u u u u u u = = = = = ="}
+{"id": "5297_sick.matched.txt_first_arrows", "question": {"stem": "A man is doing pull-ups"}, "output": "u u u u u"}
+{"id": "17837_sick.matched.txt_first_arrows", "question": {"stem": "A dog is swimming in a lake and the sun is shining on him"}, "output": "u u u u u u u u u = u u u u"}
+{"id": "10256_sick.matched.txt_first_arrows", "question": {"stem": "A woman is playing with a brown dog on a garden path"}, "output": "u u u u u u u u u u u u"}
+{"id": "3848_monotonicity_hard.matched.txt_first_arrows", "question": {"stem": "Some old animals with faint odor were happy"}, "output": "u u u u u u u u"}
+{"id": "3635_monotonicity_simple.matched.txt_first_arrows", "question": {"stem": "Every nice cat was not happy"}, "output": "u d d d u d"}
+{"id": "4928_monotonicity_hard.matched.txt_first_arrows", "question": {"stem": "Every horse who at-most 4 old dogs who some bulldog saw stared at stared at at-most 5 wheels"}, "output": "u d d d d u u u u u u d d u d u u d"}
+{"id": "5633_sick.matched.txt_first_arrows", "question": {"stem": "A man is sprinkling cheese on a pizza"}, "output": "u u u u u u u u"}
+{"id": "3494_monotonicity_simple.matched.txt_first_arrows", "question": {"stem": "A newborn animal stared at most very newborn beagles"}, "output": "u u u u u u = = ="}
+{"id": "12395_sick.matched.txt_first_arrows", "question": {"stem": "The chef is carefully drying the oil from the pan"}, "output": "u = u u u u = u u ="}
+{"id": "20285_sick.matched.txt_first_arrows", "question": {"stem": "A girl is hitting a little tee with a baseball"}, "output": "u u u u u u u u u u"}
+{"id": "11396_sick.matched.txt_first_arrows", "question": {"stem": "The air is tricking a performing cyclist"}, "output": "u = u u u u u"}
+{"id": "4814_sick.matched.txt_first_arrows", "question": {"stem": "The doctor is not helping the patient"}, "output": "u = d u d d ="}
+{"id": "20078_sick.matched.txt_first_arrows", "question": {"stem": "A man on a bike is jumping on a pyramid-shaped ramp"}, "output": "u u u u u u u u u u u"}
+{"id": "7106_sick.matched.txt_first_arrows", "question": {"stem": "The white reindeer wearing dog ears is near a brown reindeer"}, "output": "u = = = = = u u u u u"}
+{"id": "1613_sick.matched.txt_first_arrows", "question": {"stem": "A guy is cheerfully playing with the footbag"}, "output": "u u u u u u u ="}
+{"id": "3581_monotonicity_hard.matched.txt_first_arrows", "question": {"stem": "Each horse who at-most 5 old poodles who at-least 3 mammals saw stared at stared at at-most 5 objects"}, "output": "u d d d d u u u u d u u d d d u d d u"}
+{"id": "2168_monotonicity_simple.matched.txt_first_arrows", "question": {"stem": "No young mammals inspected most very young poodles"}, "output": "u d d d d = = ="}
+{"id": "22019_sick.matched.txt_first_arrows", "question": {"stem": "There are no men fighting"}, "output": "u d u d d"}
+{"id": "21101_sick.matched.txt_first_arrows", "question": {"stem": "No dog is running through the snow"}, "output": "u d d d d d ="}
+{"id": "3695_monotonicity_simple.matched.txt_first_arrows", "question": {"stem": "most brown or black bulldogs were not happy"}, "output": "u = u = = d u d"}
+{"id": "2822_sick.matched.txt_first_arrows", "question": {"stem": "A man is packing away an acoustic guitar"}, "output": "u u u u u u u u"}
+{"id": "17183_sick.matched.txt_first_arrows", "question": {"stem": "A person is dancing on the ceiling"}, "output": "u u u u u u ="}
+{"id": "21875_sick.matched.txt_first_arrows", "question": {"stem": "The man is not cutting the tape on the box"}, "output": "u = d u d d = = = ="}
+{"id": "2183_monotonicity_simple.matched.txt_first_arrows", "question": {"stem": "A quadruped stared at no metal objects"}, "output": "u u u d u d d"}
+{"id": "5681_sick.matched.txt_first_arrows", "question": {"stem": "There is no woman deep frying food"}, "output": "u d u d d d d"}
+{"id": "11492_sick.matched.txt_first_arrows", "question": {"stem": "A classroom is empty"}, "output": "u u u u"}
+{"id": "11156_sick.matched.txt_first_arrows", "question": {"stem": "A man is standing near a bike and is writing on a piece paper"}, "output": "u u u u u u u u u u u u u u"}
+{"id": "18716_sick.matched.txt_first_arrows", "question": {"stem": "A man is sitting on a sidewalk"}, "output": "u u u u u u u"}
+{"id": "1739_diagnostic.matched.txt_first_arrows", "question": {"stem": "A calm wind rolled across the glade."}, "output": "u u u u u u ="}
+{"id": "3695_diagnostic.matched.txt_first_arrows", "question": {"stem": "Similarly the use of more agent-empowering verbs in female narratives decrease the odds of 2 named women characters talking about some thing besides men."}, "output": "u u = = = = = = = = u u = = = = = = = = = = = ="}
+{"id": "2918_monotonicity_hard.matched.txt_first_arrows", "question": {"stem": "All horses who at-most 6 old bulldogs who at-least 3 bulldogs saw stared at stared at at-most 5 wheels"}, "output": "u d d d d u u u u d u u d d d u d d u"}
+{"id": "15392_sick.matched.txt_first_arrows", "question": {"stem": "A plane is taking off"}, "output": "u u u u u"}
+{"id": "10202_sick.matched.txt_first_arrows", "question": {"stem": "No dog is jumping in the shade of some trees"}, "output": "u d d d d d = = = ="}
+{"id": "3137_monotonicity_simple.matched.txt_first_arrows", "question": {"stem": "Every black beagle moved away from no nice quadrupeds"}, "output": "u d d u u d u d d"}
+{"id": "8891_sick.matched.txt_first_arrows", "question": {"stem": "A family is not purchasing some thing at a vending machine"}, "output": "u u d u d d d d d d d"}
+{"id": "5075_monotonicity_hard.matched.txt_first_arrows", "question": {"stem": "Each mammal who danced inspected many wooden wheels"}, "output": "u d d d u u = ="}
+{"id": "3422_monotonicity_hard.matched.txt_first_arrows", "question": {"stem": "All horses who at-most 6 old poodles who many bulldogs saw stared at saw at-most 5 objects"}, "output": "u d d d d u u u u = u d d d u u d"}
+{"id": "4346_monotonicity_hard.matched.txt_first_arrows", "question": {"stem": "Each young beagle with faint smell stared at at-least 3 cats without smell"}, "output": "u d d d d d u u u d u u d"}
+{"id": "4796_monotonicity_hard.matched.txt_first_arrows", "question": {"stem": "All horses who at-most 5 old poodles who at-least 5 bulldogs saw stared at stared at at-most 5 wheels"}, "output": "u d d d d u u u u d u u d d d u d d u"}
+{"id": "6362_sick.matched.txt_first_arrows", "question": {"stem": "A small dog is lying on a bed"}, "output": "u u u u u u u u"}
+{"id": "2975_monotonicity_simple.matched.txt_first_arrows", "question": {"stem": "most good dogs ran"}, "output": "u = = u"}
+{"id": "16403_sick.matched.txt_first_arrows", "question": {"stem": "A man is putting seasoning on a pizza"}, "output": "u u u u u u u u"}
+{"id": "14921_sick.matched.txt_first_arrows", "question": {"stem": "The man is walking along a track through the wilderness"}, "output": "u = u u u u u u u ="}
+{"id": "152_sick.matched.txt_first_arrows", "question": {"stem": "No person is on a motorcycle and is standing on the seat"}, "output": "u d d d d d u d d d d ="}
+{"id": "3575_diagnostic.matched.txt_first_arrows", "question": {"stem": "We also experiment with the option to either use the pretrained GloVe word embeddings or randomly initialized word embeddings -LRB- then updated during training -RRB-"}, "output": "u u u u = = = = = = = = = = u = = = = u = = = = u"}
+{"id": "17951_sick.matched.txt_first_arrows", "question": {"stem": "There is no young child wearing a white coat and playing a game"}, "output": "u d u d d d d d d u d d d"}
+{"id": "590_diagnostic.matched.txt_first_arrows", "question": {"stem": "Lexical features can hardly generalize to unseen domains."}, "output": "u u u u u u u u"}
+{"id": "20765_sick.matched.txt_first_arrows", "question": {"stem": "The boy is standing next to the opening of a fountain"}, "output": "u = u u u u u = = = ="}
+{"id": "2777_monotonicity_simple.matched.txt_first_arrows", "question": {"stem": "Some steel animal moved towards most steel chairs"}, "output": "u u u u u u = ="}
+{"id": "21884_sick.matched.txt_first_arrows", "question": {"stem": "An animal is resting"}, "output": "u u u u"}
+{"id": "2735_monotonicity_hard.matched.txt_first_arrows", "question": {"stem": "most horses who at-most 4 old dogs who at-least 3 bulldogs saw stared at stared at at-most 3 wheels"}, "output": "u = = = = = = = = = = = u u u d u u d"}
+{"id": "19244_sick.matched.txt_first_arrows", "question": {"stem": "A young boy is jumping onto a chair"}, "output": "u u u u u u u u"}
+{"id": "17498_sick.matched.txt_first_arrows", "question": {"stem": "A boy has a blue face and dirt on the shirt"}, "output": "u u u u u u u u u u ="}
+{"id": "7700_sick.matched.txt_first_arrows", "question": {"stem": "There is no little girl with blond hair smiling and sitting on a swing"}, "output": "u d u d d d d d d u d d d d"}
+{"id": "16532_sick.matched.txt_first_arrows", "question": {"stem": "A woman is cooking food in a pot of hot water"}, "output": "u u u u u u u u u u u"}
+{"id": "4484_monotonicity_hard.matched.txt_first_arrows", "question": {"stem": "Some bat did not sniff at-least 5 animals"}, "output": "u u u u d d u d"}
+{"id": "3422_monotonicity_simple.matched.txt_first_arrows", "question": {"stem": "Every rabbit danced"}, "output": "u d u"}
+{"id": "18218_sick.matched.txt_first_arrows", "question": {"stem": "There are no football players in red and white jumping and hugging each other"}, "output": "u d u d d d d u d d u d d u"}
+{"id": "3458_monotonicity_simple.matched.txt_first_arrows", "question": {"stem": "No very old poodles who were happy scratched every wooden object"}, "output": "u d d d d d d d d u u"}
+{"id": "3101_monotonicity_hard.matched.txt_first_arrows", "question": {"stem": "A horse who at-most 6 old poodles who some bulldog saw stared at stared at at-most 3 wheels"}, "output": "u u u u u d d d d d d u u u d u u d"}
+{"id": "3044_monotonicity_simple.matched.txt_first_arrows", "question": {"stem": "No nice stallions slept"}, "output": "u d d d"}
+{"id": "5219_sick.matched.txt_first_arrows", "question": {"stem": "A man is not cutting a potato"}, "output": "u u d u d d d"}
+{"id": "11162_sick.matched.txt_first_arrows", "question": {"stem": "A man with paint covered clothes is sitting outside in a busy area writing some thing"}, "output": "u u u u u u u u u u u u u u u u"}
+{"id": "20009_sick.matched.txt_first_arrows", "question": {"stem": "A black dog is jumping from a dock into the water"}, "output": "u u u u u u u u u u ="}
+{"id": "3338_monotonicity_simple.matched.txt_first_arrows", "question": {"stem": "Some beagle moved"}, "output": "u u u"}
+{"id": "4391_sick.matched.txt_first_arrows", "question": {"stem": "The panda bear is resting on the logs"}, "output": "u = = u u u u ="}
+{"id": "2192_sick.matched.txt_first_arrows", "question": {"stem": "The man is slicing some potatoes"}, "output": "u = u u u u"}
+{"id": "8069_sick.matched.txt_first_arrows", "question": {"stem": "A man is wearing a blue checkered shirt and cheerfully riding a unicycle in the street"}, "output": "u u u u u u u u u u u u u u u ="}
+{"id": "1151_monotonicity_simple.matched.txt_first_arrows", "question": {"stem": "No stallions moved"}, "output": "u d d"}
+{"id": "15509_sick.matched.txt_first_arrows", "question": {"stem": "A man is cutting a paper plate"}, "output": "u u u u u u u"}
+{"id": "20471_sick.matched.txt_first_arrows", "question": {"stem": "A toddler is sitting down"}, "output": "u u u u u"}
+{"id": "11738_sick.matched.txt_first_arrows", "question": {"stem": "A boy is standing in front of the blue building in the space reserved for handicapped people"}, "output": "u u u u u u u u = = u u = = = = ="}
+{"id": "16310_sick.matched.txt_first_arrows", "question": {"stem": "There is no man slicing a potato"}, "output": "u d u d d d d"}
+{"id": "7514_sick.matched.txt_first_arrows", "question": {"stem": "several people are sitting on a bench under some palm trees"}, "output": "u u u u u u u u u u u"}
+{"id": "1814_diagnostic.unmatched.txt_first_arrows", "question": {"stem": "Their loading capacity was about 262 tonnes."}, "output": "u u u = = = ="}
+{"id": "22940_sick.matched.txt_first_arrows", "question": {"stem": "There are no boys kneeling next to each other in front of a ball"}, "output": "u d u d d d d d u d d d d d"}
+{"id": "4430_monotonicity_simple.matched.txt_first_arrows", "question": {"stem": "Every brown animal who some very brown bat hit was sad"}, "output": "u d d d d d d d d u u"}
+{"id": "5216_sick.matched.txt_first_arrows", "question": {"stem": "There is no person cutting some ginger"}, "output": "u d u d d d d"}
+{"id": "14867_sick.matched.txt_first_arrows", "question": {"stem": "There is no woman slicing a green pepper"}, "output": "u d u d d d d d"}
+{"id": "4475_monotonicity_hard.matched.txt_first_arrows", "question": {"stem": "most young beagles with faint smell stared at each cat without faint smell"}, "output": "u = = = = = u u u d u d d"}
+{"id": "3890_monotonicity_simple.matched.txt_first_arrows", "question": {"stem": "most badgers were not sad"}, "output": "u = d u d"}
+{"id": "3968_monotonicity_simple.matched.txt_first_arrows", "question": {"stem": "No mammals scratched no good fences"}, "output": "u d u d u u"}
+{"id": "3335_monotonicity_hard.matched.txt_first_arrows", "question": {"stem": "A beagle who several newborn dogs stared at was not sad"}, "output": "u u u u u u u u d u d"}
+{"id": "1286_sick.matched.txt_first_arrows", "question": {"stem": "A boy is spanking a man with a plastic sword"}, "output": "u u u u u u u u u u"}
+{"id": "22649_sick.matched.txt_first_arrows", "question": {"stem": "There is no boy looking at a calendar"}, "output": "u d u d d d d d"}
+{"id": "3209_monotonicity_simple.matched.txt_first_arrows", "question": {"stem": "No old rabbits who were happy moved away from no plastic object"}, "output": "u d d d d d d d u d u u"}
+{"id": "671_sick.matched.txt_first_arrows", "question": {"stem": "The priest is walking down the aisle to marry a couple"}, "output": "u = u u u u = u u u u"}
+{"id": "4010_sick.matched.txt_first_arrows", "question": {"stem": "A man in a cap is playing a harp"}, "output": "u u u u u u u u u"}
+{"id": "3200_monotonicity_simple.matched.txt_first_arrows", "question": {"stem": "most very newborn rabbits swam"}, "output": "u = = = u"}
+{"id": "2846_monotonicity_hard.matched.txt_first_arrows", "question": {"stem": "An old cat with faint smell inspected all chairs"}, "output": "u u u u u u u u d"}
+{"id": "11108_sick.matched.txt_first_arrows", "question": {"stem": "A dog is chasing a stick and holding another dog in its mouth"}, "output": "u u u u u u u u u = = u u"}
+{"id": "11123_sick.matched.txt_first_arrows", "question": {"stem": "A soccer player is kicking a ball into the goal"}, "output": "u u u u u u u u u ="}
+{"id": "17492_sick.matched.txt_first_arrows", "question": {"stem": "A boy in a blue shirt has dirt on his face"}, "output": "u u u u u u u u = u u"}
+{"id": "1445_sick.matched.txt_first_arrows", "question": {"stem": "A woman is slicing meat with a knife"}, "output": "u u u u u u u u"}
+{"id": "2816_monotonicity_simple.matched.txt_first_arrows", "question": {"stem": "Every beagle moved towards some beagles who most poodles hit"}, "output": "u d u u u u u u = u"}
+{"id": "419_sick.matched.txt_first_arrows", "question": {"stem": "A man is performing stunts on a green bicycle"}, "output": "u u u u u u u u u"}
+{"id": "17108_sick.matched.txt_first_arrows", "question": {"stem": "Some person is stirring chili in a pot"}, "output": "u u u u u u u u"}
+{"id": "4334_monotonicity_hard.matched.txt_first_arrows", "question": {"stem": "most old quadrupeds who every brown or black bat with odor sniffed were happy"}, "output": "u = = = = = u = = = = = u u"}
+{"id": "4967_sick.matched.txt_first_arrows", "question": {"stem": "A man is removing the peel of an onion"}, "output": "u u u u u = = = ="}
+{"id": "2930_monotonicity_hard.matched.txt_first_arrows", "question": {"stem": "Some brown or black dog waltzed"}, "output": "u u u u u u"}
+{"id": "22985_sick.matched.txt_first_arrows", "question": {"stem": "There is no girl in pink twirling a ribbon"}, "output": "u d u d d d d d d"}
+{"id": "18152_sick.matched.txt_first_arrows", "question": {"stem": "There is no woman wearing a blue helmet and riding a bicycle in a parking lot"}, "output": "u d u d d d d d u d d d d d d d"}
+{"id": "2774_monotonicity_hard.matched.txt_first_arrows", "question": {"stem": "A dog who at-least 3 animals moved away from moved"}, "output": "u u u u d u u u u ="}
+{"id": "3098_monotonicity_hard.matched.txt_first_arrows", "question": {"stem": "A horse who at-most 6 old mammals who an animal saw stared at stared at at-most 4 wheels"}, "output": "u u u u u d d d d d d u u u d u u d"}
+{"id": "2552_monotonicity_hard.matched.txt_first_arrows", "question": {"stem": "Every brown or black quadrupeds were sad"}, "output": "u d u d d u u"}
+{"id": "2576_monotonicity_hard.matched.txt_first_arrows", "question": {"stem": "Some bulldog who touched a box was not sad"}, "output": "u u u u u u d u d"}
+{"id": "2504_monotonicity_simple.matched.txt_first_arrows", "question": {"stem": "most brown or black rabbits danced"}, "output": "u = u = = u"}
+{"id": "11600_sick.matched.txt_first_arrows", "question": {"stem": "Not a-lot-of people are in an ice skating park"}, "output": "u d u u u u u u u"}
+{"id": "1151_diagnostic.matched.txt_first_arrows", "question": {"stem": "I couldn\u2019t bring myself to throw it away not out of the fondness of all the memories surrounding that time period."}, "output": "d d d d d d d d d d d d d d d d d d d d d"}
+{"id": "4313_monotonicity_simple.matched.txt_first_arrows", "question": {"stem": "Every bad animal who a brown bat hit was sad"}, "output": "u d d d d d d d u u"}
+{"id": "3035_diagnostic.matched.txt_first_arrows", "question": {"stem": "Putin is so entrenched within Russia\u2019s ruling system that many of its members can imagine no other leader than themselves."}, "output": "u u u u u u u u u = = = = = = = = = = u"}
+{"id": "18569_sick.matched.txt_first_arrows", "question": {"stem": "A boy and a girl are playing on the outdoor gym"}, "output": "u u u u u u u u u = ="}
+{"id": "2624_monotonicity_simple.matched.txt_first_arrows", "question": {"stem": "No brown or black mammals were not sad"}, "output": "u d u d d u d u"}
+{"id": "3035_monotonicity_hard.matched.txt_first_arrows", "question": {"stem": "Each stallion without strong smell swam"}, "output": "u d d u u u"}
+{"id": "2894_monotonicity_hard.matched.txt_first_arrows", "question": {"stem": "All black horses sniffed at-least 5 chairs"}, "output": "u d d u u d u"}
+{"id": "3254_monotonicity_simple.matched.txt_first_arrows", "question": {"stem": "most black quadrupeds touched every black stallion"}, "output": "u = = u u d d"}
+{"id": "2783_monotonicity_simple.matched.txt_first_arrows", "question": {"stem": "Every young bulldog scratched some very young chair"}, "output": "u d d u u u u u"}
+{"id": "3794_diagnostic.matched.txt_first_arrows", "question": {"stem": "I baked him."}, "output": "u u u"}
+{"id": "7766_sick.matched.txt_first_arrows", "question": {"stem": "A dog which is white is standing on fallen leaves"}, "output": "u u u u u u u u u u"}
+{"id": "1625_monotonicity_simple.matched.txt_first_arrows", "question": {"stem": "Every black beagle was happy"}, "output": "u d d u u"}
+{"id": "10904_sick.matched.txt_first_arrows", "question": {"stem": "A deer is not jumping over the fence"}, "output": "u u d u d d d ="}
+{"id": "14600_sick.matched.txt_first_arrows", "question": {"stem": "The fish are immobile"}, "output": "u = u u"}
+{"id": "7250_sick.matched.txt_first_arrows", "question": {"stem": "A dog with long hair and a red vest is sitting in the grass"}, "output": "u u u u u u u u u u u u u ="}
+{"id": "21140_sick.matched.txt_first_arrows", "question": {"stem": "A man is wearing a blue shirt and walking barefoot on a tennis court"}, "output": "u u u u u u u u u u u u u u"}
+{"id": "3014_monotonicity_simple.matched.txt_first_arrows", "question": {"stem": "Every good mammal was happy"}, "output": "u d d u u"}
+{"id": "3002_monotonicity_simple.matched.txt_first_arrows", "question": {"stem": "A brown bat who most quadrupeds touched scratched some metal chair"}, "output": "u u u u u = u u u u u"}
+{"id": "4301_monotonicity_hard.matched.txt_first_arrows", "question": {"stem": "A newborn mammal who a brown animal moved away from moved"}, "output": "u u u u u u u u u u u"}
+{"id": "3353_monotonicity_simple.matched.txt_first_arrows", "question": {"stem": "Every beagle moved away from every beagle who most poodles touched"}, "output": "u d u u u u d d d = d"}
+{"id": "4115_monotonicity_hard.matched.txt_first_arrows", "question": {"stem": "Each brown mammal did touched some-but-not-all stallions without faint odor"}, "output": "u d d u u u u u d d"}
+{"id": "13589_sick.matched.txt_first_arrows", "question": {"stem": "The person is slicing a clove of garlic into pieces"}, "output": "u = u u u u u u u u"}
+{"id": "2645_monotonicity_simple.matched.txt_first_arrows", "question": {"stem": "Some bat scratched a brown or black horse"}, "output": "u u u u u u u u"}
+{"id": "20348_sick.matched.txt_first_arrows", "question": {"stem": "A man without a shirt is posing with the arms spread near a woman"}, "output": "u u u d d u u u u = = = = ="}
+{"id": "4412_monotonicity_simple.matched.txt_first_arrows", "question": {"stem": "most young bulldog who waltzed was not happy"}, "output": "u = = = = d u d"}
+{"id": "2513_monotonicity_simple.matched.txt_first_arrows", "question": {"stem": "A brown poodle did sniffed every metal wheel"}, "output": "u u u u u u d d"}
+{"id": "20465_sick.matched.txt_first_arrows", "question": {"stem": "A little girl in a green coat and a boy holding a red sled are lying in the snow"}, "output": "u u u u u u u u u u u u u u u u u u ="}
+{"id": "21002_sick.matched.txt_first_arrows", "question": {"stem": "A dog is jumping on a trees in the shades"}, "output": "u u u u u u u u u ="}
+{"id": "11726_sick.matched.txt_first_arrows", "question": {"stem": "The cowboy is tossing the blue and red pants towards the horse"}, "output": "u = u u u = u = = u u ="}
+{"id": "2942_monotonicity_hard.matched.txt_first_arrows", "question": {"stem": "A beagle who several newborn animals stared at was sad"}, "output": "u u u u u u u u u u"}
+{"id": "3698_sick.matched.txt_first_arrows", "question": {"stem": "A squirrel is spinning around in circles"}, "output": "u u u u u u u"}
+{"id": "6506_sick.matched.txt_first_arrows", "question": {"stem": "A potato is being peeled by a person"}, "output": "u u u u u u u u"}
+{"id": "11672_sick.matched.txt_first_arrows", "question": {"stem": "A lady is being kissed by a man"}, "output": "u u u u u u u u"}
+{"id": "19079_sick.matched.txt_first_arrows", "question": {"stem": "The young girl in blue is jumping in the air"}, "output": "u = = = = u u u u ="}
+{"id": "4004_monotonicity_hard.matched.txt_first_arrows", "question": {"stem": "at-least 4 dogs who at-least 6 beagles moved away from waltzed"}, "output": "d d d d d d d d d d d"}
+{"id": "11198_sick.matched.txt_first_arrows", "question": {"stem": "A blond girl is riding the waves"}, "output": "u u u u u u ="}
+{"id": "20210_sick.matched.txt_first_arrows", "question": {"stem": "Children are playing in ground fountains"}, "output": "u u u u u u"}
+{"id": "20138_sick.matched.txt_first_arrows", "question": {"stem": "A light brown dog is sprinting in the water"}, "output": "u u u u u u u u ="}
+{"id": "18866_sick.matched.txt_first_arrows", "question": {"stem": "There is no man wearing a long sleeved blue shirt and jeans and riding a unicycle down a street"}, "output": "u d u d d d d d d d u d u d d d d d d"}
+{"id": "4529_monotonicity_hard.matched.txt_first_arrows", "question": {"stem": "Each dog who at-least 6 bulldogs moved away from swam"}, "output": "d d d d d d d d d d"}
+{"id": "2573_monotonicity_hard.matched.txt_first_arrows", "question": {"stem": "at-most 3 black mammals who exactly 4 rabbits without strong odor sniffed did not sleep"}, "output": "u u d d d d = = = = = d d d u"}
+{"id": "3530_monotonicity_hard.matched.txt_first_arrows", "question": {"stem": "at-least 5 brown or black animals slept"}, "output": "u d u u u u u"}
+{"id": "1148_sick.matched.txt_first_arrows", "question": {"stem": "A man and a woman are hiking through a wooded area"}, "output": "u u u u u u u u u u u"}
+{"id": "3725_monotonicity_simple.matched.txt_first_arrows", "question": {"stem": "Some mammal who slept swam"}, "output": "u u u u u"}
+{"id": "22634_sick.matched.txt_first_arrows", "question": {"stem": "A man is lazing"}, "output": "u u u u"}
+{"id": "2450_sick.matched.txt_first_arrows", "question": {"stem": "The lady is adding cheese to the sauce"}, "output": "u = u u u u u ="}
+{"id": "2903_monotonicity_simple.matched.txt_first_arrows", "question": {"stem": "most brown or black stallions touched no iron boxes"}, "output": "u = u = = d u d d"}
+{"id": "3239_monotonicity_simple.matched.txt_first_arrows", "question": {"stem": "No brown animals who some beagle stared at touched some brown cat"}, "output": "u d d d d d d d d d d d"}
+{"id": "8927_sick.matched.txt_first_arrows", "question": {"stem": "A rocky wall is climbed by a man in a purple hat with bare hands"}, "output": "u u u u u u u u u u u u u u u"}
+{"id": "1571_sick.matched.txt_first_arrows", "question": {"stem": "Some liquid is being poured into a pan by a man"}, "output": "u u u u u u u u u u u"}

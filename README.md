@@ -93,10 +93,28 @@ single GPU), but so far I've only been able to get this to work with
 
 Polarity Projection Models 
 ----------------------------
+This library also has functionality for sequence tagging using pre-trained
+encoder (e.g., BERT, RoBERTa, ..).  The current version relies on the
+[**Simple Transformers**](https://www.google.com/search?q=simple+transformers&oq=simple&aqs=chrome.1.69i57j69i59l2j69i60l3j69i65j69i60.2021j0j4&sourceid=chrome&ie=UTF-8)
+library.
 
-
-
-
+The code below will train a *BERT-base* polarity tagger.
+```
+./run.sh Tagger \
+  --output_dir _runs/example_tagger \
+  --data_dir  etc/data/polarity \ ## uses example polarity data here
+  --num_train_epochs "3" \
+  --learning_rate "0.00001" \
+  --train_batch_size "16" \
+  --label_list "B-up;B-down;B-=" \ ## set of target labels
+  --dev_eval \
+  --print_output \
+  --model_name bert \
+  --model_type bert-base-uncased \
+  --tagger_model arrow_tagger
+```
+As above, type `./run.sh Tagger --help` to see the full list of
+details. 
 
 Setting up on beaker (AI2 Internal)
 ---------------------------
