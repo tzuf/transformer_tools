@@ -10,7 +10,7 @@ MODES = {}
 MODES["T5Classifier"]       = "transformer_tools.T5Classification"
 MODES["T5Generator"]        = "transformer_tools.T5Generative"
 MODES["T5Generative"]       = "transformer_tools.T5Generative"
-MODES["NER"]                = "transformer_tools.NER"
+MODES["Tagger"]             = "transformer_tools.Tagger"
 
 def main(argv):
     """The main execution point 
