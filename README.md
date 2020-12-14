@@ -45,6 +45,26 @@ data:
           --T5_type T5ClassificationMultiQA \
           --data_builder  multi_qa
 ```
+In the `data_dir` it will expect 2 (optionally 3) files:
+`{train,test,dev}.jsonl`, where each line has the following format
+(for QA type tasks):
+```
+{
+    "id": "4297_dev",
+    "question" :
+        {
+            "stem": "Bill got the milk there. Following that he
+            discarded the milk there. Mary is not in ..."
+        },
+    "answerKey": -1,
+    "output": "no",
+    "prefix": "answer:"
+}
+```
+Where `id` is the example id, `question` and `stem`contain the input
+question, `output` contains the target output, and `prefix` pertains
+to the target mode (`answerKey` can be safely ignored). 
+
 
 Running Transformer Taggers
 ----------------------------
