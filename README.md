@@ -28,14 +28,14 @@ data:
           --dtype mcqa \
           --output_dir _runs/example \
           --data_dir etc/data/mix_babi \
-          --num_train_epochs "12" \
+          --num_train_epochs "8" \
           --model_name_or_path  t5-large \
           --tokenizer_name_or_path t5-large \
           --learning_rate "0.0005" \
           --train_batch_size "16" \
           --seed "42" \
           --max_seq_len "250" \
-          --max_answer, "5" \
+          --max_answer, "10" \
           --early_stopping \
           --dev_eval \
           --patience "4" \
@@ -45,6 +45,19 @@ data:
           --T5_type T5ClassificationMultiQA \
           --data_builder  multi_qa
 ```
+and will place the output into `_runs/example` (to see the final
+output, check `_runs/example/dev_eval.tsv`, also to check that
+everything looks correct). The final scores will be stored in
+`metrics.json`, which gives me the following after running the
+experiment above:
+```
+{
+  "best_dev_score": 0.914572864321608,
+  "dev_eval": 0.914572864321608
+}
+```
+
+
 In the `data_dir` it will expect 2 (optionally 3) files:
 `{train,test,dev}.jsonl`, where each line has the following format
 (for QA type tasks):
