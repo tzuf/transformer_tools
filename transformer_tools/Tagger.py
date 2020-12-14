@@ -60,7 +60,8 @@ class TaggerModel(ConfigurableClass):
             use_cuda=use_cuda,
             labels=label_list,
             args={
-                "fp16" : False, 
+                "fp16" : False,
+                "classification_report" : True,
                 }
         )
         return cls(model,config)
@@ -88,11 +89,15 @@ class TaggerModel(ConfigurableClass):
                 "eval_batch_size"     : self.config.eval_batch_size,
                 "gradient_accumulation_steps": self.config.gradient_accumulation_steps,
                 "use_early_stopping" : self.config.early_stopping,
-                "fp16" : False, 
+                "fp16" : False,
+                "classification_report" : True,
             })
 
         if self.config.dev_eval:
-            result, model_outputs, predictions = self.model.eval_model(dev_data)
+            result, model_outputs, predictions = self.model.eval_model(
+                dev_data,
+                output_dir=self.config.output_dir,
+            )
 
 class ArrowTagger(TaggerModel):
 
