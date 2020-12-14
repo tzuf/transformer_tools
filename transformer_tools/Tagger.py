@@ -9,9 +9,7 @@ import pandas as pd
 from scipy.special import softmax
 from simpletransformers.ner import NERModel
 from optparse import OptionParser,OptionGroup
-
 from transformer_tools.util.tagger_utils import *
-
 
 from transformer_tools.Base import (
     ConfigurableClass,
@@ -61,6 +59,9 @@ class TaggerModel(ConfigurableClass):
             config.model_type,
             use_cuda=use_cuda,
             labels=label_list,
+            args={
+                "fp16" : False, 
+                }
         )
         return cls(model,config)
 
@@ -87,9 +88,11 @@ class TaggerModel(ConfigurableClass):
                 "eval_batch_size"     : self.config.eval_batch_size,
                 "gradient_accumulation_steps": self.config.gradient_accumulation_steps,
                 "use_early_stopping" : self.config.early_stopping,
+                "fp16" : False, 
             })
 
-        #print("hello world")
+        if self.config.dev_eval:
+            result, model_outputs, predictions = self.model.eval_model(dev_data)
 
 class ArrowTagger(TaggerModel):
 
@@ -98,7 +101,7 @@ class ArrowTagger(TaggerModel):
 
         :param split: the particular split to load 
         """
-        return load_arrow_data(self.config.data_dir,split)
+        return load_arrow_data(self.config,split)
     
 
 def params(config):
@@ -155,7 +158,7 @@ def TaggerModel(config):
     tclass = _TAGGERS.get(config.tagger_model)
     if tclass is None:
         raise ValueError('Unknown tagger: %s' % config.tagger_model)
-    if not config.label_list or not os.path.isfile(config.label_list):
+    if not config.label_list:
         raise ValueError('Must specify a label list!')
     
     return tclass.from_config(config)

@@ -3,7 +3,7 @@ import json
 import os
 import logging 
 import sys
-
+import pandas as pd
 
 __all__ = [
     "load_arrow_data",
@@ -16,22 +16,34 @@ util_logger = logging.getLogger('transformer_tools.util.tagger_utils')
 def load_label_list(labels):
     util_logger.info('Loading label list...')
     label_list = ["O"]
-    with open(labels) as my_labels:
-        for line in my_labels:
-            line = line.strip()
-            label_list.append("B-%s" % line)
+    # with open(labels) as my_labels:
+    my_labels = [l.strip() for l in labels.split(";")]
+    
+    for line in my_labels:
+        line = line.strip()
+        label_list.append("B-%s" % line)
 
     out_list = list(set(label_list))
     util_logger.info('Output list: %s' % out_list)
     return out_list
 
-def load_arrow_data(data_dir,split):
+_ARROWS = {
+    "u" : "up",
+    "d" : "down",
+    "=" : "=",
+}
+
+def load_arrow_data(config,split):
     """Load the arrow data from json 
 
     :param data_dir: the target data directory 
     :param split: the target split 
     :raises: ValueError 
+    :returns: a pandas `DataFrame`
     """
+    data_dir = config.data_dir
+    target_labels = set(load_label_list(config.label_list))
+    
     target_file = os.path.join(data_dir,"%s.jsonl" % split)
     if not os.path.isfile(target_file):
         raise ValueError('Unknown file: %s' % target_file)
@@ -49,6 +61,10 @@ def load_arrow_data(data_dir,split):
                 continue
 
             for m,word in enumerate(text_input):
-                full_data.append([k,word,output_tags[m]])
+                tag = "B-%s" % _ARROWS.get(output_tags[m],output_tags[m])
+                if tag not in target_labels:
+                    raise ValueError('Unknown label encountered: %s' % tag)
+                full_data.append([k,word,tag])
 
-    print(full_data)
+    util_logger.info('Loading %d %s instances...' % (len(full_data),split))
+    return pd.DataFrame(full_data,columns=["sentence_id", "words", "labels"])
