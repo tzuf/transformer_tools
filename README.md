@@ -28,7 +28,7 @@ data:
           --dtype mcqa \
           --output_dir _runs/example \
           --data_dir etc/data/mix_babi \
-          --num_train_epochs "8" \
+          --num_train_epochs "12" \
           --model_name_or_path  t5-large \
           --tokenizer_name_or_path t5-large \
           --learning_rate "0.0005" \
@@ -66,13 +66,24 @@ question, `output` contains the target output, and `prefix` pertains
 to the target mode (`answerKey` can be safely ignored). 
 
 
+**A few things to watch out for**: `max_seq_len` and `max_answer`
+correspond to the token number of tokens allowed on encoder and
+decoder side, respectively. When running experiments, you can see how
+many examples are getting truncated (in the data above, I think it
+truncates around 16 training examples, which one should be careful
+about). In principle, `t5-large` can be replaced with a larger T5
+model, e.g., `t5-3b` (which is the largest T5 model that can find on a
+single GPU), but so far I've only been able to get this to work with
+`gradient_accumulation` (e.g., by adding
+`--gradient_accumulation_steps "8"` above) and a `train_batch_size` of 1. 
+
 Running Transformer Taggers
 ----------------------------
 
 TODO: add documentation
 
 
-Setting up on beaker
+Setting up on beaker (AI2 Internal)
 ---------------------------
 
 Do the following:
