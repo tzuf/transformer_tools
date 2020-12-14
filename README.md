@@ -28,7 +28,7 @@ data:
           --dtype mcqa \
           --output_dir _runs/example \
           --data_dir etc/data/mix_babi \
-          --num_train_epochs "8" \
+          --num_train_epochs "12" \
           --model_name_or_path  t5-large \
           --tokenizer_name_or_path t5-large \
           --learning_rate "0.0005" \
@@ -52,8 +52,8 @@ everything looks correct). The final scores will be stored in
 experiment above:
 ```
 {
-  "best_dev_score": 0.914572864321608,
-  "dev_eval": 0.914572864321608
+  "best_dev_score": 0.9195979899497487,
+  "dev_eval": 0.9195979899497487
 }
 ```
 
