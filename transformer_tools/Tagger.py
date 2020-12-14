@@ -3,6 +3,7 @@ import json
 import os
 import logging 
 import sys
+import json
 import torch
 import numpy as np
 import pandas as pd
@@ -18,7 +19,7 @@ from transformer_tools.Base import (
 )
 
 util_logger = logging.getLogger('transformer_tools.Tagger')
-    
+
 
 class TaggerModel(ConfigurableClass):
     """Base class for building tagger models
@@ -80,6 +81,7 @@ class TaggerModel(ConfigurableClass):
             train_data,
             eval_data=dev_data,
             output_dir=self.config.output_dir,
+            show_running_loss=False,
             args={
                 "overwrite_output_dir" : True,
                 "reprocess_input_data": True,
@@ -93,12 +95,27 @@ class TaggerModel(ConfigurableClass):
                 "classification_report" : True,
             })
 
-        if self.config.dev_eval:
-            result, model_outputs, predictions = self.model.eval_model(
-                dev_data,
-                output_dir=self.config.output_dir,
-            )
+    def eval_model(self,split='dev',print_output=False):
+        """Evaluate the model
 
+        :param split: the target split
+        :param print_output: 
+        """
+        eval_data = self.load_data(split="dev")
+        result, model_outputs, predictions = self.model.eval_model(
+                eval_data,
+                output_dir=self.config.output_dir,
+        )
+        if print_output:
+            print_arrow_output(predictions,
+                                   eval_data,
+                                   split,
+                                   self.config.output_dir)
+            report_items = read_report(self.config.output_dir)
+
+        result.update(report_items)
+        return result
+    
 class ArrowTagger(TaggerModel):
 
     def load_data(self,split='train'):
@@ -107,7 +124,6 @@ class ArrowTagger(TaggerModel):
         :param split: the particular split to load 
         """
         return load_arrow_data(self.config,split)
-    
 
 def params(config):
     """Main parameters for running the T5 model
@@ -151,9 +167,8 @@ def params(config):
 
 _TAGGERS = {
     "arrow_tagger" : ArrowTagger,
-    
 }
-
+    
 def TaggerModel(config):
     """Factor for loading a tagger model 
 
@@ -180,71 +195,30 @@ def main(argv):
     config = initialize_config(argv,params)
 
     model = TaggerModel(config)
+    json_out = {}
+    
     if not config.no_training: 
         model.train_model()
 
-if __name__ == "__main__":
-    main(sys.argv[1:])
+    if config.dev_eval:
+        dev_out = model.eval_model(
+            split='dev',
+            print_output=config.print_output
+        )
+        for key,value in dev_out.items():
+            json_out["dev_%s" % key] = value
+        
 
+    if config.test_eval:
+        test_out = model.eval_model(
+            split='test',
+            print_output=config.print_output)
+        for key,value in dev_out.items():
+            json_out["test_%s" % key] = value
 
-# # Creating train_df  and eval_df for demonstration
-# train_data = [
-#     [0, "Simple", "B-MISC"],
-#     [0, "Transformers", "I-MISC"],
-#     [0, "started", "O"],
-#     [0, "with", "O"],
-#     [0, "text", "O"],
-#     [0, "classification", "B-MISC"],
-#     [1, "Simple", "B-MISC"],
-#     [1, "Transformers", "I-MISC"],
-#     [1, "can", "O"],
-#     [1, "now", "O"],
-#     [1, "perform", "O"],
-#     [1, "NER", "B-MISC"],
-# ]
-# train_df = pd.DataFrame(train_data, columns=["sentence_id", "words", "labels"])
-
-# eval_data = [
-#     [0, "Simple", "B-MISC"],
-#     [0, "Transformers", "I-MISC"],
-#     [0, "was", "O"],
-#     [0, "built", "O"],
-#     [0, "for", "O"],
-#     [0, "text", "O"],
-#     [0, "classification", "B-MISC"],
-#     [1, "Simple", "B-MISC"],
-#     [1, "Transformers", "I-MISC"],
-#     [1, "then", "O"],
-#     [1, "expanded", "O"],
-#     [1, "to", "O"],
-#     [1, "perform", "O"],
-#     [1, "NER", "B-MISC"],
-# ]
-# eval_df = pd.DataFrame(eval_data, columns=["sentence_id", "words", "labels"])
-
-# # Create a NERModel
-# model = NERModel("bert", "bert-base-cased", args={"overwrite_output_dir": True, "reprocess_input_data": True})
-# print(model)
-
-# # # Train the model
-# # model.train_model(train_df)
-
-# # # Evaluate the model
-# # result, model_outputs, predictions = model.eval_model(eval_df)
-
-
-# # Predictions on arbitary text strings
-# # sentences = ["Some arbitary sentence", "Simple Transformers sentence"]
-# # predictions, raw_outputs = model.predict(sentences)
-
-# # print(predictions)
-
-# # # More detailed preditctions
-# # for n, (preds, outs) in enumerate(zip(predictions, raw_outputs)):
-# #     print("\n___________________________")
-# #     print("Sentence: ", sentences[n])
-# #     for pred, out in zip(preds, outs):
-# #         key = list(pred.keys())[0]
-# #         new_out = out[key]
-# #         preds = list(softmax(np.mean(new_out, axis=0)))
-# #         print(key, pred[key], preds[np.argmax(preds)], preds)
+    if json_out:
+        metric_out = os.path.join(config.output_dir,"metrics.json")
+        util_logger.info('Attempting to print metrics file: %s' % metric_out)
+        with open(metric_out,'w') as my_metrics:
+            my_metrics.write(json.dumps(json_out,indent=4))
+        
