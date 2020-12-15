@@ -77,7 +77,13 @@ In the `data_dir` it will expect 2 (optionally 3) files:
 ```
 Where `id` is the example id, `question` and `stem`contain the input
 question, `output` contains the target output, and `prefix` pertains
-to the target mode (`answerKey` can be safely ignored). 
+to the target mode (`answerKey` can be safely ignored).
+
+I put an auxliary script in `bin/babi2json.py` to convert babi files
+to json. For example,:
+```
+python bin/babi2json.py --data_loc etc/data/babi_datasets/mix-1-13/ --odir etc/data/babi_datasets/mix-1-13/
+```
 
 
 **A few things to watch out for**: `max_seq_len` and `max_answer`

@@ -21,7 +21,7 @@ def main(argv):
         exit('Please specify a valid output directory')
 
     for split in ["train","test","valid"]:
-        target = [f for f in os.listdir(config.data_loc) if split in f]
+        target = [f for f in os.listdir(config.data_loc) if split in f and ".txt" in f]
         assert len(target) == 1, "multiple target files found!"
         target = target[0]
 
@@ -33,6 +33,7 @@ def main(argv):
         
             with open(os.path.join(config.data_loc,target)) as my_data:
                 problem = []
+                sub_question = 0
             
 
                 for k,line in enumerate(my_data):
@@ -42,34 +43,35 @@ def main(argv):
                     detail = ' '.join(line.split()[1:])
 
                     if line_num == "1":
-                        if problem: 
-                            ## format current problem
-                    
-                            last_problem = problem[-1]
-                            assert '?' in last_problem
-                            question,answer = last_problem.split("?")
-                            answer = answer.strip()
-                            problem[-1] = "%s?" % question
-                            problem_input = "%s $question$ %s" %\
-                              (' '.join([p for p in problem[:-1] if '?' not in p]),problem[-1])
-                      
-                            ## create json
-                            json_dict = {}
-                            json_dict["id" ] = identifier
-                            json_dict["question"] = {}
-                            json_dict["question"]["stem"] = problem_input
-                            json_dict["input"]            = problem_input
-                            json_dict["answerKey"] = -1
-                            json_dict["output"] = answer
-                            json_dict["prefix"] = "answer:"
-
-                            ## print to out
-                            new_out.write(json.dumps(json_dict))
-                            new_out.write('\n')
-
                         problem = []
-                        ## added first item 
+                        sub_question = 0
                         problem.append(detail)
+
+                    elif "?" in line:
+                        question,answer = detail.split("?")
+                        answer = answer.strip().split()[0]
+                        question = "%s?" % question
+
+                        assert len(answer.split()) < 3, answer
+
+
+                        problem_input = "%s $question$ %s" %\
+                            (' '.join([p for p in problem if '?' not in p]),question)
+
+                        json_dict = {}
+                        json_dict["id" ] = "%s_sub_question_%s" % (identifier,sub_question)
+                        json_dict["question"] = {}
+                        json_dict["question"]["stem"] = problem_input
+                        json_dict["answerKey"] = -1
+                        json_dict["output"] = answer
+                        json_dict["prefix"] = "answer:"
+                        json_dict["input"] = problem_input
+
+                        new_out.write(json.dumps(json_dict))
+                        new_out.write('\n')
+
+                        ### 
+                        sub_question += 1
 
                     else:
                         problem.append(detail)
