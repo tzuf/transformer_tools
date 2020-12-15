@@ -122,7 +122,7 @@ details. The target files have the same format as above:
         {
             "stem": "A man and a woman are hiking through a wooded area"
         },
-    "output": "u u u u u u u u u u u"
+    "output": "u u u u u u u u u u u" # alternatively, "↓ ↓ ↓ ↓ ↓ ↓ ↓ ↓ ↓ ↓ ↓"
 }
 ```
 where the `output` field shows the target arrow annotations (`u/up` =
