@@ -107,3 +107,7 @@ def get_config(module_name,logging='info'):
         config = initialize_config(["--logging",logging],mod.params)
         return config
     raise ValueError('No config for this module' % module_name)
+
+## factories
+from transformer_tools.T5Generative import T5GenerativeFactory as T5Generator
+from transformer_tools.T5Classification import T5ClassificationModel as T5Classifier

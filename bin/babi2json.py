@@ -49,10 +49,11 @@ def main(argv):
 
                     elif "?" in line:
                         question,answer = detail.split("?")
-                        answer = answer.strip().split()[0]
+                        answer = ' '.join([i for i in answer.strip().split() if not i.isnumeric()])
                         question = "%s?" % question
 
-                        assert len(answer.split()) < 3, answer
+                        #print(answer)
+                        assert len(answer.split()) == 1, answer
 
 
                         problem_input = "%s $question$ %s" %\

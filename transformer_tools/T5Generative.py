@@ -115,7 +115,6 @@ class T5GenenerationModel(T5GenerationBase):
 
         #if ofile: print_full_output(outputs,targets,dataset.data_rep,ofile)
         if ofile: print_full_with_bleu(outputs,targets,dataset.data_rep,ofile)
-        
         self.model_logger.info('Processed and scored %d outputs/targets, score=%f' % (len(outputs),score))
         ## 
         return score

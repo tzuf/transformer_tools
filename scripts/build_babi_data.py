@@ -31,36 +31,35 @@ if __name__ == "__main__":
                     if line_num == "1":
                         problem = []
                         problem.append(detail)
-                    elif '?' in line:
-                        print(line)
+                    elif '?' in line: 
                         
                         
-                    #     ## format current problem
-                    #     if problem:
-                    #         last_problem = problem[-1]
-                    #         assert '?' in last_problem
-                    #         question,answer = last_problem.split("?")
-                    #         answer = answer.strip()
-                    #         problem[-1] = "%s?" % question
-                    #         problem_input = "%s $question$ %s" %\
-                    #         (' '.join([p for p in problem[:-1] if '?' not in p]),problem[-1])
+                        ## format current problem
+                        if problem:
+                            last_problem = problem[-1]
+                            assert '?' in last_problem
+                            question,answer = last_problem.split("?")
+                            answer = answer.strip()
+                            problem[-1] = "%s?" % question
+                            problem_input = "%s $question$ %s" %\
+                            (' '.join([p for p in problem[:-1] if '?' not in p]),problem[-1])
 
-                    #         ## create json
-                    #         json_dict = {}
-                    #         json_dict["id" ] = identifier
-                    #         json_dict["question"] = {}
-                    #         json_dict["question"]["stem"] = problem_input
-                    #         json_dict["answerKey"] = -1
-                    #         json_dict["output"] = answer
-                    #         json_dict["prefix"] = "answer:"
+                            ## create json
+                            json_dict = {}
+                            json_dict["id" ] = identifier
+                            json_dict["question"] = {}
+                            json_dict["question"]["stem"] = problem_input
+                            json_dict["answerKey"] = -1
+                            json_dict["output"] = answer
+                            json_dict["prefix"] = "answer:"
 
-                    #         ###
-                    #         new_out.write(json.dumps(json_dict))
-                    #         new_out.write("\n")
+                            ###
+                            new_out.write(json.dumps(json_dict))
+                            new_out.write("\n")
 
-                    #     # problem = []
-                    #     # ## added first item 
-                    #     # problem.append(detail)
+                        # problem = []
+                        # ## added first item 
+                        # problem.append(detail)
 
-                    # else:
-                    #     problem.append(detail)
+                    else:
+                        problem.append(detail)
