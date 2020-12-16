@@ -265,6 +265,10 @@ def T5GenerativeFactory(config):
     if mtype is None:
         raise ValueError('Unknown T5 Model...%s' % config.T5_type)
     return mtype
+
+def LoadModel(config):
+    model_class =  T5GenerativeFactory(config)
+    return model_class.load_existing(config)
     
 
 def params(config):

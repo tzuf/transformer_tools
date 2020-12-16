@@ -194,7 +194,7 @@ class T5ClassificationExplanation(T5Classification):
                                    (ofile,len(dataset.data_rep),gen_func.__name__,output_size))
 
         ## go through the batches 
-        for batch in tqdm(loader)
+        for batch in tqdm(loader): 
             outs = gen_func(batch,max_length=output_size).detach().cpu()
             dec    = [self.tokenizer.decode(ids.detach().cpu()) if self.tokenizer.decode(ids).strip() else "" for ids in outs]
             target = [self.tokenizer.decode(ids.detach().cpu()) for ids in batch["target_ids"].detach()]
@@ -606,6 +606,12 @@ def T5ClassificationModel(config):
     if mtype is None:
         raise ValueError('Unknown T5 Model...%s' % config.T5_type)
     return mtype
+
+def LoadModel(config):
+    model_class = T5ClassificationModel(config)
+    return model_class.load_existing(config) 
+    
+
 
 def params(config):
     """Main parameters for running the T5 model
