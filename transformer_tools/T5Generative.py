@@ -64,6 +64,55 @@ class T5GenenerationModel(T5GenerationBase):
     :param EVALUATOR: the classifier evaluation code 
     :param LOADER: the classifier data loader class 
     """
+
+    def query(self,text_input,prefix='generate:',
+                  no_repeat_ngram_size=None,
+                  num_beams=None,
+                  do_sample=None,
+                  top_p=None,
+                  min_length=None,
+                  num_return_sequences=None,
+                  ):
+        """Query the model via a text query 
+
+        :param text_input: the text query 
+        :param prefix: the text prefix for the model
+        :param no_repeat_ngram_size: the maximum n-gram penalty (default is 2)
+        :param num_beams: the number of beams to use 
+        :param top_p: the nucleaus sampling parameter
+        :param min_length: the minimum length of the output 
+        :param top_k: the top k items to sample from 
+        """
+        inputs,targets = multi_query(text_input,self.tokenizer,self.hparams,prefix)
+
+        ## load a dataset and loader 
+        dataset = Text2TextData(inputs,targets)
+        loader = DataLoader(dataset,
+                                batch_size=1,
+                                shuffle=False,
+                                num_workers=self.hparams.num_workers)
+
+        gen_func = self._generative_step
+        output_size = self.hparams.max_answer
+        self.model_logger.info('prefix=%s, output size=%d,gen func=%s' % (prefix,output_size,gen_func.__name__))
+
+        for batch in loader:
+
+            ### 
+            outs = gen_func(batch,max_length=output_size,
+                                no_repeat_ngram_size=no_repeat_ngram_size,
+                                num_beams=num_beams,
+                                do_sample=do_sample,
+                                top_p=top_p,
+                                min_length=min_length,
+                                num_return_sequences=num_return_sequences)
+
+            ## decoder output
+            dec = [self.tokenizer.decode(ids).strip() if self.tokenizer.decode(ids).strip() else "" for ids in outs]
+
+        return dec
+
+    
     @torch.no_grad()
     def evaluate_output(self,dtype='dev',final_eval=False):
         """Method for evaluating output, called after training step (passes by default). Loads the 
