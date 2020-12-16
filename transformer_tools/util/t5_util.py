@@ -772,21 +772,21 @@ def multi_query(text_input,tokenizer,config,prefix):
     :param text_input" the text to prepare
     :param prefix: specifies the model mode
     """
-    input_ = "%s %s </s>" % (prefix,text_input)
+    input_ = "%s %s" % (prefix,text_input)
     input_ = re.sub(r'\s+|\n+',' ',input_)
-    target = "? </s>"
+    target = "?"
 
     tokenized_inputs = tokenizer.batch_encode_plus(
                     [input_],
                     max_length=config.max_seq_length,
-                    pad_to_max_length=True,
+                    #pad_to_max_length=True,
                     return_tensors="pt",
                     truncation=True, ## throws off warning if switched off
                 )
     tokenized_targets = tokenizer.batch_encode_plus(
                     [target],
                     max_length=config.max_answer,
-                    pad_to_max_length=True,
+                    #pad_to_max_length=True,
                     return_tensors="pt",
                     truncation=True, ## throws off warning if switched off
                 )
