@@ -51,7 +51,7 @@ output, check `_runs/example/dev_eval.tsv`, also to check that
 everything looks correct). The final scores will be stored in
 `metrics.json`, which gives me the following after running the
 experiment above:
-```
+```json
 {
   "best_dev_score": 0.9195979899497487,
   "dev_eval": 0.9195979899497487
@@ -62,7 +62,7 @@ experiment above:
 In the `data_dir` it will expect 2 (optionally 3) files:
 `{train,test,dev}.jsonl`, where each line has the following format
 (for QA type tasks):
-```
+```json
 {
     "id": "4297_dev",
     "question" :
