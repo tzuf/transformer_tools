@@ -111,13 +111,13 @@ the full call:
           --max_seq_len "250" \
           --max_answer, "10" \
           --dev_eval \
-          --no_training \ 
+          --no_training \         # <-------- important!
+          --target_model /mode/dir # <-------- important!
           --num_beams "2" \
           --print_output \
           --no_repeat_ngram_size "0" \
           --T5_type T5ClassificationMultiQA \
           --data_builder  multi_qa \
-          --target_model /path/to/target/model/and/tokenizer 
 ```
 
 Here is how it can be done through the terminal (see also `notebooks/load_t5_babi-model.ipynb`):
