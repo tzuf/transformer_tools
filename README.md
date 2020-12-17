@@ -7,7 +7,7 @@ Basic setup
 ----------------------------
 
 We suggest using [**conda**](https://docs.conda.io/en/latest/miniconda.html) for creating a python environment, and doing the following:
-```
+```bash
 conda create -n transformer_tools python=3.6.7
 conda activate transformer_tools ## after setting up above
 pip install -r requirements.txt
@@ -18,13 +18,13 @@ Running T5 for QA
 ----------------------------
 One main utility here is the T5 model, to run this and see all of its
 options, do the following:
-```
+```bash
 ./run.sh {T5Generator,T5Classifier} --help 
 ```
 
 The following trains a T5(-large) classifier model on a version of the babi
 data:
-```
+```bash
 ./run.sh  T5Classifier \
           --dtype mcqa \
           --output_dir _runs/example \
@@ -117,7 +117,7 @@ encoders (e.g., BERT, RoBERTa, ..).  The current version relies on the
 library.
 
 The code below will train a *BERT-base* polarity tagger.
-```
+```bash
 ./run.sh Tagger \
   --output_dir _runs/example_tagger \
   --data_dir  etc/data/polarity \ ## uses example polarity data here
@@ -133,7 +133,7 @@ The code below will train a *BERT-base* polarity tagger.
 ```
 As above, type `./run.sh Tagger --help` to see the full list of
 details. The target files have the same format as above:
-```
+```json
 {
      "1148_sick.matched.txt_first_arrows"
     "question" :
@@ -152,7 +152,7 @@ Setting up on beaker (AI2 Internal)
 ---------------------------
 
 Do the following:
-```
+```bash
 ./create_beaker_image.sh
 ```
 
