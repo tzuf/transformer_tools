@@ -43,6 +43,7 @@ reasoning_transformers/*.c
 scripts/*
 reasoning_transformers/examples/*
 _runs/*
+cache_dir/*
 
 # Installer logs
 pip-log.txt

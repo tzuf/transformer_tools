@@ -11,3 +11,4 @@ notebooks/
 _runs/
 etc/datasets/*
 _runs/*
+cache_dir/*
