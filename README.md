@@ -85,7 +85,6 @@ to json. For example,:
 python bin/babi2json.py --data_loc etc/data/babi_datasets/mix-1-13/ --odir etc/data/babi_datasets/mix-1-13/
 ```
 
-
 **A few things to watch out for**: `max_seq_len` and `max_answer`
 correspond to the token number of tokens allowed on encoder and
 decoder side, respectively. When running experiments, you can see how
@@ -96,6 +95,19 @@ model, e.g., `t5-3b` (which is the largest T5 model that can find on a
 single GPU), but so far I've only been able to get this to work with
 `gradient_accumulation` (e.g., by adding
 `--gradient_accumulation_steps "8"` above) and a `train_batch_size` of 1. 
+
+
+**Using a trained model directly** This can be done by doing the
+following:
+```
+>>> from transformer_tools import LoadT5Classifier,get_config
+>>> gen_config = get_config("transformer_tools.T5Classifier")
+>>> gen_config.target_model = "path/to/output/directory/above"
+>>> gen_config.max_answer = 200
+>>> model = LoadT5Generator(gen_config)
+>>> model.query("target query here..")
+```
+
 
 Polarity Projection Models 
 ----------------------------
