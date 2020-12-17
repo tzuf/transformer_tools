@@ -97,8 +97,30 @@ single GPU), but so far I've only been able to get this to work with
 `--gradient_accumulation_steps "8"` above) and a `train_batch_size` of 1. 
 
 
-**Using a trained model directly** This can be done by doing the
-following:
+**Using a trained model directly** From the terminal, you can use the
+code from above for testing by setting `--target_model` to the
+target model directory and using the `--no_train` directive. Here's
+the full call:
+```bash
+./run.sh  T5Classifier \
+          --dtype mcqa \
+          --output_dir _runs/example_test \
+          --data_dir etc/data/mix_babi \
+          --model_name_or_path  t5-large \
+          --tokenizer_name_or_path t5-large \
+          --max_seq_len "250" \
+          --max_answer, "10" \
+          --dev_eval \
+          --no_training \ 
+          --num_beams "2" \
+          --print_output \
+          --no_repeat_ngram_size "0" \
+          --T5_type T5ClassificationMultiQA \
+          --data_builder  multi_qa \
+          --target_model /path/to/target/model/and/tokenizer 
+```
+
+Here is how it can be done through the terminal (see also `notebooks/load_t5_babi-model.ipynb`):
 ```python
 >>> from transformer_tools import LoadT5Classifier,get_config
 >>> gen_config = get_config("transformer_tools.T5Classifier")
