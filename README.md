@@ -156,12 +156,14 @@ Do the following:
 ./create_beaker_image.sh
 ```
 
-Example notebooks
----------------------------
-
-
 An example beaker experiment is included in
 `etc/beaker_templates/run_t5_babi_v1.yaml`. To launch, run:
 ```
 beaker experiment create -n "beaker_babi_run" -f etc/beaker_templates/run_t5_babi_v1.yaml
 ```
+
+Example notebooks
+---------------------------
+Example notebooks are included in `notebooks`.
+
+
