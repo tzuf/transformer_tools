@@ -99,7 +99,7 @@ single GPU), but so far I've only been able to get this to work with
 
 **Using a trained model directly** This can be done by doing the
 following:
-```
+```python
 >>> from transformer_tools import LoadT5Classifier,get_config
 >>> gen_config = get_config("transformer_tools.T5Classifier")
 >>> gen_config.target_model = "path/to/output/directory/above"
