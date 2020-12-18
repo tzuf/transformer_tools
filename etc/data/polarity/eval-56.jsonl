@@ -1,0 +1,56 @@
+{"idx": "eval-56-0", "question": {"stem": "Every dog sees some cat"}, "output": "u d u u u"}
+{"idx": "eval-56-1", "question": {"stem": "Every rat sees every fish"}, "output": "u d u u d"}
+{"idx": "eval-56-2", "question": {"stem": "Some rat sees every squirrel"}, "output": "u u u u d"}
+{"idx": "eval-56-3", "question": {"stem": "Most dogs chase some cat"}, "output": "u = u u u"}
+{"idx": "eval-56-4", "question": {"stem": "Most dogs chase most cats"}, "output": "u = u u ="}
+{"idx": "eval-56-5", "question": {"stem": "No dog likes every hedgehog"}, "output": "u d d d u"}
+{"idx": "eval-56-6", "question": {"stem": "Three dogs like four cats"}, "output": "= = = = ="}
+{"idx": "eval-56-7", "question": {"stem": "At least seven fish died yesterday in Morocco"}, "output": "u u d u u u u u"}
+{"idx": "eval-56-8", "question": {"stem": "Not many people like lions as pets"}, "output": "u d = d d d d"}
+{"idx": "eval-56-9", "question": {"stem": "Many people like dogs as pets"}, "output": "u = u u u u"}
+{"idx": "eval-56-10", "question": {"stem": "A few boys chased a girl"}, "output": "u u u u u u"}
+{"idx": "eval-56-11", "question": {"stem": "Not every student likes semantics"}, "output": "u d u d d"}
+{"idx": "eval-56-12", "question": {"stem": "Most dogs who bark loudly do not like cats"}, "output": "u = = = = u u d d"}
+{"idx": "eval-56-13", "question": {"stem": "The dog that bark loudly does not like any cat"}, "output": "u = = = = u u d d d"}
+{"idx": "eval-56-14", "question": {"stem": "The raccoon in my car likes to eat every fish it sees"}, "output": "u = = = = u u u u d d d"}
+{"idx": "eval-56-15", "question": {"stem": "Every dog in Slovenia likes to chase pigs"}, "output": "u d d d u u u ="}
+{"idx": "eval-56-16", "question": {"stem": "Some cat in London has been to Paris"}, "output": "u u u u u u u u"}
+{"idx": "eval-56-17", "question": {"stem": "Every cat who likes every dog also likes every squirrel"}, "output": "u d d d d u u u u d"}
+{"idx": "eval-56-18", "question": {"stem": "Some cat who likes every dog who likes some squirrel died"}, "output": "u u u u u d d d d d u"}
+{"idx": "eval-56-19", "question": {"stem": "Cats who like squirrels hate dogs"}, "output": "d d d d u d"}
+{"idx": "eval-56-20", "question": {"stem": "Any dog in Ohio would prefer to live in Indiana"}, "output": "u d d d u u u u u u"}
+{"idx": "eval-56-21", "question": {"stem": "Some person in the White House does n't know if any dog in Ohio ate bananas yesterday"}, "output": "u u u u = = u u d d d d d d d d d"}
+{"idx": "eval-56-22", "question": {"stem": "There is a dog in the house who wants to eat three biscuits"}, "output": "u u u u u u = u u u u = ="}
+{"idx": "eval-56-23", "question": {"stem": "Few math students like any subject in linguistics"}, "output": "u d d d d d d d"}
+{"idx": "eval-56-24", "question": {"stem": "Five dogs see at least six cats"}, "output": "= = = = d = ="}
+{"idx": "eval-56-25", "question": {"stem": "Every cat who no dog chases walks"}, "output": "u d = u u d u"}
+{"idx": "eval-56-26", "question": {"stem": "Every dog who likes most cats was chased by at least two of them"}, "output": "u d d d d = u u u u u d u u"}
+{"idx": "eval-56-27", "question": {"stem": "More dogs than cats sit"}, "output": "= u = d ="}
+{"idx": "eval-56-28", "question": {"stem": "Fewer dogs than cats sit"}, "output": "u d = u ="}
+{"idx": "eval-56-29", "question": {"stem": "Every student 's favorite class was French"}, "output": "u d d d d u ="}
+{"idx": "eval-56-30", "question": {"stem": "No students liked any class in Chemistry"}, "output": "u d d d d d d"}
+{"idx": "eval-56-31", "question": {"stem": "All students except engineers must take a class in Organic Chemistry"}, "output": "u d = = u u u u u = ="}
+{"idx": "eval-56-32", "question": {"stem": "All but five dogs died"}, "output": "u = = = ="}
+{"idx": "eval-56-33", "question": {"stem": "All the cats except for two runs"}, "output": "u d = d d = ="}
+{"idx": "eval-56-34", "question": {"stem": "All the cats except for at most two like chocolate"}, "output": "u d = d d d d u = ="}
+{"idx": "eval-56-35", "question": {"stem": "Three out of five dentists recommend that their patients brush their teeth at least four times a day"}, "output": "= d d = u u u u u u u u u u d u u u"}
+{"idx": "eval-56-36", "question": {"stem": "No dentist who recommends that their patients brush their teeth at least four times a day gave five patients a toothbrush"}, "output": "u d d d d d d d d d d d d d d d d d d d d"}
+{"idx": "eval-56-37", "question": {"stem": "Every doctor who told her patients to take three pills a day was afraid that taking four or more would kill them"}, "output": "u d d d d d d d = = = = u u u u u u u u u u"}
+{"idx": "eval-56-38", "question": {"stem": "My parents said I could have three candies"}, "output": "u u u u u u = u"}
+{"idx": "eval-56-39", "question": {"stem": "If you are addicted to cigarettes , you can smoke two a day"}, "output": "u d d d d d u u u u d u u"}
+{"idx": "eval-56-40", "question": {"stem": "Even if you are addicted to cigarettes , you can smoke two a day"}, "output": "u u d d d d d u u u u d u u"}
+{"idx": "eval-56-41", "question": {"stem": "Every person who smokes two cigarettes in one hour runs a risk of cancer"}, "output": "u d d d u d u d d u u u u u"}
+{"idx": "eval-56-42", "question": {"stem": "If every cat runs , some dog runs also"}, "output": "u d u d u u u u u"}
+{"idx": "eval-56-43", "question": {"stem": "If some dog runs , no cat sits"}, "output": "u d d d u u d d"}
+{"idx": "eval-56-44", "question": {"stem": "A dog who ate two rotten biscuits was sick for three days"}, "output": "u u u u = u u u u u d d"}
+{"idx": "eval-56-45", "question": {"stem": "Ursula refused to sing or dance"}, "output": "u u u d d d"}
+{"idx": "eval-56-46", "question": {"stem": "John is dancing without clothes"}, "output": "u u u u d"}
+{"idx": "eval-56-47", "question": {"stem": "Less than five students got A in the class"}, "output": "u u u d d = d d ="}
+{"idx": "eval-56-48", "question": {"stem": "More than three students cheated in this class"}, "output": "u u d u u u u u"}
+{"idx": "eval-56-49", "question": {"stem": "Some but not all students cheated in this class"}, "output": "u u u u u u u u u"}
+{"idx": "eval-56-50", "question": {"stem": "At least 5 people ran"}, "output": "u u d u u"}
+{"idx": "eval-56-51", "question": {"stem": "At most 6 dogs are hungry"}, "output": "u u u d d d"}
+{"idx": "eval-56-52", "question": {"stem": "Less than 5 people ran"}, "output": "u u u d d"}
+{"idx": "eval-56-53", "question": {"stem": "More than 6 dogs are hungry"}, "output": "u u d u u u"}
+{"idx": "eval-56-54", "question": {"stem": "Exactly 8 cats are sleeping"}, "output": "u = = = ="}
+{"idx": "eval-56-55", "question": {"stem": "A dog ate 2 rotten biscuits"}, "output": "u u u = u u"}
