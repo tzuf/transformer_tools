@@ -37,9 +37,9 @@ if __name__ == "__main__":
     query = args["QUERY"]
     print(model_dir)
     logger.info("Loading model...")
-    gen_config = get_config("transformer_tools.T5Classification")
+    gen_config = get_config("transformer_tools.T5Generative")
     gen_config.target_model = model_dir
     gen_config.max_answer = 200
-    model = LoadT5Classifier(gen_config)
+    model = LoadT5Generator(gen_config)
     res = model.query(query)
     logger.info(f"[Result]: {res}")
