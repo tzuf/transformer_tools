@@ -23,7 +23,7 @@ import sys
 
 ROOT = Path(__file__).parents[1]
 sys.path.append(str(ROOT))
-from transformer_tools import LoadT5Classifier,get_config
+from transformer_tools import LoadT5Classifier, LoadT5Generator,get_config
 
 logging.basicConfig(level=logging.INFO)
 logger = logging.getLogger(__name__)
