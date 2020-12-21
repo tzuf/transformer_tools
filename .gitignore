@@ -44,6 +44,7 @@ scripts/*
 reasoning_transformers/examples/*
 _runs/*
 cache_dir/*
+_models
 
 # Installer logs
 pip-log.txt
@@ -84,3 +85,6 @@ output/
 boilerplate/
 *.bak
 python-nameless
+
+# Spyder
+*.spyproject
