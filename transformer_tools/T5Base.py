@@ -1330,12 +1330,8 @@ def run_trainer_tester(config,trainer_class,t5_class,eval_map={}):
     if not config.wdir and not config.output_dir:
         raise ValueError('Must specify a working directory using either `--wdir` or --outputdir')
     if not config.data_dir or not os.path.isdir(config.data_dir):
-        raise ValueError('Must specify a valid data directory: %s' % config.data_dir)
-
-    if not config.wdir and not config.output_dir:
-        raise ValueError('Must specify a working directory using either `--wdir` or --outputdir')
-    if not config.data_dir or not os.path.isdir(config.data_dir):
-        raise ValueError('Must specify a valid data directory: %s' % config.data_dir)
+        if not config.use_wandb_data:
+            raise ValueError('Must specify a valid data directory: %s' % config.data_dir)
 
     # setup wandb logging
     run = setup_logging(config)
