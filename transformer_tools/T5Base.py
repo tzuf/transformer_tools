@@ -1302,7 +1302,8 @@ def setup_logging(config):
     wandb.init(project=config.project, 
                    config=config,
                    name=config.exp_id, 
-                   dir=config.output_dir)
+                   dir=config.output_dir,
+                   entity="eco-semantics")
 
 def run_trainer_tester(config,trainer_class,t5_class,eval_map={}): 
     """Run the full trainer tester pipeline 
