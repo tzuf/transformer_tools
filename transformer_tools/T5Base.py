@@ -1299,11 +1299,12 @@ def set_seed(seed):
 logger = logging.getLogger(__name__)
 
 def setup_logging(config):
-    wandb.init(project=config.project, 
+    run = wandb.init(project=config.project, 
                    config=config,
                    name=config.exp_id, 
                    dir=config.output_dir,
                    entity="eco-semantics")
+    return run
 
 def run_trainer_tester(config,trainer_class,t5_class,eval_map={}): 
     """Run the full trainer tester pipeline 
@@ -1321,7 +1322,7 @@ def run_trainer_tester(config,trainer_class,t5_class,eval_map={}):
         raise ValueError('Must specify a valid data directory: %s' % config.data_dir)
 
     # setup wandb logging
-    setup_logging(config)
+    run = setup_logging(config)
     
     ### training (if set)
     best_dev_score = -1.
@@ -1353,25 +1354,36 @@ def run_trainer_tester(config,trainer_class,t5_class,eval_map={}):
         print_output = config.print_output
 
         ## (moved this out of the trainer) 
+        
         if config.train_eval:
+            split = "train"
             util_logger.info('Evaluating train...')
-            train_eval_score = model.evaluate_output(dtype='train',final_eval=print_output)
+            train_eval_score = model.evaluate_output(dtype=split,final_eval=print_output)
             metrics[eval_map.get("train_eval","train_eval")] = train_eval_score
 
         if config.dev_eval:
             util_logger.info('Evaluating dev...')
-
+            split = "dev"
             ## regenerate evaluation data? 
-            if config.regenerate_eval: model.regenerate_eval(split="dev")
-            dev_eval_score = model.evaluate_output(dtype='dev',final_eval=print_output)
+            if config.regenerate_eval: model.regenerate_eval(split=split)
+            dev_eval_score = model.evaluate_output(dtype=split,final_eval=print_output)
             metrics[eval_map.get("dev_eval","dev_eval")] = dev_eval_score
 
         if config.test_eval:
             util_logger.info('Evaluating test...')
+            split = "test"
             ## print test output
-            if config.regenerate_eval: model.regenerate_eval(split="test")
-            test_eval_score = model.evaluate_output(dtype='test',final_eval=print_output)
+            if config.regenerate_eval: model.regenerate_eval(split=split)
+            test_eval_score = model.evaluate_output(dtype=split,final_eval=print_output)
             metrics[eval_map.get("test_eval","test_eval")] = test_eval_score
+            
+        # save model output to wandb run
+        util_logger.info('Saving model output to wandb run')
+        artifact = wandb.Artifact(f"{config.exp_id}", type='result')
+        ofile = os.path.join(model.hparams.output_dir,"%s_eval.tsv" % split)
+        artifact.add_file(ofile)
+        run.log_artifact(artifact)
+        
 
     else:
         metrics[eval_map.get("dev_eval","dev_eval")] = best_dev_score
