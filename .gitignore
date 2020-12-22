@@ -88,3 +88,6 @@ python-nameless
 
 # Spyder
 *.spyproject
+
+# WandB
+wandb/*
