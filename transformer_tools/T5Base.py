@@ -1275,7 +1275,6 @@ def params(config):
                          dest="use_wandb_data",
                          action='store_true',
                          default=False,
-                         type=bool,
                          help="Use wandb as data source.")
 
     ## tpu cores
