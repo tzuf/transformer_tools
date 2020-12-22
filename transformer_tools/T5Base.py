@@ -1270,6 +1270,13 @@ def params(config):
                          default="default_exp",
                          type=str,
                          help="Wandb exp id name for logging.")
+    
+    group.add_option("--use_wandb_data",
+                         dest="use_wandb_data",
+                         action='store_true',
+                         default=False,
+                         type=bool,
+                         help="Use wandb as data source.")
 
     ## tpu cores
     group.add_option("--tpu_cores",
@@ -1306,6 +1313,16 @@ def setup_logging(config):
                    entity="eco-semantics")
     return run
 
+def fetch_wandb_data(run, source) -> str:
+    """
+    Fetch data from wandb source and return path to local directory data was downloaded to
+    """
+    artifact = run.use_artifact(source, type='dataset')
+    artifact_dir = artifact.download()
+    return artifact_dir
+
+    
+
 def run_trainer_tester(config,trainer_class,t5_class,eval_map={}): 
     """Run the full trainer tester pipeline 
     
@@ -1323,6 +1340,11 @@ def run_trainer_tester(config,trainer_class,t5_class,eval_map={}):
 
     # setup wandb logging
     run = setup_logging(config)
+    
+    if config.use_wandb_data:
+        local_data_dir = fetch_wandb_data(run, config.data_dir)
+        # use local data dir to load artifact downloaded from wandb
+        config.data_dir = local_data_dir
     
     ### training (if set)
     best_dev_score = -1.
