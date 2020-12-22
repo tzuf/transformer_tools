@@ -19,6 +19,7 @@ from dataclasses import dataclass
 from enum import Enum
 from typing import List, Optional
 from transformers import PreTrainedTokenizer
+import wandb
 
 from transformers import (
     AdamW,
@@ -1257,6 +1258,18 @@ def params(config):
                          default=3,
                          type=int,
                          help="The number of sentences to sample/generate for generative training [default=5]")
+    
+    group.add_option("--project",
+                         dest="project",
+                         default="t5-analysis",
+                         type=str,
+                         help="Wandb project name for logging.")
+    
+    group.add_option("--exp_id",
+                         dest="exp_id",
+                         default="default_exp",
+                         type=str,
+                         help="Wandb exp id name for logging.")
 
     ## tpu cores
     group.add_option("--tpu_cores",
@@ -1285,6 +1298,12 @@ def set_seed(seed):
 
 logger = logging.getLogger(__name__)
 
+def setup_logging(config):
+    wandb.init(project=config.project, 
+                   config=config,
+                   name=config.exp_id, 
+                   dir=config.output_dir)
+
 def run_trainer_tester(config,trainer_class,t5_class,eval_map={}): 
     """Run the full trainer tester pipeline 
     
@@ -1300,6 +1319,9 @@ def run_trainer_tester(config,trainer_class,t5_class,eval_map={}):
     if not config.data_dir or not os.path.isdir(config.data_dir):
         raise ValueError('Must specify a valid data directory: %s' % config.data_dir)
 
+    # setup wandb logging
+    setup_logging(config)
+    
     ### training (if set)
     best_dev_score = -1.
     metrics  = {}
@@ -1354,6 +1376,9 @@ def run_trainer_tester(config,trainer_class,t5_class,eval_map={}):
         metrics[eval_map.get("dev_eval","dev_eval")] = best_dev_score
 
 
+    ## log to wandb
+    wandb.log(metrics)
+    
     ## print metrics
     util_logger.info('Attempting to write metrics file...')
     if config.output_dir and os.path.isdir(config.output_dir):
