@@ -22,8 +22,11 @@ def main(argv):
 
     for split in ["train","test","valid"]:
         target = [f for f in os.listdir(config.data_loc) if split in f and ".txt" in f]
-        assert len(target) == 1, "multiple target files found!"
-        target = target[0]
+        assert len(target) <= 1, "multiple target files found!"
+        if target:
+            target = target[0]
+        else:
+            continue
 
         ## output
         split_name = split if split != "valid" else "dev"
