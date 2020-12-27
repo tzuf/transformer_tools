@@ -1333,10 +1333,12 @@ def run_trainer_tester(config,trainer_class,t5_class,eval_map={}):
         if not config.use_wandb_data:
             raise ValueError('Must specify a valid data directory: %s' % config.data_dir)
 
-    # setup wandb logging
-    run = setup_logging(config)
+    
     
     if config.use_wandb_data:
+        # setup wandb logging
+        run = setup_logging(config)
+        
         local_data_dir = fetch_wandb_data(run, config.data_dir)
         # use local data dir to load artifact downloaded from wandb
         config.data_dir = local_data_dir
@@ -1394,12 +1396,14 @@ def run_trainer_tester(config,trainer_class,t5_class,eval_map={}):
             test_eval_score = model.evaluate_output(dtype=split,final_eval=print_output)
             metrics[eval_map.get("test_eval","test_eval")] = test_eval_score
             
-        # save model output to wandb run
-        util_logger.info('Saving model output to wandb run')
-        artifact = wandb.Artifact(f"{config.exp_id}", type='result')
+        
         ofile = os.path.join(model.hparams.output_dir,"%s_eval.tsv" % split)
-        artifact.add_file(ofile)
-        run.log_artifact(artifact)
+        # save model output to wandb run
+        if config.use_wandb_data:
+            util_logger.info('Saving model output to wandb run')
+            artifact = wandb.Artifact(f"{config.exp_id}", type='result')
+            artifact.add_file(ofile)
+            run.log_artifact(artifact)
         
 
     else:
@@ -1407,7 +1411,8 @@ def run_trainer_tester(config,trainer_class,t5_class,eval_map={}):
 
 
     ## log to wandb
-    wandb.log(metrics)
+    if config.use_wandb_data:
+        wandb.log(metrics)
     
     ## print metrics
     util_logger.info('Attempting to write metrics file...')
