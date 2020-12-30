@@ -41,6 +41,7 @@ def main(argv):
             with open(os.path.join(config.data_loc,target)) as my_data:
                 problem = []
                 sub_question = 0
+                story_idx = 0 # counts number of questions (=stories)
             
 
                 for k,line in enumerate(my_data):
@@ -80,6 +81,7 @@ def main(argv):
                         json_dict["output"] = answer
                         json_dict["prefix"] = "answer:"
                         json_dict["input"] = problem_input
+                        json_dict["story_idx"] = story_idx
                         json_dict["supporting_facts"] = supp_facts
 
                         new_out.write(json.dumps(json_dict))
@@ -87,6 +89,7 @@ def main(argv):
 
                         ### 
                         sub_question += 1
+                        story_idx += 1
 
                     else:
                         problem.append(detail)
