@@ -1,6 +1,7 @@
 ### script for converting babi-style files to my json format used here
 import json
 import sys
+import re
 import os
 from optparse import OptionParser
 
@@ -11,6 +12,9 @@ CONFIG.add_option("--data_loc",dest="data_loc",default='',
                       help="the location of the data [default='']")
 CONFIG.add_option("--odir",dest="odir",default='',
                       help="The output directory where to put files [default='']")
+
+
+NUM_RE = re.compile(r"(\d+)") # to capture supporting facts idxs
 
 def main(argv):
     config,_ = CONFIG.parse_args(sys.argv[1:])
@@ -52,11 +56,17 @@ def main(argv):
 
                     elif "?" in line:
                         question,answer = detail.split("?")
+                        
+                        # extract supporting facts idxs if they exist
+                        supp_facts = [int(x) for x in NUM_RE.findall(answer)]
+                        
                         answer = ' '.join([i for i in answer.strip().split() if not i.isnumeric()])
                         question = "%s?" % question
 
                         #print(answer)
                         assert len(answer.split()) == 1, answer
+                        
+                        
 
 
                         problem_input = "%s $question$ %s" %\
@@ -70,6 +80,7 @@ def main(argv):
                         json_dict["output"] = answer
                         json_dict["prefix"] = "answer:"
                         json_dict["input"] = problem_input
+                        json_dict["supporting_facts"] = supp_facts
 
                         new_out.write(json.dumps(json_dict))
                         new_out.write('\n')
