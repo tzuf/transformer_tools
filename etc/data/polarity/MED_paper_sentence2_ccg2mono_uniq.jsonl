@@ -1,0 +1,980 @@
+{"idx": "MED_paper_sentence2_ccg2mono_uniq-0", "question": {"stem": "5 Fewer than are red"}, "output": "d d d d d"}
+{"idx": "MED_paper_sentence2_ccg2mono_uniq-1", "question": {"stem": "5 Fewer than are scarlet"}, "output": "d d d d d"}
+{"idx": "MED_paper_sentence2_ccg2mono_uniq-2", "question": {"stem": "5 Only chose any mint chocolates or decided on the cotton candy"}, "output": "d d d d d d d d d d d d"}
+{"idx": "MED_paper_sentence2_ccg2mono_uniq-3", "question": {"stem": "5 Only chose mint chocolates or decided on the cotton candy"}, "output": "d d d d d d d d d d d"}
+{"idx": "MED_paper_sentence2_ccg2mono_uniq-4", "question": {"stem": "5 Only decided on the cotton candy"}, "output": "d d d d d d d"}
+{"idx": "MED_paper_sentence2_ccg2mono_uniq-5", "question": {"stem": "5 Only have caught a cold"}, "output": "d d d d d d"}
+{"idx": "MED_paper_sentence2_ccg2mono_uniq-6", "question": {"stem": "5 Only have ever had a sunburn or caught a cold"}, "output": "d d d d d d d d d d d"}
+{"idx": "MED_paper_sentence2_ccg2mono_uniq-7", "question": {"stem": "5 Only have had a sunburn or caught a cold"}, "output": "d d d d d d d d d d"}
+{"idx": "MED_paper_sentence2_ccg2mono_uniq-8", "question": {"stem": "Alan took his vacation in california"}, "output": "u u u u u u"}
+{"idx": "MED_paper_sentence2_ccg2mono_uniq-9", "question": {"stem": "Aldo kissed nina"}, "output": "u u u"}
+{"idx": "MED_paper_sentence2_ccg2mono_uniq-10", "question": {"stem": "Aldo touched nina"}, "output": "u u u"}
+{"idx": "MED_paper_sentence2_ccg2mono_uniq-11", "question": {"stem": "All animals like to scratch their ears"}, "output": "u d u u u u u"}
+{"idx": "MED_paper_sentence2_ccg2mono_uniq-12", "question": {"stem": "All dogs like to scratch their ears"}, "output": "u d u u u u u"}
+{"idx": "MED_paper_sentence2_ccg2mono_uniq-13", "question": {"stem": "All dots are red"}, "output": "u d u u"}
+{"idx": "MED_paper_sentence2_ccg2mono_uniq-14", "question": {"stem": "All dots are scarlet"}, "output": "u d u u"}
+{"idx": "MED_paper_sentence2_ccg2mono_uniq-15", "question": {"stem": "All elephants are blue"}, "output": "u d u u"}
+{"idx": "MED_paper_sentence2_ccg2mono_uniq-16", "question": {"stem": "All elephants are navy blue"}, "output": "u d u u u"}
+{"idx": "MED_paper_sentence2_ccg2mono_uniq-17", "question": {"stem": "All elephants are pink"}, "output": "u d u u"}
+{"idx": "MED_paper_sentence2_ccg2mono_uniq-18", "question": {"stem": "All hegelians are mortal"}, "output": "u d u u"}
+{"idx": "MED_paper_sentence2_ccg2mono_uniq-19", "question": {"stem": "All pachyderms are blue"}, "output": "u d u u"}
+{"idx": "MED_paper_sentence2_ccg2mono_uniq-20", "question": {"stem": "All pachyderms are navy blue"}, "output": "u d u u u"}
+{"idx": "MED_paper_sentence2_ccg2mono_uniq-21", "question": {"stem": "All pachyderms are pink"}, "output": "u d u u"}
+{"idx": "MED_paper_sentence2_ccg2mono_uniq-22", "question": {"stem": "All philosophers are mortal"}, "output": "u d u u"}
+{"idx": "MED_paper_sentence2_ccg2mono_uniq-23", "question": {"stem": "All the tenors are sick"}, "output": "u d = u u"}
+{"idx": "MED_paper_sentence2_ccg2mono_uniq-24", "question": {"stem": "All the tenors have the flu"}, "output": "u d = u u ="}
+{"idx": "MED_paper_sentence2_ccg2mono_uniq-25", "question": {"stem": "Almost every camper has caught a cold"}, "output": "u u d = = = ="}
+{"idx": "MED_paper_sentence2_ccg2mono_uniq-26", "question": {"stem": "Almost every camper has ever had a sunburn or caught a cold"}, "output": "u u d = = = = = u = = ="}
+{"idx": "MED_paper_sentence2_ccg2mono_uniq-27", "question": {"stem": "Almost every camper has had a sunburn or caught a cold"}, "output": "u u d = = = = u = = ="}
+{"idx": "MED_paper_sentence2_ccg2mono_uniq-28", "question": {"stem": "Almost every child chose any mint chocolates or decided on the cotton candy"}, "output": "u u d = = = = u = = = = ="}
+{"idx": "MED_paper_sentence2_ccg2mono_uniq-29", "question": {"stem": "Almost every child chose mint chocolates or decided on the cotton candy"}, "output": "u u d = = = u = = = = ="}
+{"idx": "MED_paper_sentence2_ccg2mono_uniq-30", "question": {"stem": "Almost every child decided on the cotton candy"}, "output": "u u d = = = = ="}
+{"idx": "MED_paper_sentence2_ccg2mono_uniq-31", "question": {"stem": "Almost every person chose any mint chocolates or decided on the cotton candy"}, "output": "u u d = = = = u = = = = ="}
+{"idx": "MED_paper_sentence2_ccg2mono_uniq-32", "question": {"stem": "Almost every person chose mint chocolates or decided on the cotton candy"}, "output": "u u d = = = u = = = = ="}
+{"idx": "MED_paper_sentence2_ccg2mono_uniq-33", "question": {"stem": "Almost every person decided on the cotton candy"}, "output": "u u d = = = = ="}
+{"idx": "MED_paper_sentence2_ccg2mono_uniq-34", "question": {"stem": "Almost every person has caught a cold"}, "output": "u u d = = = ="}
+{"idx": "MED_paper_sentence2_ccg2mono_uniq-35", "question": {"stem": "Almost every person has ever had a sunburn or caught a cold"}, "output": "u u d = = = = = u = = ="}
+{"idx": "MED_paper_sentence2_ccg2mono_uniq-36", "question": {"stem": "Almost every person has had a sunburn or caught a cold"}, "output": "u u d = = = = u = = ="}
+{"idx": "MED_paper_sentence2_ccg2mono_uniq-37", "question": {"stem": "Almost no campers have caught a cold"}, "output": "d u d = = = ="}
+{"idx": "MED_paper_sentence2_ccg2mono_uniq-38", "question": {"stem": "Almost no campers have ever had a sunburn or caught a cold"}, "output": "d u d = = = = = u = = ="}
+{"idx": "MED_paper_sentence2_ccg2mono_uniq-39", "question": {"stem": "Almost no campers have had a sunburn or caught a cold"}, "output": "d u d = = = = u = = ="}
+{"idx": "MED_paper_sentence2_ccg2mono_uniq-40", "question": {"stem": "Almost no children chose any mint chocolates or decided on the cotton candy"}, "output": "d u d = = = = u = = = = ="}
+{"idx": "MED_paper_sentence2_ccg2mono_uniq-41", "question": {"stem": "Almost no children chose mint chocolates or decided on the cotton candy"}, "output": "d u d = = = u = = = = ="}
+{"idx": "MED_paper_sentence2_ccg2mono_uniq-42", "question": {"stem": "Almost no children decided on the cotton candy"}, "output": "d u d = = = = ="}
+{"idx": "MED_paper_sentence2_ccg2mono_uniq-43", "question": {"stem": "Almost no person chose any mint chocolates or decided on the cotton candy"}, "output": "d u d = = = = u = = = = ="}
+{"idx": "MED_paper_sentence2_ccg2mono_uniq-44", "question": {"stem": "Almost no person chose mint chocolates or decided on the cotton candy"}, "output": "d u d = = = u = = = = ="}
+{"idx": "MED_paper_sentence2_ccg2mono_uniq-45", "question": {"stem": "Almost no person decided on the cotton candy"}, "output": "d u d = = = = ="}
+{"idx": "MED_paper_sentence2_ccg2mono_uniq-46", "question": {"stem": "Almost no person has caught a cold"}, "output": "d u d = = = ="}
+{"idx": "MED_paper_sentence2_ccg2mono_uniq-47", "question": {"stem": "Almost no person has ever had a sunburn or caught a cold"}, "output": "d u d = = = = = u = = ="}
+{"idx": "MED_paper_sentence2_ccg2mono_uniq-48", "question": {"stem": "Almost no person has had a sunburn or caught a cold"}, "output": "d u d = = = = u = = ="}
+{"idx": "MED_paper_sentence2_ccg2mono_uniq-49", "question": {"stem": "An experienced sommelier knows the difference between the 2009 and 2013 vintage of a german riesling"}, "output": "u u u u u = = = = u = = = = = ="}
+{"idx": "MED_paper_sentence2_ccg2mono_uniq-50", "question": {"stem": "An irishman won a nobel prize"}, "output": "u u u u u u"}
+{"idx": "MED_paper_sentence2_ccg2mono_uniq-51", "question": {"stem": "An irishman won the nobel prize for literature"}, "output": "u u u u = = = ="}
+{"idx": "MED_paper_sentence2_ccg2mono_uniq-52", "question": {"stem": "An italian sommelier knows the difference between the 2009 and 2013 vintage of a german riesling"}, "output": "u u u u u = = = = u = = = = = ="}
+{"idx": "MED_paper_sentence2_ccg2mono_uniq-53", "question": {"stem": "At least half campers have caught a cold"}, "output": "u = = = u u u u"}
+{"idx": "MED_paper_sentence2_ccg2mono_uniq-54", "question": {"stem": "At least half campers have ever had a sunburn or caught a cold"}, "output": "u = = = u u u u u u u u u"}
+{"idx": "MED_paper_sentence2_ccg2mono_uniq-55", "question": {"stem": "At least half campers have had a sunburn or caught a cold"}, "output": "u = = = u u u u u u u u"}
+{"idx": "MED_paper_sentence2_ccg2mono_uniq-56", "question": {"stem": "At least half children chose any mint chocolates or decided on the cotton candy"}, "output": "u = = = u u u u u u u u = ="}
+{"idx": "MED_paper_sentence2_ccg2mono_uniq-57", "question": {"stem": "At least half children chose mint chocolates or decided on the cotton candy"}, "output": "u = = = u u u u u u u = ="}
+{"idx": "MED_paper_sentence2_ccg2mono_uniq-58", "question": {"stem": "At least half children decided on the cotton candy"}, "output": "u = = = u u u = ="}
+{"idx": "MED_paper_sentence2_ccg2mono_uniq-59", "question": {"stem": "At least several committee members are from scandinavia"}, "output": "u = = = = u u u"}
+{"idx": "MED_paper_sentence2_ccg2mono_uniq-60", "question": {"stem": "At least several female committee members are from scandinavia"}, "output": "u = = = = = u u u"}
+{"idx": "MED_paper_sentence2_ccg2mono_uniq-61", "question": {"stem": "At most half campers have caught a cold"}, "output": "u = = = u u u u"}
+{"idx": "MED_paper_sentence2_ccg2mono_uniq-62", "question": {"stem": "At most half campers have ever had a sunburn or caught a cold"}, "output": "u = = = u u u u u u u u u"}
+{"idx": "MED_paper_sentence2_ccg2mono_uniq-63", "question": {"stem": "At most half campers have had a sunburn or caught a cold"}, "output": "u = = = u u u u u u u u"}
+{"idx": "MED_paper_sentence2_ccg2mono_uniq-64", "question": {"stem": "At most half children chose any mint chocolates or decided on the cotton candy"}, "output": "u = = = u u u u u u u u = ="}
+{"idx": "MED_paper_sentence2_ccg2mono_uniq-65", "question": {"stem": "At most half children decided on the cotton candy"}, "output": "u = = = u u u = ="}
+{"idx": "MED_paper_sentence2_ccg2mono_uniq-66", "question": {"stem": "At most ten commissioners spend a-lot-of time at home"}, "output": "u = = = u u u u u"}
+{"idx": "MED_paper_sentence2_ccg2mono_uniq-67", "question": {"stem": "At most ten commissioners spend time at home"}, "output": "u = = = u u u u"}
+{"idx": "MED_paper_sentence2_ccg2mono_uniq-68", "question": {"stem": "At most ten female commissioners spend time at home"}, "output": "u = = = = u u u u"}
+{"idx": "MED_paper_sentence2_ccg2mono_uniq-69", "question": {"stem": "At most half children chose mint chocolates or decided on the cotton candy"}, "output": "u u = = u u u u u u u = ="}
+{"idx": "MED_paper_sentence2_ccg2mono_uniq-70", "question": {"stem": "At the age of 24 she was betrothed to prince albert victor duke of clarence and avondale the eldest able-bodied son of the prince of wales but 6 weeks after the announcement of the engagement he died unexpectedly of pneumonia"}, "output": "u u = = = u u u = u u u u u u u u u = = = = = = = = u u = u u = = = = u u u u u"}
+{"idx": "MED_paper_sentence2_ccg2mono_uniq-71", "question": {"stem": "At the age of 24 she was betrothed to prince albert victor duke of clarence and avondale the eldest child of the prince of wales but 6 weeks after the announcement of the engagement he died unexpectedly of pneumonia"}, "output": "u u = = = u u u = u u u u u u u u u = = = = = = = u u = u u = = = = u u u u u"}
+{"idx": "MED_paper_sentence2_ccg2mono_uniq-72", "question": {"stem": "At the age of 24 she was betrothed to prince albert victor duke of clarence and avondale the eldest son of the prince of wales but 6 weeks after the announcement of the engagement he died unexpectedly of pneumonia"}, "output": "u u = = = u u u = u u u u u u u u u = = = = = = = u u = u u = = = = u u u u u"}
+{"idx": "MED_paper_sentence2_ccg2mono_uniq-73", "question": {"stem": "At least one man danced"}, "output": "d d d d d"}
+{"idx": "MED_paper_sentence2_ccg2mono_uniq-74", "question": {"stem": "At least one man sang"}, "output": "d d d d d"}
+{"idx": "MED_paper_sentence2_ccg2mono_uniq-75", "question": {"stem": "At least one man sang and danced"}, "output": "d d d d d d d"}
+{"idx": "MED_paper_sentence2_ccg2mono_uniq-76", "question": {"stem": "At least one man sang or danced"}, "output": "d d d d d d d"}
+{"idx": "MED_paper_sentence2_ccg2mono_uniq-77", "question": {"stem": "At one most came yesterday"}, "output": "d d d d d"}
+{"idx": "MED_paper_sentence2_ccg2mono_uniq-78", "question": {"stem": "A bill made it to abbott\u2019s desk by the end of the legislative session in may"}, "output": "u u u u u u u u u = = = = = u u"}
+{"idx": "MED_paper_sentence2_ccg2mono_uniq-79", "question": {"stem": "A bulldog attacked nina"}, "output": "u u u u"}
+{"idx": "MED_paper_sentence2_ccg2mono_uniq-80", "question": {"stem": "A dog attacked nina"}, "output": "u u u u"}
+{"idx": "MED_paper_sentence2_ccg2mono_uniq-81", "question": {"stem": "A serene wind rolled across the glade"}, "output": "u u u u u u ="}
+{"idx": "MED_paper_sentence2_ccg2mono_uniq-82", "question": {"stem": "A sommelier knows the difference between the 2009 and 2013 vintage of a german riesling"}, "output": "u u u u = = = = u = = = = = ="}
+{"idx": "MED_paper_sentence2_ccg2mono_uniq-83", "question": {"stem": "A wind rolled across the glade"}, "output": "u u u u u ="}
+{"idx": "MED_paper_sentence2_ccg2mono_uniq-84", "question": {"stem": "Before she kissed him she brushed her teeth"}, "output": "u u u u u u u u"}
+{"idx": "MED_paper_sentence2_ccg2mono_uniq-85", "question": {"stem": "Before she touched him she brushed her teeth"}, "output": "u u u u u u u u"}
+{"idx": "MED_paper_sentence2_ccg2mono_uniq-86", "question": {"stem": "Betty does not live in berlin"}, "output": "u u u d d d"}
+{"idx": "MED_paper_sentence2_ccg2mono_uniq-87", "question": {"stem": "Betty does not live in germany"}, "output": "u u u d d d"}
+{"idx": "MED_paper_sentence2_ccg2mono_uniq-88", "question": {"stem": "Betty lives in berlin"}, "output": "u u u u"}
+{"idx": "MED_paper_sentence2_ccg2mono_uniq-89", "question": {"stem": "Betty lives in germany"}, "output": "u u u u"}
+{"idx": "MED_paper_sentence2_ccg2mono_uniq-90", "question": {"stem": "Both commissioners used to be businessmen"}, "output": "u = u u u u"}
+{"idx": "MED_paper_sentence2_ccg2mono_uniq-91", "question": {"stem": "Both commissioners used to be in business"}, "output": "u = u u u u u"}
+{"idx": "MED_paper_sentence2_ccg2mono_uniq-92", "question": {"stem": "Both commissioners used to be leading businessmen"}, "output": "u = u u u u u"}
+{"idx": "MED_paper_sentence2_ccg2mono_uniq-93", "question": {"stem": "Both female commissioners used to be in business"}, "output": "u = = u u u u u"}
+{"idx": "MED_paper_sentence2_ccg2mono_uniq-94", "question": {"stem": "Both alan and bob took their vacations in california"}, "output": "d d d d d d d d d"}
+{"idx": "MED_paper_sentence2_ccg2mono_uniq-95", "question": {"stem": "Every alien ate at mexican restaurants"}, "output": "u d u u u u"}
+{"idx": "MED_paper_sentence2_ccg2mono_uniq-96", "question": {"stem": "Every alien ate at restaurants"}, "output": "u d u u u"}
+{"idx": "MED_paper_sentence2_ccg2mono_uniq-97", "question": {"stem": "Every alien ate at some mexican restaurants"}, "output": "u d u u u u u"}
+{"idx": "MED_paper_sentence2_ccg2mono_uniq-98", "question": {"stem": "Every alien ate at some restaurants"}, "output": "u d u u u u"}
+{"idx": "MED_paper_sentence2_ccg2mono_uniq-99", "question": {"stem": "Every alien ate meat"}, "output": "u d u u"}
+{"idx": "MED_paper_sentence2_ccg2mono_uniq-100", "question": {"stem": "Every alien ate pork"}, "output": "u d u u"}
+{"idx": "MED_paper_sentence2_ccg2mono_uniq-101", "question": {"stem": "Every alien ate some meat"}, "output": "u d u u u"}
+{"idx": "MED_paper_sentence2_ccg2mono_uniq-102", "question": {"stem": "Every alien ate some pork"}, "output": "u d u u u"}
+{"idx": "MED_paper_sentence2_ccg2mono_uniq-103", "question": {"stem": "Every alien bought clothes"}, "output": "u d u u"}
+{"idx": "MED_paper_sentence2_ccg2mono_uniq-104", "question": {"stem": "Every alien bought shirts"}, "output": "u d u u"}
+{"idx": "MED_paper_sentence2_ccg2mono_uniq-105", "question": {"stem": "Every alien bought some clothes"}, "output": "u d u u u"}
+{"idx": "MED_paper_sentence2_ccg2mono_uniq-106", "question": {"stem": "Every alien bought some shirts"}, "output": "u d u u u"}
+{"idx": "MED_paper_sentence2_ccg2mono_uniq-107", "question": {"stem": "Every alien drank coke"}, "output": "u d u u"}
+{"idx": "MED_paper_sentence2_ccg2mono_uniq-108", "question": {"stem": "Every alien drank soda"}, "output": "u d u u"}
+{"idx": "MED_paper_sentence2_ccg2mono_uniq-109", "question": {"stem": "Every alien drank some coke"}, "output": "u d u u u"}
+{"idx": "MED_paper_sentence2_ccg2mono_uniq-110", "question": {"stem": "Every alien drank some soda"}, "output": "u d u u u"}
+{"idx": "MED_paper_sentence2_ccg2mono_uniq-111", "question": {"stem": "Every alien drove cars"}, "output": "u d u u"}
+{"idx": "MED_paper_sentence2_ccg2mono_uniq-112", "question": {"stem": "Every alien drove some cars"}, "output": "u d u u u"}
+{"idx": "MED_paper_sentence2_ccg2mono_uniq-113", "question": {"stem": "Every alien drove some suvs"}, "output": "u d u u u"}
+{"idx": "MED_paper_sentence2_ccg2mono_uniq-114", "question": {"stem": "Every alien drove suvs"}, "output": "u d u u"}
+{"idx": "MED_paper_sentence2_ccg2mono_uniq-115", "question": {"stem": "Every alien played with some toys"}, "output": "u d u u u u"}
+{"idx": "MED_paper_sentence2_ccg2mono_uniq-116", "question": {"stem": "Every alien played with some toy cars"}, "output": "u d u u u u u"}
+{"idx": "MED_paper_sentence2_ccg2mono_uniq-117", "question": {"stem": "Every alien played with toys"}, "output": "u d u u u"}
+{"idx": "MED_paper_sentence2_ccg2mono_uniq-118", "question": {"stem": "Every alien played with toy cars"}, "output": "u d u u u u"}
+{"idx": "MED_paper_sentence2_ccg2mono_uniq-119", "question": {"stem": "Every alien read books"}, "output": "u d u u"}
+{"idx": "MED_paper_sentence2_ccg2mono_uniq-120", "question": {"stem": "Every alien read magazines"}, "output": "u d u u"}
+{"idx": "MED_paper_sentence2_ccg2mono_uniq-121", "question": {"stem": "Every alien read news magazines"}, "output": "u d u u u"}
+{"idx": "MED_paper_sentence2_ccg2mono_uniq-122", "question": {"stem": "Every alien read sci-fi novels"}, "output": "u d u u u"}
+{"idx": "MED_paper_sentence2_ccg2mono_uniq-123", "question": {"stem": "Every alien read some books"}, "output": "u d u u u"}
+{"idx": "MED_paper_sentence2_ccg2mono_uniq-124", "question": {"stem": "Every alien read some magazines"}, "output": "u d u u u"}
+{"idx": "MED_paper_sentence2_ccg2mono_uniq-125", "question": {"stem": "Every alien read some news magazines"}, "output": "u d u u u u"}
+{"idx": "MED_paper_sentence2_ccg2mono_uniq-126", "question": {"stem": "Every alien read some sci-fi novels"}, "output": "u d u u u u"}
+{"idx": "MED_paper_sentence2_ccg2mono_uniq-127", "question": {"stem": "Every alien saw birds"}, "output": "u d u u"}
+{"idx": "MED_paper_sentence2_ccg2mono_uniq-128", "question": {"stem": "Every alien saw doves"}, "output": "u d u u"}
+{"idx": "MED_paper_sentence2_ccg2mono_uniq-129", "question": {"stem": "Every alien saw some birds"}, "output": "u d u u u"}
+{"idx": "MED_paper_sentence2_ccg2mono_uniq-130", "question": {"stem": "Every alien saw some doves"}, "output": "u d u u u"}
+{"idx": "MED_paper_sentence2_ccg2mono_uniq-131", "question": {"stem": "Every alien threw balls"}, "output": "u d u u"}
+{"idx": "MED_paper_sentence2_ccg2mono_uniq-132", "question": {"stem": "Every alien threw some balls"}, "output": "u d u u u"}
+{"idx": "MED_paper_sentence2_ccg2mono_uniq-133", "question": {"stem": "Every alien threw some tennis balls"}, "output": "u d u u u u"}
+{"idx": "MED_paper_sentence2_ccg2mono_uniq-134", "question": {"stem": "Every alien threw tennis balls"}, "output": "u d u u u"}
+{"idx": "MED_paper_sentence2_ccg2mono_uniq-135", "question": {"stem": "Every alien used coins"}, "output": "u d u u"}
+{"idx": "MED_paper_sentence2_ccg2mono_uniq-136", "question": {"stem": "Every alien used some coins"}, "output": "u d u u u"}
+{"idx": "MED_paper_sentence2_ccg2mono_uniq-137", "question": {"stem": "Every alien used some quarters"}, "output": "u d u u u"}
+{"idx": "MED_paper_sentence2_ccg2mono_uniq-138", "question": {"stem": "Every alien used quarters"}, "output": "u d d d"}
+{"idx": "MED_paper_sentence2_ccg2mono_uniq-139", "question": {"stem": "Every alien watched baseball matches"}, "output": "u d u u u"}
+{"idx": "MED_paper_sentence2_ccg2mono_uniq-140", "question": {"stem": "Every alien watched some baseball matches"}, "output": "u d u u u u"}
+{"idx": "MED_paper_sentence2_ccg2mono_uniq-141", "question": {"stem": "Every alien watched some sports matches"}, "output": "u d u u u u"}
+{"idx": "MED_paper_sentence2_ccg2mono_uniq-142", "question": {"stem": "Every alien watched sports matches"}, "output": "u d u u u"}
+{"idx": "MED_paper_sentence2_ccg2mono_uniq-143", "question": {"stem": "Every alien who did not buy clothes is hairy"}, "output": "u d d d d u u u u"}
+{"idx": "MED_paper_sentence2_ccg2mono_uniq-144", "question": {"stem": "Every alien who did not buy shirts is hairy"}, "output": "u d d d d u u u u"}
+{"idx": "MED_paper_sentence2_ccg2mono_uniq-145", "question": {"stem": "Every alien who did not drink coke is hairy"}, "output": "u d d d d u u u u"}
+{"idx": "MED_paper_sentence2_ccg2mono_uniq-146", "question": {"stem": "Every alien who did not drink soda is hairy"}, "output": "u d d d d u u u u"}
+{"idx": "MED_paper_sentence2_ccg2mono_uniq-147", "question": {"stem": "Every alien who did not drive cars is hairy"}, "output": "u d d d d u u u u"}
+{"idx": "MED_paper_sentence2_ccg2mono_uniq-148", "question": {"stem": "Every alien who did not drive suvs is hairy"}, "output": "u d d d d u u u u"}
+{"idx": "MED_paper_sentence2_ccg2mono_uniq-149", "question": {"stem": "Every alien who did not eat at mexican restaurants is hairy"}, "output": "u d d d d u u u u u u"}
+{"idx": "MED_paper_sentence2_ccg2mono_uniq-150", "question": {"stem": "Every alien who did not eat at restaurants is hairy"}, "output": "u d d d d u u u u u"}
+{"idx": "MED_paper_sentence2_ccg2mono_uniq-151", "question": {"stem": "Every alien who did not eat meat is hairy"}, "output": "u d d d d u u u u"}
+{"idx": "MED_paper_sentence2_ccg2mono_uniq-152", "question": {"stem": "Every alien who did not eat pork is hairy"}, "output": "u d d d d u u u u"}
+{"idx": "MED_paper_sentence2_ccg2mono_uniq-153", "question": {"stem": "Every alien who did not play with toys is hairy"}, "output": "u d d d d u u u u u"}
+{"idx": "MED_paper_sentence2_ccg2mono_uniq-154", "question": {"stem": "Every alien who did not play with toy cars is hairy"}, "output": "u d d d d u u u u u u"}
+{"idx": "MED_paper_sentence2_ccg2mono_uniq-155", "question": {"stem": "Every alien who did not read books is hairy"}, "output": "u d d d d u u u u"}
+{"idx": "MED_paper_sentence2_ccg2mono_uniq-156", "question": {"stem": "Every alien who did not read magazines is hairy"}, "output": "u d d d d u u u u"}
+{"idx": "MED_paper_sentence2_ccg2mono_uniq-157", "question": {"stem": "Every alien who did not read news magazines is hairy"}, "output": "u d d d d u u u u u"}
+{"idx": "MED_paper_sentence2_ccg2mono_uniq-158", "question": {"stem": "Every alien who did not read sci-fi novels is hairy"}, "output": "u d d d d u u u u u"}
+{"idx": "MED_paper_sentence2_ccg2mono_uniq-159", "question": {"stem": "Every alien who did not see birds is hairy"}, "output": "u d d d d u u u u"}
+{"idx": "MED_paper_sentence2_ccg2mono_uniq-160", "question": {"stem": "Every alien who did not see doves is hairy"}, "output": "u d d d d u u u u"}
+{"idx": "MED_paper_sentence2_ccg2mono_uniq-161", "question": {"stem": "Every alien who did not throw balls is hairy"}, "output": "u d d d d u u u u"}
+{"idx": "MED_paper_sentence2_ccg2mono_uniq-162", "question": {"stem": "Every alien who did not throw tennis balls is hairy"}, "output": "u d d d d u u u u u"}
+{"idx": "MED_paper_sentence2_ccg2mono_uniq-163", "question": {"stem": "Every alien who did not use coins is hairy"}, "output": "u d d d d u u u u"}
+{"idx": "MED_paper_sentence2_ccg2mono_uniq-164", "question": {"stem": "Every alien who did not use quarters is hairy"}, "output": "u d d d d u u u u"}
+{"idx": "MED_paper_sentence2_ccg2mono_uniq-165", "question": {"stem": "Every alien who did not watch baseball matches is hairy"}, "output": "u d d d d u u u u u"}
+{"idx": "MED_paper_sentence2_ccg2mono_uniq-166", "question": {"stem": "Every alien who did not watch sports matches is hairy"}, "output": "u d d d d u u u u u"}
+{"idx": "MED_paper_sentence2_ccg2mono_uniq-167", "question": {"stem": "Every cook who is not a man ran"}, "output": "u d d u d u u u"}
+{"idx": "MED_paper_sentence2_ccg2mono_uniq-168", "question": {"stem": "Every cook who is not a tall man ran"}, "output": "u d d u d u u u u"}
+{"idx": "MED_paper_sentence2_ccg2mono_uniq-169", "question": {"stem": "Every linguist entered the race"}, "output": "u d u u ="}
+{"idx": "MED_paper_sentence2_ccg2mono_uniq-170", "question": {"stem": "Every linguist entered the race early"}, "output": "u d u u = u"}
+{"idx": "MED_paper_sentence2_ccg2mono_uniq-171", "question": {"stem": "Every mammal is striped"}, "output": "u d u u"}
+{"idx": "MED_paper_sentence2_ccg2mono_uniq-172", "question": {"stem": "Every man danced"}, "output": "u d u"}
+{"idx": "MED_paper_sentence2_ccg2mono_uniq-173", "question": {"stem": "Every man ran"}, "output": "u d u"}
+{"idx": "MED_paper_sentence2_ccg2mono_uniq-174", "question": {"stem": "Every man ran quickly"}, "output": "u d u u"}
+{"idx": "MED_paper_sentence2_ccg2mono_uniq-175", "question": {"stem": "Every man sang"}, "output": "u d u"}
+{"idx": "MED_paper_sentence2_ccg2mono_uniq-176", "question": {"stem": "Every man sang and danced"}, "output": "u d u u u"}
+{"idx": "MED_paper_sentence2_ccg2mono_uniq-177", "question": {"stem": "Every man sang or danced"}, "output": "u d u u u"}
+{"idx": "MED_paper_sentence2_ccg2mono_uniq-178", "question": {"stem": "Every student whom mary kissed smiled"}, "output": "u = d = = ="}
+{"idx": "MED_paper_sentence2_ccg2mono_uniq-179", "question": {"stem": "Every student whom mary touched smiled"}, "output": "u = d = = ="}
+{"idx": "MED_paper_sentence2_ccg2mono_uniq-180", "question": {"stem": "Every student kissed every tall teacher"}, "output": "u d u u d d"}
+{"idx": "MED_paper_sentence2_ccg2mono_uniq-181", "question": {"stem": "Every student kissed every teacher"}, "output": "u d u u d"}
+{"idx": "MED_paper_sentence2_ccg2mono_uniq-182", "question": {"stem": "Every student who kissed every tall teacher smiled"}, "output": "u d d d d u u u"}
+{"idx": "MED_paper_sentence2_ccg2mono_uniq-183", "question": {"stem": "Every student who kissed every teacher smiled"}, "output": "u d d d d u u"}
+{"idx": "MED_paper_sentence2_ccg2mono_uniq-184", "question": {"stem": "Every tall man ran"}, "output": "u d d u"}
+{"idx": "MED_paper_sentence2_ccg2mono_uniq-185", "question": {"stem": "Every tall teacher ran"}, "output": "u d d u"}
+{"idx": "MED_paper_sentence2_ccg2mono_uniq-186", "question": {"stem": "Every teacher ran yesterday"}, "output": "u d u u"}
+{"idx": "MED_paper_sentence2_ccg2mono_uniq-187", "question": {"stem": "Every zebra is striped"}, "output": "u d u u"}
+{"idx": "MED_paper_sentence2_ccg2mono_uniq-188", "question": {"stem": "Exactly one man danced"}, "output": "u u u u"}
+{"idx": "MED_paper_sentence2_ccg2mono_uniq-189", "question": {"stem": "Exactly one man ran"}, "output": "u u u u"}
+{"idx": "MED_paper_sentence2_ccg2mono_uniq-190", "question": {"stem": "Exactly one man ran quickly"}, "output": "u u u u u"}
+{"idx": "MED_paper_sentence2_ccg2mono_uniq-191", "question": {"stem": "Exactly one man sang"}, "output": "u u u u"}
+{"idx": "MED_paper_sentence2_ccg2mono_uniq-192", "question": {"stem": "Exactly one man sang or danced"}, "output": "u u u u u u"}
+{"idx": "MED_paper_sentence2_ccg2mono_uniq-193", "question": {"stem": "Exactly one tall man ran"}, "output": "u u u u u"}
+{"idx": "MED_paper_sentence2_ccg2mono_uniq-194", "question": {"stem": "Few of the books had -LSB- some -RSB- typical readers"}, "output": "u d d = d d d d d d"}
+{"idx": "MED_paper_sentence2_ccg2mono_uniq-195", "question": {"stem": "Fred\u2019s tie is blue"}, "output": "u u u u"}
+{"idx": "MED_paper_sentence2_ccg2mono_uniq-196", "question": {"stem": "Fred\u2019s tie is navy blue"}, "output": "u u u u u"}
+{"idx": "MED_paper_sentence2_ccg2mono_uniq-197", "question": {"stem": "He bought marble"}, "output": "u u u"}
+{"idx": "MED_paper_sentence2_ccg2mono_uniq-198", "question": {"stem": "He bought stone"}, "output": "u u u"}
+{"idx": "MED_paper_sentence2_ccg2mono_uniq-199", "question": {"stem": "He kissed no woman"}, "output": "u d u d"}
+{"idx": "MED_paper_sentence2_ccg2mono_uniq-200", "question": {"stem": "He knows a city in europe"}, "output": "u u u u u u"}
+{"idx": "MED_paper_sentence2_ccg2mono_uniq-201", "question": {"stem": "He knows a city in spain"}, "output": "u u u u u u"}
+{"idx": "MED_paper_sentence2_ccg2mono_uniq-202", "question": {"stem": "He loves a person"}, "output": "u u u u"}
+{"idx": "MED_paper_sentence2_ccg2mono_uniq-203", "question": {"stem": "He loves a woman"}, "output": "u u u u"}
+{"idx": "MED_paper_sentence2_ccg2mono_uniq-204", "question": {"stem": "He never lacked money"}, "output": "u u u u"}
+{"idx": "MED_paper_sentence2_ccg2mono_uniq-205", "question": {"stem": "He never lacked paper money"}, "output": "u u u u u"}
+{"idx": "MED_paper_sentence2_ccg2mono_uniq-206", "question": {"stem": "He touched no woman"}, "output": "u d u d"}
+{"idx": "MED_paper_sentence2_ccg2mono_uniq-207", "question": {"stem": "Indeed it is often stated that for humans to learn how to perform adequately in a domain any number of examples is enough from which to learn"}, "output": "u u u u u u = = = = = = = = = = = = = = = = = = = = ="}
+{"idx": "MED_paper_sentence2_ccg2mono_uniq-208", "question": {"stem": "Indeed it is often stated that for humans to learn how to perform adequately in a domain one example is enough from which to learn"}, "output": "u u u u u u = = = = = = = = = = = = = = = = = = ="}
+{"idx": "MED_paper_sentence2_ccg2mono_uniq-209", "question": {"stem": "In all areas human activity has changed the form of river channels altering magnitudes and frequencies of flooding"}, "output": "u u d u u u u u = = = = = = u = = ="}
+{"idx": "MED_paper_sentence2_ccg2mono_uniq-210", "question": {"stem": "In all developed areas human activity has changed the form of river channels altering magnitudes and frequencies of flooding"}, "output": "u u d d u u u u u = = = = = = u = = ="}
+{"idx": "MED_paper_sentence2_ccg2mono_uniq-211", "question": {"stem": "In grounded communication tasks speakers face pressures in choosing referential expressions that distinguish their targets from others in the context leading to many kinds of meaning enrichment"}, "output": "u u u u = = = u = = = = = = = = = = = = = = = = = = ="}
+{"idx": "MED_paper_sentence2_ccg2mono_uniq-212", "question": {"stem": "In grounded communication tasks speakers face pressures in choosing referential expressions that distinguish their targets from others in the context leading to many kinds of pragmatic meaning enrichment"}, "output": "u u u u = = = u = = = = = = = = = = = = = = = = = = = ="}
+{"idx": "MED_paper_sentence2_ccg2mono_uniq-213", "question": {"stem": "In many areas human activity has changed the form of river channels altering magnitudes and frequencies of flooding"}, "output": "u u = u u u u u = = = = = = u = = ="}
+{"idx": "MED_paper_sentence2_ccg2mono_uniq-214", "question": {"stem": "In many developed areas human activity has changed the form of river channels altering magnitudes and frequencies of flooding"}, "output": "u u = = u u u u u = = = = = = u = = ="}
+{"idx": "MED_paper_sentence2_ccg2mono_uniq-215", "question": {"stem": "It 's not true that betty does not live in berlin"}, "output": "u u u d u = = = = = ="}
+{"idx": "MED_paper_sentence2_ccg2mono_uniq-216", "question": {"stem": "It 's not true that betty does not live in germany"}, "output": "u u u d u = = = = = ="}
+{"idx": "MED_paper_sentence2_ccg2mono_uniq-217", "question": {"stem": "It 's not true that betty lives in berlin"}, "output": "u u u d u = = = ="}
+{"idx": "MED_paper_sentence2_ccg2mono_uniq-218", "question": {"stem": "It 's not true that betty lives in germany"}, "output": "u u u d u = = = ="}
+{"idx": "MED_paper_sentence2_ccg2mono_uniq-219", "question": {"stem": "I do not want to have to keep entertaining people"}, "output": "u u u d d d d d d d"}
+{"idx": "MED_paper_sentence2_ccg2mono_uniq-220", "question": {"stem": "I do not want to have to keep entertaining people who do not value my time"}, "output": "u u u d d d d d d d d d d u u u"}
+{"idx": "MED_paper_sentence2_ccg2mono_uniq-221", "question": {"stem": "I have never seen a bird not flying"}, "output": "u u u u u u u d"}
+{"idx": "MED_paper_sentence2_ccg2mono_uniq-222", "question": {"stem": "I have never seen a hummingbird"}, "output": "u u u u u u"}
+{"idx": "MED_paper_sentence2_ccg2mono_uniq-223", "question": {"stem": "I have never seen a hummingbird not flying"}, "output": "u u u u u u u d"}
+{"idx": "MED_paper_sentence2_ccg2mono_uniq-224", "question": {"stem": "John entered the race"}, "output": "u u u ="}
+{"idx": "MED_paper_sentence2_ccg2mono_uniq-225", "question": {"stem": "John entered the race early"}, "output": "u u u = u"}
+{"idx": "MED_paper_sentence2_ccg2mono_uniq-226", "question": {"stem": "John is a student"}, "output": "u u u u"}
+{"idx": "MED_paper_sentence2_ccg2mono_uniq-227", "question": {"stem": "John is a tall student"}, "output": "u u u u u"}
+{"idx": "MED_paper_sentence2_ccg2mono_uniq-228", "question": {"stem": "John is a very tall student"}, "output": "u u u u u u"}
+{"idx": "MED_paper_sentence2_ccg2mono_uniq-229", "question": {"stem": "John is tall"}, "output": "u u u"}
+{"idx": "MED_paper_sentence2_ccg2mono_uniq-230", "question": {"stem": "John is very tall"}, "output": "u u u u"}
+{"idx": "MED_paper_sentence2_ccg2mono_uniq-231", "question": {"stem": "John moves"}, "output": "u u"}
+{"idx": "MED_paper_sentence2_ccg2mono_uniq-232", "question": {"stem": "John saw no student"}, "output": "u d u d"}
+{"idx": "MED_paper_sentence2_ccg2mono_uniq-233", "question": {"stem": "John saw no tall student"}, "output": "u d u d d"}
+{"idx": "MED_paper_sentence2_ccg2mono_uniq-234", "question": {"stem": "John walk"}, "output": "u u"}
+{"idx": "MED_paper_sentence2_ccg2mono_uniq-235", "question": {"stem": "Just watched the first 15 minutes got bored skipped to the magic bit it 's funnier as a gif"}, "output": "u u u = = = u u u u u = = = = = = = ="}
+{"idx": "MED_paper_sentence2_ccg2mono_uniq-236", "question": {"stem": "Just watched the first quarter hour got bored skipped to the magic bit it 's funnier as a gif"}, "output": "u u u = = = u u u u u = = = = = = = ="}
+{"idx": "MED_paper_sentence2_ccg2mono_uniq-237", "question": {"stem": "Last time i visited my friend was nearly 6 months ago and i am still finding husky fur on my socks"}, "output": "d d d d d d d d d d d d d d d d d d d d d"}
+{"idx": "MED_paper_sentence2_ccg2mono_uniq-238", "question": {"stem": "Last time i visited was nearly 6 months ago and i am still finding husky fur on my socks"}, "output": "d d d d d d d d d d d d d d d d d d d"}
+{"idx": "MED_paper_sentence2_ccg2mono_uniq-239", "question": {"stem": "Looking at pictures online of people trying to take photos of mirrors is my new thing"}, "output": "u u u u u u u u u u u u = u u u"}
+{"idx": "MED_paper_sentence2_ccg2mono_uniq-240", "question": {"stem": "Looking at pictures online of people trying to take photos of mirrors they want to sell is my new thing"}, "output": "u u u u u u u u u u u u u u u u = u u u"}
+{"idx": "MED_paper_sentence2_ccg2mono_uniq-241", "question": {"stem": "Many aliens ate at mexican restaurants"}, "output": "u = u u u u"}
+{"idx": "MED_paper_sentence2_ccg2mono_uniq-242", "question": {"stem": "Many aliens ate at restaurants"}, "output": "u = u u u"}
+{"idx": "MED_paper_sentence2_ccg2mono_uniq-243", "question": {"stem": "Many aliens ate at some mexican restaurants"}, "output": "u = u u u u u"}
+{"idx": "MED_paper_sentence2_ccg2mono_uniq-244", "question": {"stem": "Many aliens ate at some restaurants"}, "output": "u = u u u u"}
+{"idx": "MED_paper_sentence2_ccg2mono_uniq-245", "question": {"stem": "Many aliens ate meat"}, "output": "u = u u"}
+{"idx": "MED_paper_sentence2_ccg2mono_uniq-246", "question": {"stem": "Many aliens ate pork"}, "output": "u = u u"}
+{"idx": "MED_paper_sentence2_ccg2mono_uniq-247", "question": {"stem": "Many aliens ate some meat"}, "output": "u = u u u"}
+{"idx": "MED_paper_sentence2_ccg2mono_uniq-248", "question": {"stem": "Many aliens ate some pork"}, "output": "u = u u u"}
+{"idx": "MED_paper_sentence2_ccg2mono_uniq-249", "question": {"stem": "Many aliens bought clothes"}, "output": "u = u u"}
+{"idx": "MED_paper_sentence2_ccg2mono_uniq-250", "question": {"stem": "Many aliens bought shirts"}, "output": "u = u u"}
+{"idx": "MED_paper_sentence2_ccg2mono_uniq-251", "question": {"stem": "Many aliens bought some clothes"}, "output": "u = u u u"}
+{"idx": "MED_paper_sentence2_ccg2mono_uniq-252", "question": {"stem": "Many aliens bought some shirts"}, "output": "u = u u u"}
+{"idx": "MED_paper_sentence2_ccg2mono_uniq-253", "question": {"stem": "Many aliens drank coke"}, "output": "u = u u"}
+{"idx": "MED_paper_sentence2_ccg2mono_uniq-254", "question": {"stem": "Many aliens drank soda"}, "output": "u = u u"}
+{"idx": "MED_paper_sentence2_ccg2mono_uniq-255", "question": {"stem": "Many aliens drank some coke"}, "output": "u = u u u"}
+{"idx": "MED_paper_sentence2_ccg2mono_uniq-256", "question": {"stem": "Many aliens drank some soda"}, "output": "u = u u u"}
+{"idx": "MED_paper_sentence2_ccg2mono_uniq-257", "question": {"stem": "Many aliens drove cars"}, "output": "u = u u"}
+{"idx": "MED_paper_sentence2_ccg2mono_uniq-258", "question": {"stem": "Many aliens drove some cars"}, "output": "u = u u u"}
+{"idx": "MED_paper_sentence2_ccg2mono_uniq-259", "question": {"stem": "Many aliens drove some suvs"}, "output": "u = u u u"}
+{"idx": "MED_paper_sentence2_ccg2mono_uniq-260", "question": {"stem": "Many aliens drove suvs"}, "output": "u = u u"}
+{"idx": "MED_paper_sentence2_ccg2mono_uniq-261", "question": {"stem": "Many aliens played with some toys"}, "output": "u = u u u u"}
+{"idx": "MED_paper_sentence2_ccg2mono_uniq-262", "question": {"stem": "Many aliens played with some toy cars"}, "output": "u = u u u u u"}
+{"idx": "MED_paper_sentence2_ccg2mono_uniq-263", "question": {"stem": "Many aliens played with toys"}, "output": "u = u u u"}
+{"idx": "MED_paper_sentence2_ccg2mono_uniq-264", "question": {"stem": "Many aliens played with toy cars"}, "output": "u = u u u u"}
+{"idx": "MED_paper_sentence2_ccg2mono_uniq-265", "question": {"stem": "Many aliens read books"}, "output": "u = u u"}
+{"idx": "MED_paper_sentence2_ccg2mono_uniq-266", "question": {"stem": "Many aliens read magazines"}, "output": "u = u u"}
+{"idx": "MED_paper_sentence2_ccg2mono_uniq-267", "question": {"stem": "Many aliens read news magazines"}, "output": "u = u u u"}
+{"idx": "MED_paper_sentence2_ccg2mono_uniq-268", "question": {"stem": "Many aliens read sci-fi novels"}, "output": "u = u u u"}
+{"idx": "MED_paper_sentence2_ccg2mono_uniq-269", "question": {"stem": "Many aliens read some books"}, "output": "u = u u u"}
+{"idx": "MED_paper_sentence2_ccg2mono_uniq-270", "question": {"stem": "Many aliens read some magazines"}, "output": "u = u u u"}
+{"idx": "MED_paper_sentence2_ccg2mono_uniq-271", "question": {"stem": "Many aliens read some news magazines"}, "output": "u = u u u u"}
+{"idx": "MED_paper_sentence2_ccg2mono_uniq-272", "question": {"stem": "Many aliens read some sci-fi novels"}, "output": "u = u u u u"}
+{"idx": "MED_paper_sentence2_ccg2mono_uniq-273", "question": {"stem": "Many aliens saw birds"}, "output": "u = u u"}
+{"idx": "MED_paper_sentence2_ccg2mono_uniq-274", "question": {"stem": "Many aliens saw doves"}, "output": "u = u u"}
+{"idx": "MED_paper_sentence2_ccg2mono_uniq-275", "question": {"stem": "Many aliens saw some birds"}, "output": "u = u u u"}
+{"idx": "MED_paper_sentence2_ccg2mono_uniq-276", "question": {"stem": "Many aliens saw some doves"}, "output": "u = u u u"}
+{"idx": "MED_paper_sentence2_ccg2mono_uniq-277", "question": {"stem": "Many aliens threw balls"}, "output": "u = u u"}
+{"idx": "MED_paper_sentence2_ccg2mono_uniq-278", "question": {"stem": "Many aliens threw some balls"}, "output": "u = u u u"}
+{"idx": "MED_paper_sentence2_ccg2mono_uniq-279", "question": {"stem": "Many aliens threw some tennis balls"}, "output": "u = u u u u"}
+{"idx": "MED_paper_sentence2_ccg2mono_uniq-280", "question": {"stem": "Many aliens threw tennis balls"}, "output": "u = u u u"}
+{"idx": "MED_paper_sentence2_ccg2mono_uniq-281", "question": {"stem": "Many aliens used coins"}, "output": "u = u u"}
+{"idx": "MED_paper_sentence2_ccg2mono_uniq-282", "question": {"stem": "Many aliens used quarters"}, "output": "u = u u"}
+{"idx": "MED_paper_sentence2_ccg2mono_uniq-283", "question": {"stem": "Many aliens used some coins"}, "output": "u = u u u"}
+{"idx": "MED_paper_sentence2_ccg2mono_uniq-284", "question": {"stem": "Many aliens used some quarters"}, "output": "u = u u u"}
+{"idx": "MED_paper_sentence2_ccg2mono_uniq-285", "question": {"stem": "Many aliens watched baseball matches"}, "output": "u = u u u"}
+{"idx": "MED_paper_sentence2_ccg2mono_uniq-286", "question": {"stem": "Many aliens watched some baseball matches"}, "output": "u = u u u u"}
+{"idx": "MED_paper_sentence2_ccg2mono_uniq-287", "question": {"stem": "Many aliens watched some sports matches"}, "output": "u = u u u u"}
+{"idx": "MED_paper_sentence2_ccg2mono_uniq-288", "question": {"stem": "Many aliens watched sports matches"}, "output": "u = u u u"}
+{"idx": "MED_paper_sentence2_ccg2mono_uniq-289", "question": {"stem": "Many british delegates obtained interesting results from the survey"}, "output": "u = = u u u u u ="}
+{"idx": "MED_paper_sentence2_ccg2mono_uniq-290", "question": {"stem": "Many campers have caught a cold"}, "output": "u = u u u u"}
+{"idx": "MED_paper_sentence2_ccg2mono_uniq-291", "question": {"stem": "Many campers have ever had a sunburn or caught a cold"}, "output": "u = u u u u u u u u u"}
+{"idx": "MED_paper_sentence2_ccg2mono_uniq-292", "question": {"stem": "Many campers have had a sunburn or caught a cold"}, "output": "u = u u u u u u u u"}
+{"idx": "MED_paper_sentence2_ccg2mono_uniq-293", "question": {"stem": "Many children chose any mint chocolates or decided on the cotton candy"}, "output": "u = u u u u u u u u = ="}
+{"idx": "MED_paper_sentence2_ccg2mono_uniq-294", "question": {"stem": "Many children chose mint chocolates or decided on the cotton candy"}, "output": "u = u u u u u u u = ="}
+{"idx": "MED_paper_sentence2_ccg2mono_uniq-295", "question": {"stem": "Many children decided on the cotton candy"}, "output": "u = u u u = ="}
+{"idx": "MED_paper_sentence2_ccg2mono_uniq-296", "question": {"stem": "Many delegates obtained interesting results from the survey"}, "output": "u = u u u u u ="}
+{"idx": "MED_paper_sentence2_ccg2mono_uniq-297", "question": {"stem": "Many delegates obtained results from the survey"}, "output": "u = u u u u ="}
+{"idx": "MED_paper_sentence2_ccg2mono_uniq-298", "question": {"stem": "Many men entered the race"}, "output": "u = u u ="}
+{"idx": "MED_paper_sentence2_ccg2mono_uniq-299", "question": {"stem": "Many men entered the race early"}, "output": "u = u u = u"}
+{"idx": "MED_paper_sentence2_ccg2mono_uniq-300", "question": {"stem": "Many men farmers entered the race early"}, "output": "u = = u u = u"}
+{"idx": "MED_paper_sentence2_ccg2mono_uniq-301", "question": {"stem": "Many of the books had typical or marginal readers"}, "output": "u u u = u u u u u"}
+{"idx": "MED_paper_sentence2_ccg2mono_uniq-302", "question": {"stem": "Many of the campers have caught a cold"}, "output": "u u u = u u u u"}
+{"idx": "MED_paper_sentence2_ccg2mono_uniq-303", "question": {"stem": "Many of the campers have ever had a sunburn or caught a cold"}, "output": "u u u = u u u u u u u u u"}
+{"idx": "MED_paper_sentence2_ccg2mono_uniq-304", "question": {"stem": "Many of the campers have had a sunburn or caught a cold"}, "output": "u u u = u u u u u u u u"}
+{"idx": "MED_paper_sentence2_ccg2mono_uniq-305", "question": {"stem": "Many of the children chose any mint chocolates or decided on the cotton candy"}, "output": "u u u = u u u u u u u u = ="}
+{"idx": "MED_paper_sentence2_ccg2mono_uniq-306", "question": {"stem": "Many of the children chose mint chocolates or decided on the cotton candy"}, "output": "u u u = u u u u u u u = ="}
+{"idx": "MED_paper_sentence2_ccg2mono_uniq-307", "question": {"stem": "Many of the children decided on the cotton candy"}, "output": "u u u = u u u = ="}
+{"idx": "MED_paper_sentence2_ccg2mono_uniq-308", "question": {"stem": "Mary does not move"}, "output": "u u u d"}
+{"idx": "MED_paper_sentence2_ccg2mono_uniq-309", "question": {"stem": "Mary does not walk"}, "output": "u u u d"}
+{"idx": "MED_paper_sentence2_ccg2mono_uniq-310", "question": {"stem": "Mary is sad"}, "output": "u u u"}
+{"idx": "MED_paper_sentence2_ccg2mono_uniq-311", "question": {"stem": "Mary is tired"}, "output": "u u u"}
+{"idx": "MED_paper_sentence2_ccg2mono_uniq-312", "question": {"stem": "Mary is very sad or very tired"}, "output": "u u u u u u u"}
+{"idx": "MED_paper_sentence2_ccg2mono_uniq-313", "question": {"stem": "Mary loves john"}, "output": "u u u"}
+{"idx": "MED_paper_sentence2_ccg2mono_uniq-314", "question": {"stem": "Mary never ate pizza with anchovies"}, "output": "u u u u u u"}
+{"idx": "MED_paper_sentence2_ccg2mono_uniq-315", "question": {"stem": "Missouri lawmakers are considering a boycott of companies that boycott israel"}, "output": "u u u u u u u u u = ="}
+{"idx": "MED_paper_sentence2_ccg2mono_uniq-316", "question": {"stem": "Missouri lawmakers are considering a government boycott of companies that boycott israel"}, "output": "u u u u u u u u u u = ="}
+{"idx": "MED_paper_sentence2_ccg2mono_uniq-317", "question": {"stem": "More than half of the tenors are sick"}, "output": "= = = = = = = ="}
+{"idx": "MED_paper_sentence2_ccg2mono_uniq-318", "question": {"stem": "More than half of the tenors have the flu"}, "output": "= = = = = = = = ="}
+{"idx": "MED_paper_sentence2_ccg2mono_uniq-319", "question": {"stem": "Neither commissioner spends time at home"}, "output": "u = d d d d"}
+{"idx": "MED_paper_sentence2_ccg2mono_uniq-320", "question": {"stem": "Neither democrat entered the race"}, "output": "u = d d ="}
+{"idx": "MED_paper_sentence2_ccg2mono_uniq-321", "question": {"stem": "Neither democrat entered the race early"}, "output": "u = d d = d"}
+{"idx": "MED_paper_sentence2_ccg2mono_uniq-322", "question": {"stem": "Nina has a bulldog"}, "output": "u u u u"}
+{"idx": "MED_paper_sentence2_ccg2mono_uniq-323", "question": {"stem": "Nina has a dog"}, "output": "u u u u"}
+{"idx": "MED_paper_sentence2_ccg2mono_uniq-324", "question": {"stem": "None of the sopranos sang with fewer than 3 of the male singers"}, "output": "u u u = u = = = = = = = ="}
+{"idx": "MED_paper_sentence2_ccg2mono_uniq-325", "question": {"stem": "None of the sopranos sang with fewer than 3 of the tenors"}, "output": "u u u = u = = = = = = ="}
+{"idx": "MED_paper_sentence2_ccg2mono_uniq-326", "question": {"stem": "Not many of the campers have caught a cold"}, "output": "u d d d = d d d d"}
+{"idx": "MED_paper_sentence2_ccg2mono_uniq-327", "question": {"stem": "Not many of the campers have ever had a sunburn or caught a cold"}, "output": "u d d d = d d d d d u d d d"}
+{"idx": "MED_paper_sentence2_ccg2mono_uniq-328", "question": {"stem": "Not many of the campers have had a sunburn or caught a cold"}, "output": "u d d d = d d d d u d d d"}
+{"idx": "MED_paper_sentence2_ccg2mono_uniq-329", "question": {"stem": "Not many of the children chose any mint chocolates or decided on the cotton candy"}, "output": "u d d d = d d d d u d d d = ="}
+{"idx": "MED_paper_sentence2_ccg2mono_uniq-330", "question": {"stem": "Not many of the children chose mint chocolates or decided on the cotton candy"}, "output": "u d d d = d d d u d d d = ="}
+{"idx": "MED_paper_sentence2_ccg2mono_uniq-331", "question": {"stem": "Not many of the children decided on the cotton candy"}, "output": "u d d d = d d d = ="}
+{"idx": "MED_paper_sentence2_ccg2mono_uniq-332", "question": {"stem": "Not many campers have caught a cold"}, "output": "d d d d d d d"}
+{"idx": "MED_paper_sentence2_ccg2mono_uniq-333", "question": {"stem": "Not many campers have ever had a sunburn or caught a cold"}, "output": "d d d d d d d d d d d d"}
+{"idx": "MED_paper_sentence2_ccg2mono_uniq-334", "question": {"stem": "Not many campers have had a sunburn or caught a cold"}, "output": "d d d d d d d d d d d"}
+{"idx": "MED_paper_sentence2_ccg2mono_uniq-335", "question": {"stem": "Not many children chose any mint chocolates or decided on the cotton candy"}, "output": "d d d d d d d d d d d d d"}
+{"idx": "MED_paper_sentence2_ccg2mono_uniq-336", "question": {"stem": "Not many children chose mint chocolates or decided on the cotton candy"}, "output": "d d d d d d d d d d d d"}
+{"idx": "MED_paper_sentence2_ccg2mono_uniq-337", "question": {"stem": "Not many children decided on the cotton candy"}, "output": "d d d d d d d d"}
+{"idx": "MED_paper_sentence2_ccg2mono_uniq-338", "question": {"stem": "No alien ate any meat"}, "output": "u d d d d"}
+{"idx": "MED_paper_sentence2_ccg2mono_uniq-339", "question": {"stem": "No alien ate any pork"}, "output": "u d d d d"}
+{"idx": "MED_paper_sentence2_ccg2mono_uniq-340", "question": {"stem": "No alien ate at any mexican restaurants"}, "output": "u d d d d d d"}
+{"idx": "MED_paper_sentence2_ccg2mono_uniq-341", "question": {"stem": "No alien ate at any restaurants"}, "output": "u d d d d d"}
+{"idx": "MED_paper_sentence2_ccg2mono_uniq-342", "question": {"stem": "No alien ate at mexican restaurants"}, "output": "u d d d d d"}
+{"idx": "MED_paper_sentence2_ccg2mono_uniq-343", "question": {"stem": "No alien ate at restaurants"}, "output": "u d d d d"}
+{"idx": "MED_paper_sentence2_ccg2mono_uniq-344", "question": {"stem": "No alien ate meat"}, "output": "u d d d"}
+{"idx": "MED_paper_sentence2_ccg2mono_uniq-345", "question": {"stem": "No alien ate pork"}, "output": "u d d d"}
+{"idx": "MED_paper_sentence2_ccg2mono_uniq-346", "question": {"stem": "No alien bought any clothes"}, "output": "u d d d d"}
+{"idx": "MED_paper_sentence2_ccg2mono_uniq-347", "question": {"stem": "No alien bought any shirts"}, "output": "u d d d d"}
+{"idx": "MED_paper_sentence2_ccg2mono_uniq-348", "question": {"stem": "No alien bought clothes"}, "output": "u d d d"}
+{"idx": "MED_paper_sentence2_ccg2mono_uniq-349", "question": {"stem": "No alien bought shirts"}, "output": "u d d d"}
+{"idx": "MED_paper_sentence2_ccg2mono_uniq-350", "question": {"stem": "No alien died without buying clothes"}, "output": "u d d d u u"}
+{"idx": "MED_paper_sentence2_ccg2mono_uniq-351", "question": {"stem": "No alien died without buying shirts"}, "output": "u d d d u u"}
+{"idx": "MED_paper_sentence2_ccg2mono_uniq-352", "question": {"stem": "No alien died without drinking coke"}, "output": "u d d d u u"}
+{"idx": "MED_paper_sentence2_ccg2mono_uniq-353", "question": {"stem": "No alien died without drinking soda"}, "output": "u d d d u u"}
+{"idx": "MED_paper_sentence2_ccg2mono_uniq-354", "question": {"stem": "No alien died without driving cars"}, "output": "u d d d u u"}
+{"idx": "MED_paper_sentence2_ccg2mono_uniq-355", "question": {"stem": "No alien died without driving suvs"}, "output": "u d d d u u"}
+{"idx": "MED_paper_sentence2_ccg2mono_uniq-356", "question": {"stem": "No alien died without eating at mexican restaurants"}, "output": "u d d d u u u u"}
+{"idx": "MED_paper_sentence2_ccg2mono_uniq-357", "question": {"stem": "No alien died without eating at restaurants"}, "output": "u d d d u u u"}
+{"idx": "MED_paper_sentence2_ccg2mono_uniq-358", "question": {"stem": "No alien died without eating meat"}, "output": "u d d d u u"}
+{"idx": "MED_paper_sentence2_ccg2mono_uniq-359", "question": {"stem": "No alien died without eating pork"}, "output": "u d d d u u"}
+{"idx": "MED_paper_sentence2_ccg2mono_uniq-360", "question": {"stem": "No alien died without playing with toys"}, "output": "u d d d u u u"}
+{"idx": "MED_paper_sentence2_ccg2mono_uniq-361", "question": {"stem": "No alien died without playing with toy cars"}, "output": "u d d d u u u u"}
+{"idx": "MED_paper_sentence2_ccg2mono_uniq-362", "question": {"stem": "No alien died without reading books"}, "output": "u d d d u u"}
+{"idx": "MED_paper_sentence2_ccg2mono_uniq-363", "question": {"stem": "No alien died without reading magazines"}, "output": "u d d d u u"}
+{"idx": "MED_paper_sentence2_ccg2mono_uniq-364", "question": {"stem": "No alien died without reading news magazines"}, "output": "u d d d u u u"}
+{"idx": "MED_paper_sentence2_ccg2mono_uniq-365", "question": {"stem": "No alien died without reading sci-fi novels"}, "output": "u d d d u u u"}
+{"idx": "MED_paper_sentence2_ccg2mono_uniq-366", "question": {"stem": "No alien died without seeing birds"}, "output": "u d d d u u"}
+{"idx": "MED_paper_sentence2_ccg2mono_uniq-367", "question": {"stem": "No alien died without seeing doves"}, "output": "u d d d u u"}
+{"idx": "MED_paper_sentence2_ccg2mono_uniq-368", "question": {"stem": "No alien died without throwing balls"}, "output": "u d d d u u"}
+{"idx": "MED_paper_sentence2_ccg2mono_uniq-369", "question": {"stem": "No alien died without throwing tennis balls"}, "output": "u d d d u u u"}
+{"idx": "MED_paper_sentence2_ccg2mono_uniq-370", "question": {"stem": "No alien died without using coins"}, "output": "u d d d u u"}
+{"idx": "MED_paper_sentence2_ccg2mono_uniq-371", "question": {"stem": "No alien died without using quarters"}, "output": "u d d d u u"}
+{"idx": "MED_paper_sentence2_ccg2mono_uniq-372", "question": {"stem": "No alien died without watching baseball matches"}, "output": "u d d d u u u"}
+{"idx": "MED_paper_sentence2_ccg2mono_uniq-373", "question": {"stem": "No alien died without watching sports matches"}, "output": "u d d d u u u"}
+{"idx": "MED_paper_sentence2_ccg2mono_uniq-374", "question": {"stem": "No alien drank any coke"}, "output": "u d d d d"}
+{"idx": "MED_paper_sentence2_ccg2mono_uniq-375", "question": {"stem": "No alien drank any soda"}, "output": "u d d d d"}
+{"idx": "MED_paper_sentence2_ccg2mono_uniq-376", "question": {"stem": "No alien drank coke"}, "output": "u d d d"}
+{"idx": "MED_paper_sentence2_ccg2mono_uniq-377", "question": {"stem": "No alien drank soda"}, "output": "u d d d"}
+{"idx": "MED_paper_sentence2_ccg2mono_uniq-378", "question": {"stem": "No alien drove any cars"}, "output": "u d d d d"}
+{"idx": "MED_paper_sentence2_ccg2mono_uniq-379", "question": {"stem": "No alien drove any suvs"}, "output": "u d d d d"}
+{"idx": "MED_paper_sentence2_ccg2mono_uniq-380", "question": {"stem": "No alien drove cars"}, "output": "u d d d"}
+{"idx": "MED_paper_sentence2_ccg2mono_uniq-381", "question": {"stem": "No alien drove suvs"}, "output": "u d d d"}
+{"idx": "MED_paper_sentence2_ccg2mono_uniq-382", "question": {"stem": "No alien played with any toys"}, "output": "u d d d d d"}
+{"idx": "MED_paper_sentence2_ccg2mono_uniq-383", "question": {"stem": "No alien played with any toy cars"}, "output": "u d d d d d d"}
+{"idx": "MED_paper_sentence2_ccg2mono_uniq-384", "question": {"stem": "No alien played with toys"}, "output": "u d d d d"}
+{"idx": "MED_paper_sentence2_ccg2mono_uniq-385", "question": {"stem": "No alien played with toy cars"}, "output": "u d d d d d"}
+{"idx": "MED_paper_sentence2_ccg2mono_uniq-386", "question": {"stem": "No alien read any books"}, "output": "u d d d d"}
+{"idx": "MED_paper_sentence2_ccg2mono_uniq-387", "question": {"stem": "No alien read any magazines"}, "output": "u d d d d"}
+{"idx": "MED_paper_sentence2_ccg2mono_uniq-388", "question": {"stem": "No alien read any news magazines"}, "output": "u d d d d d"}
+{"idx": "MED_paper_sentence2_ccg2mono_uniq-389", "question": {"stem": "No alien read any sci-fi novels"}, "output": "u d d d d d"}
+{"idx": "MED_paper_sentence2_ccg2mono_uniq-390", "question": {"stem": "No alien read books"}, "output": "u d d d"}
+{"idx": "MED_paper_sentence2_ccg2mono_uniq-391", "question": {"stem": "No alien read magazines"}, "output": "u d d d"}
+{"idx": "MED_paper_sentence2_ccg2mono_uniq-392", "question": {"stem": "No alien read news magazines"}, "output": "u d d d d"}
+{"idx": "MED_paper_sentence2_ccg2mono_uniq-393", "question": {"stem": "No alien read sci-fi novels"}, "output": "u d d d d"}
+{"idx": "MED_paper_sentence2_ccg2mono_uniq-394", "question": {"stem": "No alien saw any birds"}, "output": "u d d d d"}
+{"idx": "MED_paper_sentence2_ccg2mono_uniq-395", "question": {"stem": "No alien saw any doves"}, "output": "u d d d d"}
+{"idx": "MED_paper_sentence2_ccg2mono_uniq-396", "question": {"stem": "No alien saw birds"}, "output": "u d d d"}
+{"idx": "MED_paper_sentence2_ccg2mono_uniq-397", "question": {"stem": "No alien saw doves"}, "output": "u d d d"}
+{"idx": "MED_paper_sentence2_ccg2mono_uniq-398", "question": {"stem": "No alien threw any balls"}, "output": "u d d d d"}
+{"idx": "MED_paper_sentence2_ccg2mono_uniq-399", "question": {"stem": "No alien threw any tennis balls"}, "output": "u d d d d d"}
+{"idx": "MED_paper_sentence2_ccg2mono_uniq-400", "question": {"stem": "No alien threw balls"}, "output": "u d d d"}
+{"idx": "MED_paper_sentence2_ccg2mono_uniq-401", "question": {"stem": "No alien threw tennis balls"}, "output": "u d d d d"}
+{"idx": "MED_paper_sentence2_ccg2mono_uniq-402", "question": {"stem": "No alien used any coins"}, "output": "u d d d d"}
+{"idx": "MED_paper_sentence2_ccg2mono_uniq-403", "question": {"stem": "No alien used any quarters"}, "output": "u d d d d"}
+{"idx": "MED_paper_sentence2_ccg2mono_uniq-404", "question": {"stem": "No alien used coins"}, "output": "u d d d"}
+{"idx": "MED_paper_sentence2_ccg2mono_uniq-405", "question": {"stem": "No alien used quarters"}, "output": "u d d d"}
+{"idx": "MED_paper_sentence2_ccg2mono_uniq-406", "question": {"stem": "No alien watched any baseball matches"}, "output": "u d d d d d"}
+{"idx": "MED_paper_sentence2_ccg2mono_uniq-407", "question": {"stem": "No alien watched any sports matches"}, "output": "u d d d d d"}
+{"idx": "MED_paper_sentence2_ccg2mono_uniq-408", "question": {"stem": "No alien watched baseball matches"}, "output": "u d d d d"}
+{"idx": "MED_paper_sentence2_ccg2mono_uniq-409", "question": {"stem": "No alien watched sports matches"}, "output": "u d d d d"}
+{"idx": "MED_paper_sentence2_ccg2mono_uniq-410", "question": {"stem": "No delegate finished the report"}, "output": "u d d d ="}
+{"idx": "MED_paper_sentence2_ccg2mono_uniq-411", "question": {"stem": "No dots are red"}, "output": "u d d d"}
+{"idx": "MED_paper_sentence2_ccg2mono_uniq-412", "question": {"stem": "No dots are scarlet"}, "output": "u d d d"}
+{"idx": "MED_paper_sentence2_ccg2mono_uniq-413", "question": {"stem": "No elephants are blue"}, "output": "u d d d"}
+{"idx": "MED_paper_sentence2_ccg2mono_uniq-414", "question": {"stem": "No elephants are navy blue"}, "output": "u d d d d"}
+{"idx": "MED_paper_sentence2_ccg2mono_uniq-415", "question": {"stem": "No elephants are pink"}, "output": "u d d d"}
+{"idx": "MED_paper_sentence2_ccg2mono_uniq-416", "question": {"stem": "No less than fifty campers have caught a cold"}, "output": "u = d d = u u u u"}
+{"idx": "MED_paper_sentence2_ccg2mono_uniq-417", "question": {"stem": "No less than fifty campers have ever had a sunburn or caught a cold"}, "output": "u = d d = u u u u u u u u u"}
+{"idx": "MED_paper_sentence2_ccg2mono_uniq-418", "question": {"stem": "No less than fifty campers have had a sunburn or caught a cold"}, "output": "u = d d = u u u u u u u u"}
+{"idx": "MED_paper_sentence2_ccg2mono_uniq-419", "question": {"stem": "No less than fifty children chose any mint chocolates or decided on the cotton candy"}, "output": "u = d d = u u u u u u u u = ="}
+{"idx": "MED_paper_sentence2_ccg2mono_uniq-420", "question": {"stem": "No less than fifty children chose mint chocolates or decided on the cotton candy"}, "output": "u = d d = u u u u u u u = ="}
+{"idx": "MED_paper_sentence2_ccg2mono_uniq-421", "question": {"stem": "No less than fifty children decided on the cotton candy"}, "output": "u = d d = u u u = ="}
+{"idx": "MED_paper_sentence2_ccg2mono_uniq-422", "question": {"stem": "No man ran"}, "output": "u d d"}
+{"idx": "MED_paper_sentence2_ccg2mono_uniq-423", "question": {"stem": "No man ran quickly"}, "output": "u d d d"}
+{"idx": "MED_paper_sentence2_ccg2mono_uniq-424", "question": {"stem": "No more-than 5 campers have caught a cold"}, "output": "u d u d d d d d"}
+{"idx": "MED_paper_sentence2_ccg2mono_uniq-425", "question": {"stem": "No more-than 5 campers have ever had a sunburn or caught a cold"}, "output": "u d u d d d d d d u d d d"}
+{"idx": "MED_paper_sentence2_ccg2mono_uniq-426", "question": {"stem": "No more-than 5 campers have had a sunburn or caught a cold"}, "output": "u d u d d d d d u d d d"}
+{"idx": "MED_paper_sentence2_ccg2mono_uniq-427", "question": {"stem": "No more-than 5 children chose any mint chocolates or decided on the cotton candy"}, "output": "u d u d d d d d u d d d = ="}
+{"idx": "MED_paper_sentence2_ccg2mono_uniq-428", "question": {"stem": "No more-than 5 children chose mint chocolates or decided on the cotton candy"}, "output": "u d u d d d d u d d d = ="}
+{"idx": "MED_paper_sentence2_ccg2mono_uniq-429", "question": {"stem": "No more-than 5 children decided on the cotton candy"}, "output": "u d u d d d d = ="}
+{"idx": "MED_paper_sentence2_ccg2mono_uniq-430", "question": {"stem": "No more than fifty campers have caught a cold"}, "output": "u = d d = u u u u"}
+{"idx": "MED_paper_sentence2_ccg2mono_uniq-431", "question": {"stem": "No more than fifty campers have ever had a sunburn or caught a cold"}, "output": "u = d d = u u u u u u u u u"}
+{"idx": "MED_paper_sentence2_ccg2mono_uniq-432", "question": {"stem": "No more than fifty campers have had a sunburn or caught a cold"}, "output": "u = d d = u u u u u u u u"}
+{"idx": "MED_paper_sentence2_ccg2mono_uniq-433", "question": {"stem": "No more than fifty children chose any mint chocolates or decided on the cotton candy"}, "output": "u = d d = u u u u u u u u = ="}
+{"idx": "MED_paper_sentence2_ccg2mono_uniq-434", "question": {"stem": "No more than fifty children chose mint chocolates or decided on the cotton candy"}, "output": "u = d d = u u u u u u u = ="}
+{"idx": "MED_paper_sentence2_ccg2mono_uniq-435", "question": {"stem": "No more than fifty children decided on the cotton candy"}, "output": "u = d d = u u u = ="}
+{"idx": "MED_paper_sentence2_ccg2mono_uniq-436", "question": {"stem": "No pachyderms are pink"}, "output": "u d d d"}
+{"idx": "MED_paper_sentence2_ccg2mono_uniq-437", "question": {"stem": "No person danced"}, "output": "u d d"}
+{"idx": "MED_paper_sentence2_ccg2mono_uniq-438", "question": {"stem": "No person here has a european car"}, "output": "u d d d d d d"}
+{"idx": "MED_paper_sentence2_ccg2mono_uniq-439", "question": {"stem": "No person here has a german car"}, "output": "u d d d d d d"}
+{"idx": "MED_paper_sentence2_ccg2mono_uniq-440", "question": {"stem": "No person moved"}, "output": "u d d"}
+{"idx": "MED_paper_sentence2_ccg2mono_uniq-441", "question": {"stem": "No plumber entered the race"}, "output": "u d d d ="}
+{"idx": "MED_paper_sentence2_ccg2mono_uniq-442", "question": {"stem": "No tall teacher ran yesterday"}, "output": "u d d d d"}
+{"idx": "MED_paper_sentence2_ccg2mono_uniq-443", "question": {"stem": "No teacher ran"}, "output": "u d d"}
+{"idx": "MED_paper_sentence2_ccg2mono_uniq-444", "question": {"stem": "No bathroom bill made it to abbott\u2019s desk by the end of the legislative session in may"}, "output": "d d d d d d d d d d d d d d d d d"}
+{"idx": "MED_paper_sentence2_ccg2mono_uniq-445", "question": {"stem": "No bills made it to abbott\u2019s desk by the end of the legislative session in may"}, "output": "d d d d d d d d d d d d d d d d"}
+{"idx": "MED_paper_sentence2_ccg2mono_uniq-446", "question": {"stem": "No less-than 5 campers have caught a cold"}, "output": "d d d d d d d d"}
+{"idx": "MED_paper_sentence2_ccg2mono_uniq-447", "question": {"stem": "No less-than 5 campers have ever had a sunburn or caught a cold"}, "output": "d d d d d d d d d d d d d"}
+{"idx": "MED_paper_sentence2_ccg2mono_uniq-448", "question": {"stem": "No less-than 5 campers have had a sunburn or caught a cold"}, "output": "d d d d d d d d d d d d"}
+{"idx": "MED_paper_sentence2_ccg2mono_uniq-449", "question": {"stem": "No less-than 5 children chose any mint chocolates or decided on the cotton candy"}, "output": "d d d u d d d d u d d d = ="}
+{"idx": "MED_paper_sentence2_ccg2mono_uniq-450", "question": {"stem": "No less-than 5 children chose mint chocolates or decided on the cotton candy"}, "output": "d d d u d d d u d d d = ="}
+{"idx": "MED_paper_sentence2_ccg2mono_uniq-451", "question": {"stem": "No less-than 5 children decided on the cotton candy"}, "output": "d d d u d d d = ="}
+{"idx": "MED_paper_sentence2_ccg2mono_uniq-452", "question": {"stem": "One of the commissioners spends a-lot-of time at home"}, "output": "u u u = u u u u u"}
+{"idx": "MED_paper_sentence2_ccg2mono_uniq-453", "question": {"stem": "One of the female commissioners spends a-lot-of time at home"}, "output": "u u u = = u u u u u"}
+{"idx": "MED_paper_sentence2_ccg2mono_uniq-454", "question": {"stem": "Only 5 of the campers have caught a cold"}, "output": "= u u u = = = = ="}
+{"idx": "MED_paper_sentence2_ccg2mono_uniq-455", "question": {"stem": "Only 5 of the campers have ever had a sunburn or caught a cold"}, "output": "= u u u = = = = = = u = = ="}
+{"idx": "MED_paper_sentence2_ccg2mono_uniq-456", "question": {"stem": "Only 5 of the campers have had a sunburn or caught a cold"}, "output": "= u u u = = = = = u = = ="}
+{"idx": "MED_paper_sentence2_ccg2mono_uniq-457", "question": {"stem": "Only 5 of the children chose any mint chocolates or decided on the cotton candy"}, "output": "= u u u = = = = = u = = = = ="}
+{"idx": "MED_paper_sentence2_ccg2mono_uniq-458", "question": {"stem": "Only 5 of the children chose mint chocolates or decided on the cotton candy"}, "output": "= u u u = = = = u = = = = ="}
+{"idx": "MED_paper_sentence2_ccg2mono_uniq-459", "question": {"stem": "Only 5 of the children decided on the cotton candy"}, "output": "= u u u = = = = = ="}
+{"idx": "MED_paper_sentence2_ccg2mono_uniq-460", "question": {"stem": "Only 12 aliens ate any meat"}, "output": "u u u u u u"}
+{"idx": "MED_paper_sentence2_ccg2mono_uniq-461", "question": {"stem": "Only 12 aliens ate any pork"}, "output": "u u u u u u"}
+{"idx": "MED_paper_sentence2_ccg2mono_uniq-462", "question": {"stem": "Only 12 aliens ate at any mexican restaurants"}, "output": "u u u u u u u u"}
+{"idx": "MED_paper_sentence2_ccg2mono_uniq-463", "question": {"stem": "Only 12 aliens ate at any restaurants"}, "output": "u u u u u u u"}
+{"idx": "MED_paper_sentence2_ccg2mono_uniq-464", "question": {"stem": "Only 12 aliens ate at mexican restaurants"}, "output": "u u u u u u u"}
+{"idx": "MED_paper_sentence2_ccg2mono_uniq-465", "question": {"stem": "Only 12 aliens ate at restaurants"}, "output": "u u u u u u"}
+{"idx": "MED_paper_sentence2_ccg2mono_uniq-466", "question": {"stem": "Only 12 aliens ate at some mexican restaurants"}, "output": "u u u u u u u u"}
+{"idx": "MED_paper_sentence2_ccg2mono_uniq-467", "question": {"stem": "Only 12 aliens ate at some restaurants"}, "output": "u u u u u u u"}
+{"idx": "MED_paper_sentence2_ccg2mono_uniq-468", "question": {"stem": "Only 12 aliens ate meat"}, "output": "u u u u u"}
+{"idx": "MED_paper_sentence2_ccg2mono_uniq-469", "question": {"stem": "Only 12 aliens ate pork"}, "output": "u u u u u"}
+{"idx": "MED_paper_sentence2_ccg2mono_uniq-470", "question": {"stem": "Only 12 aliens ate some meat"}, "output": "u u u u u u"}
+{"idx": "MED_paper_sentence2_ccg2mono_uniq-471", "question": {"stem": "Only 12 aliens ate some pork"}, "output": "u u u u u u"}
+{"idx": "MED_paper_sentence2_ccg2mono_uniq-472", "question": {"stem": "Only 12 aliens bought any clothes"}, "output": "u u u u u u"}
+{"idx": "MED_paper_sentence2_ccg2mono_uniq-473", "question": {"stem": "Only 12 aliens bought any shirts"}, "output": "u u u u u u"}
+{"idx": "MED_paper_sentence2_ccg2mono_uniq-474", "question": {"stem": "Only 12 aliens bought clothes"}, "output": "u u u u u"}
+{"idx": "MED_paper_sentence2_ccg2mono_uniq-475", "question": {"stem": "Only 12 aliens bought shirts"}, "output": "u u u u u"}
+{"idx": "MED_paper_sentence2_ccg2mono_uniq-476", "question": {"stem": "Only 12 aliens bought some clothes"}, "output": "u u u u u u"}
+{"idx": "MED_paper_sentence2_ccg2mono_uniq-477", "question": {"stem": "Only 12 aliens bought some shirts"}, "output": "u u u u u u"}
+{"idx": "MED_paper_sentence2_ccg2mono_uniq-478", "question": {"stem": "Only 12 aliens drank any coke"}, "output": "u u u u u u"}
+{"idx": "MED_paper_sentence2_ccg2mono_uniq-479", "question": {"stem": "Only 12 aliens drank any soda"}, "output": "u u u u u u"}
+{"idx": "MED_paper_sentence2_ccg2mono_uniq-480", "question": {"stem": "Only 12 aliens drank coke"}, "output": "u u u u u"}
+{"idx": "MED_paper_sentence2_ccg2mono_uniq-481", "question": {"stem": "Only 12 aliens drank soda"}, "output": "u u u u u"}
+{"idx": "MED_paper_sentence2_ccg2mono_uniq-482", "question": {"stem": "Only 12 aliens drank some coke"}, "output": "u u u u u u"}
+{"idx": "MED_paper_sentence2_ccg2mono_uniq-483", "question": {"stem": "Only 12 aliens drank some soda"}, "output": "u u u u u u"}
+{"idx": "MED_paper_sentence2_ccg2mono_uniq-484", "question": {"stem": "Only 12 aliens drove any cars"}, "output": "u u u u u u"}
+{"idx": "MED_paper_sentence2_ccg2mono_uniq-485", "question": {"stem": "Only 12 aliens drove any suvs"}, "output": "u u u u u u"}
+{"idx": "MED_paper_sentence2_ccg2mono_uniq-486", "question": {"stem": "Only 12 aliens drove cars"}, "output": "u u u u u"}
+{"idx": "MED_paper_sentence2_ccg2mono_uniq-487", "question": {"stem": "Only 12 aliens drove some cars"}, "output": "u u u u u u"}
+{"idx": "MED_paper_sentence2_ccg2mono_uniq-488", "question": {"stem": "Only 12 aliens drove some suvs"}, "output": "u u u u u u"}
+{"idx": "MED_paper_sentence2_ccg2mono_uniq-489", "question": {"stem": "Only 12 aliens drove suvs"}, "output": "u u u u u"}
+{"idx": "MED_paper_sentence2_ccg2mono_uniq-490", "question": {"stem": "Only 12 aliens played with any toys"}, "output": "u u u u u u u"}
+{"idx": "MED_paper_sentence2_ccg2mono_uniq-491", "question": {"stem": "Only 12 aliens played with any toy cars"}, "output": "u u u u u u u u"}
+{"idx": "MED_paper_sentence2_ccg2mono_uniq-492", "question": {"stem": "Only 12 aliens played with some toys"}, "output": "u u u u u u u"}
+{"idx": "MED_paper_sentence2_ccg2mono_uniq-493", "question": {"stem": "Only 12 aliens played with some toy cars"}, "output": "u u u u u u u u"}
+{"idx": "MED_paper_sentence2_ccg2mono_uniq-494", "question": {"stem": "Only 12 aliens played with toys"}, "output": "u u u u u u"}
+{"idx": "MED_paper_sentence2_ccg2mono_uniq-495", "question": {"stem": "Only 12 aliens played with toy cars"}, "output": "u u u u u u u"}
+{"idx": "MED_paper_sentence2_ccg2mono_uniq-496", "question": {"stem": "Only 12 aliens read any books"}, "output": "u u u u u u"}
+{"idx": "MED_paper_sentence2_ccg2mono_uniq-497", "question": {"stem": "Only 12 aliens read any magazines"}, "output": "u u u u u u"}
+{"idx": "MED_paper_sentence2_ccg2mono_uniq-498", "question": {"stem": "Only 12 aliens read any news magazines"}, "output": "u u u u u u u"}
+{"idx": "MED_paper_sentence2_ccg2mono_uniq-499", "question": {"stem": "Only 12 aliens read any sci-fi novels"}, "output": "u u u u u u u"}
+{"idx": "MED_paper_sentence2_ccg2mono_uniq-500", "question": {"stem": "Only 12 aliens read books"}, "output": "u u u u u"}
+{"idx": "MED_paper_sentence2_ccg2mono_uniq-501", "question": {"stem": "Only 12 aliens read magazines"}, "output": "u u u u u"}
+{"idx": "MED_paper_sentence2_ccg2mono_uniq-502", "question": {"stem": "Only 12 aliens read news magazines"}, "output": "u u u u u u"}
+{"idx": "MED_paper_sentence2_ccg2mono_uniq-503", "question": {"stem": "Only 12 aliens read sci-fi novels"}, "output": "u u u u u u"}
+{"idx": "MED_paper_sentence2_ccg2mono_uniq-504", "question": {"stem": "Only 12 aliens read some books"}, "output": "u u u u u u"}
+{"idx": "MED_paper_sentence2_ccg2mono_uniq-505", "question": {"stem": "Only 12 aliens read some magazines"}, "output": "u u u u u u"}
+{"idx": "MED_paper_sentence2_ccg2mono_uniq-506", "question": {"stem": "Only 12 aliens read some news magazines"}, "output": "u u u u u u u"}
+{"idx": "MED_paper_sentence2_ccg2mono_uniq-507", "question": {"stem": "Only 12 aliens read some sci-fi novels"}, "output": "u u u u u u u"}
+{"idx": "MED_paper_sentence2_ccg2mono_uniq-508", "question": {"stem": "Only 12 aliens saw any birds"}, "output": "u u u u u u"}
+{"idx": "MED_paper_sentence2_ccg2mono_uniq-509", "question": {"stem": "Only 12 aliens saw any doves"}, "output": "u u u u u u"}
+{"idx": "MED_paper_sentence2_ccg2mono_uniq-510", "question": {"stem": "Only 12 aliens saw birds"}, "output": "u u u u u"}
+{"idx": "MED_paper_sentence2_ccg2mono_uniq-511", "question": {"stem": "Only 12 aliens saw doves"}, "output": "u u u u u"}
+{"idx": "MED_paper_sentence2_ccg2mono_uniq-512", "question": {"stem": "Only 12 aliens saw some birds"}, "output": "u u u u u u"}
+{"idx": "MED_paper_sentence2_ccg2mono_uniq-513", "question": {"stem": "Only 12 aliens saw some doves"}, "output": "u u u u u u"}
+{"idx": "MED_paper_sentence2_ccg2mono_uniq-514", "question": {"stem": "Only 12 aliens threw any balls"}, "output": "u u u u u u"}
+{"idx": "MED_paper_sentence2_ccg2mono_uniq-515", "question": {"stem": "Only 12 aliens threw any tennis balls"}, "output": "u u u u u u u"}
+{"idx": "MED_paper_sentence2_ccg2mono_uniq-516", "question": {"stem": "Only 12 aliens threw balls"}, "output": "u u u u u"}
+{"idx": "MED_paper_sentence2_ccg2mono_uniq-517", "question": {"stem": "Only 12 aliens threw some balls"}, "output": "u u u u u u"}
+{"idx": "MED_paper_sentence2_ccg2mono_uniq-518", "question": {"stem": "Only 12 aliens threw some tennis balls"}, "output": "u u u u u u u"}
+{"idx": "MED_paper_sentence2_ccg2mono_uniq-519", "question": {"stem": "Only 12 aliens threw tennis balls"}, "output": "u u u u u u"}
+{"idx": "MED_paper_sentence2_ccg2mono_uniq-520", "question": {"stem": "Only 12 aliens used any coins"}, "output": "u u u u u u"}
+{"idx": "MED_paper_sentence2_ccg2mono_uniq-521", "question": {"stem": "Only 12 aliens used any quarters"}, "output": "u u u u u u"}
+{"idx": "MED_paper_sentence2_ccg2mono_uniq-522", "question": {"stem": "Only 12 aliens used coins"}, "output": "u u u u u"}
+{"idx": "MED_paper_sentence2_ccg2mono_uniq-523", "question": {"stem": "Only 12 aliens used quarters"}, "output": "u u u u u"}
+{"idx": "MED_paper_sentence2_ccg2mono_uniq-524", "question": {"stem": "Only 12 aliens used some coins"}, "output": "u u u u u u"}
+{"idx": "MED_paper_sentence2_ccg2mono_uniq-525", "question": {"stem": "Only 12 aliens used some quarters"}, "output": "u u u u u u"}
+{"idx": "MED_paper_sentence2_ccg2mono_uniq-526", "question": {"stem": "Only 12 aliens watched any baseball matches"}, "output": "u u u u u u u"}
+{"idx": "MED_paper_sentence2_ccg2mono_uniq-527", "question": {"stem": "Only 12 aliens watched any sports matches"}, "output": "u u u u u u u"}
+{"idx": "MED_paper_sentence2_ccg2mono_uniq-528", "question": {"stem": "Only 12 aliens watched baseball matches"}, "output": "u u u u u u"}
+{"idx": "MED_paper_sentence2_ccg2mono_uniq-529", "question": {"stem": "Only 12 aliens watched some baseball matches"}, "output": "u u u u u u u"}
+{"idx": "MED_paper_sentence2_ccg2mono_uniq-530", "question": {"stem": "Only 12 aliens watched some sports matches"}, "output": "u u u u u u u"}
+{"idx": "MED_paper_sentence2_ccg2mono_uniq-531", "question": {"stem": "Only 12 aliens watched sports matches"}, "output": "u u u u u u"}
+{"idx": "MED_paper_sentence2_ccg2mono_uniq-532", "question": {"stem": "Pete believes he is an arachnid"}, "output": "u u u u u u"}
+{"idx": "MED_paper_sentence2_ccg2mono_uniq-533", "question": {"stem": "Pete believes he is a black widow"}, "output": "u u u u u u u"}
+{"idx": "MED_paper_sentence2_ccg2mono_uniq-534", "question": {"stem": "Pete believes he is a spider"}, "output": "u u u u u u"}
+{"idx": "MED_paper_sentence2_ccg2mono_uniq-535", "question": {"stem": "Pluto and uranus are now directly aligned with neptune"}, "output": "u u u u u u u u u"}
+{"idx": "MED_paper_sentence2_ccg2mono_uniq-536", "question": {"stem": "Pluto or uranus is now directly aligned with neptune"}, "output": "u u u u u u u u u"}
+{"idx": "MED_paper_sentence2_ccg2mono_uniq-537", "question": {"stem": "Regional governors could not rely on anyone for help in times of crisis and the ensuing food shortages and political disputes escalated into famines and small-scale civil wars"}, "output": "u u d u d d d d d d d d d u u = = = u = = u u u u u u u"}
+{"idx": "MED_paper_sentence2_ccg2mono_uniq-538", "question": {"stem": "Regional governors could not rely on the king for help in times of crisis and the ensuing food shortages and political disputes escalated into famines and small-scale civil wars"}, "output": "u u d u d d d = d d d d d d u u = = = u = = u u u u u u u"}
+{"idx": "MED_paper_sentence2_ccg2mono_uniq-539", "question": {"stem": "She did not give him a flower"}, "output": "u u u d d d d"}
+{"idx": "MED_paper_sentence2_ccg2mono_uniq-540", "question": {"stem": "She did not give him a rose"}, "output": "u u u d d d d"}
+{"idx": "MED_paper_sentence2_ccg2mono_uniq-541", "question": {"stem": "She gave him a flower"}, "output": "u u u u u"}
+{"idx": "MED_paper_sentence2_ccg2mono_uniq-542", "question": {"stem": "She gave him a rose"}, "output": "u u u u u"}
+{"idx": "MED_paper_sentence2_ccg2mono_uniq-543", "question": {"stem": "She has a european car"}, "output": "u u u u u"}
+{"idx": "MED_paper_sentence2_ccg2mono_uniq-544", "question": {"stem": "She has a german car"}, "output": "u u u u u"}
+{"idx": "MED_paper_sentence2_ccg2mono_uniq-545", "question": {"stem": "She kissed him"}, "output": "u u u"}
+{"idx": "MED_paper_sentence2_ccg2mono_uniq-546", "question": {"stem": "She kissed less-than 3 words"}, "output": "u d u u d"}
+{"idx": "MED_paper_sentence2_ccg2mono_uniq-547", "question": {"stem": "She never kissed him"}, "output": "u u u u"}
+{"idx": "MED_paper_sentence2_ccg2mono_uniq-548", "question": {"stem": "She never touched him"}, "output": "u u u u"}
+{"idx": "MED_paper_sentence2_ccg2mono_uniq-549", "question": {"stem": "She said more-than 3 words"}, "output": "u u u d u"}
+{"idx": "MED_paper_sentence2_ccg2mono_uniq-550", "question": {"stem": "She touched him"}, "output": "u u u"}
+{"idx": "MED_paper_sentence2_ccg2mono_uniq-551", "question": {"stem": "She whispered more-than 3 words"}, "output": "u u u d u"}
+{"idx": "MED_paper_sentence2_ccg2mono_uniq-552", "question": {"stem": "She whispered less-than 3 words"}, "output": "u d u u d"}
+{"idx": "MED_paper_sentence2_ccg2mono_uniq-553", "question": {"stem": "Some animals like to scratch their ears"}, "output": "u u u u u u u"}
+{"idx": "MED_paper_sentence2_ccg2mono_uniq-554", "question": {"stem": "Some boy the brother of whom mary loves walked"}, "output": "u u u = = = = = u"}
+{"idx": "MED_paper_sentence2_ccg2mono_uniq-555", "question": {"stem": "Some boy walked"}, "output": "u u u"}
+{"idx": "MED_paper_sentence2_ccg2mono_uniq-556", "question": {"stem": "Some delegates finished the survey"}, "output": "u u u u ="}
+{"idx": "MED_paper_sentence2_ccg2mono_uniq-557", "question": {"stem": "Some delegates finished the survey on time"}, "output": "u u u u = u u"}
+{"idx": "MED_paper_sentence2_ccg2mono_uniq-558", "question": {"stem": "Some delegate finished the report on time"}, "output": "u u u u = u u"}
+{"idx": "MED_paper_sentence2_ccg2mono_uniq-559", "question": {"stem": "Some dogs like to scratch their ears"}, "output": "u u u u u u u"}
+{"idx": "MED_paper_sentence2_ccg2mono_uniq-560", "question": {"stem": "Some dots are red"}, "output": "u u u u"}
+{"idx": "MED_paper_sentence2_ccg2mono_uniq-561", "question": {"stem": "Some dots are scarlet"}, "output": "u u u u"}
+{"idx": "MED_paper_sentence2_ccg2mono_uniq-562", "question": {"stem": "Some elephants are blue"}, "output": "u u u u"}
+{"idx": "MED_paper_sentence2_ccg2mono_uniq-563", "question": {"stem": "Some elephants are navy blue"}, "output": "u u u u u"}
+{"idx": "MED_paper_sentence2_ccg2mono_uniq-564", "question": {"stem": "Some elephants are pink"}, "output": "u u u u"}
+{"idx": "MED_paper_sentence2_ccg2mono_uniq-565", "question": {"stem": "Some elephants are not blue"}, "output": "u u d u d"}
+{"idx": "MED_paper_sentence2_ccg2mono_uniq-566", "question": {"stem": "Some elephants are not navy blue"}, "output": "u u d u d d"}
+{"idx": "MED_paper_sentence2_ccg2mono_uniq-567", "question": {"stem": "Some elephants are not pink"}, "output": "u u d u d"}
+{"idx": "MED_paper_sentence2_ccg2mono_uniq-568", "question": {"stem": "Some irish delegates finished the survey on time"}, "output": "u u u u u = u u"}
+{"idx": "MED_paper_sentence2_ccg2mono_uniq-569", "question": {"stem": "Some man ran"}, "output": "u u u"}
+{"idx": "MED_paper_sentence2_ccg2mono_uniq-570", "question": {"stem": "Some man ran quickly"}, "output": "u u u u"}
+{"idx": "MED_paper_sentence2_ccg2mono_uniq-571", "question": {"stem": "Some of the orator 's statements were comprehensible but the crowd loved them"}, "output": "u = u = u u u u u u = u u"}
+{"idx": "MED_paper_sentence2_ccg2mono_uniq-572", "question": {"stem": "Some of the orator 's statements were incomprehensible but the crowd loved them"}, "output": "u = u = u u u u u u = u u"}
+{"idx": "MED_paper_sentence2_ccg2mono_uniq-573", "question": {"stem": "Some pachyderms are pink"}, "output": "u u u u"}
+{"idx": "MED_paper_sentence2_ccg2mono_uniq-574", "question": {"stem": "Some pachyderms are not pink"}, "output": "u u d u d"}
+{"idx": "MED_paper_sentence2_ccg2mono_uniq-575", "question": {"stem": "Some person is rational"}, "output": "u u u u"}
+{"idx": "MED_paper_sentence2_ccg2mono_uniq-576", "question": {"stem": "Some republican entered the race"}, "output": "u u u u ="}
+{"idx": "MED_paper_sentence2_ccg2mono_uniq-577", "question": {"stem": "Some republican entered the race early"}, "output": "u u u u = u"}
+{"idx": "MED_paper_sentence2_ccg2mono_uniq-578", "question": {"stem": "Some smart boy smiled"}, "output": "u u u u"}
+{"idx": "MED_paper_sentence2_ccg2mono_uniq-579", "question": {"stem": "Some tall man ran"}, "output": "u u u u"}
+{"idx": "MED_paper_sentence2_ccg2mono_uniq-580", "question": {"stem": "Some of the sopranos sang with more-than 3 of the male singers"}, "output": "d d d d d d d d d d d d"}
+{"idx": "MED_paper_sentence2_ccg2mono_uniq-581", "question": {"stem": "Some of the sopranos sang with more-than 3 of the tenors"}, "output": "d d d d d d d d d d d"}
+{"idx": "MED_paper_sentence2_ccg2mono_uniq-582", "question": {"stem": "So far 2 of my cherry trees have already bloomed and it 's not even april"}, "output": "u u u = u u u = = = u u d u u d"}
+{"idx": "MED_paper_sentence2_ccg2mono_uniq-583", "question": {"stem": "So far 2 of my trees have already bloomed and it 's not even april"}, "output": "u u u = u u = = = u u d u u d"}
+{"idx": "MED_paper_sentence2_ccg2mono_uniq-584", "question": {"stem": "So there is no dedicated high-dimensional memory block for every entity and no distinction between entity mentions and non-mention words"}, "output": "u = = = = = = = = = = u = = = = = u = ="}
+{"idx": "MED_paper_sentence2_ccg2mono_uniq-585", "question": {"stem": "So there is no dedicated memory block for every entity and no distinction between entity mentions and non-mention words"}, "output": "u = = = = = = = = = u = = = = = u = ="}
+{"idx": "MED_paper_sentence2_ccg2mono_uniq-586", "question": {"stem": "There are 4 scales above the eyes in almost all specimens"}, "output": "u u u = = = = = = = ="}
+{"idx": "MED_paper_sentence2_ccg2mono_uniq-587", "question": {"stem": "There are 4 supraocular scales -LSB- above the eyes -RSB- in almost all specimens"}, "output": "u u u = = = = = = = = = = ="}
+{"idx": "MED_paper_sentence2_ccg2mono_uniq-588", "question": {"stem": "There are some amazing hikes around mt. fuji"}, "output": "u u u u u u u u"}
+{"idx": "MED_paper_sentence2_ccg2mono_uniq-589", "question": {"stem": "There are some amazing hikes in japan"}, "output": "u u u u u u u"}
+{"idx": "MED_paper_sentence2_ccg2mono_uniq-590", "question": {"stem": "There are some amazing hikes in nepal"}, "output": "u u u u u u u"}
+{"idx": "MED_paper_sentence2_ccg2mono_uniq-591", "question": {"stem": "There are some strenuous hikes around mt. fuji"}, "output": "u u u u u u u u"}
+{"idx": "MED_paper_sentence2_ccg2mono_uniq-592", "question": {"stem": "The 15th tank corps was a corps of the soviet union 's red army"}, "output": "u = = = u u u = u = = u u u"}
+{"idx": "MED_paper_sentence2_ccg2mono_uniq-593", "question": {"stem": "The 15th tank corps was a tank corps of the soviet union 's red army"}, "output": "u = = = u u u u = u = = u u u"}
+{"idx": "MED_paper_sentence2_ccg2mono_uniq-594", "question": {"stem": "The blue alien ate at restaurants"}, "output": "u = = u u u"}
+{"idx": "MED_paper_sentence2_ccg2mono_uniq-595", "question": {"stem": "The blue alien ate at some restaurants"}, "output": "u = = u u u u"}
+{"idx": "MED_paper_sentence2_ccg2mono_uniq-596", "question": {"stem": "The blue alien ate some meat"}, "output": "u = = u u u"}
+{"idx": "MED_paper_sentence2_ccg2mono_uniq-597", "question": {"stem": "The blue alien bought clothes"}, "output": "u = = u u"}
+{"idx": "MED_paper_sentence2_ccg2mono_uniq-598", "question": {"stem": "The blue alien bought some clothes"}, "output": "u = = u u u"}
+{"idx": "MED_paper_sentence2_ccg2mono_uniq-599", "question": {"stem": "The blue alien did not buy any clothes"}, "output": "u = = u u d d d"}
+{"idx": "MED_paper_sentence2_ccg2mono_uniq-600", "question": {"stem": "The blue alien did not drink any soda"}, "output": "u = = u u d d d"}
+{"idx": "MED_paper_sentence2_ccg2mono_uniq-601", "question": {"stem": "The blue alien did not drink soda"}, "output": "u = = u u d d"}
+{"idx": "MED_paper_sentence2_ccg2mono_uniq-602", "question": {"stem": "The blue alien did not drive any cars"}, "output": "u = = u u d d d"}
+{"idx": "MED_paper_sentence2_ccg2mono_uniq-603", "question": {"stem": "The blue alien did not drive cars"}, "output": "u = = u u d d"}
+{"idx": "MED_paper_sentence2_ccg2mono_uniq-604", "question": {"stem": "The blue alien did not eat any meat"}, "output": "u = = u u d d d"}
+{"idx": "MED_paper_sentence2_ccg2mono_uniq-605", "question": {"stem": "The blue alien did not eat at any restaurants"}, "output": "u = = u u d d d d"}
+{"idx": "MED_paper_sentence2_ccg2mono_uniq-606", "question": {"stem": "The blue alien did not eat at restaurants"}, "output": "u = = u u d d d"}
+{"idx": "MED_paper_sentence2_ccg2mono_uniq-607", "question": {"stem": "The blue alien did not eat meat"}, "output": "u = = u u d d"}
+{"idx": "MED_paper_sentence2_ccg2mono_uniq-608", "question": {"stem": "The blue alien did not play with any toys"}, "output": "u = = u u d d d d"}
+{"idx": "MED_paper_sentence2_ccg2mono_uniq-609", "question": {"stem": "The blue alien did not play with toys"}, "output": "u = = u u d d d"}
+{"idx": "MED_paper_sentence2_ccg2mono_uniq-610", "question": {"stem": "The blue alien did not read any books"}, "output": "u = = u u d d d"}
+{"idx": "MED_paper_sentence2_ccg2mono_uniq-611", "question": {"stem": "The blue alien did not read any magazines"}, "output": "u = = u u d d d"}
+{"idx": "MED_paper_sentence2_ccg2mono_uniq-612", "question": {"stem": "The blue alien did not see any birds"}, "output": "u = = u u d d d"}
+{"idx": "MED_paper_sentence2_ccg2mono_uniq-613", "question": {"stem": "The blue alien did not see birds"}, "output": "u = = u u d d"}
+{"idx": "MED_paper_sentence2_ccg2mono_uniq-614", "question": {"stem": "The blue alien did not throw any balls"}, "output": "u = = u u d d d"}
+{"idx": "MED_paper_sentence2_ccg2mono_uniq-615", "question": {"stem": "The blue alien did not use any coins"}, "output": "u = = u u d d d"}
+{"idx": "MED_paper_sentence2_ccg2mono_uniq-616", "question": {"stem": "The blue alien did not use coins"}, "output": "u = = u u d d"}
+{"idx": "MED_paper_sentence2_ccg2mono_uniq-617", "question": {"stem": "The blue alien did not watch any sports matches"}, "output": "u = = u u d d d d"}
+{"idx": "MED_paper_sentence2_ccg2mono_uniq-618", "question": {"stem": "The blue alien did not watch sports matches"}, "output": "u = = u u d d d"}
+{"idx": "MED_paper_sentence2_ccg2mono_uniq-619", "question": {"stem": "The blue alien drank soda"}, "output": "u = = u u"}
+{"idx": "MED_paper_sentence2_ccg2mono_uniq-620", "question": {"stem": "The blue alien drank some soda"}, "output": "u = = u u u"}
+{"idx": "MED_paper_sentence2_ccg2mono_uniq-621", "question": {"stem": "The blue alien drove some cars"}, "output": "u = = u u u"}
+{"idx": "MED_paper_sentence2_ccg2mono_uniq-622", "question": {"stem": "The blue alien played with some toys"}, "output": "u = = u u u u"}
+{"idx": "MED_paper_sentence2_ccg2mono_uniq-623", "question": {"stem": "The blue alien played with toys"}, "output": "u = = u u u"}
+{"idx": "MED_paper_sentence2_ccg2mono_uniq-624", "question": {"stem": "The blue alien read books"}, "output": "u = = u u"}
+{"idx": "MED_paper_sentence2_ccg2mono_uniq-625", "question": {"stem": "The blue alien read magazines"}, "output": "u = = u u"}
+{"idx": "MED_paper_sentence2_ccg2mono_uniq-626", "question": {"stem": "The blue alien read some books"}, "output": "u = = u u u"}
+{"idx": "MED_paper_sentence2_ccg2mono_uniq-627", "question": {"stem": "The blue alien read some magazines"}, "output": "u = = u u u"}
+{"idx": "MED_paper_sentence2_ccg2mono_uniq-628", "question": {"stem": "The blue alien saw some birds"}, "output": "u = = u u u"}
+{"idx": "MED_paper_sentence2_ccg2mono_uniq-629", "question": {"stem": "The blue alien threw balls"}, "output": "u = = u u"}
+{"idx": "MED_paper_sentence2_ccg2mono_uniq-630", "question": {"stem": "The blue alien threw some balls"}, "output": "u = = u u u"}
+{"idx": "MED_paper_sentence2_ccg2mono_uniq-631", "question": {"stem": "The blue alien used coins"}, "output": "u = = u u"}
+{"idx": "MED_paper_sentence2_ccg2mono_uniq-632", "question": {"stem": "The blue alien used some coins"}, "output": "u = = u u u"}
+{"idx": "MED_paper_sentence2_ccg2mono_uniq-633", "question": {"stem": "The blue alien watched some sports matches"}, "output": "u = = u u u u"}
+{"idx": "MED_paper_sentence2_ccg2mono_uniq-634", "question": {"stem": "The crown prince 's mother would not be the first royal whose movements were restricted since june 2017"}, "output": "u = = u u = = = = = = = = = = = = ="}
+{"idx": "MED_paper_sentence2_ccg2mono_uniq-635", "question": {"stem": "The crown prince 's mother would not be the first saudi royal whose movements were restricted since june 2017"}, "output": "u = = u u = = = = = = = = = = = = = ="}
+{"idx": "MED_paper_sentence2_ccg2mono_uniq-636", "question": {"stem": "The first displeasurable experience i had interacting with another human being was at the age of seventeen"}, "output": "u = = = = = = = = = = u u u = = ="}
+{"idx": "MED_paper_sentence2_ccg2mono_uniq-637", "question": {"stem": "The first experience i had interacting with another human being was at the age of seventeen"}, "output": "u = = = = = = = = = u u u = = ="}
+{"idx": "MED_paper_sentence2_ccg2mono_uniq-638", "question": {"stem": "The first pleasurable experience i had interacting with another human being was at the age of seventeen"}, "output": "u = = = = = = = = = = u u u = = ="}
+{"idx": "MED_paper_sentence2_ccg2mono_uniq-639", "question": {"stem": "The latest fatal incident reported monday morning killed a 17-year-old boy and wounded a woman"}, "output": "u = = = = = = u u u u u u u u"}
+{"idx": "MED_paper_sentence2_ccg2mono_uniq-640", "question": {"stem": "The latest incident reported monday morning killed a 17-year-old boy and wounded a woman"}, "output": "u = = = = = u u u u u u u u"}
+{"idx": "MED_paper_sentence2_ccg2mono_uniq-641", "question": {"stem": "The leading car gradually shifted to the left lane"}, "output": "u = = u u u u = ="}
+{"idx": "MED_paper_sentence2_ccg2mono_uniq-642", "question": {"stem": "The leading car shifted to the left lane"}, "output": "u = = u u u = ="}
+{"idx": "MED_paper_sentence2_ccg2mono_uniq-643", "question": {"stem": "The purple alien ate at mexican restaurants"}, "output": "u = = u u u u"}
+{"idx": "MED_paper_sentence2_ccg2mono_uniq-644", "question": {"stem": "The purple alien ate pork"}, "output": "u = = u u"}
+{"idx": "MED_paper_sentence2_ccg2mono_uniq-645", "question": {"stem": "The purple alien bought shirts"}, "output": "u = = u u"}
+{"idx": "MED_paper_sentence2_ccg2mono_uniq-646", "question": {"stem": "The purple alien did not buy shirts"}, "output": "u = = u u d d"}
+{"idx": "MED_paper_sentence2_ccg2mono_uniq-647", "question": {"stem": "The purple alien did not drink coke"}, "output": "u = = u u d d"}
+{"idx": "MED_paper_sentence2_ccg2mono_uniq-648", "question": {"stem": "The purple alien did not drive suvs"}, "output": "u = = u u d d"}
+{"idx": "MED_paper_sentence2_ccg2mono_uniq-649", "question": {"stem": "The purple alien did not eat at mexican restaurants"}, "output": "u = = u u d d d d"}
+{"idx": "MED_paper_sentence2_ccg2mono_uniq-650", "question": {"stem": "The purple alien did not eat pork"}, "output": "u = = u u d d"}
+{"idx": "MED_paper_sentence2_ccg2mono_uniq-651", "question": {"stem": "The purple alien did not play with toy cars"}, "output": "u = = u u d d d d"}
+{"idx": "MED_paper_sentence2_ccg2mono_uniq-652", "question": {"stem": "The purple alien did not read news magazines"}, "output": "u = = u u d d d"}
+{"idx": "MED_paper_sentence2_ccg2mono_uniq-653", "question": {"stem": "The purple alien did not read sci-fi novels"}, "output": "u = = u u d d d"}
+{"idx": "MED_paper_sentence2_ccg2mono_uniq-654", "question": {"stem": "The purple alien did not see doves"}, "output": "u = = u u d d"}
+{"idx": "MED_paper_sentence2_ccg2mono_uniq-655", "question": {"stem": "The purple alien did not throw tennis balls"}, "output": "u = = u u d d d"}
+{"idx": "MED_paper_sentence2_ccg2mono_uniq-656", "question": {"stem": "The purple alien did not use quarters"}, "output": "u = = u u d d"}
+{"idx": "MED_paper_sentence2_ccg2mono_uniq-657", "question": {"stem": "The purple alien did not watch baseball matches"}, "output": "u = = u u d d d"}
+{"idx": "MED_paper_sentence2_ccg2mono_uniq-658", "question": {"stem": "The purple alien drank coke"}, "output": "u = = u u"}
+{"idx": "MED_paper_sentence2_ccg2mono_uniq-659", "question": {"stem": "The purple alien drove suvs"}, "output": "u = = u u"}
+{"idx": "MED_paper_sentence2_ccg2mono_uniq-660", "question": {"stem": "The purple alien played with toy cars"}, "output": "u = = u u u u"}
+{"idx": "MED_paper_sentence2_ccg2mono_uniq-661", "question": {"stem": "The purple alien read news magazines"}, "output": "u = = u u u"}
+{"idx": "MED_paper_sentence2_ccg2mono_uniq-662", "question": {"stem": "The purple alien read sci-fi novels"}, "output": "u = = u u u"}
+{"idx": "MED_paper_sentence2_ccg2mono_uniq-663", "question": {"stem": "The purple alien saw doves"}, "output": "u = = u u"}
+{"idx": "MED_paper_sentence2_ccg2mono_uniq-664", "question": {"stem": "The purple alien threw tennis balls"}, "output": "u = = u u u"}
+{"idx": "MED_paper_sentence2_ccg2mono_uniq-665", "question": {"stem": "The purple alien used quarters"}, "output": "u = = u u"}
+{"idx": "MED_paper_sentence2_ccg2mono_uniq-666", "question": {"stem": "The purple alien watched baseball matches"}, "output": "u = = u u u"}
+{"idx": "MED_paper_sentence2_ccg2mono_uniq-667", "question": {"stem": "The red alien ate at mexican restaurants"}, "output": "u = = u u u u"}
+{"idx": "MED_paper_sentence2_ccg2mono_uniq-668", "question": {"stem": "The red alien ate at restaurants"}, "output": "u = = u u u"}
+{"idx": "MED_paper_sentence2_ccg2mono_uniq-669", "question": {"stem": "The red alien ate at some mexican restaurants"}, "output": "u = = u u u u u"}
+{"idx": "MED_paper_sentence2_ccg2mono_uniq-670", "question": {"stem": "The red alien ate meat"}, "output": "u = = u u"}
+{"idx": "MED_paper_sentence2_ccg2mono_uniq-671", "question": {"stem": "The red alien ate pork"}, "output": "u = = u u"}
+{"idx": "MED_paper_sentence2_ccg2mono_uniq-672", "question": {"stem": "The red alien ate some pork"}, "output": "u = = u u u"}
+{"idx": "MED_paper_sentence2_ccg2mono_uniq-673", "question": {"stem": "The red alien bought clothes"}, "output": "u = = u u"}
+{"idx": "MED_paper_sentence2_ccg2mono_uniq-674", "question": {"stem": "The red alien bought shirts"}, "output": "u = = u u"}
+{"idx": "MED_paper_sentence2_ccg2mono_uniq-675", "question": {"stem": "The red alien bought some shirts"}, "output": "u = = u u u"}
+{"idx": "MED_paper_sentence2_ccg2mono_uniq-676", "question": {"stem": "The red alien did not buy any shirts"}, "output": "u = = u u d d d"}
+{"idx": "MED_paper_sentence2_ccg2mono_uniq-677", "question": {"stem": "The red alien did not buy clothes"}, "output": "u = = u u d d"}
+{"idx": "MED_paper_sentence2_ccg2mono_uniq-678", "question": {"stem": "The red alien did not buy shirts"}, "output": "u = = u u d d"}
+{"idx": "MED_paper_sentence2_ccg2mono_uniq-679", "question": {"stem": "The red alien did not drink any coke"}, "output": "u = = u u d d d"}
+{"idx": "MED_paper_sentence2_ccg2mono_uniq-680", "question": {"stem": "The red alien did not drink coke"}, "output": "u = = u u d d"}
+{"idx": "MED_paper_sentence2_ccg2mono_uniq-681", "question": {"stem": "The red alien did not drink soda"}, "output": "u = = u u d d"}
+{"idx": "MED_paper_sentence2_ccg2mono_uniq-682", "question": {"stem": "The red alien did not drive any suvs"}, "output": "u = = u u d d d"}
+{"idx": "MED_paper_sentence2_ccg2mono_uniq-683", "question": {"stem": "The red alien did not drive suvs"}, "output": "u = = u u d d"}
+{"idx": "MED_paper_sentence2_ccg2mono_uniq-684", "question": {"stem": "The red alien did not eat any pork"}, "output": "u = = u u d d d"}
+{"idx": "MED_paper_sentence2_ccg2mono_uniq-685", "question": {"stem": "The red alien did not eat at any mexican restaurants"}, "output": "u = = u u d d d d d"}
+{"idx": "MED_paper_sentence2_ccg2mono_uniq-686", "question": {"stem": "The red alien did not eat at mexican restaurants"}, "output": "u = = u u d d d d"}
+{"idx": "MED_paper_sentence2_ccg2mono_uniq-687", "question": {"stem": "The red alien did not eat at restaurants"}, "output": "u = = u u d d d"}
+{"idx": "MED_paper_sentence2_ccg2mono_uniq-688", "question": {"stem": "The red alien did not eat meat"}, "output": "u = = u u d d"}
+{"idx": "MED_paper_sentence2_ccg2mono_uniq-689", "question": {"stem": "The red alien did not eat pork"}, "output": "u = = u u d d"}
+{"idx": "MED_paper_sentence2_ccg2mono_uniq-690", "question": {"stem": "The red alien did not play with any toy cars"}, "output": "u = = u u d d d d d"}
+{"idx": "MED_paper_sentence2_ccg2mono_uniq-691", "question": {"stem": "The red alien did not play with toys"}, "output": "u = = u u d d d"}
+{"idx": "MED_paper_sentence2_ccg2mono_uniq-692", "question": {"stem": "The red alien did not play with toy cars"}, "output": "u = = u u d d d d"}
+{"idx": "MED_paper_sentence2_ccg2mono_uniq-693", "question": {"stem": "The red alien did not read any news magazines"}, "output": "u = = u u d d d d"}
+{"idx": "MED_paper_sentence2_ccg2mono_uniq-694", "question": {"stem": "The red alien did not read any sci-fi novels"}, "output": "u = = u u d d d d"}
+{"idx": "MED_paper_sentence2_ccg2mono_uniq-695", "question": {"stem": "The red alien did not read magazines"}, "output": "u = = u u d d"}
+{"idx": "MED_paper_sentence2_ccg2mono_uniq-696", "question": {"stem": "The red alien did not read news magazines"}, "output": "u = = u u d d d"}
+{"idx": "MED_paper_sentence2_ccg2mono_uniq-697", "question": {"stem": "The red alien did not see any doves"}, "output": "u = = u u d d d"}
+{"idx": "MED_paper_sentence2_ccg2mono_uniq-698", "question": {"stem": "The red alien did not see birds"}, "output": "u = = u u d d"}
+{"idx": "MED_paper_sentence2_ccg2mono_uniq-699", "question": {"stem": "The red alien did not see doves"}, "output": "u = = u u d d"}
+{"idx": "MED_paper_sentence2_ccg2mono_uniq-700", "question": {"stem": "The red alien did not throw balls"}, "output": "u = = u u d d"}
+{"idx": "MED_paper_sentence2_ccg2mono_uniq-701", "question": {"stem": "The red alien did not throw tennis balls"}, "output": "u = = u u d d d"}
+{"idx": "MED_paper_sentence2_ccg2mono_uniq-702", "question": {"stem": "The red alien did not use any quarters"}, "output": "u = = u u d d d"}
+{"idx": "MED_paper_sentence2_ccg2mono_uniq-703", "question": {"stem": "The red alien did not use coins"}, "output": "u = = u u d d"}
+{"idx": "MED_paper_sentence2_ccg2mono_uniq-704", "question": {"stem": "The red alien did not use quarters"}, "output": "u = = u u d d"}
+{"idx": "MED_paper_sentence2_ccg2mono_uniq-705", "question": {"stem": "The red alien did not watch any baseball matches"}, "output": "u = = u u d d d d"}
+{"idx": "MED_paper_sentence2_ccg2mono_uniq-706", "question": {"stem": "The red alien did not watch baseball matches"}, "output": "u = = u u d d d"}
+{"idx": "MED_paper_sentence2_ccg2mono_uniq-707", "question": {"stem": "The red alien did not watch sports matches"}, "output": "u = = u u d d d"}
+{"idx": "MED_paper_sentence2_ccg2mono_uniq-708", "question": {"stem": "The red alien drank coke"}, "output": "u = = u u"}
+{"idx": "MED_paper_sentence2_ccg2mono_uniq-709", "question": {"stem": "The red alien drank soda"}, "output": "u = = u u"}
+{"idx": "MED_paper_sentence2_ccg2mono_uniq-710", "question": {"stem": "The red alien drank some coke"}, "output": "u = = u u u"}
+{"idx": "MED_paper_sentence2_ccg2mono_uniq-711", "question": {"stem": "The red alien drove some suvs"}, "output": "u = = u u u"}
+{"idx": "MED_paper_sentence2_ccg2mono_uniq-712", "question": {"stem": "The red alien played with some toy cars"}, "output": "u = = u u u u u"}
+{"idx": "MED_paper_sentence2_ccg2mono_uniq-713", "question": {"stem": "The red alien played with toys"}, "output": "u = = u u u"}
+{"idx": "MED_paper_sentence2_ccg2mono_uniq-714", "question": {"stem": "The red alien played with toy cars"}, "output": "u = = u u u u"}
+{"idx": "MED_paper_sentence2_ccg2mono_uniq-715", "question": {"stem": "The red alien read magazines"}, "output": "u = = u u"}
+{"idx": "MED_paper_sentence2_ccg2mono_uniq-716", "question": {"stem": "The red alien read news magazines"}, "output": "u = = u u u"}
+{"idx": "MED_paper_sentence2_ccg2mono_uniq-717", "question": {"stem": "The red alien read sci-fi novels"}, "output": "u = = u u u"}
+{"idx": "MED_paper_sentence2_ccg2mono_uniq-718", "question": {"stem": "The red alien read some news magazines"}, "output": "u = = u u u u"}
+{"idx": "MED_paper_sentence2_ccg2mono_uniq-719", "question": {"stem": "The red alien read some sci-fi novels"}, "output": "u = = u u u u"}
+{"idx": "MED_paper_sentence2_ccg2mono_uniq-720", "question": {"stem": "The red alien saw birds"}, "output": "u = = u u"}
+{"idx": "MED_paper_sentence2_ccg2mono_uniq-721", "question": {"stem": "The red alien saw doves"}, "output": "u = = u u"}
+{"idx": "MED_paper_sentence2_ccg2mono_uniq-722", "question": {"stem": "The red alien saw some doves"}, "output": "u = = u u u"}
+{"idx": "MED_paper_sentence2_ccg2mono_uniq-723", "question": {"stem": "The red alien threw balls"}, "output": "u = = u u"}
+{"idx": "MED_paper_sentence2_ccg2mono_uniq-724", "question": {"stem": "The red alien threw some tennis balls"}, "output": "u = = u u u u"}
+{"idx": "MED_paper_sentence2_ccg2mono_uniq-725", "question": {"stem": "The red alien threw tennis balls"}, "output": "u = = u u u"}
+{"idx": "MED_paper_sentence2_ccg2mono_uniq-726", "question": {"stem": "The red alien used coins"}, "output": "u = = u u"}
+{"idx": "MED_paper_sentence2_ccg2mono_uniq-727", "question": {"stem": "The red alien used quarters"}, "output": "u = = u u"}
+{"idx": "MED_paper_sentence2_ccg2mono_uniq-728", "question": {"stem": "The red alien used some quarters"}, "output": "u = = u u u"}
+{"idx": "MED_paper_sentence2_ccg2mono_uniq-729", "question": {"stem": "The red alien watched baseball matches"}, "output": "u = = u u u"}
+{"idx": "MED_paper_sentence2_ccg2mono_uniq-730", "question": {"stem": "The red alien watched some baseball matches"}, "output": "u = = u u u u"}
+{"idx": "MED_paper_sentence2_ccg2mono_uniq-731", "question": {"stem": "The red alien watched sports matches"}, "output": "u = = u u u"}
+{"idx": "MED_paper_sentence2_ccg2mono_uniq-732", "question": {"stem": "The timing of the meeting has not been considered according to a starbucks spokesperson"}, "output": "u = = = = d u d d d d d d d"}
+{"idx": "MED_paper_sentence2_ccg2mono_uniq-733", "question": {"stem": "The timing of the meeting has not been set according to a starbucks spokesperson"}, "output": "u = = = = d u d d d d d d d"}
+{"idx": "MED_paper_sentence2_ccg2mono_uniq-734", "question": {"stem": "The yellow alien ate at restaurants"}, "output": "u = = u u u"}
+{"idx": "MED_paper_sentence2_ccg2mono_uniq-735", "question": {"stem": "The yellow alien ate meat"}, "output": "u = = u u"}
+{"idx": "MED_paper_sentence2_ccg2mono_uniq-736", "question": {"stem": "The yellow alien bought clothes"}, "output": "u = = u u"}
+{"idx": "MED_paper_sentence2_ccg2mono_uniq-737", "question": {"stem": "The yellow alien did not buy clothes"}, "output": "u = = u u d d"}
+{"idx": "MED_paper_sentence2_ccg2mono_uniq-738", "question": {"stem": "The yellow alien did not drink soda"}, "output": "u = = u u d d"}
+{"idx": "MED_paper_sentence2_ccg2mono_uniq-739", "question": {"stem": "The yellow alien did not drive cars"}, "output": "u = = u u d d"}
+{"idx": "MED_paper_sentence2_ccg2mono_uniq-740", "question": {"stem": "The yellow alien did not eat at restaurants"}, "output": "u = = u u d d d"}
+{"idx": "MED_paper_sentence2_ccg2mono_uniq-741", "question": {"stem": "The yellow alien did not eat meat"}, "output": "u = = u u d d"}
+{"idx": "MED_paper_sentence2_ccg2mono_uniq-742", "question": {"stem": "The yellow alien did not play with toys"}, "output": "u = = u u d d d"}
+{"idx": "MED_paper_sentence2_ccg2mono_uniq-743", "question": {"stem": "The yellow alien did not read books"}, "output": "u = = u u d d"}
+{"idx": "MED_paper_sentence2_ccg2mono_uniq-744", "question": {"stem": "The yellow alien did not read magazines"}, "output": "u = = u u d d"}
+{"idx": "MED_paper_sentence2_ccg2mono_uniq-745", "question": {"stem": "The yellow alien did not see birds"}, "output": "u = = u u d d"}
+{"idx": "MED_paper_sentence2_ccg2mono_uniq-746", "question": {"stem": "The yellow alien did not throw balls"}, "output": "u = = u u d d"}
+{"idx": "MED_paper_sentence2_ccg2mono_uniq-747", "question": {"stem": "The yellow alien did not use coins"}, "output": "u = = u u d d"}
+{"idx": "MED_paper_sentence2_ccg2mono_uniq-748", "question": {"stem": "The yellow alien did not watch sports matches"}, "output": "u = = u u d d d"}
+{"idx": "MED_paper_sentence2_ccg2mono_uniq-749", "question": {"stem": "The yellow alien drank soda"}, "output": "u = = u u"}
+{"idx": "MED_paper_sentence2_ccg2mono_uniq-750", "question": {"stem": "The yellow alien drove cars"}, "output": "u = = u u"}
+{"idx": "MED_paper_sentence2_ccg2mono_uniq-751", "question": {"stem": "The yellow alien played with toys"}, "output": "u = = u u u"}
+{"idx": "MED_paper_sentence2_ccg2mono_uniq-752", "question": {"stem": "The yellow alien read books"}, "output": "u = = u u"}
+{"idx": "MED_paper_sentence2_ccg2mono_uniq-753", "question": {"stem": "The yellow alien read magazines"}, "output": "u = = u u"}
+{"idx": "MED_paper_sentence2_ccg2mono_uniq-754", "question": {"stem": "The yellow alien saw birds"}, "output": "u = = u u"}
+{"idx": "MED_paper_sentence2_ccg2mono_uniq-755", "question": {"stem": "The yellow alien threw balls"}, "output": "u = = u u"}
+{"idx": "MED_paper_sentence2_ccg2mono_uniq-756", "question": {"stem": "The yellow alien used coins"}, "output": "u = = u u"}
+{"idx": "MED_paper_sentence2_ccg2mono_uniq-757", "question": {"stem": "The yellow alien watched sports matches"}, "output": "u = = u u u"}
+{"idx": "MED_paper_sentence2_ccg2mono_uniq-758", "question": {"stem": "Understanding a long document requires tracking how entities are introduced and evolve over time"}, "output": "u u u u = = = = = = u = = ="}
+{"idx": "MED_paper_sentence2_ccg2mono_uniq-759", "question": {"stem": "Understanding a long document requires understanding how entities are introduced"}, "output": "u u u u = = = = = ="}
+{"idx": "MED_paper_sentence2_ccg2mono_uniq-760", "question": {"stem": "Very few of campers have caught a cold"}, "output": "u u u u u u u u"}
+{"idx": "MED_paper_sentence2_ccg2mono_uniq-761", "question": {"stem": "Very few of campers have ever had a sunburn or caught a cold"}, "output": "u u u u u u u u u u u u u"}
+{"idx": "MED_paper_sentence2_ccg2mono_uniq-762", "question": {"stem": "Very few of campers have had a sunburn or caught a cold"}, "output": "u u u u u u u u u u u u"}
+{"idx": "MED_paper_sentence2_ccg2mono_uniq-763", "question": {"stem": "Very few of the children chose any mint chocolates or decided on the cotton candy"}, "output": "u u u u = = = = = u = = = = ="}
+{"idx": "MED_paper_sentence2_ccg2mono_uniq-764", "question": {"stem": "Very few of the children chose mint chocolates or decided on the cotton candy"}, "output": "u u u u = = = = u = = = = ="}
+{"idx": "MED_paper_sentence2_ccg2mono_uniq-765", "question": {"stem": "Very few of the children decided on the cotton candy"}, "output": "u u u u = = = = = ="}
+{"idx": "MED_paper_sentence2_ccg2mono_uniq-766", "question": {"stem": "We consider all context words as positive examples and sample negatives at random from the dictionary"}, "output": "= u u d d u u u u = = u = = = ="}
+{"idx": "MED_paper_sentence2_ccg2mono_uniq-767", "question": {"stem": "We consider all words as positive examples and sample negatives at random from the dictionary"}, "output": "= u u d u u u u = = u = = = ="}
+{"idx": "MED_paper_sentence2_ccg2mono_uniq-768", "question": {"stem": "We consider some context words as positive examples and sample negatives at random from the dictionary"}, "output": "= u u u u u u u u = = u = = = ="}
+{"idx": "MED_paper_sentence2_ccg2mono_uniq-769", "question": {"stem": "We consider some words as positive examples and sample negatives at random from the dictionary"}, "output": "= u u u u u u u = = u = = = ="}
+{"idx": "MED_paper_sentence2_ccg2mono_uniq-770", "question": {"stem": "Weird that you want to show some thing to a stack of papers"}, "output": "u u u u u u u u u u u u u"}
+{"idx": "MED_paper_sentence2_ccg2mono_uniq-771", "question": {"stem": "Weird that you want to show this video to a stack of papers"}, "output": "u u u u u u u = u u u u u"}
+{"idx": "MED_paper_sentence2_ccg2mono_uniq-772", "question": {"stem": "We never danced"}, "output": "u u u"}
+{"idx": "MED_paper_sentence2_ccg2mono_uniq-773", "question": {"stem": "We never kissed"}, "output": "u u u"}
+{"idx": "MED_paper_sentence2_ccg2mono_uniq-774", "question": {"stem": "While most approaches for reading comprehension rely on recurrent neural networks -LSB- rnns -RSB- running them over long documents is prohibitively slow because it is difficult to parallelize over sequences"}, "output": "u u = = = = u u u u u u = u u u u u u u u u u u u u u u u u"}
+{"idx": "MED_paper_sentence2_ccg2mono_uniq-775", "question": {"stem": "While most successful approaches for reading comprehension rely on recurrent neural networks -LSB- rnns -RSB- running them over long documents is prohibitively slow because it is difficult to parallelize over sequences"}, "output": "u u = u u u u u u u u u u = u u u u u u u u u u u u u u u u u"}
+{"idx": "MED_paper_sentence2_ccg2mono_uniq-776", "question": {"stem": "You know that some actions must be taken when grandma reacts with the sad emoji"}, "output": "d d d d d d d d d d d d d d d"}
+{"idx": "MED_paper_sentence2_ccg2mono_uniq-777", "question": {"stem": "You know that some life-changing actions must be taken when grandma reacts with emoji"}, "output": "d d d d d d d d d d d d d d"}
+{"idx": "MED_paper_sentence2_ccg2mono_uniq-778", "question": {"stem": "You know that some life changing actions must be taken when grandma reacts with the sad emoji"}, "output": "d d d d d d d d d d d d d d d d d"}
+{"idx": "MED_paper_sentence2_ccg2mono_uniq-779", "question": {"stem": "`` cruz has frequently derided as `` '' amnesty '' '' any bill that confers legal status or citizenship on people living in the country illegally. ''"}, "output": "u u u u u u u u u u u u u u = = = u = = = = = = = = ="}
+{"idx": "MED_paper_sentence2_ccg2mono_uniq-780", "question": {"stem": "`` cruz has frequently derided as `` '' amnesty '' '' various bills that confer legal status or citizenship on people living in the country illegally. ''"}, "output": "u u u u u u u u u u u u u u = = = u = = = = = = = = ="}
+{"idx": "MED_paper_sentence2_ccg2mono_uniq-781", "question": {"stem": "`` cruz has frequently derided as `` '' amnesty '' '' various plans that confer legal status or citizenship on people living in the country illegally. ''"}, "output": "u u u u u u u u u u u u u u = = = u = = = = = = = = ="}
+{"idx": "MED_paper_sentence2_ccg2mono_uniq-782", "question": {"stem": "`` cruz has frequently derided as `` '' amnesty '' '' any plan that confers legal status or citizenship on people living in the country illegally. ''"}, "output": "d d d d d d d d d d d d d d d d d d d d d d d d d d d"}
+{"idx": "MED_paper_sentence2_ccg2mono_uniq-783", "question": {"stem": "at-least 3 commissioners spend a-lot-of time at home"}, "output": "u d u u u u u u"}
+{"idx": "MED_paper_sentence2_ccg2mono_uniq-784", "question": {"stem": "at-least 3 commissioners spend time at home"}, "output": "u d u u u u u"}
+{"idx": "MED_paper_sentence2_ccg2mono_uniq-785", "question": {"stem": "at-least 3 elephants are blue"}, "output": "u d u u u"}
+{"idx": "MED_paper_sentence2_ccg2mono_uniq-786", "question": {"stem": "at-least 3 elephants are navy blue"}, "output": "u d u u u u"}
+{"idx": "MED_paper_sentence2_ccg2mono_uniq-787", "question": {"stem": "at-least 3 elephants are pink"}, "output": "u d u u u"}
+{"idx": "MED_paper_sentence2_ccg2mono_uniq-788", "question": {"stem": "at-least 3 male commissioners spend time at home"}, "output": "u d u u u u u u"}
+{"idx": "MED_paper_sentence2_ccg2mono_uniq-789", "question": {"stem": "at-least 3 pachyderms are pink"}, "output": "u d u u u"}
+{"idx": "MED_paper_sentence2_ccg2mono_uniq-790", "question": {"stem": "at-least 5 campers have caught a cold"}, "output": "u d u u u u u"}
+{"idx": "MED_paper_sentence2_ccg2mono_uniq-791", "question": {"stem": "at-least 5 campers have ever had a sunburn or caught a cold"}, "output": "u d u u u u u u u u u u"}
+{"idx": "MED_paper_sentence2_ccg2mono_uniq-792", "question": {"stem": "at-least 5 campers have had a sunburn or caught a cold"}, "output": "u d u u u u u u u u u"}
+{"idx": "MED_paper_sentence2_ccg2mono_uniq-793", "question": {"stem": "at-least 5 children chose any mint chocolates or decided on the cotton candy"}, "output": "u d u u u u u u u u u = ="}
+{"idx": "MED_paper_sentence2_ccg2mono_uniq-794", "question": {"stem": "at-least 5 children chose mint chocolates or decided on the cotton candy"}, "output": "u d u u u u u u u u = ="}
+{"idx": "MED_paper_sentence2_ccg2mono_uniq-795", "question": {"stem": "at-least 5 children decided on the cotton candy"}, "output": "u d u u u u = ="}
+{"idx": "MED_paper_sentence2_ccg2mono_uniq-796", "question": {"stem": "at-least 5 dots are red"}, "output": "u d u u u"}
+{"idx": "MED_paper_sentence2_ccg2mono_uniq-797", "question": {"stem": "at-least 5 dots are scarlet"}, "output": "u d u u u"}
+{"idx": "MED_paper_sentence2_ccg2mono_uniq-798", "question": {"stem": "at-most 3 elephants are blue"}, "output": "u u d d d"}
+{"idx": "MED_paper_sentence2_ccg2mono_uniq-799", "question": {"stem": "at-most 3 elephants are navy blue"}, "output": "u u d d d d"}
+{"idx": "MED_paper_sentence2_ccg2mono_uniq-800", "question": {"stem": "at-most 3 elephants are pink"}, "output": "u u d d d"}
+{"idx": "MED_paper_sentence2_ccg2mono_uniq-801", "question": {"stem": "at-most 3 girls did not dance"}, "output": "u u d d d u"}
+{"idx": "MED_paper_sentence2_ccg2mono_uniq-802", "question": {"stem": "at-most 3 girls did not move"}, "output": "u u d d d u"}
+{"idx": "MED_paper_sentence2_ccg2mono_uniq-803", "question": {"stem": "at-most 3 pachyderms are pink"}, "output": "u u d d d"}
+{"idx": "MED_paper_sentence2_ccg2mono_uniq-804", "question": {"stem": "at-most 5 campers have caught a cold"}, "output": "u u d d d d d"}
+{"idx": "MED_paper_sentence2_ccg2mono_uniq-805", "question": {"stem": "at-most 5 campers have ever had a sunburn or caught a cold"}, "output": "u u d d d d d d u d d d"}
+{"idx": "MED_paper_sentence2_ccg2mono_uniq-806", "question": {"stem": "at-most 5 campers have had a sunburn or caught a cold"}, "output": "u u d d d d d u d d d"}
+{"idx": "MED_paper_sentence2_ccg2mono_uniq-807", "question": {"stem": "at-most 5 children chose any mint chocolates or decided on the cotton candy"}, "output": "u u d d d d d u d d d = ="}
+{"idx": "MED_paper_sentence2_ccg2mono_uniq-808", "question": {"stem": "at-most 5 children chose mint chocolates or decided on the cotton candy"}, "output": "u u d d d d u d d d = ="}
+{"idx": "MED_paper_sentence2_ccg2mono_uniq-809", "question": {"stem": "at-most 5 children decided on the cotton candy"}, "output": "u u d d d d = ="}
+{"idx": "MED_paper_sentence2_ccg2mono_uniq-810", "question": {"stem": "exactly 12 aliens ate any meat"}, "output": "u = = = = ="}
+{"idx": "MED_paper_sentence2_ccg2mono_uniq-811", "question": {"stem": "exactly 12 aliens ate any pork"}, "output": "u = = = = ="}
+{"idx": "MED_paper_sentence2_ccg2mono_uniq-812", "question": {"stem": "exactly 12 aliens ate at any mexican restaurants"}, "output": "u = = = = = = ="}
+{"idx": "MED_paper_sentence2_ccg2mono_uniq-813", "question": {"stem": "exactly 12 aliens ate at any restaurants"}, "output": "u = = = = = ="}
+{"idx": "MED_paper_sentence2_ccg2mono_uniq-814", "question": {"stem": "exactly 12 aliens ate at mexican restaurants"}, "output": "u = = = = = ="}
+{"idx": "MED_paper_sentence2_ccg2mono_uniq-815", "question": {"stem": "exactly 12 aliens ate at restaurants"}, "output": "u = = = = ="}
+{"idx": "MED_paper_sentence2_ccg2mono_uniq-816", "question": {"stem": "exactly 12 aliens ate at some mexican restaurants"}, "output": "u = = = = = = ="}
+{"idx": "MED_paper_sentence2_ccg2mono_uniq-817", "question": {"stem": "exactly 12 aliens ate at some restaurants"}, "output": "u = = = = = ="}
+{"idx": "MED_paper_sentence2_ccg2mono_uniq-818", "question": {"stem": "exactly 12 aliens ate meat"}, "output": "u = = = ="}
+{"idx": "MED_paper_sentence2_ccg2mono_uniq-819", "question": {"stem": "exactly 12 aliens ate pork"}, "output": "u = = = ="}
+{"idx": "MED_paper_sentence2_ccg2mono_uniq-820", "question": {"stem": "exactly 12 aliens ate some meat"}, "output": "u = = = = ="}
+{"idx": "MED_paper_sentence2_ccg2mono_uniq-821", "question": {"stem": "exactly 12 aliens ate some pork"}, "output": "u = = = = ="}
+{"idx": "MED_paper_sentence2_ccg2mono_uniq-822", "question": {"stem": "exactly 12 aliens bought any clothes"}, "output": "u = = = = ="}
+{"idx": "MED_paper_sentence2_ccg2mono_uniq-823", "question": {"stem": "exactly 12 aliens bought any shirts"}, "output": "u = = = = ="}
+{"idx": "MED_paper_sentence2_ccg2mono_uniq-824", "question": {"stem": "exactly 12 aliens bought clothes"}, "output": "u = = = ="}
+{"idx": "MED_paper_sentence2_ccg2mono_uniq-825", "question": {"stem": "exactly 12 aliens bought shirts"}, "output": "u = = = ="}
+{"idx": "MED_paper_sentence2_ccg2mono_uniq-826", "question": {"stem": "exactly 12 aliens bought some clothes"}, "output": "u = = = = ="}
+{"idx": "MED_paper_sentence2_ccg2mono_uniq-827", "question": {"stem": "exactly 12 aliens bought some shirts"}, "output": "u = = = = ="}
+{"idx": "MED_paper_sentence2_ccg2mono_uniq-828", "question": {"stem": "exactly 12 aliens drank any coke"}, "output": "u = = = = ="}
+{"idx": "MED_paper_sentence2_ccg2mono_uniq-829", "question": {"stem": "exactly 12 aliens drank any soda"}, "output": "u = = = = ="}
+{"idx": "MED_paper_sentence2_ccg2mono_uniq-830", "question": {"stem": "exactly 12 aliens drank coke"}, "output": "u = = = ="}
+{"idx": "MED_paper_sentence2_ccg2mono_uniq-831", "question": {"stem": "exactly 12 aliens drank soda"}, "output": "u = = = ="}
+{"idx": "MED_paper_sentence2_ccg2mono_uniq-832", "question": {"stem": "exactly 12 aliens drank some coke"}, "output": "u = = = = ="}
+{"idx": "MED_paper_sentence2_ccg2mono_uniq-833", "question": {"stem": "exactly 12 aliens drank some soda"}, "output": "u = = = = ="}
+{"idx": "MED_paper_sentence2_ccg2mono_uniq-834", "question": {"stem": "exactly 12 aliens drove any cars"}, "output": "u = = = = ="}
+{"idx": "MED_paper_sentence2_ccg2mono_uniq-835", "question": {"stem": "exactly 12 aliens drove any suvs"}, "output": "u = = = = ="}
+{"idx": "MED_paper_sentence2_ccg2mono_uniq-836", "question": {"stem": "exactly 12 aliens drove cars"}, "output": "u = = = ="}
+{"idx": "MED_paper_sentence2_ccg2mono_uniq-837", "question": {"stem": "exactly 12 aliens drove some cars"}, "output": "u = = = = ="}
+{"idx": "MED_paper_sentence2_ccg2mono_uniq-838", "question": {"stem": "exactly 12 aliens drove some suvs"}, "output": "u = = = = ="}
+{"idx": "MED_paper_sentence2_ccg2mono_uniq-839", "question": {"stem": "exactly 12 aliens drove suvs"}, "output": "u = = = ="}
+{"idx": "MED_paper_sentence2_ccg2mono_uniq-840", "question": {"stem": "exactly 12 aliens played with any toy cars"}, "output": "u = = = = = = ="}
+{"idx": "MED_paper_sentence2_ccg2mono_uniq-841", "question": {"stem": "exactly 12 aliens played with any toys"}, "output": "u = = = = = ="}
+{"idx": "MED_paper_sentence2_ccg2mono_uniq-842", "question": {"stem": "exactly 12 aliens played with some toy cars"}, "output": "u = = = = = = ="}
+{"idx": "MED_paper_sentence2_ccg2mono_uniq-843", "question": {"stem": "exactly 12 aliens played with some toys"}, "output": "u = = = = = ="}
+{"idx": "MED_paper_sentence2_ccg2mono_uniq-844", "question": {"stem": "exactly 12 aliens played with toy cars"}, "output": "u = = = = = ="}
+{"idx": "MED_paper_sentence2_ccg2mono_uniq-845", "question": {"stem": "exactly 12 aliens played with toys"}, "output": "u = = = = ="}
+{"idx": "MED_paper_sentence2_ccg2mono_uniq-846", "question": {"stem": "exactly 12 aliens read any books"}, "output": "u = = = = ="}
+{"idx": "MED_paper_sentence2_ccg2mono_uniq-847", "question": {"stem": "exactly 12 aliens read any magazines"}, "output": "u = = = = ="}
+{"idx": "MED_paper_sentence2_ccg2mono_uniq-848", "question": {"stem": "exactly 12 aliens read any news magazines"}, "output": "u = = = = = ="}
+{"idx": "MED_paper_sentence2_ccg2mono_uniq-849", "question": {"stem": "exactly 12 aliens read any sci-fi novels"}, "output": "u = = = = = ="}
+{"idx": "MED_paper_sentence2_ccg2mono_uniq-850", "question": {"stem": "exactly 12 aliens read books"}, "output": "u = = = ="}
+{"idx": "MED_paper_sentence2_ccg2mono_uniq-851", "question": {"stem": "exactly 12 aliens read magazines"}, "output": "u = = = ="}
+{"idx": "MED_paper_sentence2_ccg2mono_uniq-852", "question": {"stem": "exactly 12 aliens read news magazines"}, "output": "u = = = = ="}
+{"idx": "MED_paper_sentence2_ccg2mono_uniq-853", "question": {"stem": "exactly 12 aliens read sci-fi novels"}, "output": "u = = = = ="}
+{"idx": "MED_paper_sentence2_ccg2mono_uniq-854", "question": {"stem": "exactly 12 aliens read some books"}, "output": "u = = = = ="}
+{"idx": "MED_paper_sentence2_ccg2mono_uniq-855", "question": {"stem": "exactly 12 aliens read some magazines"}, "output": "u = = = = ="}
+{"idx": "MED_paper_sentence2_ccg2mono_uniq-856", "question": {"stem": "exactly 12 aliens read some news magazines"}, "output": "u = = = = = ="}
+{"idx": "MED_paper_sentence2_ccg2mono_uniq-857", "question": {"stem": "exactly 12 aliens read some sci-fi novels"}, "output": "u = = = = = ="}
+{"idx": "MED_paper_sentence2_ccg2mono_uniq-858", "question": {"stem": "exactly 12 aliens saw any birds"}, "output": "u = = = = ="}
+{"idx": "MED_paper_sentence2_ccg2mono_uniq-859", "question": {"stem": "exactly 12 aliens saw any doves"}, "output": "u = = = = ="}
+{"idx": "MED_paper_sentence2_ccg2mono_uniq-860", "question": {"stem": "exactly 12 aliens saw birds"}, "output": "u = = = ="}
+{"idx": "MED_paper_sentence2_ccg2mono_uniq-861", "question": {"stem": "exactly 12 aliens saw doves"}, "output": "u = = = ="}
+{"idx": "MED_paper_sentence2_ccg2mono_uniq-862", "question": {"stem": "exactly 12 aliens saw some birds"}, "output": "u = = = = ="}
+{"idx": "MED_paper_sentence2_ccg2mono_uniq-863", "question": {"stem": "exactly 12 aliens saw some doves"}, "output": "u = = = = ="}
+{"idx": "MED_paper_sentence2_ccg2mono_uniq-864", "question": {"stem": "exactly 12 aliens threw any balls"}, "output": "u = = = = ="}
+{"idx": "MED_paper_sentence2_ccg2mono_uniq-865", "question": {"stem": "exactly 12 aliens threw any tennis balls"}, "output": "u = = = = = ="}
+{"idx": "MED_paper_sentence2_ccg2mono_uniq-866", "question": {"stem": "exactly 12 aliens threw balls"}, "output": "u = = = ="}
+{"idx": "MED_paper_sentence2_ccg2mono_uniq-867", "question": {"stem": "exactly 12 aliens threw some balls"}, "output": "u = = = = ="}
+{"idx": "MED_paper_sentence2_ccg2mono_uniq-868", "question": {"stem": "exactly 12 aliens threw some tennis balls"}, "output": "u = = = = = ="}
+{"idx": "MED_paper_sentence2_ccg2mono_uniq-869", "question": {"stem": "exactly 12 aliens threw tennis balls"}, "output": "u = = = = ="}
+{"idx": "MED_paper_sentence2_ccg2mono_uniq-870", "question": {"stem": "exactly 12 aliens used any coins"}, "output": "u = = = = ="}
+{"idx": "MED_paper_sentence2_ccg2mono_uniq-871", "question": {"stem": "exactly 12 aliens used any quarters"}, "output": "u = = = = ="}
+{"idx": "MED_paper_sentence2_ccg2mono_uniq-872", "question": {"stem": "exactly 12 aliens used coins"}, "output": "u = = = ="}
+{"idx": "MED_paper_sentence2_ccg2mono_uniq-873", "question": {"stem": "exactly 12 aliens used quarters"}, "output": "u = = = ="}
+{"idx": "MED_paper_sentence2_ccg2mono_uniq-874", "question": {"stem": "exactly 12 aliens used some coins"}, "output": "u = = = = ="}
+{"idx": "MED_paper_sentence2_ccg2mono_uniq-875", "question": {"stem": "exactly 12 aliens used some quarters"}, "output": "u = = = = ="}
+{"idx": "MED_paper_sentence2_ccg2mono_uniq-876", "question": {"stem": "exactly 12 aliens watched any baseball matches"}, "output": "u = = = = = ="}
+{"idx": "MED_paper_sentence2_ccg2mono_uniq-877", "question": {"stem": "exactly 12 aliens watched any sports matches"}, "output": "u = = = = = ="}
+{"idx": "MED_paper_sentence2_ccg2mono_uniq-878", "question": {"stem": "exactly 12 aliens watched baseball matches"}, "output": "u = = = = ="}
+{"idx": "MED_paper_sentence2_ccg2mono_uniq-879", "question": {"stem": "exactly 12 aliens watched some baseball matches"}, "output": "u = = = = = ="}
+{"idx": "MED_paper_sentence2_ccg2mono_uniq-880", "question": {"stem": "exactly 12 aliens watched some sports matches"}, "output": "u = = = = = ="}
+{"idx": "MED_paper_sentence2_ccg2mono_uniq-881", "question": {"stem": "exactly 12 aliens watched sports matches"}, "output": "u = = = = ="}
+{"idx": "MED_paper_sentence2_ccg2mono_uniq-882", "question": {"stem": "exactly 3 elephants are blue"}, "output": "u = = = ="}
+{"idx": "MED_paper_sentence2_ccg2mono_uniq-883", "question": {"stem": "exactly 3 pachyderms are blue"}, "output": "u = = = ="}
+{"idx": "MED_paper_sentence2_ccg2mono_uniq-884", "question": {"stem": "exactly 5 dots are red"}, "output": "u = = = ="}
+{"idx": "MED_paper_sentence2_ccg2mono_uniq-885", "question": {"stem": "exactly 5 dots are scarlet"}, "output": "u = = = ="}
+{"idx": "MED_paper_sentence2_ccg2mono_uniq-886", "question": {"stem": "exactly 5 students brought food"}, "output": "u = = = ="}
+{"idx": "MED_paper_sentence2_ccg2mono_uniq-887", "question": {"stem": "exactly 5 students brought hazelnuts"}, "output": "u = = = ="}
+{"idx": "MED_paper_sentence2_ccg2mono_uniq-888", "question": {"stem": "exactly 5 students brought nuts"}, "output": "u = = = ="}
+{"idx": "MED_paper_sentence2_ccg2mono_uniq-889", "question": {"stem": "few aliens ate any meat"}, "output": "u d d d d"}
+{"idx": "MED_paper_sentence2_ccg2mono_uniq-890", "question": {"stem": "few aliens ate any pork"}, "output": "u d d d d"}
+{"idx": "MED_paper_sentence2_ccg2mono_uniq-891", "question": {"stem": "few aliens ate at any mexican restaurants"}, "output": "u d d d d d d"}
+{"idx": "MED_paper_sentence2_ccg2mono_uniq-892", "question": {"stem": "few aliens ate at any restaurants"}, "output": "u d d d d d"}
+{"idx": "MED_paper_sentence2_ccg2mono_uniq-893", "question": {"stem": "few aliens ate at mexican restaurants"}, "output": "u d d d d d"}
+{"idx": "MED_paper_sentence2_ccg2mono_uniq-894", "question": {"stem": "few aliens ate at restaurants"}, "output": "u d d d d"}
+{"idx": "MED_paper_sentence2_ccg2mono_uniq-895", "question": {"stem": "few aliens ate meat"}, "output": "u d d d"}
+{"idx": "MED_paper_sentence2_ccg2mono_uniq-896", "question": {"stem": "few aliens ate pork"}, "output": "u d d d"}
+{"idx": "MED_paper_sentence2_ccg2mono_uniq-897", "question": {"stem": "few aliens bought any clothes"}, "output": "u d d d d"}
+{"idx": "MED_paper_sentence2_ccg2mono_uniq-898", "question": {"stem": "few aliens bought any shirts"}, "output": "u d d d d"}
+{"idx": "MED_paper_sentence2_ccg2mono_uniq-899", "question": {"stem": "few aliens bought clothes"}, "output": "u d d d"}
+{"idx": "MED_paper_sentence2_ccg2mono_uniq-900", "question": {"stem": "few aliens bought shirts"}, "output": "u d d d"}
+{"idx": "MED_paper_sentence2_ccg2mono_uniq-901", "question": {"stem": "few aliens drank any coke"}, "output": "u d d d d"}
+{"idx": "MED_paper_sentence2_ccg2mono_uniq-902", "question": {"stem": "few aliens drank any soda"}, "output": "u d d d d"}
+{"idx": "MED_paper_sentence2_ccg2mono_uniq-903", "question": {"stem": "few aliens drank coke"}, "output": "u d d d"}
+{"idx": "MED_paper_sentence2_ccg2mono_uniq-904", "question": {"stem": "few aliens drank soda"}, "output": "u d d d"}
+{"idx": "MED_paper_sentence2_ccg2mono_uniq-905", "question": {"stem": "few aliens drove any cars"}, "output": "u d d d d"}
+{"idx": "MED_paper_sentence2_ccg2mono_uniq-906", "question": {"stem": "few aliens drove any suvs"}, "output": "u d d d d"}
+{"idx": "MED_paper_sentence2_ccg2mono_uniq-907", "question": {"stem": "few aliens drove cars"}, "output": "u d d d"}
+{"idx": "MED_paper_sentence2_ccg2mono_uniq-908", "question": {"stem": "few aliens drove suvs"}, "output": "u d d d"}
+{"idx": "MED_paper_sentence2_ccg2mono_uniq-909", "question": {"stem": "few aliens played with any toys"}, "output": "u d d d d d"}
+{"idx": "MED_paper_sentence2_ccg2mono_uniq-910", "question": {"stem": "few aliens played with any toy cars"}, "output": "u d d d d d d"}
+{"idx": "MED_paper_sentence2_ccg2mono_uniq-911", "question": {"stem": "few aliens played with toys"}, "output": "u d d d d"}
+{"idx": "MED_paper_sentence2_ccg2mono_uniq-912", "question": {"stem": "few aliens played with toy cars"}, "output": "u d d d d d"}
+{"idx": "MED_paper_sentence2_ccg2mono_uniq-913", "question": {"stem": "few aliens read any books"}, "output": "u d d d d"}
+{"idx": "MED_paper_sentence2_ccg2mono_uniq-914", "question": {"stem": "few aliens read any magazines"}, "output": "u d d d d"}
+{"idx": "MED_paper_sentence2_ccg2mono_uniq-915", "question": {"stem": "few aliens read any news magazines"}, "output": "u d d d d d"}
+{"idx": "MED_paper_sentence2_ccg2mono_uniq-916", "question": {"stem": "few aliens read any sci-fi novels"}, "output": "u d d d d d"}
+{"idx": "MED_paper_sentence2_ccg2mono_uniq-917", "question": {"stem": "few aliens read books"}, "output": "u d d d"}
+{"idx": "MED_paper_sentence2_ccg2mono_uniq-918", "question": {"stem": "few aliens read magazines"}, "output": "u d d d"}
+{"idx": "MED_paper_sentence2_ccg2mono_uniq-919", "question": {"stem": "few aliens read news magazines"}, "output": "u d d d d"}
+{"idx": "MED_paper_sentence2_ccg2mono_uniq-920", "question": {"stem": "few aliens read sci-fi novels"}, "output": "u d d d d"}
+{"idx": "MED_paper_sentence2_ccg2mono_uniq-921", "question": {"stem": "few aliens saw any birds"}, "output": "u d d d d"}
+{"idx": "MED_paper_sentence2_ccg2mono_uniq-922", "question": {"stem": "few aliens saw any doves"}, "output": "u d d d d"}
+{"idx": "MED_paper_sentence2_ccg2mono_uniq-923", "question": {"stem": "few aliens saw birds"}, "output": "u d d d"}
+{"idx": "MED_paper_sentence2_ccg2mono_uniq-924", "question": {"stem": "few aliens saw doves"}, "output": "u d d d"}
+{"idx": "MED_paper_sentence2_ccg2mono_uniq-925", "question": {"stem": "few aliens threw any balls"}, "output": "u d d d d"}
+{"idx": "MED_paper_sentence2_ccg2mono_uniq-926", "question": {"stem": "few aliens threw any tennis balls"}, "output": "u d d d d d"}
+{"idx": "MED_paper_sentence2_ccg2mono_uniq-927", "question": {"stem": "few aliens threw balls"}, "output": "u d d d"}
+{"idx": "MED_paper_sentence2_ccg2mono_uniq-928", "question": {"stem": "few aliens threw tennis balls"}, "output": "u d d d d"}
+{"idx": "MED_paper_sentence2_ccg2mono_uniq-929", "question": {"stem": "few aliens used any coins"}, "output": "u d d d d"}
+{"idx": "MED_paper_sentence2_ccg2mono_uniq-930", "question": {"stem": "few aliens used any quarters"}, "output": "u d d d d"}
+{"idx": "MED_paper_sentence2_ccg2mono_uniq-931", "question": {"stem": "few aliens used coins"}, "output": "u d d d"}
+{"idx": "MED_paper_sentence2_ccg2mono_uniq-932", "question": {"stem": "few aliens used quarters"}, "output": "u d d d"}
+{"idx": "MED_paper_sentence2_ccg2mono_uniq-933", "question": {"stem": "few aliens watched any baseball matches"}, "output": "u d d d d d"}
+{"idx": "MED_paper_sentence2_ccg2mono_uniq-934", "question": {"stem": "few aliens watched any sports matches"}, "output": "u d d d d d"}
+{"idx": "MED_paper_sentence2_ccg2mono_uniq-935", "question": {"stem": "few aliens watched baseball matches"}, "output": "u d d d d"}
+{"idx": "MED_paper_sentence2_ccg2mono_uniq-936", "question": {"stem": "few aliens watched sports matches"}, "output": "u d d d d"}
+{"idx": "MED_paper_sentence2_ccg2mono_uniq-937", "question": {"stem": "few committee members are from southern europe"}, "output": "u d d d d d d"}
+{"idx": "MED_paper_sentence2_ccg2mono_uniq-938", "question": {"stem": "few female committee members are from southern europe"}, "output": "u d d d d d d d"}
+{"idx": "MED_paper_sentence2_ccg2mono_uniq-939", "question": {"stem": "few linguists entered the race"}, "output": "u d d d ="}
+{"idx": "MED_paper_sentence2_ccg2mono_uniq-940", "question": {"stem": "few linguists entered the race early"}, "output": "u d d d = d"}
+{"idx": "MED_paper_sentence2_ccg2mono_uniq-941", "question": {"stem": "few Very chose any mint chocolates or decided on the cotton candy"}, "output": "d d d d d d d d d d d d"}
+{"idx": "MED_paper_sentence2_ccg2mono_uniq-942", "question": {"stem": "few Very chose mint chocolates or decided on the cotton candy"}, "output": "d d d d d d d d d d d"}
+{"idx": "MED_paper_sentence2_ccg2mono_uniq-943", "question": {"stem": "few Very decided on the cotton candy"}, "output": "d d d d d d d"}
+{"idx": "MED_paper_sentence2_ccg2mono_uniq-944", "question": {"stem": "few Very have caught a cold"}, "output": "d d d d d d"}
+{"idx": "MED_paper_sentence2_ccg2mono_uniq-945", "question": {"stem": "few Very have ever had a sunburn or caught a cold"}, "output": "d d d d d d d d d d d"}
+{"idx": "MED_paper_sentence2_ccg2mono_uniq-946", "question": {"stem": "few Very have had a sunburn or caught a cold"}, "output": "d d d d d d d d d d"}
+{"idx": "MED_paper_sentence2_ccg2mono_uniq-947", "question": {"stem": "less-than 5 campers have caught a cold"}, "output": "u u d d d d d"}
+{"idx": "MED_paper_sentence2_ccg2mono_uniq-948", "question": {"stem": "less-than 5 campers have ever had a sunburn or caught a cold"}, "output": "u u d d d d d d u d d d"}
+{"idx": "MED_paper_sentence2_ccg2mono_uniq-949", "question": {"stem": "less-than 5 campers have had a sunburn or caught a cold"}, "output": "u u d d d d d u d d d"}
+{"idx": "MED_paper_sentence2_ccg2mono_uniq-950", "question": {"stem": "less-than 5 children chose any mint chocolates or decided on the cotton candy"}, "output": "u u d d d d d u d d d = ="}
+{"idx": "MED_paper_sentence2_ccg2mono_uniq-951", "question": {"stem": "less-than 5 children chose mint chocolates or decided on the cotton candy"}, "output": "u u d d d d u d d d = ="}
+{"idx": "MED_paper_sentence2_ccg2mono_uniq-952", "question": {"stem": "less-than 5 children decided on the cotton candy"}, "output": "u u d d d d = ="}
+{"idx": "MED_paper_sentence2_ccg2mono_uniq-953", "question": {"stem": "less-than 5 of campers have caught a cold"}, "output": "d d d d d d d d"}
+{"idx": "MED_paper_sentence2_ccg2mono_uniq-954", "question": {"stem": "less-than 5 of campers have ever had a sunburn or caught a cold"}, "output": "d d d d d d d d d d d d d"}
+{"idx": "MED_paper_sentence2_ccg2mono_uniq-955", "question": {"stem": "less-than 5 of campers have had a sunburn or caught a cold"}, "output": "d d d d d d d d d d d d"}
+{"idx": "MED_paper_sentence2_ccg2mono_uniq-956", "question": {"stem": "less-than 5 of the children chose any mint chocolates or decided on the cotton candy"}, "output": "d d d d d d d d d d d d d d d"}
+{"idx": "MED_paper_sentence2_ccg2mono_uniq-957", "question": {"stem": "less-than 5 of the children chose mint chocolates or decided on the cotton candy"}, "output": "d d d d d d d d d d d d d d"}
+{"idx": "MED_paper_sentence2_ccg2mono_uniq-958", "question": {"stem": "less-than 5 of the children decided on the cotton candy"}, "output": "d d d d d d d d d d"}
+{"idx": "MED_paper_sentence2_ccg2mono_uniq-959", "question": {"stem": "more-than 5 campers have caught a cold"}, "output": "u d u u u u u"}
+{"idx": "MED_paper_sentence2_ccg2mono_uniq-960", "question": {"stem": "more-than 5 campers have ever had a sunburn or caught a cold"}, "output": "u d u u u u u u u u u u"}
+{"idx": "MED_paper_sentence2_ccg2mono_uniq-961", "question": {"stem": "more-than 5 campers have had a sunburn or caught a cold"}, "output": "u d u u u u u u u u u"}
+{"idx": "MED_paper_sentence2_ccg2mono_uniq-962", "question": {"stem": "more-than 5 children chose any mint chocolates or decided on the cotton candy"}, "output": "u d u u u u u u u u u = ="}
+{"idx": "MED_paper_sentence2_ccg2mono_uniq-963", "question": {"stem": "more-than 5 children chose mint chocolates or decided on the cotton candy"}, "output": "u d u u u u u u u u = ="}
+{"idx": "MED_paper_sentence2_ccg2mono_uniq-964", "question": {"stem": "more-than 5 children decided on the cotton candy"}, "output": "u d u u u u = ="}
+{"idx": "MED_paper_sentence2_ccg2mono_uniq-965", "question": {"stem": "more-than 5 of campers have caught a cold"}, "output": "d d d d d d d d"}
+{"idx": "MED_paper_sentence2_ccg2mono_uniq-966", "question": {"stem": "more-than 5 of campers have ever had a sunburn or caught a cold"}, "output": "d d d d d d d d d d d d d"}
+{"idx": "MED_paper_sentence2_ccg2mono_uniq-967", "question": {"stem": "more-than 5 of campers have had a sunburn or caught a cold"}, "output": "d d d d d d d d d d d d"}
+{"idx": "MED_paper_sentence2_ccg2mono_uniq-968", "question": {"stem": "more-than 5 of the children chose any mint chocolates or decided on the cotton candy"}, "output": "d d d d d d d d d d d d d d d"}
+{"idx": "MED_paper_sentence2_ccg2mono_uniq-969", "question": {"stem": "more-than 5 of the children chose mint chocolates or decided on the cotton candy"}, "output": "d d d d d d d d d d d d d d"}
+{"idx": "MED_paper_sentence2_ccg2mono_uniq-970", "question": {"stem": "more-than 5 of the children decided on the cotton candy"}, "output": "d d d d d d d d d d"}
+{"idx": "MED_paper_sentence2_ccg2mono_uniq-971", "question": {"stem": "most dots are red"}, "output": "u = u u"}
+{"idx": "MED_paper_sentence2_ccg2mono_uniq-972", "question": {"stem": "most dots are scarlet"}, "output": "u = u u"}
+{"idx": "MED_paper_sentence2_ccg2mono_uniq-973", "question": {"stem": "most europeans can travel freely within europe"}, "output": "u = u u u u u"}
+{"idx": "MED_paper_sentence2_ccg2mono_uniq-974", "question": {"stem": "most europeans who are resident outside europe can travel freely within europe"}, "output": "u = = = = = = u u u u u"}
+{"idx": "MED_paper_sentence2_ccg2mono_uniq-975", "question": {"stem": "most peanut farmers entered the race"}, "output": "u = = u u ="}
+{"idx": "MED_paper_sentence2_ccg2mono_uniq-976", "question": {"stem": "most peanut farmers entered the race early"}, "output": "u = = u u = u"}
+{"idx": "MED_paper_sentence2_ccg2mono_uniq-977", "question": {"stem": "several delegates got the results published"}, "output": "u u u u = ="}
+{"idx": "MED_paper_sentence2_ccg2mono_uniq-978", "question": {"stem": "several delegates got the results published in major national newspapers"}, "output": "u u u u = = = = = ="}
+{"idx": "MED_paper_sentence2_ccg2mono_uniq-979", "question": {"stem": "several portuguese delegates got the results published in major national newspapers"}, "output": "u u u u u = = = = = ="}
