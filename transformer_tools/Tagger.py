@@ -12,15 +12,14 @@ from simpletransformers.ner import NERModel
 from optparse import OptionParser,OptionGroup
 from transformer_tools.util.tagger_utils import *
 
-from transformer_tools.Base import (
-    ConfigurableClass,
-    UtilityClass,
-    LoggableClass,
-)
+# from transformer_tools.Base import (
+#     ConfigurableClass,
+# )
+from transformer_tools.model import Model
 
 util_logger = logging.getLogger('transformer_tools.Tagger')
 
-class TaggerModel(ConfigurableClass):
+class TaggerModel(Model):
     """Base class for building tagger models
 
     """
