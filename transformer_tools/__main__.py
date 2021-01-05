@@ -11,6 +11,7 @@ MODES["T5Classifier"]       = "transformer_tools.T5Classification"
 MODES["T5Generator"]        = "transformer_tools.T5Generative"
 MODES["T5Generative"]       = "transformer_tools.T5Generative"
 MODES["Tagger"]             = "transformer_tools.Tagger"
+MODES["Beaker"]             = "transformer_tools.tools.run_beaker"
 
 def main(argv):
     """The main execution point 
