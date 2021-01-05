@@ -66,6 +66,11 @@ def params(config):
                          type=str,
                          help="The particular cluster to use [default='us_wvnghctl47k0/01E5TXXY2BN0XNQHF7QHSDJ5YR']")
 
+    group.add_option("--beaker_group",
+                         dest="beaker_group",
+                         default='',
+                         type=str,
+                         help="The particular beaker group to assign to experiment (optional) [default='']")
 
     config.add_option_group(group)
 
