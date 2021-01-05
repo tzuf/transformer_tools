@@ -11,11 +11,15 @@ from scipy.special import softmax
 from simpletransformers.ner import NERModel
 from optparse import OptionParser,OptionGroup
 from transformer_tools.util.tagger_utils import *
-
-# from transformer_tools.Base import (
-#     ConfigurableClass,
-# )
 from transformer_tools.model import Model
+
+## wandb (if available)
+try:
+    import wandb
+
+    wandb_available = True
+except ImportError:
+    wandb_available = False
 
 util_logger = logging.getLogger('transformer_tools.Tagger')
 
@@ -235,3 +239,7 @@ def main(argv):
             my_metrics.write(
                 json.dumps(json_out,indent=4)
             )
+
+        #### log to wandb output 
+        if wandb_available and config.wandb_project:
+            wandb.log(json_out)
