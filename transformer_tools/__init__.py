@@ -113,3 +113,7 @@ def get_config(module_name,logging='info'):
 from transformer_tools.T5Generative import LoadModel as LoadT5Generator
 #from transformer_tools.T5Classification import T5ClassificationModel as T5Classifier
 from transformer_tools.T5Classification import LoadModel as LoadT5Classifier
+
+
+### wandb stuff
+from transformer_tools.util.wandb_util import load_wandb

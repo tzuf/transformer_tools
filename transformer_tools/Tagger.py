@@ -141,6 +141,9 @@ def params(config):
     from transformer_tools.T5Base import params as tparams
     tparams(config)
 
+    from transformer_tools.model import params as mparams
+    mparams(config)
+
     group = OptionGroup(config,"transformer_tools.Tagger",
                             "Settings for tagger models")
 
@@ -168,18 +171,6 @@ def params(config):
                          type=str,
                          help="The types of labels to use [default='']")
 
-    group.add_option("--tensorboard_dir",
-                         dest="tensorboard_dir",
-                         default=None,
-                         help="The types of labels to use [default=None]")
-
-    group.add_option("--wandb_project",
-                         dest="wandb_project",
-                         default=None,
-                         help="The particular wandb project (if used) [default='']")
-
-    group = OptionGroup(config,"transformer_tools.NER",
-                            "Settings for NER transformer models")
 
     config.add_option_group(group)
 
@@ -209,8 +200,12 @@ def main(argv):
     :rtype: None 
     """
     ## config
-    from transformer_tools import initialize_config
+    from transformer_tools import initialize_config,load_wandb
     config = initialize_config(argv,params)
+
+    ## load wandb
+    if config.wandb_project:
+        load_wandb(config)
 
     model = TaggerModel(config)
     json_out = {}
