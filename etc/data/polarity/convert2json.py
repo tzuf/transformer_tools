@@ -24,7 +24,10 @@ MY_MAP = {'↑':'u','↓':'d','=':'='}
 import json, sys, os
 
 def main():
-    convert('eval-56.txt')
+    if len(sys.argv) != 2:
+        print(' usage: python script.py fn.txt ')
+        exit(0)
+    convert(sys.argv[1])
 
 def convert(fn):
     fn_json = fn.replace('txt','jsonl')
@@ -40,15 +43,16 @@ def convert(fn):
                     exit()
                 output.append(MY_MAP[token[-1]])
                 stem.append(token[:-1])
-            
+
             if len(stem) != len(output):
                 print(f'len(stem) != len(output): {line}')
                 exit()
-                
-            f.write(json.dumps( 
+
+            f.write(json.dumps(
                 {'idx': f'{basename}-{str(i)}', 'question' : {'stem': ' '.join(stem)},
                 'output': ' '.join(output) }
             ) + '\n')
+    print('done!')
 
 if __name__ == "__main__":
     main()
