@@ -31,22 +31,21 @@ def load_label_list(labels):
     return out_list
 
 _ARROWS = {
-    "u"   : "B-up",
-    "d"   : "B-down",
-    "="   : "B-=",
-    "up" : "B-up",
+    "u"    : "B-up",
+    "d"    : "B-down",
+    "="    : "B-=",
+    "up"   : "B-up",
     "down" : "B-down",
-    "↑"   : "B-up",
-    "↓"   : "B-down",
+    "↑"    : "B-up",
+    "↓"    : "B-down",
 }
     
 _REVERSE_ARROWS = {
-    "B-up" : "↑",
+    "B-up"   : "↑",
     "B-down" : "↓",
     "B-="    : "=",
 }
     
-
 def load_arrow_data(config,split):
     """Load the arrow data from json 
 
@@ -82,6 +81,7 @@ def load_arrow_data(config,split):
 
     util_logger.info('Loading %d %s instances...' % (len(full_data),split))
     return pd.DataFrame(full_data,columns=["sentence_id", "words", "labels"])
+
 
 def print_arrow_output(predictions,
                            eval_data,
@@ -138,12 +138,11 @@ def read_report(output_dir):
     with open(report_loc) as report:
         for line in report:
             fields = [l for l in re.split("\s+",line) if l.strip()]
-            if len(fields) == 5: 
+            if len(fields) == 5:
                 label = fields[0]
                 label_scores["%s_precision" % label] = float(fields[1])
                 label_scores["%s_recall" % label] = float(fields[2])
                 label_scores["%s_f1-score" % label] = float(fields[3])
                 label_scores["%s_support" % label] = float(fields[4])
-
     util_logger.info(label_scores)
     return label_scores

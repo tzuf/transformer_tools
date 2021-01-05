@@ -652,13 +652,14 @@ class T5Text2TextBase(pl.LightningModule):
                                     max_length=max_length,
                                     min_length=min_length,
                                     num_beams=num_beams,
-                                    early_stopping=True,
+                                    early_stopping=True, ## <---- look at this, eos_
                                     no_repeat_ngram_size=no_repeat_ngram_size,
                                     top_p=top_p,
                                     top_k=top_k,
                                     do_sample=do_sample,
                                     num_return_sequences=num_return_sequences,
                                     use_cache=True)
+
         return outs
 
     @torch.no_grad()

@@ -1,10 +1,10 @@
-CURRENT=3
+CURRENT=7
 IMAGE_NAME=transformer_tools_v1
 DOCKERFILE_NAME=Dockerfile
 
 GIT_HASH=`git log --format="%h" -n 1`
 IMAGE=$IMAGE_NAME_$USER-$GIT_HASH
-IM_NAME=${IMAGE}_3
+IM_NAME=${IMAGE}_7
 
 echo "Building $IMAGE"
 docker build -f $DOCKERFILE_NAME -t $IMAGE .

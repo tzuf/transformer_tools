@@ -1,9 +1,9 @@
 description: Train BERT tagger model on polarity data
 tasks:
 - spec:
-    image: im_x4f3jgolbvzv
+    image: im_94k4kqrcljsb
     resultPath: /output
-    args: [python, -m, transformer_tools, Tagger, --output_dir, /output, --data_dir, /inputs, --num_train_epochs, "1", --learning_rate, "0.00001", --train_batch_size, "16", --seed, "42", --cloud, --early_stopping, --label_list,"B-up;B-down;B-=",--dev_eval,--print_output]
+    args: [python, -m, transformer_tools, Tagger, --output_dir, /output, --data_dir, /inputs, --num_train_epochs, "3", --learning_rate, "0.00001", --train_batch_size, "16", --seed, "42", --cloud, --early_stopping, --label_list,"B-up;B-down;B-=",--dev_eval,--print_output,--tensorboard_dir,/output]
     env:
       DATASET : "polarity_2"
       LR : "0.00001"

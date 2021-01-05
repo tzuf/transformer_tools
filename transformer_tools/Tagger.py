@@ -20,7 +20,6 @@ from transformer_tools.Base import (
 
 util_logger = logging.getLogger('transformer_tools.Tagger')
 
-
 class TaggerModel(ConfigurableClass):
     """Base class for building tagger models
 
@@ -54,7 +53,7 @@ class TaggerModel(ConfigurableClass):
         ## find labels in list
         label_list = load_label_list(config.label_list)
         use_cuda = True if torch.cuda.is_available() else False
-        
+
         model = NERModel(
             config.model_name,
             config.model_type,
@@ -63,6 +62,8 @@ class TaggerModel(ConfigurableClass):
             args={
                 "fp16" : False,
                 "classification_report" : True,
+                "tensorboard_dir" : config.tensorboard_dir,
+                "wandb_project" : config.wandb_project,
                 }
         )
         return cls(model,config)
@@ -76,7 +77,7 @@ class TaggerModel(ConfigurableClass):
         train_data = self.load_data(split="train")
         dev_data = self.load_data(split="dev")
 
-        self.logger.info('Training the model...')
+        self.logger.info('Training the model, outputdir=%s...' % self.config.output_dir)
         self.model.train_model(
             train_data,
             eval_data=dev_data,
@@ -93,6 +94,8 @@ class TaggerModel(ConfigurableClass):
                 "use_early_stopping" : self.config.early_stopping,
                 "fp16" : False,
                 "classification_report" : True,
+                "evaluate_during_training" : True,
+                "evaluate_during_training_verbose" : True,
             })
 
     def eval_model(self,split='dev',print_output=False):
@@ -124,6 +127,12 @@ class ArrowTagger(TaggerModel):
         :param split: the particular split to load 
         """
         return load_arrow_data(self.config,split)
+
+class GenericTagger(TaggerModel):
+    """Generic data model 
+
+    """
+    pass
 
 def params(config):
     """Main parameters for running the T5 model
@@ -160,6 +169,16 @@ def params(config):
                          type=str,
                          help="The types of labels to use [default='']")
 
+    group.add_option("--tensorboard_dir",
+                         dest="tensorboard_dir",
+                         default=None,
+                         help="The types of labels to use [default=None]")
+
+    group.add_option("--wandb_project",
+                         dest="wandb_project",
+                         default=None,
+                         help="The particular wandb project (if used) [default='']")
+
     group = OptionGroup(config,"transformer_tools.NER",
                             "Settings for NER transformer models")
 
@@ -168,7 +187,7 @@ def params(config):
 _TAGGERS = {
     "arrow_tagger" : ArrowTagger,
 }
-    
+
 def TaggerModel(config):
     """Factor for loading a tagger model 
 
@@ -208,7 +227,6 @@ def main(argv):
         for key,value in dev_out.items():
             json_out["dev_%s" % key] = value
         
-
     if config.test_eval:
         test_out = model.eval_model(
             split='test',
@@ -220,5 +238,6 @@ def main(argv):
         metric_out = os.path.join(config.output_dir,"metrics.json")
         util_logger.info('Attempting to print metrics file: %s' % metric_out)
         with open(metric_out,'w') as my_metrics:
-            my_metrics.write(json.dumps(json_out,indent=4))
-        
+            my_metrics.write(
+                json.dumps(json_out,indent=4)
+            )
