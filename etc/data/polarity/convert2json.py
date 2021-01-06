@@ -30,7 +30,8 @@ def main():
     convert(sys.argv[1])
 
 def convert(fn):
-    fn_json = fn.replace('txt','jsonl')
+    if fn[-4:] == '.txt': fn_json = fn.replace('txt','jsonl')
+    else: fn_json = fn + '.jsonl'
     basename = os.path.basename(fn).replace('.txt','')
     lines = [l.strip() for l in open(fn).readlines()]
     with open(fn_json, 'w') as f:
