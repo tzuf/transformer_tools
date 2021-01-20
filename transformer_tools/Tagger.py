@@ -207,12 +207,14 @@ def main(argv):
     config = initialize_config(argv,params)
 
     ## load wandb
-    if config.wandb_project:
+    if config.wandb_project and wandb_available:
         load_wandb(config)
 
     model = TaggerModel(config)
     json_out = {}
-    
+    json_out["train_data"] = config.train_name
+    json_out["eval_data"]  = config.eval_name
+
     if not config.no_training: 
         model.train_model()
 

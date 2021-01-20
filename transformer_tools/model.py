@@ -4,7 +4,8 @@ from transformer_tools.Base import ConfigurableClass
 class Model(ConfigurableClass):
     """Base model for all other models
     """
-    def query(self,text_input):
+    #def query(self,text_input):
+    def query(self,text_input,prefix='answer:'):
         raise NotImplementedError
 
 def params(config):
@@ -45,10 +46,36 @@ def params(config):
                          default=None,
                          help="The types of labels to use [default=None]")
 
+    group.add_option("--train_name",
+                         dest="train_name",
+                         default="generic",
+                         type=str,
+                         help="The name of training data [default='generic']")
 
-    # group.add_option("--cuda_device",dest="cuda_device",default=-1,type=int,
-    #                   help="The cuda device to run on (for GPU processes) [default=-1]")
+    group.add_option("--eval_name",
+                         dest="eval_name",
+                         default="generic",
+                         type=str,
+                         help="The name of evaluation data [default='generic']")
 
-    ## TODO : move the t5base settings here 
+    group.add_option("--log_wandb_model",
+                         dest="log_wandb_model",
+                         action='store_true',
+                         default=False,
+                         help="Backup the wandb model [default=False]")
+
+    group.add_option("--wandb_entity",
+                         dest="wandb_entity",
+                         default='',
+                         type=str,
+                         help="Backup the wandb model [default='']")
+
+    group.add_option("--model_name",
+                         dest="model_name",
+                         default='n/a',
+                         type=str,
+                         help="The type of model (for plotting purposes) [default='n/a']")
+
+    ## TODO : move the t5base settings here
 
     config.add_option_group(group)

@@ -13,12 +13,14 @@ import numpy as np
 import torch
 from torch.utils.data import Dataset, DataLoader
 import pytorch_lightning as pl
+from pytorch_lightning.loggers import WandbLogger
 from tqdm.auto import tqdm
 from sklearn import metrics as sklearn_metrics
 from dataclasses import dataclass
 from enum import Enum
 from typing import List, Optional
 from transformers import PreTrainedTokenizer
+from transformer_tools.model import Model
 
 from transformers import (
     AdamW,
@@ -31,13 +33,6 @@ from transformers.optimization import (
     Adafactor
 )
 
-# try: 
-#     import torch_xla
-#     import torch_xla.core.xla_model as xm
-# except:
-#     pass
-
-from transformer_tools import initialize_config
 from optparse import OptionParser,OptionGroup
 
 from transformer_tools.Base import (
@@ -48,6 +43,13 @@ from transformer_tools.Base import (
 
 from transformer_tools.util.t5_util import *
 
+try:
+    import wandb
+
+    wandb_available = True
+except ImportError:
+    wandb_available = False
+    
 util_logger = logging.getLogger('transformer_tools.T5Model')
 
 ## T5 modeling, based largely on notebook from
@@ -109,6 +111,9 @@ def _update_config(args,config):
     args.print_bleu    = config.print_bleu
     args.generate_once = config.generate_once
     args.no_generate_train = config.no_generate_train
+    args.wandb_project = config.wandb_project
+    args.wandb_name = config.wandb_name
+    args.wandb_note = config.wandb_note
 
     try:
         args.max_regenerate = config.max_regenerate
@@ -689,7 +694,8 @@ class T5Text2TextBase(pl.LightningModule):
 
         ## build model 
         model = cls(args,config.target_model,config.target_model)
-        if config.special_device: model.to(config.special_device)
+        if config.special_device and torch.cuda.is_available():
+            model.to(config.special_device)
         return model
     
     def query(self,text_input,prefix='answer:'):
@@ -778,7 +784,8 @@ class T5Trainer(ConfigurableClass):
             mode=mode,
             save_top_k=args.save_top_k,
             verbose=args.verbose,
-            period=args.period)
+            period=args.period
+        )
 
         ## early stopping callback (if available)
         early_stop_callback=False 
@@ -807,10 +814,17 @@ class T5Trainer(ConfigurableClass):
             auto_lr_find=args.auto_lr_find,
             reload_dataloaders_every_epoch=True,
             num_sanity_val_steps=0,
-            log_gpu_memory='all')
+            log_gpu_memory='all'
+        )
 
         if args.tpu_cores > 0:
             train_params["tpu_cores"] = args.tpu_cores
+        if config.wandb_project and wandb_available:
+            wandb_logger = WandbLogger(
+                project=config.wandb_project,
+                entity=config.wandb_entity
+            )
+            train_params['logger'] = wandb_logger
 
         ## set up the model
         mclass = cls._MODELS.get(args.T5_type,None)
@@ -857,9 +871,13 @@ def params(config):
 
     :param config: the global configuration object
     """
+    from transformer_tools.model import params as mparams
+    mparams(config)
 
     group = OptionGroup(config,"transformer_tools.T5Base",
                             "KnowledgeManager settings")
+
+    
     
     group.add_option("--dtype",
                           dest="dtype",
@@ -1301,6 +1319,14 @@ def run_trainer_tester(config,trainer_class,t5_class,eval_map={}):
     if not config.data_dir or not os.path.isdir(config.data_dir):
         raise ValueError('Must specify a valid data directory: %s' % config.data_dir)
 
+    ## wandb stuff
+    if wandb_available and config.wandb_project and wandb_available:
+        from transformer_tools import load_wandb
+        load_wandb(config)
+        #print(config.wandb_api_key)
+        #os.environ["WANDB_API_KEY"] = config.wandb_api_key
+        #wandb.login(key=config.wandb_api_key)
+
     ### training (if set)
     best_dev_score = -1.
     metrics  = {}
@@ -1354,6 +1380,10 @@ def run_trainer_tester(config,trainer_class,t5_class,eval_map={}):
     else:
         metrics[eval_map.get("dev_eval","dev_eval")] = best_dev_score
 
+    ## additional run details
+    metrics["model_name"]  = config.model_name
+    metrics["eval_name"]   = config.eval_name
+    metrics["train_name"]  = config.train_name
 
     ## print metrics
     util_logger.info('Attempting to write metrics file...')
@@ -1363,6 +1393,11 @@ def run_trainer_tester(config,trainer_class,t5_class,eval_map={}):
         ## print out 
         with open(metrics_out,'w') as my_metrics:
             my_metrics.write(json.dumps(metrics,indent=4))
+        
+
+        util_logger.info('Checking wandb to print internal metrics...')
+        if wandb_available and config.wandb_project:
+            wandb.log(metrics)
 
     ## remove models (if desired)
     if config.remove_models:
@@ -1386,8 +1421,16 @@ def main(argv):
     :param argv: the cli arguments 
     :raises: ValueError
     """
+    from transformer_tools import initialize_config
+
     ## set up config and get working directory set up
     config = initialize_config(argv,params)
+    ## wandb?
+    # if config.wandb_project and wandb_available:
+    #     load_wandb(config)
+        #print(config.wandb_api_key)
+        #os.environ["WANDB_API_KEY"] = config.wandb_api_key
+        #wandb.login(key=config.wandb_api_key)
 
     ## run 
     run_trainer_tester(config)

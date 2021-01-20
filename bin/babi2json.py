@@ -11,6 +11,8 @@ CONFIG.add_option("--data_loc",dest="data_loc",default='',
                       help="the location of the data [default='']")
 CONFIG.add_option("--odir",dest="odir",default='',
                       help="The output directory where to put files [default='']")
+CONFIG.add_option("--supporting_facts",dest="supporting_facts",default='',
+                      help="The output directory where to put files [default='']")
 
 def main(argv):
     config,_ = CONFIG.parse_args(sys.argv[1:])
