@@ -635,7 +635,8 @@ def print_full_output(outputs,targets,data_rep,ofile,print_bleu=False):
     ### 
     with open(ofile,'w') as output_file:
         for k,output in enumerate(outputs):
-            print("%s\t%s\t%s" % (data_rep[k],targets[k],output),file=output_file)
+            #print("%s\t%s\t%s" % (data_rep[k],targets[k],output),file=output_file)
+            print("%s\t%s" % (data_rep[k],output),file=output_file)
 
     ### print bleu scores for generation outputs
     if print_bleu: 

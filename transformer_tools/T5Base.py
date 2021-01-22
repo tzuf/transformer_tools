@@ -1326,7 +1326,7 @@ def run_trainer_tester(config,trainer_class,t5_class,eval_map={}):
     if wandb_available and config.wandb_project and wandb_available:
         from transformer_tools import load_wandb
         load_wandb(config)
-
+        
     ### training (if set)
     best_dev_score = -1.
     metrics  = {}
@@ -1343,17 +1343,20 @@ def run_trainer_tester(config,trainer_class,t5_class,eval_map={}):
         ## backup model to wandb? 
         if wandb_available and config.save_wandb_model:
             util_logger.info('Backing up the model files to wandb')
-            wandb.save(os.path.join(config.output_dir,"*.json"))
-            wandb.save(os.path.join(config.output_dir,"*.txt"))
-            wandb.save(os.path.join(config.output_dir,"*.bin"))
-            wandb.save(os.path.join(config.output_dir,"*.model"))
+            ## save instead as an artifact
+            artifact = wandb.Artifact("%s_model" % config.wandb_name, type='model')
+            artifact.add_file(os.path.join(config.output_dir,"pytorch_model.bin"))
+
+            # wandb.save(os.path.join(config.output_dir,"*.json"))
+            # wandb.save(os.path.join(config.output_dir,"*.txt"))
+            # wandb.save(os.path.join(config.output_dir,"*.bin"))
+            # wandb.save(os.path.join(config.output_dir,"*.model"))
 
     ## evaluation (if set) 
     if config.dev_eval or config.test_eval or config.train_eval:
 
         ### 
         util_logger.info('Going into evaluation branch...')
-        #t5_class = T5Model(config)
         model    = t5_class.load_existing(config)
         model.eval()
         util_logger.info('loading model (might take time)...')
@@ -1401,6 +1404,9 @@ def run_trainer_tester(config,trainer_class,t5_class,eval_map={}):
         util_logger.info('Checking wandb to print internal metrics...')
         if wandb_available and config.wandb_project:
             wandb.log(metrics)
+            ## get the model output 
+            if config.print_output: 
+                wandb.save(os.path.join(config.output_dir,"*.tsv"))
 
     ## remove models (if desired)
     if config.remove_models:

@@ -188,7 +188,7 @@ Setting up with wandb
 ---------------------------
 
 Here's an example of running a T5 with wandb on the backend:
-```
+```python
 python  -m  transformer_tools T5Classifier \
         --output_dir /output \
          --data_dir  /inputs \
