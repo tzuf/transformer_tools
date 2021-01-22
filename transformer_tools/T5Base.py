@@ -1395,13 +1395,10 @@ def run_trainer_tester(config,trainer_class,t5_class,eval_map={}):
 
             ## backup model to wandb? 
             if config.save_wandb_model and not config.no_training:
-                pass
-                # Save a model file from the current directory
-                # wandb.save('model.h5')
-                # # Save all files that currently exist containing the substring "ckpt"
-                # wandb.save('../logs/*ckpt*')
-                # # Save any files starting with "checkpoint" as they're written to
-                # wandb.save(os.path.join(wandb.run.dir, "checkpoint*"))
+                wandb.save(os.path.join(config.output_dir,"*.json"))
+                wandb.save(os.path.join(config.output_dir,"*.txt"))
+                wandb.save(os.path.join(config.output_dir,"*.bin"))
+                wandb.save(os.path.join(config.output_dir,"*.model"))
 
     ## remove models (if desired)
     if config.remove_models:
