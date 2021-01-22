@@ -4,8 +4,14 @@ from transformer_tools.Base import ConfigurableClass
 class Model(ConfigurableClass):
     """Base model for all other models
     """
-    #def query(self,text_input):
     def query(self,text_input,prefix='answer:'):
+        """Main method for outside interaction with Python/text 
+
+        :param text_input: the input text 
+        :rtype text_input: str 
+        :param prefix: the model mode to run (if needed) 
+        :rtype: obj
+        """
         raise NotImplementedError
 
 def params(config):
@@ -58,8 +64,8 @@ def params(config):
                          type=str,
                          help="The name of evaluation data [default='generic']")
 
-    group.add_option("--log_wandb_model",
-                         dest="log_wandb_model",
+    group.add_option("--save_wandb_model",
+                         dest="save_wandb_model",
                          action='store_true',
                          default=False,
                          help="Backup the wandb model [default=False]")

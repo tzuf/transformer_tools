@@ -229,9 +229,16 @@ def main(argv):
     if config.test_eval:
         test_out = model.eval_model(
             split='test',
-            print_output=config.print_output)
+            print_output=config.print_output
+        )
+
         for key,value in dev_out.items():
             json_out["test_%s" % key] = value
+
+    ### additional details 
+    json_out["model_name"]  = config.model_name
+    json_out["eval_name"]   = config.eval_name
+    json_out["train_name"]  = config.train_name
 
     if json_out:
         metric_out = os.path.join(config.output_dir,"metrics.json")

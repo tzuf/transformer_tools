@@ -691,6 +691,8 @@ class T5Text2TextBase(pl.LightningModule):
 
         ## update
         _update_config(args,config)
+        ## make sure you don't save it again
+        config.save_wandb_model = False 
 
         ## build model 
         model = cls(args,config.target_model,config.target_model)
@@ -1323,9 +1325,6 @@ def run_trainer_tester(config,trainer_class,t5_class,eval_map={}):
     if wandb_available and config.wandb_project and wandb_available:
         from transformer_tools import load_wandb
         load_wandb(config)
-        #print(config.wandb_api_key)
-        #os.environ["WANDB_API_KEY"] = config.wandb_api_key
-        #wandb.login(key=config.wandb_api_key)
 
     ### training (if set)
     best_dev_score = -1.
@@ -1380,11 +1379,6 @@ def run_trainer_tester(config,trainer_class,t5_class,eval_map={}):
     else:
         metrics[eval_map.get("dev_eval","dev_eval")] = best_dev_score
 
-    ## additional run details
-    metrics["model_name"]  = config.model_name
-    metrics["eval_name"]   = config.eval_name
-    metrics["train_name"]  = config.train_name
-
     ## print metrics
     util_logger.info('Attempting to write metrics file...')
     if config.output_dir and os.path.isdir(config.output_dir):
@@ -1398,6 +1392,16 @@ def run_trainer_tester(config,trainer_class,t5_class,eval_map={}):
         util_logger.info('Checking wandb to print internal metrics...')
         if wandb_available and config.wandb_project:
             wandb.log(metrics)
+
+            ## backup model to wandb? 
+            if config.save_wandb_model and not config.no_training:
+                pass
+                # Save a model file from the current directory
+                # wandb.save('model.h5')
+                # # Save all files that currently exist containing the substring "ckpt"
+                # wandb.save('../logs/*ckpt*')
+                # # Save any files starting with "checkpoint" as they're written to
+                # wandb.save(os.path.join(wandb.run.dir, "checkpoint*"))
 
     ## remove models (if desired)
     if config.remove_models:
@@ -1425,12 +1429,6 @@ def main(argv):
 
     ## set up config and get working directory set up
     config = initialize_config(argv,params)
-    ## wandb?
-    # if config.wandb_project and wandb_available:
-    #     load_wandb(config)
-        #print(config.wandb_api_key)
-        #os.environ["WANDB_API_KEY"] = config.wandb_api_key
-        #wandb.login(key=config.wandb_api_key)
 
     ## run 
     run_trainer_tester(config)
