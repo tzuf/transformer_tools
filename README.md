@@ -184,6 +184,28 @@ An example beaker experiment is included in
 beaker experiment create -n "beaker_babi_run" -f etc/beaker_templates/run_t5_babi_v1.yaml
 ```
 
+Setting up with wandb
+---------------------------
+
+Here's an example of running a T5 with wandb on the backend:
+```
+python  -m  transformer_tools T5Classifier \
+        --output_dir /output \
+         --data_dir  /inputs \
+         --dev_eval \
+         --wdir /output \
+         --T5_type T5ClassificationMultiQA \
+         --data_builder  multi_qa \
+         --wandb_project "t5_model_runs" \ #<---- name of project
+         --wandb_name "t5_small_backup_test" \ #<----- name of wandbexp. 
+         --wandb_entity "eco-semantics" \ #<--- project id
+         --save_wandb_model \ #<--- backup the resulting model on wandb
+         --wandb_api_key "xxxxxxxxxxxxxxxxxxxx" #<--- wandb api key (if needed)
+```
+**NOTE**: `wandb_api_key` is not safe to broadcast like this; if not
+running in a cloud environment, it is best to set this as an
+environment variable.
+
 Example notebooks
 ---------------------------
 Example notebooks are included in `notebooks`.
