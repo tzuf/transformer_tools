@@ -114,6 +114,7 @@ def _update_config(args,config):
     args.wandb_project = config.wandb_project
     args.wandb_name = config.wandb_name
     args.wandb_note = config.wandb_note
+    args.save_wandb_model = config.save_wandb_model
 
     try:
         args.max_regenerate = config.max_regenerate
@@ -693,7 +694,7 @@ class T5Text2TextBase(pl.LightningModule):
         ## update
         _update_config(args,config)
         ## make sure you don't save it again
-        config.save_wandb_model = False 
+        #config.save_wandb_model = False 
 
         ## build model 
         model = cls(args,config.target_model,config.target_model)
@@ -1340,18 +1341,6 @@ def run_trainer_tester(config,trainer_class,t5_class,eval_map={}):
             trainer.force_exit()
             metrics[eval_map.get("best_dev_score","best_dev_score")] = best_dev_score
 
-        ## backup model to wandb? 
-        if wandb_available and config.save_wandb_model:
-            util_logger.info('Backing up the model files to wandb')
-            ## save instead as an artifact
-            artifact = wandb.Artifact("%s_model" % config.wandb_name, type='model')
-            artifact.add_file(os.path.join(config.output_dir,"pytorch_model.bin"))
-
-            # wandb.save(os.path.join(config.output_dir,"*.json"))
-            # wandb.save(os.path.join(config.output_dir,"*.txt"))
-            # wandb.save(os.path.join(config.output_dir,"*.bin"))
-            # wandb.save(os.path.join(config.output_dir,"*.model"))
-
     ## evaluation (if set) 
     if config.dev_eval or config.test_eval or config.train_eval:
 
@@ -1381,6 +1370,9 @@ def run_trainer_tester(config,trainer_class,t5_class,eval_map={}):
             dev_eval_score = model.evaluate_output(dtype='dev',final_eval=print_output)
             metrics[eval_map.get("dev_eval","dev_eval")] = dev_eval_score
 
+            if print_output and config.wandb_project:
+                wandb.save(os.path.join(config.output_dir,"dev_results.tsv"))
+
         if config.test_eval:
             util_logger.info('Evaluating test...')
             ## print test output
@@ -1394,6 +1386,7 @@ def run_trainer_tester(config,trainer_class,t5_class,eval_map={}):
     ## print metrics
     util_logger.info('Attempting to write metrics file...')
     if config.output_dir and os.path.isdir(config.output_dir):
+
         metrics_out = os.path.join(config.output_dir,"metrics.json")
         util_logger.info('Attempting to write metrics file, out=%s...' % metrics_out)
         ## print out 
@@ -1403,10 +1396,37 @@ def run_trainer_tester(config,trainer_class,t5_class,eval_map={}):
 
         util_logger.info('Checking wandb to print internal metrics...')
         if wandb_available and config.wandb_project:
+
+            ### 
             wandb.log(metrics)
             ## get the model output 
             if config.print_output: 
                 wandb.save(os.path.join(config.output_dir,"*.tsv"))
+
+            ## backup model to wandb?
+            if config.save_wandb_model and not config.no_training:
+                util_logger.info('Backing up the model files to wandb')
+                ## save instead as an artifact
+                run = wandb.init(
+                    project=config.wandb_project,
+                    entity=config.wandb_entity,
+                    name="",
+                )
+                artifact = wandb.Artifact('%s_model' % config.wandb_name, type='model')
+
+                for model_file in [
+                        "added_tokens.json",
+                        "commandline_args.txt",
+                        "config.json",
+                        "pytorch_model.bin",
+                        "special_tokens_map.json",
+                        "spiece.model",
+                        "tokenizer_config.json",
+                        ]:
+                    artifact.add_file(os.path.join(config.output_dir,model_file))
+
+                ## log model 
+                run.log_artifact(artifact)
 
     ## remove models (if desired)
     if config.remove_models:

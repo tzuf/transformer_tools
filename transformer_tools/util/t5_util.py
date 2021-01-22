@@ -644,7 +644,7 @@ def print_full_output(outputs,targets,data_rep,ofile,print_bleu=False):
         with open(generation_out,'w') as gen_out:
             for k,output in enumerate(outputs):
                 score = bleu([output],targets[k],smoothing_function=SmoothingFunction().method1)
-                print("%s\t%s\t%s\t%f" % (data_rep[k],targets[k],output,score),file=gen_out)
+                print("%s\t%s\t%f" % (data_rep[k],output,score),file=gen_out)
                 
 def prepare_explanations(config,tokenizer):
     """This is a bit of a hack, but sets up the mcqa format to get out the explanations. 
