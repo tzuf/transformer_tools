@@ -389,8 +389,8 @@ class T5Text2TextBase(pl.LightningModule):
 
         outputs = self(input_ids=batch["source_ids"],
                            attention_mask=batch["source_mask"],
-                           #lm_labels=lm_labels, # change to labels
-                           labels=lm_labels,
+                           lm_labels=lm_labels, # change to labels
+                           #labels=lm_labels,
                            decoder_attention_mask=batch['target_mask'])
 
         loss = outputs[0]

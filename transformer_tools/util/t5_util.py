@@ -415,8 +415,8 @@ def multi_qa(config,
             tokenized_inputs = tokenizer.batch_encode_plus(
                     [input_],
                     max_length=config.max_seq_length,
-                    pad_to_max_length=True,
-                    #padding=True,
+                    #pad_to_max_length=True,
+                    padding='max_length',
                     return_tensors="pt",
                     truncation=True, ## throws off warning if switched off
                 )
@@ -424,8 +424,8 @@ def multi_qa(config,
             tokenized_targets = tokenizer.batch_encode_plus(
                     [target],
                     max_length=config.max_answer,
-                    pad_to_max_length=True,
-                    #padding=True,
+                    #pad_to_max_length=True,
+                    padding='max_length',
                     return_tensors="pt",
                     truncation=True, ## throws off warning if switched off
                 )
