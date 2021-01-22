@@ -389,8 +389,8 @@ class T5Text2TextBase(pl.LightningModule):
 
         outputs = self(input_ids=batch["source_ids"],
                            attention_mask=batch["source_mask"],
-                           lm_labels=lm_labels, # change to labels
-                           #labels=lm_labels,
+                           #lm_labels=lm_labels, # change to labels
+                           labels=lm_labels,
                            decoder_attention_mask=batch['target_mask'])
 
         loss = outputs[0]
@@ -410,7 +410,8 @@ class T5Text2TextBase(pl.LightningModule):
                               attention_mask=attention_mask,
                               decoder_input_ids=decoder_input_ids,
                               decoder_attention_mask=decoder_attention_mask,
-                              lm_labels=lm_labels)
+                              labels=lm_labels)
+                              #lm_labels=lm_labels)
 
     ## VALIDATION STEPS AND EPOCHS
     
@@ -1338,7 +1339,15 @@ def run_trainer_tester(config,trainer_class,t5_class,eval_map={}):
             ## hack 
             trainer.force_exit()
             metrics[eval_map.get("best_dev_score","best_dev_score")] = best_dev_score
-            
+
+        ## backup model to wandb? 
+        if wandb_available and config.save_wandb_model:
+            util_logger.info('Backing up the model files to wandb')
+            wandb.save(os.path.join(config.output_dir,"*.json"))
+            wandb.save(os.path.join(config.output_dir,"*.txt"))
+            wandb.save(os.path.join(config.output_dir,"*.bin"))
+            wandb.save(os.path.join(config.output_dir,"*.model"))
+
     ## evaluation (if set) 
     if config.dev_eval or config.test_eval or config.train_eval:
 
@@ -1392,13 +1401,6 @@ def run_trainer_tester(config,trainer_class,t5_class,eval_map={}):
         util_logger.info('Checking wandb to print internal metrics...')
         if wandb_available and config.wandb_project:
             wandb.log(metrics)
-
-            ## backup model to wandb? 
-            if config.save_wandb_model and not config.no_training:
-                wandb.save(os.path.join(config.output_dir,"*.json"))
-                wandb.save(os.path.join(config.output_dir,"*.txt"))
-                wandb.save(os.path.join(config.output_dir,"*.bin"))
-                wandb.save(os.path.join(config.output_dir,"*.model"))
 
     ## remove models (if desired)
     if config.remove_models:
