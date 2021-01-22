@@ -565,7 +565,7 @@ class QuestionContextGenerator(T5GenerativeTrainer):
                            scores,
                            full_data,split,
                            instance_scores=self.instance_scores
-                           )
+      )
         
     
 _CLASSIFICATION_MODELS={

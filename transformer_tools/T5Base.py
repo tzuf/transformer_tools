@@ -814,7 +814,7 @@ class T5Trainer(ConfigurableClass):
             checkpoint_callback=checkpoint_callback,
             callbacks=[T5LoggingCallback()],
             auto_lr_find=args.auto_lr_find,
-            reload_dataloaders_every_epoch=True,
+            reload_dataloaders_every_epoch=True if args.T5_type == "QuestionContextGenerator" else False, ## 
             num_sanity_val_steps=0,
             log_gpu_memory='all'
         )
