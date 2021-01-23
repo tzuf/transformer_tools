@@ -1204,6 +1204,13 @@ def run_trainer_tester(config,trainer_class,t5_class,eval_map={}):
     
     :param config: the global configuration 
     """
+    ## wandb stuff
+    if wandb_available and config.wandb_project and wandb_available:
+        _init_wandb(config)
+        ## download wandb data?
+        if config.wandb_data:
+            _grab_wandb_data(config)
+    
     if not config.wdir and not config.output_dir:
         raise ValueError('Must specify a working directory using either `--wdir` or --outputdir')
     if not config.data_dir or not os.path.isdir(config.data_dir):
@@ -1211,17 +1218,9 @@ def run_trainer_tester(config,trainer_class,t5_class,eval_map={}):
 
     if not config.wdir and not config.output_dir:
         raise ValueError('Must specify a working directory using either `--wdir` or --outputdir')
-    if (not config.data_dir or not os.path.isdir(config.data_dir)) or not config.wandb_data:
+    if not config.data_dir or not os.path.isdir(config.data_dir):
         raise ValueError('Must specify a valid data directory: %s' % config.data_dir)
-
-    ## wandb stuff
-    if wandb_available and config.wandb_project and wandb_available:
-        _init_wandb(config)
-        
-        ## download wandb data?
-        if config.wandb_data:
-            _grab_wandb_data(config)
-        
+    
     ### training (if set)
     best_dev_score = -1.
     metrics  = {}

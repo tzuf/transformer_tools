@@ -44,6 +44,8 @@ scripts/*
 reasoning_transformers/examples/*
 _runs/*
 cache_dir/*
+artifacts/*
+wandb/*
 
 # Installer logs
 pip-log.txt
