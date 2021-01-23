@@ -64,14 +64,14 @@ def _update_config(args,config):
     :param config: config for this experiment 
     :rtype: None 
     """
-#     ### data settings 
+    ### data settings 
     args.data_dir   = config.data_dir
     args.output_dir = config.output_dir
     args.wdir       = config.wdir
     args.checkpoint_path = config.checkpoint_path
     args.seed = config.seed
 
-#     ### decoder options
+    ### decoder options
     args.num_beams            = config.num_beams
     args.do_sample            = config.do_sample
     args.no_repeat_ngram_size = config.no_repeat_ngram_size
@@ -80,7 +80,7 @@ def _update_config(args,config):
     args.min_length    = int(config.min_length) if config.min_length is not None else config.min_length
     args.regen_k       = int(config.regen_k) if config.regen_k is not None else config.regen_k
 
-#     ###
+    ###
     args.early_stop_decoding = config.early_stop_decoding
     args.max_seq_length = config.max_seq_length
     args.max_answer = config.max_answer
@@ -734,7 +734,16 @@ class CustomTrainer(pl.Trainer):
 ################
 
 def _grab_wandb_data(config):
-    pass
+    """Downloads the wandb data and use it as main data 
+
+    :param config: the global configuration 
+    """
+    run = wandb.init(entity=config.wandb_entity)
+    artifact = run.use_artifact(config.wandb_data, type='dataset')
+    artifact_dir = artifact.download()
+    util_logger.info('Download data to: %s' % artifact_dir)
+    config.data_dir = artifact_dir
+    run.finish()
 
 def _init_wandb_logger(config):
     """Initializes the wandb logger 
@@ -1202,15 +1211,16 @@ def run_trainer_tester(config,trainer_class,t5_class,eval_map={}):
 
     if not config.wdir and not config.output_dir:
         raise ValueError('Must specify a working directory using either `--wdir` or --outputdir')
-    if not config.data_dir or not os.path.isdir(config.data_dir):
+    if (not config.data_dir or not os.path.isdir(config.data_dir)) or not config.wandb_data:
         raise ValueError('Must specify a valid data directory: %s' % config.data_dir)
 
     ## wandb stuff
     if wandb_available and config.wandb_project and wandb_available:
-        ## download wandb data?
-                
-        ## overall wandb initilization 
         _init_wandb(config)
+        
+        ## download wandb data?
+        if config.wandb_data:
+            _grab_wandb_data(config)
         
     ### training (if set)
     best_dev_score = -1.

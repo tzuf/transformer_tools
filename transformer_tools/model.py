@@ -215,6 +215,12 @@ def params(config):
                          default='',
                          type=str,
                          help="The directory where the data sits [default='']")
+
+    group.add_option("--wandb_data",
+                         dest="wandb_data",
+                         default='',
+                         type=str,
+                         help="Link to the wandb data [default='']")
     
     group.add_option("--eval_batch_size",
                          dest="eval_batch_size",
