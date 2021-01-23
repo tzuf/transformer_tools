@@ -231,7 +231,6 @@ def main(argv):
             split='test',
             print_output=config.print_output
         )
-
         for key,value in dev_out.items():
             json_out["test_%s" % key] = value
 

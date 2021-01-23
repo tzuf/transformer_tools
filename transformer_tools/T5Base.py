@@ -728,6 +728,97 @@ class CustomTrainer(pl.Trainer):
             del self.__dict__[key]
 
 
+################
+# WANDB STUFF  #
+################
+
+
+def _init_wandb_logger(config):
+    """Initializes the wandb logger 
+
+    :param config: the global configuration 
+    """
+    wandb_logger = WandbLogger(
+        project=config.wandb_project,
+        entity=config.wandb_entity,
+        name=config.wandb_name
+    )
+    return wandb_logger
+
+def _init_wandb(config):
+    """Initializes the overall wandb environment 
+
+    :param config: the global configuration 
+    :raises: ValueError 
+    """
+    if "WANDB_NOTES" not in os.environ and config.wandb_note:
+        os.environ["WANDB_NOTES"] = config.wandb_note
+    if "WANDB_API_KEY" not in os.environ:
+        if not config.wandb_api_key:
+            raise ValueError(
+                'Unknown wandb key! please let environment variable or specify via `--wandb_api_key`'
+            )
+        util_logger.info('Setting the wandb api key....')
+        os.environ["WANDB_API_KEY"] = config.wandb_api_key
+    ## hide the key if provided
+    config.wandb_api_key = None
+
+def _push_wandb_experiment(config,metrics):
+    """Generic method for pushing the wandb data 
+
+    :param config: the global experiment configuration 
+    :param metrics: the resulting metrics 
+    """
+    wandb.log(metrics)
+    
+    ## back up the output file if exists 
+    if config.print_output: 
+        wandb.save(os.path.join(config.output_dir,"*.tsv"))
+
+    ## back up the standard T5 model files if specified
+    if config.save_wandb_model and not config.no_training:
+        util_logger.info('Backing up the model files to wandb')
+        ## save instead as an artifact
+        run = wandb.init(
+            project=config.wandb_project,
+            entity=config.wandb_entity,
+            name="",
+        )
+        artifact = wandb.Artifact('%s_model' % config.wandb_name, type='model')
+
+        for model_file in [
+                "added_tokens.json",
+                "commandline_args.txt",
+                "config.json",
+                "pytorch_model.bin",
+                "special_tokens_map.json",
+                "spiece.model",
+                "tokenizer_config.json",
+                ]:
+            artifact.add_file(os.path.join(config.output_dir,model_file))
+            
+        ## log model 
+        run.log_artifact(artifact)
+
+def _remove_models(config):
+    """Remove models specified
+
+    :param config: the global experiment configuration 
+    """
+    for out_file in os.listdir(config.output_dir):
+        if '.ckpt' in out_file and config.remove_checkpoints or\
+          'pytorch_model' in out_file and config.remove_models:
+            try:
+                logger.info('removing: %s' % out_file)
+                os.remove(os.path.join(config.output_dir,out_file))
+            except Exception as e:
+                util_logger.error("Cannot remove: %s" % out_file)
+                util_logger.error(e,exc_info=True)
+
+#############
+# TRAINERS  #
+#############
+
 class T5Trainer(ConfigurableClass):
     """Main trainer class"""
     _MODELS = {}
@@ -804,6 +895,8 @@ class T5Trainer(ConfigurableClass):
                 mode=mode)
 
         ## load the training parameters
+        reload_data = True if args.T5_type == "QuestionContextGenerator" else False
+            
         train_params = dict(
             accumulate_grad_batches=args.gradient_accumulation_steps,
             gpus=args.n_gpu,
@@ -816,7 +909,7 @@ class T5Trainer(ConfigurableClass):
             checkpoint_callback=checkpoint_callback,
             callbacks=[T5LoggingCallback()],
             auto_lr_find=args.auto_lr_find,
-            reload_dataloaders_every_epoch=True if args.T5_type == "QuestionContextGenerator" else False, ## 
+            reload_dataloaders_every_epoch=reload_data,
             num_sanity_val_steps=0,
             log_gpu_memory='all'
         )
@@ -824,11 +917,7 @@ class T5Trainer(ConfigurableClass):
         if args.tpu_cores > 0:
             train_params["tpu_cores"] = args.tpu_cores
         if config.wandb_project and wandb_available:
-            wandb_logger = WandbLogger(
-                project=config.wandb_project,
-                entity=config.wandb_entity
-            )
-            train_params['logger'] = wandb_logger
+            train_params['logger'] = _init_wandb_logger(config)
 
         ## set up the model
         mclass = cls._MODELS.get(args.T5_type,None)
@@ -882,7 +971,6 @@ def params(config):
                             "KnowledgeManager settings")
 
     
-    
     group.add_option("--dtype",
                           dest="dtype",
                           default='mcqa',
@@ -894,60 +982,11 @@ def params(config):
                           type=str,
                           help="The optional level  [default='']")
 
-    group.add_option("--fp_16",
-                         dest="fp_16",
-                         action='store_true',
-                         default=False,
-                         help="use fp_16 precision [default=False]")
-    
-    group.add_option("--output_dir",
-                         dest="output_dir",
-                         default='',
-                         help="The location to put output for model [default='']")
-
     group.add_option("--evaluator",
                          dest="evaluator",
                          default='single_token',
                          help="The type of evaluator to use [default='single_token']")
 
-    group.add_option("--n_gpu",
-                         dest="n_gpu",
-                         default=1,
-                         type=int,
-                         help="The number of gpus to use [default=1]")
-
-    group.add_option("--max_grad_norm",
-                         dest="max_grad_norm",
-                         default=1.0,
-                         type=float,
-                         help="maximum gradient norm [default=1.0]")
-
-    group.add_option("--data_dir",
-                         dest="data_dir",
-                         default='',
-                         type=str,
-                         help="The directory where the data sits [default='']")
-    
-    group.add_option("--eval_batch_size",
-                         dest="eval_batch_size",
-                         default=8,
-                         type=int,
-                         help="the size of the eval batch size [default=8]")
-    
-    group.add_option("--model_name_or_path",
-                         dest="model_name_or_path",
-                         default='t5-base',
-                         help="The type of dataset to train [default='']")
-    
-    group.add_option("--model_dir",
-                         dest="model_dir",
-                         default='',
-                         help="The model to use for eval [default='']")
-    
-    group.add_option("--tokenizer_name_or_path",
-                         dest="tokenizer_name_or_path",
-                         default='t5-base',
-                         help="The type of dataset to train [default='']")
     
     group.add_option("--full_answer",
                          dest="full_answer",
@@ -955,53 +994,11 @@ def params(config):
                          default=False,
                          help="predict full answers [default=False]")
 
-    group.add_option("--dev_eval",
-                         dest="dev_eval",
-                         action='store_true',
-                         default=False,
-                         help="run an evaluation of the dev eval [default=False]")
-
-    group.add_option("--train_eval",
-                         dest="train_eval",
-                         action='store_true',
-                         default=False,
-                         help="run an evaluation of the train eval [default=False]")
-
-    group.add_option("--test_eval",
-                         dest="test_eval",
-                         action='store_true',
-                         default=False,
-                         help="run an evaluation of the test [default=False]")
-
-    group.add_option("--early_stopping",
-                         dest="early_stopping",
-                         action='store_true',
-                         default=False,
-                         help="Use early stopping [default=False]")
-
-    group.add_option("--patience",
-                         dest="patience",
-                         default=5,
-                         type=int,
-                         help="Patient level (when early stopping is used) [default=5]")
-
-    # group.add_option("--data_builder",
-    #                      dest="data_builder",
-    #                      default='json_mcqa',
-    #                      type=str,
-    #                      help="Dataset builder function [default='json_mcqa']")
-
     group.add_option("--add_explanations",
                          dest="add_explanations",
                          action='store_true',
                          default=False,
                          help="Add explanations to the answers [default=False]")
-
-    group.add_option("--print_output",
-                         dest="print_output",
-                         action='store_true',
-                         default=False,
-                         help="Print output [default=False]")
 
     group.add_option("--no_special_tokens",
                          dest="no_special_tokens",
@@ -1009,42 +1006,12 @@ def params(config):
                          default=False,
                          help="Dont add special tokens to model [default=False]")
 
-    group.add_option("--no_training",
-                         dest="no_training",
-                         action='store_true',
-                         default=False,
-                         help="Skip the training step [default=False]")
-
-    group.add_option("--adafactor",
-                         dest="adafactor",
-                         action='store_true',
-                         default=False,
-                         help="Use adafactor [default=False]")
-    
     group.add_option("--mark_knowledge",
                          dest="mark_kwnowledge",
                          action='store_true',
                          default=False,
                          help="Mark the type of knowledge being used [default=False]")
 
-    group.add_option("--verbose",
-                         dest="verbose",
-                         action='store_true',
-                         default=False,
-                         help="Verbose option [default=False]")
-
-    group.add_option("--remove_models",
-                         dest="remove_models",
-                         action='store_true',
-                         default=False,
-                         help="Remove models/checkpoints [default=False]")
-
-    group.add_option("--auto_lr_find",
-                         dest="auto_lr_find",
-                         action='store_true',
-                         default=False,
-                         help="automatic learning rate finder [default=False]")
-    
     group.add_option("--deterministic",
                          dest="deterministic",
                          action='store_true',
@@ -1057,17 +1024,6 @@ def params(config):
                          type=int,
                          help="size of decoding  [default=2]")
 
-    group.add_option("--learning_rate",
-                         dest="learning_rate",
-                         default=3e-4,
-                         type=float,
-                         help="learning rate [default=3e-5]")
-
-    group.add_option("--train_batch_size",
-                         dest="train_batch_size",
-                         default=8,
-                         type=int,
-                         help="batch size [default=3]")
 
     group.add_option("--callback_prefix",
                          dest="callback_prefix",
@@ -1092,12 +1048,6 @@ def params(config):
                          action='store_true',
                          default=False,
                          help="Drop the last batches [default=False]")
-
-    group.add_option("--no_shuffle",
-                         dest="no_shuffle",
-                         action='store_true',
-                         default=False,
-                         help="Remove shuffling [default=False]")
 
     group.add_option("--generate_once",
                          dest="generate_once",
@@ -1129,12 +1079,6 @@ def params(config):
                          default=False,
                          help="Add explanations separately from classification labels [default=False]")
 
-    group.add_option("--num_train_epochs",
-                         dest="num_train_epochs",
-                         default=3,
-                         type=int,
-                         help="number of training iterations [default=3]")
-
     group.add_option("--num_workers",
                          dest="num_workers",
                          default=4,
@@ -1165,62 +1109,6 @@ def params(config):
                          type=int,
                          help="the maximum number of facts to use [default=8]")
 
-    group.add_option("--gradient_accumulation_steps",
-                         dest="gradient_accumulation_steps",
-                         default=1,
-                         type=int,
-                         help="number of gradient accumulations [default=1]")
-
-    group.add_option("--seed",
-                         dest="seed",
-                         default=42,
-                         type=int,
-                         help="random seed[default=42]")
-
-    group.add_option("--weight_decay",
-                         dest="weight_decay",
-                         default=0.0,
-                         type=float,
-                         help="the weight decay amount [default=0.0]")
-
-    group.add_option("--adam_epsilon",
-                         dest="adam_epsilon",
-                         default=1e-8,
-                         type=float,
-                         help="adam epsilon parameter [default=1e-8]")
-
-    group.add_option("--warmup_steps",
-                         dest="warmup_steps",
-                         default=0,
-                         type=int,
-                         help="warmnup steps [default=0]")
-
-    # group.add_option("--T5_type",
-    #                      dest="T5_type",
-    #                      default='T5Classification',
-    #                      type=str,
-    #                      help="The type of T5 model to use [default=T5Classification]")
-
-
-    ## loading models and checkpoints
-
-    group.add_option("--checkpoint_path",
-                         dest="checkpoint_path",
-                         default='',
-                         type=str,
-                         help="Path to checkpoint (for loading model) [default=T5Classification]")
-    
-    group.add_option("--target_model",
-                         dest="target_model",
-                         default='',
-                         type=str,
-                         help="Path to target model (for loading model) [default=T5Classification]")
-
-    group.add_option("--special_device",
-                         dest="special_device",
-                         default='cuda',
-                         type=str,
-                         help="The special device (for loading) [default='cuda']")
 
     ## decoder settings
     group.add_option("--retrain_batch",
@@ -1281,12 +1169,6 @@ def params(config):
                          type=int,
                          help="The number of sentences to sample/generate for generative training [default=5]")
 
-    ## tpu cores
-    group.add_option("--tpu_cores",
-                         dest="tpu_cores",
-                         default=0,
-                         type=int,
-                         help="The number of TPU cores (for tpu usage) [default=0]")
 
     config.add_option_group(group)
 
@@ -1325,8 +1207,10 @@ def run_trainer_tester(config,trainer_class,t5_class,eval_map={}):
 
     ## wandb stuff
     if wandb_available and config.wandb_project and wandb_available:
-        from transformer_tools import load_wandb
-        load_wandb(config)
+        ## download wandb data?
+                
+        ## overall wandb initilization 
+        _init_wandb(config)
         
     ### training (if set)
     best_dev_score = -1.
@@ -1337,6 +1221,7 @@ def run_trainer_tester(config,trainer_class,t5_class,eval_map={}):
             best_dev_score = trainer()
             config.target_model   = config.output_dir
             config.special_device = trainer._model.device
+
             ## hack 
             trainer.force_exit()
             metrics[eval_map.get("best_dev_score","best_dev_score")] = best_dev_score
@@ -1351,7 +1236,6 @@ def run_trainer_tester(config,trainer_class,t5_class,eval_map={}):
         util_logger.info('loading model (might take time)...')
 
         ## fix pointers
-        #if model.hparams.data_dir != config.data_dir:
         model.hparams.data_dir   = config.data_dir
         model.hparams.output_dir = config.output_dir
         print_output = config.print_output
@@ -1392,57 +1276,15 @@ def run_trainer_tester(config,trainer_class,t5_class,eval_map={}):
         ## print out 
         with open(metrics_out,'w') as my_metrics:
             my_metrics.write(json.dumps(metrics,indent=4))
-        
 
-        util_logger.info('Checking wandb to print internal metrics...')
+        ### wandb 
         if wandb_available and config.wandb_project:
-
-            ### 
-            wandb.log(metrics)
-            ## get the model output 
-            if config.print_output: 
-                wandb.save(os.path.join(config.output_dir,"*.tsv"))
-
-            ## backup model to wandb?
-            if config.save_wandb_model and not config.no_training:
-                util_logger.info('Backing up the model files to wandb')
-                ## save instead as an artifact
-                run = wandb.init(
-                    project=config.wandb_project,
-                    entity=config.wandb_entity,
-                    name="",
-                )
-                artifact = wandb.Artifact('%s_model' % config.wandb_name, type='model')
-
-                for model_file in [
-                        "added_tokens.json",
-                        "commandline_args.txt",
-                        "config.json",
-                        "pytorch_model.bin",
-                        "special_tokens_map.json",
-                        "spiece.model",
-                        "tokenizer_config.json",
-                        ]:
-                    artifact.add_file(os.path.join(config.output_dir,model_file))
-
-                ## log model 
-                run.log_artifact(artifact)
+            _push_wandb_experiment(config,metrics)
 
     ## remove models (if desired)
-    if config.remove_models:
+    if config.remove_models or config.remove_checkpoints:
         util_logger.info('Attempting to remove models...')
-        for out_file in os.listdir(config.output_dir):
-            try: 
-                if '.ckpt' in out_file:
-                    logger.info('removing: %s' % out_file)
-                    os.remove(os.path.join(config.output_dir,out_file))
-                elif "pytorch_model" in out_file:
-                    logger.info('removing %s' % out_file)
-                    os.remove(os.path.join(config.output_dir,out_file))
-            except Exception as e:
-                print("ERROR: cannot remove: %s" % out_file)
-                print(e)
-
+        _remove_models(config)
 
 def main(argv):
     """The main execution point for running the T5 model 
