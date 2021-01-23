@@ -134,7 +134,7 @@ def params(config):
 
     group.add_option("--train_batch_size",
                          dest="train_batch_size",
-                         default=8,
+                         default=16,
                          type=int,
                          help="batch size [default=3]")
 
@@ -145,7 +145,7 @@ def params(config):
                          help="Remove models/checkpoints [default=False]")
 
     group.add_option("--remove_checkpoints",
-                         dest="remove_models",
+                         dest="remove_checkpoints",
                          action='store_true',
                          default=False,
                          help="Remove models/checkpoints [default=False]")

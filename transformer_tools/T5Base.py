@@ -97,6 +97,7 @@ def _update_config(args,config):
     args.no_shuffle = config.no_shuffle
     args.num_train_epochs = config.num_train_epochs
     args.remove_models = config.remove_models
+    args.remove_checkpoints = config.remove_checkpoints
     args.callback_monitor  = config.callback_monitor
     args.weight_decay = config.weight_decay
     args.adam_epsilon = config.adam_epsilon
@@ -732,6 +733,8 @@ class CustomTrainer(pl.Trainer):
 # WANDB STUFF  #
 ################
 
+def _grab_wandb_data(config):
+    pass
 
 def _init_wandb_logger(config):
     """Initializes the wandb logger 
@@ -806,14 +809,12 @@ def _remove_models(config):
     :param config: the global experiment configuration 
     """
     for out_file in os.listdir(config.output_dir):
-        if '.ckpt' in out_file and config.remove_checkpoints or\
-          'pytorch_model' in out_file and config.remove_models:
-            try:
-                logger.info('removing: %s' % out_file)
-                os.remove(os.path.join(config.output_dir,out_file))
-            except Exception as e:
-                util_logger.error("Cannot remove: %s" % out_file)
-                util_logger.error(e,exc_info=True)
+        if '.ckpt' in out_file and config.remove_checkpoints:
+            logger.info('removing: %s' % out_file)
+            os.remove(os.path.join(config.output_dir,out_file))
+        elif 'pytorch_model' in out_file and config.remove_models:
+            logger.info('removing: %s' % out_file)
+            os.remove(os.path.join(config.output_dir,out_file))
 
 #############
 # TRAINERS  #
@@ -1023,7 +1024,6 @@ def params(config):
                          default=512,
                          type=int,
                          help="size of decoding  [default=2]")
-
 
     group.add_option("--callback_prefix",
                          dest="callback_prefix",
