@@ -47,6 +47,12 @@ def params(config):
                          type=str,
                          help="The note to use for the wandb [default='empty']")
 
+    group.add_option("--wandb_model",
+                         dest="wandb_model",
+                         default='',
+                         type=str,
+                         help="Specifies a location to an existing wandb model [default='']")
+
     group.add_option("--tensorboard_dir",
                          dest="tensorboard_dir",
                          default=None,
