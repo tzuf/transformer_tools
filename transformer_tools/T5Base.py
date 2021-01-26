@@ -695,10 +695,8 @@ class T5Text2TextBase(pl.LightningModule):
         hparams_file = os.path.join(config.target_model,"commandline_args.txt")
         with open(hparams_file,'r') as f: args.__dict__ = json.load(f)
 
-        ## update
+        ## update (needs work!)
         _update_config(args,config)
-        ## make sure you don't save it again
-        #config.save_wandb_model = False 
 
         ## build model 
         model = cls(args,config.target_model,config.target_model)
@@ -801,20 +799,23 @@ def _push_wandb_experiment(config,metrics):
     """
     wandb.log(metrics)
     wandb.log({"model_name" : config.model_name, "eval_name" : config.eval_name})
+
+    run = wandb.init(
+            project=config.wandb_project,
+            entity=config.wandb_entity,
+            name="",
+    )
     
     ## back up the output file if exists 
-    if config.print_output: 
-        wandb.save(os.path.join(config.output_dir,"*.tsv"))
+    if config.print_output:
+        artifact = wandb.Artifact('%s_model' % config.wandb_name.replace(">","-"), type='model_output')
+        artifact.add_file(os.path.join(config.output_dir,"dev_eval.tsv"))
+        run.log_artifact(artifact)
 
     ## back up the standard T5 model files if specified
     if config.save_wandb_model and not config.no_training:
         util_logger.info('Backing up the model files to wandb')
         ## save instead as an artifact
-        run = wandb.init(
-            project=config.wandb_project,
-            entity=config.wandb_entity,
-            name="",
-        )
         artifact = wandb.Artifact('%s_model' % config.wandb_name, type='model')
 
         for model_file in [
@@ -1243,6 +1244,7 @@ def run_trainer_tester(config,trainer_class,t5_class,eval_map={}):
     ### training (if set)
     best_dev_score = -1.
     metrics  = {}
+    wandb_logger = None 
     if not config.no_training:
 
         with trainer_class.from_config(config) as trainer:
@@ -1260,8 +1262,7 @@ def run_trainer_tester(config,trainer_class,t5_class,eval_map={}):
             entity=config.wandb_entity,
             name=config.wandb_name,
         )
-        ## back up the experiment stuff (do automatically with trainer)
-        #wandb.log(config.__dict__)
+        #wandb_logger = _init_wandb_logger(config)
 
     ## evaluation (if set) 
     if config.dev_eval or config.test_eval or config.train_eval:
@@ -1276,6 +1277,9 @@ def run_trainer_tester(config,trainer_class,t5_class,eval_map={}):
         model.hparams.data_dir   = config.data_dir
         model.hparams.output_dir = config.output_dir
         print_output = config.print_output
+
+        # if wandb_logger:
+        #     wandb_logger.watch(model.model)
 
         ## (moved this out of the trainer) 
         if config.train_eval:
@@ -1292,8 +1296,6 @@ def run_trainer_tester(config,trainer_class,t5_class,eval_map={}):
             metrics[eval_map.get("dev_eval","dev_eval")] = dev_eval_score
             if eval_map.get("best_dev_score","best_dev_score") not in metrics:
                 metrics[eval_map.get("best_dev_score","best_dev_score")] = dev_eval_score
-            if print_output and config.wandb_project:
-                wandb.save(os.path.join(config.output_dir,"dev_results.tsv"))
 
         if config.test_eval:
             util_logger.info('Evaluating test...')
