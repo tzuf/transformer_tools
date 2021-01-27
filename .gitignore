@@ -37,6 +37,7 @@ env*/
 
 etc/*
 examples/*
+_data/*
 
 ## reasoning_transformers c sources and experiment runs
 reasoning_transformers/*.c
