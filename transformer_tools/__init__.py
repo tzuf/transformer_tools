@@ -10,7 +10,7 @@ from transformer_tools.util.os_util import make_experiment_directory as make_wdi
 USAGE = """usage: python -m transformer_tools mode [options] [--help]"""
 DESCRIPTION = """Set of utilities for building language fragments and running experiments on them"""
 
-_CONFIG = OptionParser(usage=USAGE,description=DESCRIPTION)
+_CONFIG = OptionParser(usage=USAGE,description=DESCRIPTION,conflict_handler="resolve")
 
 ## logging
 

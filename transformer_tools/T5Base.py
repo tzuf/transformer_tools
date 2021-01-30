@@ -740,6 +740,7 @@ def _grab_wandb_data(config):
     :param config: the global configuration 
     """
     ##
+    init_wandb(config)
     run = wandb.init(entity=config.wandb_entity)
 
     ## grab the data
@@ -773,7 +774,7 @@ def _init_wandb_logger(config):
     )
     return wandb_logger
 
-def _init_wandb(config):
+def init_wandb(config):
     """Initializes the overall wandb environment 
 
     :param config: the global configuration 
@@ -816,7 +817,7 @@ def _push_wandb_experiment(config,metrics):
     if config.save_wandb_model and not config.no_training:
         util_logger.info('Backing up the model files to wandb')
         ## save instead as an artifact
-        artifact = wandb.Artifact('%s_model' % config.wandb_name, type='model')
+        martifact = wandb.Artifact('%s_model' % config.wandb_name, type='model')
 
         for model_file in [
                 "added_tokens.json",
@@ -827,10 +828,10 @@ def _push_wandb_experiment(config,metrics):
                 "spiece.model",
                 "tokenizer_config.json",
                 ]:
-            artifact.add_file(os.path.join(config.output_dir,model_file))
+            martifact.add_file(os.path.join(config.output_dir,model_file))
             
         ## log model 
-        run.log_artifact(artifact)
+        run.log_artifact(martifact)
 
 def _remove_models(config):
     """Remove models specified
@@ -947,7 +948,7 @@ class T5Trainer(ConfigurableClass):
         if args.tpu_cores > 0:
             train_params["tpu_cores"] = args.tpu_cores
         if config.wandb_project and wandb_available:
-            train_params['logger'] = _init_wandb_logger(config)
+            train_params['logger'] = init_wandb_logger(config)
 
         ## set up the model
         mclass = cls._MODELS.get(args.T5_type,None)
@@ -1226,7 +1227,7 @@ def run_trainer_tester(config,trainer_class,t5_class,eval_map={}):
     """
     ## wandb stuff
     if wandb_available and config.wandb_project and wandb_available:
-        _init_wandb(config)
+        init_wandb(config)
         ## download wandb data?
         if config.wandb_data:
             _grab_wandb_data(config)
