@@ -801,22 +801,27 @@ def _push_wandb_experiment(config,metrics):
     wandb.log(metrics)
     wandb.log({"model_name" : config.model_name, "eval_name" : config.eval_name})
 
-    run = wandb.init(
+    ## back up the output file if exists 
+    if config.print_output:
+        run = wandb.init(
             project=config.wandb_project,
             entity=config.wandb_entity,
             name="",
-    )
-    
-    ## back up the output file if exists 
-    if config.print_output:
+        )
         artifact = wandb.Artifact('%s_model' % config.wandb_name.replace(">","-"), type='model_output')
         artifact.add_file(os.path.join(config.output_dir,"dev_eval.tsv"))
         run.log_artifact(artifact)
+        run.finish()
 
     ## back up the standard T5 model files if specified
     if config.save_wandb_model and not config.no_training:
         util_logger.info('Backing up the model files to wandb')
         ## save instead as an artifact
+        run = wandb.init(
+            project=config.wandb_project,
+            entity=config.wandb_entity,
+            name="",
+        )
         martifact = wandb.Artifact('%s_model' % config.wandb_name, type='model')
 
         for model_file in [
@@ -828,10 +833,13 @@ def _push_wandb_experiment(config,metrics):
                 "spiece.model",
                 "tokenizer_config.json",
                 ]:
-            martifact.add_file(os.path.join(config.output_dir,model_file))
+            martifact.add_file(
+                os.path.join(config.output_dir,model_file)
+            )
             
         ## log model 
         run.log_artifact(martifact)
+        run.finish()
 
 def _remove_models(config):
     """Remove models specified
