@@ -82,6 +82,7 @@ def run_model(mode_set,
       "sp+s+q => a" in mode_set or \
       "s+a+sp => q" in mode_set:
         supporting_text = "$question$ %s $story$ %s" % (question,story_text)
+        support_markedup = "$question$ %s $story$ %s" % (question,story_text)
         support_out = model.query(supporting_text,prefix="generate:")[0]
         if "s+q => sp" in mode_set:
             row.append([supporting_text,support_out])
@@ -111,7 +112,7 @@ def run_model(mode_set,
                 row_der,
                 columns=["input (predicted)","output (predicted)"],
                 index=index_der
-            )
+        )
 
     return (df,df2)
             
@@ -168,53 +169,5 @@ def main():
              st.write("<b> Derived Computations </b>",unsafe_allow_html=True)
              st.table(df2)
         
-        # mode_set = set(modes)
-        # ### s+q => a
-        # q_input = "%s $question$ %s" % (story_text,question)
-        # model_out = model.query(q_input)
-        # answer_text = model_out[0]
-        # row.append([q_input,answer_text])
-        # index.append("s+q => a")
-
-        # ## s+q => sp
-        # if "s+q => sp" in mode_set or "sp+s+q => a" in mode_set or "s+a+sp => q" in mode_set:
-        #     supporting_text = "$question$ %s $story$ %s" % (question,story_text)
-        #     support_out = model.query(supporting_text,prefix="generate:")[0]
-        #     row.append([supporting_text,support_out])
-        #     index.append("s+q => sp")
-
-        #     if "sp+s+q => a" in mode_set:
-        #         full_input = "$context$ %s $story$ %s $question$ %s" % (support_out,story_text,question)
-        #         second_answer_out = model.query(full_input,prefix="answer:")[0]
-        #         row_der.append([full_input,second_answer_out])
-        #         index_der.append("sp+s+q => a")
-
-        #     if "s+a+sp => q" in mode_set:
-        #         question_input = "$answer$ %s $context$ %s $story$ %s" % (answer_text,support_out,story_text)
-        #         question_out = model.query(question_input,prefix="question:")[0]
-        #         row_der.append([question_input,question_out])
-        #         index_der.append("s+a+sp => q")
-
-        # ## explicit results 
-        # df = pd.DataFrame(
-        #     row,
-        #     columns=["input","output (predicted)"],
-        #     index=index
-        # )
-        # st.write("<b> Direct Computations </b>",unsafe_allow_html=True)
-        # st.table(df)
-
-        # if index_der and row_der:
-        #     st.write("<b> Derived Computations </b>",unsafe_allow_html=True)
-        #     df2 = pd.DataFrame(
-        #         row_der,
-        #         columns=["input (predicted)","output (predicted)"],
-        #         index=index_der
-        #     )
-        #     st.table(df2)
-            
-        
-        
 if __name__ == '__main__':
-    #load_model()
     main()
