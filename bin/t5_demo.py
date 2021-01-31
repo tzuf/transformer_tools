@@ -149,7 +149,7 @@ def main():
         ["s+q => a","s+q => sp","sp+s+q => a","s+a+sp => q"],
         ["s+q => a"]
     )
-    
+
     ## answer a query
     submit = st.button("Process")
     row = []; index = []
@@ -168,6 +168,10 @@ def main():
         if df2 is not None:
              st.write("<b> Derived Computations </b>",unsafe_allow_html=True)
              st.table(df2)
+
+        if story_text not in EXAMPLE_STORIES:
+            EXAMPLE_STORIES.append(story_text)
+            EXAMPLE_QUESTIONS.append(question)
         
 if __name__ == '__main__':
     main()
