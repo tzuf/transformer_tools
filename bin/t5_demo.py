@@ -2,6 +2,7 @@
 import streamlit as st 
 import os
 import sys
+import pandas as pd
 sys.path.append('.')
 from optparse import OptionParser,OptionGroup
 from transformer_tools.T5Classification import params as tparams
@@ -44,8 +45,7 @@ def main():
     
     st.title("T5 bAbi Interface")
 
-    mode = ["story + question => answer"]
-    choice = st.sidebar.selectbox("Model-mode",mode)
+    choice = "story + question => answer"
 
     story_text = st.text_area(
         "story text","Enter your story",
@@ -54,19 +54,30 @@ def main():
     story_text = BOILER_PLATE.get(story_text,story_text)
 
     question = st.text_area(
-        "question","Enter question (optional)",
+        "other input: for a single question, just type `question`.","Enter question (optional)",
         height=1
     )
     question = BOILER_PLATE.get(question,question)
 
+    modes = st.multiselect(
+        "Modular Computations",["story + question => answer"],
+        ["story + question => answer"]
+    )
+    
     ## answer a query
     submit = st.button("Process")
 
     if story_text and question and submit:
-        model_out = model.query("%s $question$ %s" % (story_text,question))
-        
-        st.write("<b> <tt> mode: </tt> </b> %s" % choice,unsafe_allow_html=True)
-        st.write("<b> <tt> output: </tt> </b> %s" % str(model_out[0]),unsafe_allow_html=True)
+        q_input = "%s $question$ %s" % (story_text,question)
+        model_out = model.query(q_input)
 
+        df = pd.DataFrame(
+            [[q_input,model_out[0]]],
+            columns=["input","output (predicted)"],
+            index=[choice]
+       )
+
+        st.table(df)
+        
 if __name__ == '__main__':
     main()
