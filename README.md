@@ -206,8 +206,15 @@ python  -m  transformer_tools T5Classifier \
 running in a cloud environment, it is best to set this as an
 environment variable.
 
-Example notebooks
+Example notebooks and bAbi demo
 ---------------------------
 Example notebooks are included in `notebooks`.
 
-
+I hacked out a quick `bAbi` demo interface, specifically for debugging
+our newest multi-task models (requires `streamlit`, which can be
+installed via `pip`). To run the demo, do:
+```
+./babi_demo.sh
+```
+This will require having access to the `eco-semantics` wandb account,
+and might require you to set your `WANDB_API_KEY` (via `export WANDB_API_KEY=xxxxxxxxxxxxxx`).
