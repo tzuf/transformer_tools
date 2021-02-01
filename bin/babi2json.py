@@ -1,6 +1,7 @@
 ### script for converting babi-style files to my json format used here
 import json
 import sys
+import re
 import os
 from optparse import OptionParser
 
@@ -11,8 +12,9 @@ CONFIG.add_option("--data_loc",dest="data_loc",default='',
                       help="the location of the data [default='']")
 CONFIG.add_option("--odir",dest="odir",default='',
                       help="The output directory where to put files [default='']")
-CONFIG.add_option("--supporting_facts",dest="supporting_facts",default='',
-                      help="The output directory where to put files [default='']")
+
+
+NUM_RE = re.compile(r"(\d+)") # to capture supporting facts idxs
 
 def main(argv):
     config,_ = CONFIG.parse_args(sys.argv[1:])
@@ -24,8 +26,11 @@ def main(argv):
 
     for split in ["train","test","valid"]:
         target = [f for f in os.listdir(config.data_loc) if split in f and ".txt" in f]
-        assert len(target) == 1, "multiple target files found!"
-        target = target[0]
+        assert len(target) <= 1, "multiple target files found!"
+        if target:
+            target = target[0]
+        else:
+            continue
 
         ## output
         split_name = split if split != "valid" else "dev"
@@ -36,6 +41,7 @@ def main(argv):
             with open(os.path.join(config.data_loc,target)) as my_data:
                 problem = []
                 sub_question = 0
+                story_idx = 0 # counts number of questions (=stories)
             
 
                 for k,line in enumerate(my_data):
@@ -51,11 +57,17 @@ def main(argv):
 
                     elif "?" in line:
                         question,answer = detail.split("?")
+                        
+                        # extract supporting facts idxs if they exist
+                        supp_facts = [int(x) for x in NUM_RE.findall(answer)]
+                        
                         answer = ' '.join([i for i in answer.strip().split() if not i.isnumeric()])
                         question = "%s?" % question
 
                         #print(answer)
                         assert len(answer.split()) == 1, answer
+                        
+                        
 
 
                         problem_input = "%s $question$ %s" %\
@@ -69,12 +81,15 @@ def main(argv):
                         json_dict["output"] = answer
                         json_dict["prefix"] = "answer:"
                         json_dict["input"] = problem_input
+                        json_dict["story_idx"] = story_idx
+                        json_dict["supporting_facts"] = supp_facts
 
                         new_out.write(json.dumps(json_dict))
                         new_out.write('\n')
 
                         ### 
                         sub_question += 1
+                        story_idx += 1
 
                     else:
                         problem.append(detail)
