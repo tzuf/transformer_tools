@@ -1,6 +1,6 @@
 from collections import defaultdict,OrderedDict
 from typing import Dict, TypeVar, Generic, Optional
-from transformer_tools.base import UtilityClass
+from transformer_tools.Base import UtilityClass
 
 class CacheUtility(UtilityClass):
     """Base class for cachers"""

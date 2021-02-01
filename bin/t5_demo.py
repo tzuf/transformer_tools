@@ -8,12 +8,15 @@ from optparse import OptionParser,OptionGroup
 from transformer_tools.T5Classification import params as tparams
 from transformer_tools import initialize_config
 from transformer_tools import LoadT5Classifier
-#from transformer_tools.utils
+from transformer_tools.util.cache import LRUCache
+
 
 BOILER_PLATE = {
     "Enter your story" : "",
     "Enter question (optional)": "",
 }
+
+CACHE_SIZE = 10000
 
 def params(config):
     """Main parameters for running the T5 model
@@ -41,9 +44,11 @@ def build_model(config):
     model = LoadT5Classifier(config)
     return model
 
-@st.cache
-def get_cache(config):
-    pass
+@st.cache(allow_output_mutation=True)
+def get_cache():
+    cache = LRUCache(CACHE_SIZE)
+    return cache
+    
 
 @st.cache(allow_output_mutation=True)
 def example_sets():
@@ -72,6 +77,7 @@ def run_model(mode_set,
     """
     config = build_config()
     model = build_model(config)
+    cache = get_cache()
 
     ## for building data frames
     row = []; index = []
@@ -79,9 +85,14 @@ def run_model(mode_set,
 
     ## story + question => answer 
     q_input = "%s $question$ %s" % (story_text,question)
-    answer_text = model.query(q_input)[0]
+    answer_text = cache[q_input]
+    if answer_text is None:
+        answer_text = model.query(q_input)[0]
+        cache[q_input] = answer_text
+        
     row.append([q_input,answer_text])
     index.append("s+q => a")
+    cache[q_input] = answer_text
 
     ## other modes that rely on supporting facts 
     if "s+q => sp" in mode_set or \
@@ -89,7 +100,11 @@ def run_model(mode_set,
       "s+a+sp => q" in mode_set:
         supporting_text = "$question$ %s $story$ %s" % (question,story_text)
         support_markedup = "$question$ %s $story$ %s" % (question,story_text)
-        support_out = model.query(supporting_text,prefix="generate:")[0]
+        support_out = cache[supporting_text]
+        if support_out is None:
+            support_out = model.query(supporting_text,prefix="generate:")[0]
+            cache[supporting_text] = support_out
+                
         if "s+q => sp" in mode_set:
             row.append([supporting_text,support_out])
             index.append("s+q => sp")
@@ -97,12 +112,20 @@ def run_model(mode_set,
         ##
         if "sp+s+q => a" in mode_set:
             full_input = "$context$ %s $story$ %s $question$ %s" % (support_out,story_text,question)
-            second_answer_out = model.query(full_input,prefix="answer:")[0]
+            second_answer_out = cache[full_input]
+            if second_answer_out is None:
+                second_answer_out = model.query(full_input,prefix="answer:")[0]
+                cache[full_input] = second_answer_out
+
             row_der.append([full_input,second_answer_out])
             index_der.append("sp+s+q => a")
         if "s+a+sp => q" in mode_set:
             question_input = "$answer$ %s $context$ %s $story$ %s" % (answer_text,support_out,story_text)
-            question_out = model.query(question_input,prefix="question:")[0]
+            question_out = cache[question_input]
+            if question_out is None: 
+                question_out = model.query(question_input,prefix="question:")[0]
+                cache[question_input] = question_out
+                
             row_der.append([question_input,question_out])
             index_der.append("s+a+sp => q")
 
