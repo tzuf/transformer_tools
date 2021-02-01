@@ -89,10 +89,30 @@ def run_model(mode_set,
     if answer_text is None:
         answer_text = model.query(q_input)[0]
         cache[q_input] = answer_text
+
+    if "s+q => a" in mode_set: 
+        row.append([q_input,answer_text])
+        index.append("s+q => a")
+        #cache[q_input] = answer_text
+
+    if "s => ql" in mode_set:
+        inquire_prompt = "$story$ %s" % (story_text)
+        inquire_text = cache[inquire_prompt]
+        if inquire_text is None: 
+            inquire_text = model.query(inquire_prompt,prefix="inquire:")[0]
+            cache[inquire_prompt] = inquire_text
         
-    row.append([q_input,answer_text])
-    index.append("s+q => a")
-    cache[q_input] = answer_text
+        row.append([inquire_prompt,inquire_text])
+        index.append("s => ql")
+
+    if "s+p => g" in mode_set:
+        location_prompt = "$prompt$ %s $story$ %s" % (question,story_text)
+        location_text = cache[location_prompt]
+        if location_text is None:
+            location_text = model.query(location_prompt,prefix="locate:")[0]
+            cache[location_prompt] = location_text
+        row.append([location_prompt,location_text])
+        index.append("s+p => g")
 
     ## other modes that rely on supporting facts 
     if "s+q => sp" in mode_set or \
@@ -175,8 +195,8 @@ def main():
 
     #story + answer + supporting facts => question 
     modes = st.multiselect(
-        "Modular Computations (story=`s`, question=`q`, supporting sentences=`sp`, answer=`a`)",
-        ["s+q => a","s+q => sp","sp+s+q => a","s+a+sp => q"],
+        "Modular Computations (story=`s`, question=`q`, supporting sentences=`sp`, answer=`a`, question list=`ql`, prompt=`p`, graph=`g`)",
+        ["s+q => a","s+q => sp","sp+s+q => a","s+a+sp => q","s => ql", "s+p => g"],
         ["s+q => a"]
     )
 
@@ -196,7 +216,7 @@ def main():
 
         ## derived
         if df2 is not None:
-             st.write("<b> Derived Computations </b>",unsafe_allow_html=True)
+             st.write("<b> Derived Computations/Round-trips </b>",unsafe_allow_html=True)
              st.table(df2)
 
         if story_text not in ex_stories:
