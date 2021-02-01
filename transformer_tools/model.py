@@ -29,6 +29,11 @@ def params(config):
                          default=None,
                          help="The particular wandb project (if used) [default='']")
 
+    group.add_option("--wandb_cache",
+                         dest="wandb_cache",
+                         default='~/.wandb_cache',
+                         help="The particular wandb project (if used) [default='']")
+
     group.add_option("--wandb_api_key",
                          dest="wandb_api_key",
                          default='',

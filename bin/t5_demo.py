@@ -8,7 +8,7 @@ from optparse import OptionParser,OptionGroup
 from transformer_tools.T5Classification import params as tparams
 from transformer_tools import initialize_config
 from transformer_tools import LoadT5Classifier
-
+#from transformer_tools.utils
 
 BOILER_PLATE = {
     "Enter your story" : "",
@@ -41,17 +41,23 @@ def build_model(config):
     model = LoadT5Classifier(config)
     return model
 
-EXAMPLE_STORIES = [
+@st.cache
+def get_cache(config):
+    pass
+
+@st.cache(allow_output_mutation=True)
+def example_sets():
+    return ([
     "...",
     "Julie and John moved to the school. Afterwards they journeyed to the park. Fred and Daniel  moved to the bedroom. Mary went back to the office. John went to the kitchen. Following that he went back to the hallway. Mary got the football. Mary travelled to the garden. Following that she moved to the bedroom. Fred went to the school. Fred grabbed the milk. Fred discarded the milk. Bill is either in the bedroom or the school. Mary gave the football to Daniel. Daniel dropped the football. Fred is in the office. Sandra journeyed to the cinema. Julie and Daniel went back to the bathroom. Daniel and John travelled to the office. Afterwards they moved to the park. Julie is either in the office or the school. Bill and Mary travelled to the garden. Then they journeyed to the hallway. Mary and Bill journeyed to the school. Sandra and Mary moved to the park. Then they went to the school. Sandra journeyed to the garden. After that she went to the bathroom. Sandra went to the garden. After that she moved to the bathroom.",
-    "Sandra took the milk. Mary and Daniel went to the cinema. After that they moved to the office. Mary is either in the kitchen or the cinema. Julie and Daniel went to the kitchen. Following that they moved to the cinema. Jeff and Julie journeyed to the office. Afterwards they moved to the hallway. Mary is not in the cinema. Fred and Julie went back to the cinema. Sandra put down the milk. Following that she travelled to the hallway. Mary is either in the school or the kitchen. John is either in the school or the office. Julie is in the park. Julie is either in the cinema or the kitchen. John and Sandra went back to the cinema. Afterwards they travelled to the park. Julie and Fred went back to the hallway. Sandra went back to the school. After that she went back to the park. Jeff and Mary moved to the park. Jeff went to the school. Bill and Daniel journeyed to the bathroom. Following that they went back to the office. Daniel took the football. Afterwards he discarded the football. Fred journeyed to the kitchen. Then he went to the cinema. Fred and Bill went to the kitchen."
-]
-
-EXAMPLE_QUESTIONS = [
-    "...",
-    "Where is the milk?",
-    "Is Fred in the kitchen?",
-]
+    "Sandra took the milk. Mary and Daniel went to the cinema. After that they moved to the office. Mary is either in the kitchen or the cinema. Julie and Daniel went to the kitchen. Following that they moved to the cinema. Jeff and Julie journeyed to the office. Afterwards they moved to the hallway. Mary is not in the cinema. Fred and Julie went back to the cinema. Sandra put down the milk. Following that she travelled to the hallway. Mary is either in the school or the kitchen. John is either in the school or the office. Julie is in the park. Julie is either in the cinema or the kitchen. John and Sandra went back to the cinema. Afterwards they travelled to the park. Julie and Fred went back to the hallway. Sandra went back to the school. After that she went back to the park. Jeff and Mary moved to the park. Jeff went to the school. Bill and Daniel journeyed to the bathroom. Following that they went back to the office. Daniel took the football. Afterwards he discarded the football. Fred journeyed to the kitchen. Then he went to the cinema. Fred and Bill went to the kitchen.",
+    "Mark is in the garden. John traveled to the store. He then returned home.",
+    ],[
+        "...",
+        "Where is the milk?",
+        "Is Fred in the kitchen?",
+        "Where is John?",
+    ])
 
 def run_model(mode_set,
                   story_text,
@@ -120,15 +126,16 @@ def run_model(mode_set,
 def main():
     config = build_config()
     model = build_model(config)
+    ex_stories,ex_questions = example_sets()
     st.title("T5 bAbi Interface")
 
     ## page details
     story_filler = "Enter your story"
     q_filler = "Enter your question"
-    ex_s = st.selectbox("Select example:",EXAMPLE_STORIES,index=0)
+    ex_s = st.selectbox("Select example:",ex_stories,index=0)
     if ex_s != '...':
         story_filler = ex_s
-        q_filler = EXAMPLE_QUESTIONS[EXAMPLE_STORIES.index(ex_s)]
+        q_filler = ex_questions[ex_stories.index(ex_s)]
     
     story_text = st.text_area(
         "story text",story_filler,
@@ -169,9 +176,9 @@ def main():
              st.write("<b> Derived Computations </b>",unsafe_allow_html=True)
              st.table(df2)
 
-        if story_text not in EXAMPLE_STORIES:
-            EXAMPLE_STORIES.append(story_text)
-            EXAMPLE_QUESTIONS.append(question)
+        if story_text not in ex_stories:
+            ex_stories.append(story_text)
+            ex_questions.append(question)
         
 if __name__ == '__main__':
     main()
