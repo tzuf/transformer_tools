@@ -207,21 +207,24 @@ def main():
 
     if story_text and question and submit:
         mode_set = set(modes)
-        df,df2 = run_model(mode_set,story_text,question)
+        with st.spinner("Processing..."):
+            df,df2 = run_model(mode_set,story_text,question)
 
-        # main computations
-        st.write("<b> Direct Computations </b>",unsafe_allow_html=True)
-        st.table(df)
-        #st.dataframe(df,width=400)
+            # main computations
+            st.write("<b> Direct Computations </b>",unsafe_allow_html=True)
+            st.table(df)
+            #st.dataframe(df,width=400)
 
-        ## derived
-        if df2 is not None:
-             st.write("<b> Derived Computations/Round-trips </b>",unsafe_allow_html=True)
-             st.table(df2)
+            ## derived
+            if df2 is not None:
+                st.write("<b> Derived Computations/Round-trips </b>",unsafe_allow_html=True)
+                st.table(df2)
 
-        if story_text not in ex_stories:
-            ex_stories.append(story_text)
-            ex_questions.append(question)
+            if story_text not in ex_stories:
+                ex_stories.append(story_text)
+                ex_questions.append(question)
+
+            st.success("Finished!")
         
 if __name__ == '__main__':
     main()
