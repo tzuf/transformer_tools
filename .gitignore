@@ -46,6 +46,7 @@ _runs/*
 cache_dir/*
 artifacts/*
 wandb/*
+_data/*
 
 # Installer logs
 pip-log.txt
@@ -67,6 +68,9 @@ htmlcov
 .idea
 *.iml
 *.komodoproject
+
+# spyder
+*.spyproject
 
 # Complexity
 output/*.html
