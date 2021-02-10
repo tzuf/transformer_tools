@@ -1,5 +1,4 @@
 ## base classes for T5 
-
 import argparse
 from argparse import ArgumentParser 
 import os
@@ -20,7 +19,7 @@ from dataclasses import dataclass
 from enum import Enum
 from typing import List, Optional
 from transformers import PreTrainedTokenizer
-from transformer_tools.model import Model
+from transformer_tools.model import Model,init_wandb
 
 from transformers import (
     AdamW,
@@ -774,23 +773,23 @@ def init_wandb_logger(config):
     )
     return wandb_logger
 
-def init_wandb(config):
-    """Initializes the overall wandb environment 
+# def init_wandb(config):
+#     """Initializes the overall wandb environment 
 
-    :param config: the global configuration 
-    :raises: ValueError 
-    """
-    if "WANDB_NOTES" not in os.environ and config.wandb_note:
-        os.environ["WANDB_NOTES"] = config.wandb_note
-    if "WANDB_API_KEY" not in os.environ:
-        if not config.wandb_api_key:
-            raise ValueError(
-                'Unknown wandb key! please let environment variable or specify via `--wandb_api_key`'
-            )
-        util_logger.info('Setting the wandb api key....')
-        os.environ["WANDB_API_KEY"] = config.wandb_api_key
-    ## hide the key if provided
-    config.wandb_api_key = None
+#     :param config: the global configuration 
+#     :raises: ValueError 
+#     """
+#     if "WANDB_NOTES" not in os.environ and config.wandb_note:
+#         os.environ["WANDB_NOTES"] = config.wandb_note
+#     if "WANDB_API_KEY" not in os.environ:
+#         if not config.wandb_api_key:
+#             raise ValueError(
+#                 'Unknown wandb key! please let environment variable or specify via `--wandb_api_key`'
+#             )
+#         util_logger.info('Setting the wandb api key....')
+#         os.environ["WANDB_API_KEY"] = config.wandb_api_key
+#     ## hide the key if provided
+#     config.wandb_api_key = None
 
 def _push_wandb_experiment(config,metrics):
     """Generic method for pushing the wandb data 

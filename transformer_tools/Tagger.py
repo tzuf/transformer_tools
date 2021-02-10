@@ -11,7 +11,8 @@ from scipy.special import softmax
 from simpletransformers.ner import NERModel
 from optparse import OptionParser,OptionGroup
 from transformer_tools.util.tagger_utils import *
-from transformer_tools.model import Model
+from transformer_tools import initialize_config
+from transformer_tools.model import Model,init_wandb
 
 ## wandb (if available)
 try:
@@ -23,6 +24,35 @@ except ImportError:
 
 util_logger = logging.getLogger('transformer_tools.Tagger')
 
+def push_model(config):
+    """Push models as artifacts 
+    
+    :param config: the global configuration 
+    """
+    run = wandb.init(
+            project=config.wandb_project,
+            entity=config.wandb_entity,
+            name="",
+    )
+    util_logger.info('Backing up the model files to wandb')
+    martifact = wandb.Artifact('%s_model' % config.wandb_name, type='model')
+
+    for model_file in [
+            "pytorch_model.bin",
+            "special_tokens_map.json",
+            "training_args.bin",
+            "vocab.txt",
+            "model_args.json",
+            "config.json",
+    ]:
+        martifact.add_file(
+                os.path.join(config.output_dir,model_file)
+        )
+
+    run.log_artifact(martifact)
+    run.finish()
+    
+    
 class TaggerModel(Model):
     """Base class for building tagger models
 
@@ -55,7 +85,7 @@ class TaggerModel(Model):
         ## find labels in list
         label_list = load_label_list(config.label_list)
         use_cuda = True if torch.cuda.is_available() else False
-
+        
         model = NERModel(
             config.model_name,
             config.model_type,
@@ -66,6 +96,10 @@ class TaggerModel(Model):
                 "classification_report" : True,
                 "tensorboard_dir" : config.tensorboard_dir,
                 "wandb_project" : config.wandb_project,
+                "wandb_kwargs" : {
+                    "name"    : config.wandb_name,
+                    "entity"  : config.wandb_entity,
+                    }
                 }
         )
         return cls(model,config)
@@ -98,6 +132,11 @@ class TaggerModel(Model):
                 "classification_report" : True,
                 "evaluate_during_training" : True,
                 "evaluate_during_training_verbose" : True,
+                "best_model_dir": self.config.output_dir,
+                ## saving options (default only saves best model)
+                "save_model_every_epoch" : self.config.save_model_every_epoch,
+                "save_steps" : self.config.save_steps,
+                "save_optimizer_and_scheduler" : self.config.save_optimizer_and_scheduler,
             })
 
     def eval_model(self,split='dev',print_output=False):
@@ -120,7 +159,17 @@ class TaggerModel(Model):
 
         result.update(report_items)
         return result
-    
+
+    def __enter__(self):
+        self.logger.info('Entering the trainer...')
+        return self
+
+    def __exit__(self, exc_type, exc_value, exc_traceback):
+        try:
+            self.logger.info('Closing wandb.')
+            wandb.finish()
+        except: pass
+
 class ArrowTagger(TaggerModel):
 
     def load_data(self,split='train'):
@@ -141,9 +190,6 @@ def params(config):
 
     :param config: the global configuration object
     """
-    from transformer_tools.T5Base import params as tparams
-    tparams(config)
-
     from transformer_tools.model import params as mparams
     mparams(config)
 
@@ -174,6 +220,24 @@ def params(config):
                          type=str,
                          help="The types of labels to use [default='']")
 
+    group.add_option("--save_model_every_epoch",
+                         dest="save_model_every_epoch",
+                         action='store_true',
+                         default=False,
+                         help="Backup up every model after epoch [default=False]")
+
+    group.add_option("--save_optimizer_and_scheduler",
+                         dest="save_optimizer_and_scheduler",
+                         action='store_true',
+                         default=False,
+                         help="Save the optimizer and schuler [default=False]")
+
+    group.add_option("--save_steps",
+                         dest="save_steps",
+                         default=-1,
+                         type=int,
+                         help="Save model at this frequency [default=-1]")
+
 
     config.add_option_group(group)
 
@@ -203,20 +267,23 @@ def main(argv):
     :rtype: None 
     """
     ## config
-    from transformer_tools import initialize_config,load_wandb
     config = initialize_config(argv,params)
 
     ## load wandb
-    if config.wandb_project and wandb_available:
-        load_wandb(config)
+    init_wandb(config) #add_name=True,add_entity=True)
 
-    model = TaggerModel(config)
+    #model = TaggerModel(config)
     json_out = {}
     json_out["train_data"] = config.train_name
     json_out["eval_data"]  = config.eval_name
 
-    if not config.no_training: 
-        model.train_model()
+    if not config.no_training:
+        with TaggerModel(config) as model: 
+            model.train_model()
+
+        ## save wandb model 
+        if wandb_available and config.save_wandb_model:
+            push_model(config)
 
     if config.dev_eval:
         dev_out = model.eval_model(
@@ -250,3 +317,4 @@ def main(argv):
         #### log to wandb output 
         if wandb_available and config.wandb_project:
             wandb.log(json_out)
+

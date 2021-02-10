@@ -1,5 +1,41 @@
+import os
+import sys
+import logging
 from optparse import OptionParser,OptionGroup
 from transformer_tools.Base import ConfigurableClass
+try:
+    import wandb
+
+    wandb_available = True
+except ImportError:
+    wandb_available = False
+
+util_logger = logging.getLogger('transformer_tools.model')
+
+## wandb boilerplate
+
+def init_wandb(config,add_name=False,add_entity=False):
+    """Initializes the overall wandb environment 
+
+    :param config: the global configuration 
+    :raises: ValueError 
+    """
+    if "WANDB_NOTES" not in os.environ and config.wandb_note:
+        os.environ["WANDB_NOTES"] = config.wandb_note
+    if "WANDB_API_KEY" not in os.environ:
+        if not config.wandb_api_key:
+            raise ValueError(
+                'Unknown wandb key! please let environment variable or specify via `--wandb_api_key`'
+            )
+        util_logger.info('Setting the wandb api key....')
+        os.environ["WANDB_API_KEY"] = config.wandb_api_key
+    ## hide the key if provided
+    if add_name:
+        os.environ["WANDB_NAME"] = config.wandb_name
+    if add_entity:
+        os.environ["WANDB_ENTITY"] = config.wandb_entity
+        
+    config.wandb_api_key = None
 
 class Model(ConfigurableClass):
     """Base model for all other models
