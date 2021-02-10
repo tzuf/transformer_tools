@@ -30,10 +30,10 @@ def init_wandb(config,add_name=False,add_entity=False):
         util_logger.info('Setting the wandb api key....')
         os.environ["WANDB_API_KEY"] = config.wandb_api_key
     ## hide the key if provided
-    if add_name:
-        os.environ["WANDB_NAME"] = config.wandb_name
-    if add_entity:
-        os.environ["WANDB_ENTITY"] = config.wandb_entity
+    # if add_name:
+    #     os.environ["WANDB_NAME"] = config.wandb_name
+    # if add_entity:
+    #     os.environ["WANDB_ENTITY"] = config.wandb_entity
         
     config.wandb_api_key = None
 

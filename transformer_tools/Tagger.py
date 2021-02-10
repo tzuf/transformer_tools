@@ -29,11 +29,11 @@ def push_model(config):
     
     :param config: the global configuration 
     """
-    run = wandb.init(
-            project=config.wandb_project,
-            entity=config.wandb_entity,
-            name="",
-    )
+    # run = wandb.init(
+    #         project=config.wandb_project,
+    #         entity=config.wandb_entity,
+    #         name="",
+    # )
     util_logger.info('Backing up the model files to wandb')
     martifact = wandb.Artifact('%s_model' % config.wandb_name, type='model')
 
@@ -46,11 +46,11 @@ def push_model(config):
             "config.json",
     ]:
         martifact.add_file(
-                os.path.join(config.output_dir,model_file)
+                os.path.join(os.path.join(config.output_dir,"best_model"),model_file)
         )
 
-    run.log_artifact(martifact)
-    run.finish()
+    wandb.log_artifact(martifact)
+    #run.finish()
     
     
 class TaggerModel(Model):
@@ -132,11 +132,12 @@ class TaggerModel(Model):
                 "classification_report" : True,
                 "evaluate_during_training" : True,
                 "evaluate_during_training_verbose" : True,
-                "best_model_dir": self.config.output_dir,
+                "best_model_dir": os.path.join(self.config.output_dir,"best_model"),
                 ## saving options (default only saves best model)
                 "save_model_every_epoch" : self.config.save_model_every_epoch,
                 "save_steps" : self.config.save_steps,
                 "save_optimizer_and_scheduler" : self.config.save_optimizer_and_scheduler,
+                "save_best_model": True,
             })
 
     def eval_model(self,split='dev',print_output=False):
@@ -272,14 +273,14 @@ def main(argv):
     ## load wandb
     init_wandb(config) #add_name=True,add_entity=True)
 
-    #model = TaggerModel(config)
+    model = TaggerModel(config)
     json_out = {}
     json_out["train_data"] = config.train_name
     json_out["eval_data"]  = config.eval_name
 
     if not config.no_training:
-        with TaggerModel(config) as model: 
-            model.train_model()
+        #with TaggerModel(config) as model: 
+        model.train_model()
 
         ## save wandb model 
         if wandb_available and config.save_wandb_model:
