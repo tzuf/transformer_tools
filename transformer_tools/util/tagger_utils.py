@@ -11,6 +11,7 @@ __all__ = [
     "load_label_list",
     "print_arrow_output",
     "read_report",
+    "REVERSE_ARROWS",
 ]
 
 util_logger = logging.getLogger('transformer_tools.util.tagger_utils')
@@ -40,11 +41,19 @@ _ARROWS = {
     "↓"    : "B-down",
 }
     
-_REVERSE_ARROWS = {
+REVERSE_ARROWS = {
     "B-up"   : "↑",
     "B-down" : "↓",
     "B-="    : "=",
 }
+
+def load_arrow_example(sentence):
+    """Load a single arrow example for generating output 
+    given a simple text input. 
+
+    
+    """
+    pass 
     
 def load_arrow_data(config,split):
     """Load the arrow data from json 
@@ -114,9 +123,9 @@ def print_arrow_output(predictions,
 
             # ### print both outputs 
             print("%s\t%s\t%f" % (
-                ' '.join(["%s%s" % (w,_REVERSE_ARROWS.get(gold_labels[k],gold_labels[k])) \
+                ' '.join(["%s%s" % (w,REVERSE_ARROWS.get(gold_labels[k],gold_labels[k])) \
                               for k,w in enumerate(original_sentence)]),
-                ' '.join(["%s%s" % (w,_REVERSE_ARROWS.get(predicted_labels[k],predicted_labels[k])) \
+                ' '.join(["%s%s" % (w,REVERSE_ARROWS.get(predicted_labels[k],predicted_labels[k])) \
                               for k,w in enumerate(original_sentence)]),
                 score
             ),file=my_output)

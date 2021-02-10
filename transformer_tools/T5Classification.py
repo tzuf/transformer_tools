@@ -609,9 +609,7 @@ def T5ClassificationModel(config):
 
 def LoadModel(config):
     model_class = T5ClassificationModel(config)
-    return model_class.load_existing(config) 
-    
-
+    return model_class.load_existing(config)
 
 def params(config):
     """Main parameters for running the T5 model

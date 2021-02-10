@@ -29,4 +29,5 @@ seaborn
 jupyter==1.0.0
 nose==1.3.7
 simpletransformers
-wandb
+wandb==0.10.12
+streamlit==0.74.1

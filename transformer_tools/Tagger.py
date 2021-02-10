@@ -13,6 +13,7 @@ from optparse import OptionParser,OptionGroup
 from transformer_tools.util.tagger_utils import *
 from transformer_tools import initialize_config
 from transformer_tools.model import Model,init_wandb
+from optparse import Values
 
 ## wandb (if available)
 try:
@@ -31,23 +32,16 @@ def push_model(config):
     """
     util_logger.info('Backing up the model files to wandb')
     martifact = wandb.Artifact('%s_model' % config.wandb_name, type='model')
-
-    for model_file in [
-            "pytorch_model.bin",
-            "special_tokens_map.json",
-            "training_args.bin",
-            "vocab.txt",
-            "model_args.json",
-            "config.json",
-    ]:
-        martifact.add_file(
-                os.path.join(os.path.join(config.output_dir,"best_model"),model_file)
-        )
-
+    martifact.add_dir(os.path.join(config.output_dir,"best_model"))
+    #matrifact.add_file(os.path.join(config.output_dir,"trainer_config.json"))
     wandb.log_artifact(martifact)
 
-
 def wandb_setup(config):
+    """Set up the wandb data and models if such are specified 
+
+    :param config: the global configuration 
+    :rtype: None 
+    """
     init_wandb(config)
     run = wandb.init(entity=config.wandb_entity)
     
@@ -63,7 +57,8 @@ def wandb_setup(config):
         model = run.use_artifact(config.wandb_model, type='model')
         model_dir = model.download()
         util_logger.info('Download data to: %s' % model_dir)
-        config.model_name = model_dir
+        config.existing_model = model_dir
+        config.wandb_model = ""
 
     run.finish()
     
@@ -112,24 +107,48 @@ class TaggerModel(Model):
         ## find labels in list
         label_list = load_label_list(config.label_list)
         use_cuda = True if torch.cuda.is_available() else False
-        
+
+        global_args = {
+            "fp16" : False,
+            "classification_report" : True,
+            "tensorboard_dir" : config.tensorboard_dir,
+            "wandb_project" : config.wandb_project,
+            "wandb_kwargs" : {
+                "name"    : config.wandb_name,
+                "entity"  : config.wandb_entity,
+                }
+            }
+
         model = NERModel(
             config.model_name,
             config.model_type,
             use_cuda=use_cuda,
             labels=label_list,
-            args={
-                "fp16" : False,
-                "classification_report" : True,
-                "tensorboard_dir" : config.tensorboard_dir,
-                "wandb_project" : config.wandb_project,
-                "wandb_kwargs" : {
-                    "name"    : config.wandb_name,
-                    "entity"  : config.wandb_entity,
-                    }
-                }
+            args=global_args,
         )
         return cls(model,config)
+
+    @classmethod
+    def load_existing(cls,config):
+        """Load an existing model from configuration 
+
+        :param config: the global configuration
+        """
+        if config.wandb_model: wandb_setup(config)
+        use_cuda = True if torch.cuda.is_available() else False
+
+        ## load original configuration
+        orig_config = None 
+        with open(os.path.join(config.existing_model,"trainer_config.json")) as oconfig:
+            orig_config = Values(json.loads(oconfig.read()))
+        orig_config.existing_model = config.existing_model
+             
+        model = NERModel(
+            orig_config.model_name,
+            orig_config.existing_model,
+            use_cuda=use_cuda
+        )
+        return cls(model,orig_config)
 
     def train_model(self):
         """Main method for training the data 
@@ -139,34 +158,43 @@ class TaggerModel(Model):
         self.logger.info('Loading the data...')
         train_data = self.load_data(split="train")
         dev_data = self.load_data(split="dev")
+        best_model = os.path.join(self.config.output_dir,"best_model")
+        self.logger.info('Training the model, outputdir=%s...,best_model=%s' % (self.config.output_dir,self.best_model))
 
-        self.logger.info('Training the model, outputdir=%s...' % self.config.output_dir)
+        train_params = {
+            "overwrite_output_dir" : True,
+            "reprocess_input_data": True,
+            "learning_rate"       : self.config.learning_rate,
+            "num_train_epochs"    : self.config.num_train_epochs,
+            "train_batch_size"    : self.config.train_batch_size,
+            "eval_batch_size"     : self.config.eval_batch_size,
+            "gradient_accumulation_steps": self.config.gradient_accumulation_steps,
+            "use_early_stopping" : self.config.early_stopping,
+            "fp16" : False,
+            "classification_report" : True,
+            "evaluate_during_training" : True,
+            "evaluate_during_training_verbose" : True,
+            "best_model_dir": self.best_model,
+            "save_model_every_epoch" : self.config.save_model_every_epoch,
+            "save_steps" : self.config.save_steps,
+            "save_optimizer_and_scheduler" : self.config.save_optimizer_and_scheduler,
+            "save_best_model": True,
+        }
+
+        ## train the model 
         self.model.train_model(
             train_data,
             eval_data=dev_data,
             output_dir=self.config.output_dir,
             show_running_loss=False,
-            args={
-                "overwrite_output_dir" : True,
-                "reprocess_input_data": True,
-                "learning_rate"       : self.config.learning_rate,
-                "num_train_epochs"    : self.config.num_train_epochs,
-                "train_batch_size"    : self.config.train_batch_size,
-                "eval_batch_size"     : self.config.eval_batch_size,
-                "gradient_accumulation_steps": self.config.gradient_accumulation_steps,
-                "use_early_stopping" : self.config.early_stopping,
-                "fp16" : False,
-                "classification_report" : True,
-                "evaluate_during_training" : True,
-                "evaluate_during_training_verbose" : True,
-                "best_model_dir": os.path.join(self.config.output_dir,"best_model"),
-                ## saving options (default only saves best model)
-                "save_model_every_epoch" : self.config.save_model_every_epoch,
-                "save_steps" : self.config.save_steps,
-                "save_optimizer_and_scheduler" : self.config.save_optimizer_and_scheduler,
-                "save_best_model": True,
-            })
+            args=train_params,
+        )
 
+        ## backing up the config and create pointer to best model 
+        with open(os.path.join(self.config.best_model,"trainer_config.json"),'w') as mconfig:
+            mconfig.write(json.dumps(self.config.__dict__))
+        self.config.existing_model = self.config.best_model
+        
     def eval_model(self,split='dev',print_output=False):
         """Evaluate the model
 
@@ -188,15 +216,28 @@ class TaggerModel(Model):
         result.update(report_items)
         return result
 
-    def __enter__(self):
-        self.logger.info('Entering the trainer...')
-        return self
+    def query(self,text_input,prefix='answer:',convert_to_string=True):
+        """Main method for outside interaction with Python/text 
 
-    def __exit__(self, exc_type, exc_value, exc_traceback):
-        try:
-            self.logger.info('Closing wandb.')
-            wandb.finish()
-        except: pass
+        :param text_input: the input text 
+        :rtype text_input: str 
+        :param prefix: the model mode to run (if needed) 
+        :rtype: obj
+        """
+        predictions, raw_outputs = model.predict([text_input])
+        preds = [[(i[0],i[1]) for i in p.items()][0] for p in predictions[0]]
+        return self._post_process_output(preds,convert_to_string=convert_to_string)
+
+    def _post_process_output(self,predictions,convert_to_string):
+        """Maps the predictions into a more comfortable tuple format
+
+        :param predictions: the predictions made by the model 
+        :type predictions: list 
+        :rtype: list 
+        """
+        if convert_to_string:
+            return ' '.join(["%s-%s" % (p[0],p[1]) for p in predictions])
+        return preds
 
 class ArrowTagger(TaggerModel):
 
@@ -207,11 +248,28 @@ class ArrowTagger(TaggerModel):
         """
         return load_arrow_data(self.config,split)
 
+    def _post_process_output(self,predictions,convert_to_string):
+        """Maps the predictions into the arrows (if `convert_to_string=True`,
+        which is the default) 
+
+        :param predictions: the predictions made by the model 
+        :type predictions: list 
+        :rtype: list 
+        """
+        if convert_to_string:
+            return ' '.join(["%s%s" % (p[0],REVERSE_ARROWS.get(p[1],p[1])) for p in predictions])
+        return preds
+    
 class GenericTagger(TaggerModel):
     """Generic data model 
 
     """
-    pass
+    def load_data(self,split='train'):
+        """Load data for running experiments 
+
+        :param split: the particular split to load 
+        """
+        raise ValueError('Please implement me!')
 
 def params(config):
     """Main parameters for running the T5 model
@@ -230,6 +288,12 @@ def params(config):
                          type=str,
                          help="The type of tagger to use [default='bert-base-cased']")
 
+    group.add_option("--existing_model",
+                         dest="existing_model",
+                         default='',
+                         type=str,
+                         help="The path of an existing model to load [default='']")
+
     group.add_option("--model_name",
                          dest="model_name",
                          default='bert',
@@ -244,9 +308,9 @@ def params(config):
 
     group.add_option("--label_list",
                          dest="label_list",
-                         default='',
+                         default="B-up;B-down;B-=",
                          type=str,
-                         help="The types of labels to use [default='']")
+                         help="The types of labels to use [default='B-up;B-down;B-=']")
 
     group.add_option("--save_model_every_epoch",
                          dest="save_model_every_epoch",
@@ -282,9 +346,11 @@ def TaggerModel(config):
     tclass = _TAGGERS.get(config.tagger_model)
     if tclass is None:
         raise ValueError('Unknown tagger: %s' % config.tagger_model)
-    if not config.label_list:
+    if not config.label_list and not config.wandb_model:
         raise ValueError('Must specify a label list!')
-    
+
+    if config.wandb_model:
+        return tclass.load_existing(config)
     return tclass.from_config(config)
 
 
