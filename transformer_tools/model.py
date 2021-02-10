@@ -337,6 +337,12 @@ def params(config):
                          dest="auto_lr_find",
                          action='store_true',
                          default=False,
-                         help="automatic learning rate finder [default=False]")    
+                         help="automatic learning rate finder [default=False]")
+
+    group.add_option("--data_subdir",
+                         dest="data_subdir",
+                         default='',
+                         type=str,
+                         help="The subdirectory to find the data (if needed) [default='']")
 
     config.add_option_group(group)

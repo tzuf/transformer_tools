@@ -29,11 +29,6 @@ def push_model(config):
     
     :param config: the global configuration 
     """
-    # run = wandb.init(
-    #         project=config.wandb_project,
-    #         entity=config.wandb_entity,
-    #         name="",
-    # )
     util_logger.info('Backing up the model files to wandb')
     martifact = wandb.Artifact('%s_model' % config.wandb_name, type='model')
 
@@ -50,8 +45,40 @@ def push_model(config):
         )
 
     wandb.log_artifact(martifact)
-    #run.finish()
+
+
+def wandb_setup(config):
+    init_wandb(config)
+    run = wandb.init(entity=config.wandb_entity)
     
+    if config.wandb_data:
+        run = wandb.init(entity=config.wandb_entity)
+        artifact = run.use_artifact(config.wandb_data, type='dataset')
+        artifact_dir = artifact.download()
+        util_logger.info('Download data to: %s' % artifact_dir)
+        adir = os.path.join(artifact_dir,config.data_subdir) if config.data_subdir else artifact_dir
+        config.data_dir = adir
+
+    if config.wandb_model:
+        model = run.use_artifact(config.wandb_model, type='model')
+        model_dir = model.download()
+        util_logger.info('Download data to: %s' % model_dir)
+        config.model_name = model_dir
+
+    run.finish()
+    
+def load_wandb_data(config):
+    """Load the wandb data and also set `subdir` path if needed 
+
+    :param config: the global configuration 
+    """
+    run = wandb.init(entity=config.wandb_entity)
+    artifact = run.use_artifact(config.wandb_data, type='dataset')
+    artifact_dir = artifact.download()
+    util_logger.info('Download data to: %s' % artifact_dir)
+    adir = os.path.join(artifact_dir,config.data_subdir) if config.data_subdir else artifact_dir
+    config.data_dir = adir
+
     
 class TaggerModel(Model):
     """Base class for building tagger models
@@ -270,8 +297,8 @@ def main(argv):
     ## config
     config = initialize_config(argv,params)
 
-    ## load wandb
-    init_wandb(config) #add_name=True,add_entity=True)
+    ## load wandb data/models (if needed) 
+    wandb_setup(config) 
 
     model = TaggerModel(config)
     json_out = {}
@@ -279,7 +306,6 @@ def main(argv):
     json_out["eval_data"]  = config.eval_name
 
     if not config.no_training:
-        #with TaggerModel(config) as model: 
         model.train_model()
 
         ## save wandb model 
