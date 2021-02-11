@@ -29,13 +29,20 @@ def build_config():
 @st.cache
 def build_model(config):
     model = TaggerModel(config)
+
+    ## strange things with streamlit and multiprocessing
+    ## see: https://discuss.streamlit.io/t/streamlit-is-stopping/3881/3
+    model.model.args.use_multiprocessing=False
+    model.model.args.use_multiprocessing_for_evaluation=False
+    model.model.args.silent=True
+
     os.environ["WANDB_MODE"] = "dryrun"
     return model
 
 def run_model(text_input,mode_set):
     config = build_config()
     model = build_model(config)
-    token_tags = model.query(text_input,convert_to_string=False)
+    token_tags = model.query("this is my sentence",convert_to_string=False)
 
 def main():
     """The Main execution point 
