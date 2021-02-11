@@ -206,7 +206,7 @@ python  -m  transformer_tools T5Classifier \
 running in a cloud environment, it is best to set this as an
 environment variable.
 
-Example notebooks and bAbi demo
+Example notebooks, bAbi/polarity demo
 ---------------------------
 Example notebooks are included in `notebooks`.
 
@@ -218,3 +218,8 @@ installed via `pip`). To run the demo, do:
 ```
 This will require having access to the `eco-semantics` wandb account,
 and might require you to set your `WANDB_API_KEY` (via `export WANDB_API_KEY=xxxxxxxxxxxxxx`).
+
+There is also a polarity demo that can be run in the same fashion:
+```
+./polarity_demo.sh 
+```

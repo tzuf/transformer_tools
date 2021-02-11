@@ -28,6 +28,7 @@ def params(config):
 
     config.add_option_group(group)
 
+## cache here causes serious problems 
 #@st.cache(allow_output_mutation=True)
 def build_config():
     config = initialize_config(sys.argv[1:],params)
@@ -106,10 +107,6 @@ def main():
             df = run_model(story_text,mode_set)
             st.text('model=%s' % mname)
             st.dataframe(df)
-
-            # if story_text not in ex_stories:
-            #     ex_stories.append(story_text)
-                
 
 if __name__ == "__main__":
     main() 
