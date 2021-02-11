@@ -129,24 +129,26 @@ class TaggerModel(Model):
         return cls(model,config)
 
     @classmethod
-    def load_existing(cls,config):
+    def load_existing(cls,config,silent=True):
         """Load an existing model from configuration 
 
         :param config: the global configuration
         """
-        if config.wandb_model: wandb_setup(config)
         use_cuda = True if torch.cuda.is_available() else False
+        if config.wandb_model:
+            wandb_setup(config)
 
         ## load original configuration
         orig_config = None 
         with open(os.path.join(config.existing_model,"trainer_config.json")) as oconfig:
             orig_config = Values(json.loads(oconfig.read()))
         orig_config.existing_model = config.existing_model
-             
+
         model = NERModel(
             orig_config.model_name,
             orig_config.existing_model,
-            use_cuda=use_cuda
+            use_cuda=use_cuda,
+            args={"silent" : silent},
         )
         return cls(model,orig_config)
 
@@ -158,8 +160,8 @@ class TaggerModel(Model):
         self.logger.info('Loading the data...')
         train_data = self.load_data(split="train")
         dev_data = self.load_data(split="dev")
-        best_model = os.path.join(self.config.output_dir,"best_model")
-        self.logger.info('Training the model, outputdir=%s...,best_model=%s' % (self.config.output_dir,self.best_model))
+        self.config.best_model = os.path.join(self.config.output_dir,"best_model")
+        self.logger.info('Training the model, outputdir=%s...,best_model=%s' % (self.config.output_dir,self.config.best_model))
 
         train_params = {
             "overwrite_output_dir" : True,
@@ -174,7 +176,7 @@ class TaggerModel(Model):
             "classification_report" : True,
             "evaluate_during_training" : True,
             "evaluate_during_training_verbose" : True,
-            "best_model_dir": self.best_model,
+            "best_model_dir": self.config.best_model,
             "save_model_every_epoch" : self.config.save_model_every_epoch,
             "save_steps" : self.config.save_steps,
             "save_optimizer_and_scheduler" : self.config.save_optimizer_and_scheduler,
@@ -224,7 +226,7 @@ class TaggerModel(Model):
         :param prefix: the model mode to run (if needed) 
         :rtype: obj
         """
-        predictions, raw_outputs = model.predict([text_input])
+        predictions, raw_outputs = self.model.predict([text_input])
         preds = [[(i[0],i[1]) for i in p.items()][0] for p in predictions[0]]
         return self._post_process_output(preds,convert_to_string=convert_to_string)
 
