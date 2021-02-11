@@ -239,7 +239,7 @@ class TaggerModel(Model):
         """
         if convert_to_string:
             return ' '.join(["%s-%s" % (p[0],p[1]) for p in predictions])
-        return preds
+        return predictions
 
 class ArrowTagger(TaggerModel):
 
@@ -260,7 +260,7 @@ class ArrowTagger(TaggerModel):
         """
         if convert_to_string:
             return ' '.join(["%s%s" % (p[0],REVERSE_ARROWS.get(p[1],p[1])) for p in predictions])
-        return preds
+        return predictions
     
 class GenericTagger(TaggerModel):
     """Generic data model 
