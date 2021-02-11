@@ -258,8 +258,9 @@ class ArrowTagger(TaggerModel):
         :type predictions: list 
         :rtype: list 
         """
+        normalized = [(p[0],REVERSE_ARROWS.get(p[1],p[1])) for p in predictions]
         if convert_to_string:
-            return ' '.join(["%s%s" % (p[0],REVERSE_ARROWS.get(p[1],p[1])) for p in predictions])
+            return ' '.join(["%s%s" % (p[0],p[1]) for p in predictions])
         return predictions
     
 class GenericTagger(TaggerModel):
