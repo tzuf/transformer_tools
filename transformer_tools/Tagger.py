@@ -227,7 +227,8 @@ class TaggerModel(Model):
         :rtype: obj
         """
         predictions, raw_outputs = self.model.predict([text_input])
-        preds = [[(i[0],i[1]) for i in p.items()][0] for p in predictions[0]]
+        raw_outputs = [np.max(softmax([s[1][0] for s in v.items()][0])) for v in raw_outputs[0]]
+        preds = [[(i[0],i[1],raw_outputs[k]) for i in p.items()][0] for k,p in enumerate(predictions[0])]
         return self._post_process_output(preds,convert_to_string=convert_to_string)
 
     def _post_process_output(self,predictions,convert_to_string):
@@ -258,10 +259,10 @@ class ArrowTagger(TaggerModel):
         :type predictions: list 
         :rtype: list 
         """
-        normalized = [(p[0],REVERSE_ARROWS.get(p[1],p[1])) for p in predictions]
+        normalized = [(p[0],REVERSE_ARROWS.get(p[1],p[1]),p[2]) for p in predictions]
         if convert_to_string:
-            return ' '.join(["%s%s" % (p[0],p[1]) for p in predictions])
-        return predictions
+            return ' '.join(["%s%s" % (p[0],p[1]) for p in normalized])
+        return normalized
     
 class GenericTagger(TaggerModel):
     """Generic data model 

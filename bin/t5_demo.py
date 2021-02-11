@@ -169,8 +169,8 @@ def run_model(mode_set,
 
 def main():
 
-    config = build_config()
-    model = build_model(config)
+    #config = build_config()
+    #model = build_model(config)
     ex_stories,ex_questions = example_sets()
     st.title("T5 bAbi Interface")
 
