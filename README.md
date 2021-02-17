@@ -223,3 +223,12 @@ There is also a polarity demo that can be run in the same fashion:
 ```
 ./polarity_demo.sh 
 ```
+
+Notebook for Colab
+-----------------------------
+This is now in `notebooks/load_polarity_tagger_wandb_colab.ipynb`.
+`requirements_colab.txt` is a bit different from `requirements.txt` as I removed a few packages. 
+
+Note: when installing the packages, colab will give several Errors about python package conflict; Just ignore them.
+
+
