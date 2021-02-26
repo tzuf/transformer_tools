@@ -18,21 +18,6 @@ from optparse import Values
 ### should link in a separate model
 from transformer_tools.Tagger import wandb_setup,push_model,load_wandb_data
 
-# # Train and Evaluation data needs to be in a Pandas Dataframe of two columns. The first column is the text with type str, and the second column is the label with type int.
-# train_data = [["Example sentence belonging to class 1", 1], ["Example sentence belonging to class 0", 0]]
-# train_df = pd.DataFrame(train_data)
-# eval_data = [["Example eval sentence belonging to class 1", 1], ["Example eval sentence belonging to class 0", 0]]
-# eval_df = pd.DataFrame(eval_data)
-# # Create a ClassificationModel
-# model = ClassificationModel("roberta", "roberta-base")
-# # Train the model
-# model.train_model(train_df)
-# # Evaluate the model
-# result, model_outputs, wrong_predictions = model.eval_model(eval_df)
-
-
-
-
 class ClassifierModel(Model):
 
     def __init__(self,model,config):
@@ -46,8 +31,53 @@ class ClassifierModel(Model):
         """
         raise NotImplementedError
 
+    ### TODO : this should be in some general simple transformers interface to be
+    ## shared with `Tagger`
     def train_model(self):
-        pass
+        """Main method for training the data 
+
+        :rtype: None 
+        """
+        self.logger.info('Loading the data...')
+        train_data = self.load_data(split="train")
+        dev_data = self.load_data(split="dev")
+
+
+        self.config.best_model = os.path.join(self.config.output_dir,"best_model")
+        self.logger.info('Training the model, outputdir=%s...,best_model=%s' % (self.config.output_dir,self.config.best_model))
+
+        train_params = {
+            "overwrite_output_dir" : True,
+            "reprocess_input_data": True,
+            "learning_rate"       : self.config.learning_rate,
+            "num_train_epochs"    : self.config.num_train_epochs,
+            "train_batch_size"    : self.config.train_batch_size,
+            "eval_batch_size"     : self.config.eval_batch_size,
+            "gradient_accumulation_steps": self.config.gradient_accumulation_steps,
+            "use_early_stopping" : self.config.early_stopping,
+            "fp16" : False,
+            ##"classification_report" : True,
+            "evaluate_during_training" : True,
+            "evaluate_during_training_verbose" : True,
+            "best_model_dir": self.config.best_model,
+            "save_model_every_epoch" : self.config.save_model_every_epoch,
+            "save_steps" : self.config.save_steps,
+            "save_optimizer_and_scheduler" : self.config.save_optimizer_and_scheduler,
+            "save_best_model": True,
+        }
+
+        ## train the model 
+        self.model.train_model(
+            train_data,
+            eval_df=dev_data,
+            output_dir=self.config.output_dir,
+            show_running_loss=False,
+            args=train_params,
+        )
+        with open(os.path.join(self.config.best_model,"trainer_config.json"),'w') as mconfig:
+            mconfig.write(json.dumps(self.config.__dict__))
+        self.config.existing_model = self.config.best_model
+
 
 class BinaryClassifier(ClassifierModel):
 
@@ -63,7 +93,8 @@ class BinaryClassifier(ClassifierModel):
             "wandb_kwargs" : {
                 "name"    : config.wandb_name,
                 "entity"  : config.wandb_entity,
-                }
+                },
+            ### general parameters 
             "max_seq_length" : config.max_seq_length,
         }
 
@@ -78,6 +109,12 @@ class BinaryClassifier(ClassifierModel):
 
         return cls(model,config)
 
+    def load_data(self,split="train"):
+        """Load data for running experiments 
+
+        :param split: the particular split to load 
+        """
+        return load_classification_data(self.config,split)
 
 def params(config):
     """Main parameters for running the T5 model
@@ -181,3 +218,9 @@ def main(argv):
         wandb_setup(config)
         
     model = ClassifierModel(config)
+    json_out = {}
+    json_out["train_data"] = config.train_name
+    json_out["eval_data"]  = config.eval_name
+
+    if not config.no_training:
+        model.train_model()

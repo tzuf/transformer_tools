@@ -18,6 +18,7 @@ def load_classification_data(config,split):
 
     :param config: the global configuration 
     :param split: the target split 
+    :returns: pandas data frame consisting of the target classification data
     """
     data_dir = config.data_dir
     target_file = os.path.join(data_dir,"%s.jsonl" % split)
@@ -32,4 +33,8 @@ def load_classification_data(config,split):
             json_line = json.loads(line)
             text_passage = json_line["question"]["stem"]
             output = json_line["output"]
-            instances += [text_passage,output]
+            instances.append([text_passage,output])
+
+
+    util_logger.info('Loaded %d instances for splits=%s' % (len(instances),split))
+    return pd.DataFrame(instances)
