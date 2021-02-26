@@ -83,13 +83,6 @@ class TaggerModel(Model):
         self.model = model
         self.config = config
 
-    @classmethod
-    def from_config(cls,config):
-        """Load tagger model from configuration 
-
-        :param config: the global configuration instance 
-        """
-        pass
 
     def load_data(self,split='train'):
         """Load data for running experiments 

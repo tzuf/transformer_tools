@@ -8,6 +8,14 @@ from transformer_tools.Tagger import params as tparams
 from transformer_tools.Tagger import TaggerModel
 from transformer_tools import initialize_config
 from transformer_tools.util.cache import LRUCache
+from transformers import pipeline
+
+## for the bert prediction
+try:
+    import spacy
+    nlp = spacy.load('en')
+except Exception:
+    spacy = None
 
 CACHE_SIZE = 10000
 
@@ -28,7 +36,11 @@ def params(config):
 
     config.add_option_group(group)
 
-## cache here causes serious problems 
+@st.cache
+def mask_prediction_model():
+    return pipeline("fill-mask", model="bert-base-uncased")
+
+## caching here causes serious problems 
 #@st.cache(allow_output_mutation=True)
 def build_config():
     config = initialize_config(sys.argv[1:],params)
@@ -42,7 +54,9 @@ def example_sets():
         "Only 12 aliens played with some toys",
         "Tom does not have a sister",
         "I like all vegetables except green cabbage",
-        "No alien died without reading some news magazines"
+        "No alien died without reading some news magazines",
+        "At most twelve aliens played with a rock.",
+        "At least twelve aliens played with a rock.",
     ]
 
 @st.cache(allow_output_mutation=True)
@@ -73,7 +87,40 @@ def run_model(text_input,mode_set):
             columns=["input","tag","probability"],
             index=[str(n) for n in range(len(token_tags))] 
     )
-    return df
+
+    df2 = None
+
+    if "bert mask prediction" in mode_set:
+
+        mmodel = mask_prediction_model()
+        token_list = nlp(text_input)
+        #table_substitutions = []
+        table_substitutions = cache[token_list]
+
+        if table_substitutions is None:
+            table_substitutions = []
+            token_indexes = []
+            for k,token in enumerate(token_list):
+                pos = token.pos_
+                if pos == "NOUN" or pos == "VERB" or pos == "ADJ":
+                    model_input = f"%s {mmodel.tokenizer.mask_token} %s" %\
+                      (' '.join([w.text for w in token_list[:k]]),' '.join([w.text for w in token_list[k+1:]]))
+                    substitutions = mmodel(model_input)
+                    new_words = [s["token_str"] for s in substitutions]
+                    table_substitutions.append((token.text,','.join(new_words)))
+                    token_indexes.append(str(k))
+
+            ## add to cache 
+            cache[token_list] = table_substitutions
+
+        df2 = pd.DataFrame(
+            table_substitutions,
+            columns=["token","substitution list"],
+            index=token_indexes,
+        )
+                
+                
+    return (df,df2)
 
 def main():
     """The Main execution point 
@@ -96,7 +143,7 @@ def main():
     
     modes = st.multiselect(
         "Modes",
-        ["polarity tagging"],
+        ["polarity tagging","bert mask prediction"],
         ["polarity tagging"]
     )
     submit = st.button("Process")
@@ -104,9 +151,15 @@ def main():
     if story_text and submit:
         mode_set = set(modes)
         with st.spinner("Processing..."):
-            df = run_model(story_text,mode_set)
+            df,df2 = run_model(story_text,mode_set)
             st.text('model=%s' % mname)
             st.dataframe(df)
+
+            if df2 is not None:
+                st.text('\n\n substitution model=bert')
+                st.dataframe(df2)
+                
+            
 
 if __name__ == "__main__":
     main() 

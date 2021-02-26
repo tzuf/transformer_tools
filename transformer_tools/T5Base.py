@@ -19,7 +19,7 @@ from dataclasses import dataclass
 from enum import Enum
 from typing import List, Optional
 from transformers import PreTrainedTokenizer
-from transformer_tools.model import Model,init_wandb
+from transformer_tools.model import Model,init_wandb,WANDB_CACHE
 
 from transformers import (
     AdamW,
@@ -738,28 +738,34 @@ def _grab_wandb_data(config):
 
     :param config: the global configuration 
     """
-    ##
     init_wandb(config)
-    run = wandb.init(entity=config.wandb_entity)
 
-    ## grab the data
-    if config.wandb_data: 
-        artifact = run.use_artifact(config.wandb_data, type='dataset')
-        artifact_dir = artifact.download()
-        util_logger.info('Download data to: %s' % artifact_dir)
-        config.data_dir = artifact_dir
+    if not config.wandb_model and not config.wandb_data:
+        return
 
-    ## grab existing model if specified
-    if config.wandb_model:
-        model = run.use_artifact(config.wandb_model, type='model')
-        model_dir = model.download()
-        util_logger.info('Download data to: %s' % model_dir)
-        config.target_model = model_dir
+    ## cache paths
+    dfile_type = config.wandb_data.split("/")[-1]
+    data_cache = os.path.join(WANDB_CACHE,dfile_type)
+    mfile_type = config.wandb_model.split("/")[-1]
+    model_cache = os.path.join(WANDB_CACHE,mfile_type)
+    
+    with wandb.init(entity=config.wandb_entity) as run:
+        ## grab the data
+        if config.wandb_data:
+            artifact = run.use_artifact(config.wandb_data, type='dataset')
+            artifact_dir = artifact.download(root=data_cache)
+            util_logger.info('Download data to: %s' % artifact_dir)
+            config.data_dir = artifact_dir
+
+        ## grab existing model if specified
+        if config.wandb_model:
+            model = run.use_artifact(config.wandb_model, type='model')
+            model_dir = model.download(root=model_cache)
+            util_logger.info('Download data to: %s' % model_dir)
+            config.target_model = model_dir
 
         ## turn off 
         config.wandb_model = ""
-    
-    run.finish()
 
 def init_wandb_logger(config):
     """Initializes the wandb logger 
@@ -1215,8 +1221,7 @@ def run_trainer_tester(config,trainer_class,t5_class,eval_map={}):
     if wandb_available and config.wandb_project and wandb_available:
         init_wandb(config)
         ## download wandb data?
-        if config.wandb_data:
-            _grab_wandb_data(config)
+        if config.wandb_data: _grab_wandb_data(config)
     
     if not config.wdir and not config.output_dir:
         raise ValueError('Must specify a working directory using either `--wdir` or --outputdir')

@@ -1,6 +1,7 @@
 import os
 import sys
 import logging
+import pathlib
 from optparse import OptionParser,OptionGroup
 from transformer_tools.Base import ConfigurableClass
 try:
@@ -13,6 +14,7 @@ except ImportError:
 util_logger = logging.getLogger('transformer_tools.model')
 
 ## wandb boilerplate
+WANDB_CACHE = str(pathlib.PosixPath('~/.wandb_cache').expanduser())
 
 def init_wandb(config,add_name=False,add_entity=False):
     """Initializes the overall wandb environment 
@@ -27,15 +29,13 @@ def init_wandb(config,add_name=False,add_entity=False):
             raise ValueError(
                 'Unknown wandb key! please let environment variable or specify via `--wandb_api_key`'
             )
-        util_logger.info('Setting the wandb api key....')
+        util_logger.warning('Setting the wandb api key, note: this is not safe!')
         os.environ["WANDB_API_KEY"] = config.wandb_api_key
-    ## hide the key if provided
-    # if add_name:
-    #     os.environ["WANDB_NAME"] = config.wandb_name
-    # if add_entity:
-    #     os.environ["WANDB_ENTITY"] = config.wandb_entity
-        
     config.wandb_api_key = None
+
+    ### set up wandb cache directory, if not set up
+    try: os.mkdir(WANDB_CACHE)
+    except FileExistsError: pass
 
 class Model(ConfigurableClass):
     """Base model for all other models
