@@ -1115,7 +1115,7 @@ def params(config):
 
     group.add_option("--classifier_length",
                          dest="classifier_length",
-                         default=2,
+                         default=4, ##<-- new tokenization 
                          type=int,
                          help="The space needed for classification [default=2]")
 

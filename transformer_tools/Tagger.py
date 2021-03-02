@@ -407,4 +407,3 @@ def main(argv):
         #### log to wandb output 
         if wandb_available and config.wandb_project:
             wandb.log(json_out)
-

@@ -574,7 +574,8 @@ def single_token_eval(outputs,targets,final_eval=False):
     :param targets: the model target
     :type targets: list 
     """
-    new_outputs = [o.split()[0].strip() if o.strip() else "" for o in outputs]
+    ## update for new tokenizer 
+    new_outputs = [o.split()[0].replace("<pad> ","").replace("</s>","").strip()  if o.strip() else "" for o in outputs]
     score = sklearn_metrics.accuracy_score(targets, new_outputs)
     util_logger.info('resulting score: %f, length of inputs=%d' % (score,len(new_outputs)))
     #return torch.from_numpy(np.array(score)).double()

@@ -272,7 +272,8 @@ class T5ClassificationMultiQA(T5ClassificationExplanation):
                                 num_return_sequences=num_return_sequences)
 
             ## decoder output
-            dec = [self.tokenizer.decode(ids).strip() if self.tokenizer.decode(ids).strip() else "" for ids in outs]
+            dec = [self.tokenizer.decode(ids).replace("<pad> ","").replace("</s>","").strip() \
+                       if self.tokenizer.decode(ids).strip() else "" for ids in outs]
 
         return dec
 

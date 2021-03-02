@@ -31,7 +31,7 @@ def load_classification_data(config,split):
         for k,line in enumerate(my_target):
             line = line.strip()
             json_line = json.loads(line)
-            text_passage = json_line["question"]["stem"]
+            text_passage = json_line["question"]["stem"].replace("_"," ") #<-- small hack for now 
             output = json_line["output"]
             instances.append([text_passage,output])
 

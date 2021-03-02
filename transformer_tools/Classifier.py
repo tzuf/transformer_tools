@@ -18,6 +18,15 @@ from optparse import Values
 ### should link in a separate model
 from transformer_tools.Tagger import wandb_setup,push_model,load_wandb_data
 
+## wandb (if available)
+try:
+    import wandb
+
+    wandb_available = True
+except ImportError:
+    wandb_available = False
+
+
 class ClassifierModel(Model):
 
     def __init__(self,model,config):
@@ -64,6 +73,7 @@ class ClassifierModel(Model):
             "save_steps" : self.config.save_steps,
             "save_optimizer_and_scheduler" : self.config.save_optimizer_and_scheduler,
             "save_best_model": True,
+            "use_multiprocessing" : False,
         }
 
         ## train the model 
@@ -224,3 +234,12 @@ def main(argv):
 
     if not config.no_training:
         model.train_model()
+
+        ## save wandb model 
+        if wandb_available and config.save_wandb_model:
+            push_model(config)
+
+    ### additional details 
+    json_out["model_name"]  = config.model_name
+    json_out["eval_name"]   = config.eval_name
+    json_out["train_name"]  = config.train_name
