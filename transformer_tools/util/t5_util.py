@@ -21,7 +21,6 @@ from seqeval.metrics import accuracy_score
 from seqeval.metrics import classification_report
 from seqeval.metrics import f1_score
 
-
 __all__ = [
     "json_mcqa",
     "single_token_eval",
@@ -40,7 +39,6 @@ __all__ = [
 ]
 
 util_logger = logging.getLogger('transformer_tools.util.t5_util')
-
 
 def _build_assertion_list(generated_context):
     assertions = []
@@ -574,9 +572,18 @@ def single_token_eval(outputs,targets,final_eval=False):
     :param targets: the model target
     :type targets: list 
     """
+    ## log the first few
+    util_logger.info('First few (outputs): %s' % ' '.join(outputs[:3]))
+    util_logger.info('First few (targets): %s' % ' '.join(targets[:3]))
+    
     ## update for new tokenizer 
-    new_outputs = [o.split()[0].replace("<pad> ","").replace("</s>","").strip()  if o.strip() else "" for o in outputs]
-    score = sklearn_metrics.accuracy_score(targets, new_outputs)
+    new_outputs = [o.replace("<pad>","").replace("</s>","").strip().split()[0]  if o.strip() else "" for o in outputs]
+    new_targets = [t.replace("<pad>","").replace("</s>","").strip() for t in targets]
+
+    util_logger.info('First few (outputs, processed): %s' % ' '.join(new_outputs[:3]))
+    util_logger.info('First few (targets, processed): %s' % ' '.join(new_targets[:3]))
+    #score = sklearn_metrics.accuracy_score(targets, new_outputs)
+    score = sklearn_metrics.accuracy_score(new_targets, new_outputs)
     util_logger.info('resulting score: %f, length of inputs=%d' % (score,len(new_outputs)))
     #return torch.from_numpy(np.array(score)).double()
     return score
@@ -637,7 +644,7 @@ def print_full_output(outputs,targets,data_rep,ofile,print_bleu=False):
     with open(ofile,'w') as output_file:
         for k,output in enumerate(outputs):
             #print("%s\t%s\t%s" % (data_rep[k],targets[k],output),file=output_file)
-            print("%s\t%s" % (data_rep[k],output),file=output_file)
+            print("%s\t%s" % (data_rep[k],output.replace("<pad>","").replace("</s>","").strip()),file=output_file)
 
     ### print bleu scores for generation outputs
     if print_bleu: 
