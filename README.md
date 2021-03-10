@@ -11,7 +11,7 @@ We suggest using [**conda**](https://docs.conda.io/en/latest/miniconda.html) for
 conda create -n transformer_tools python=3.6.7
 conda activate transformer_tools ## after setting up above
 pip install -r requirements.txt
-python -m spacy download en (optional for some demos)
+python -m spacy download en  ## (optional for some demos)
 ```
 Below are some of the current use cases. 
 
