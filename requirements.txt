@@ -139,3 +139,4 @@ werkzeug==1.0.1
 wheel==0.36.2
 widgetsnbextension==3.5.1
 zipp==3.4.0
+streamlit
