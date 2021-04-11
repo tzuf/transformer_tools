@@ -369,7 +369,8 @@ class T5Text2TextBase(pl.LightningModule):
                            batch_idx,
                            optimizer,
                            optimizer_idx,
-                           second_order_closure=None):
+                           second_order_closure=None,
+                           using_native_amp=None):
         """Runs the optimizer step 
         """
         if self.trainer.use_tpu: xm.optimizer_step(optimizer)
