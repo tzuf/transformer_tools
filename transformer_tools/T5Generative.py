@@ -281,8 +281,8 @@ def params(config):
     from transformer_tools.T5Base import params as tparams
     tparams(config)
 
-    group = OptionGroup(config,"transformer_tools.T5Classification",
-                            "Settings for T5Classification models")
+    group = OptionGroup(config,"transformer_tools.T5Generative",
+                            "Settings for T5Generative models")
 
     group.add_option("--callback_monitor",
                          dest="callback_monitor",

@@ -189,7 +189,7 @@ def params(config):
                          dest="max_seq_length",
                          default=128,
                          type=int,
-                         help="The maximum sequence length [default=128]")    
+                         help="The maximum sequence length [default=128]")
 
 
     config.add_option_group(group)

@@ -24,6 +24,8 @@ def load_classification_data(config,split):
     target_file = os.path.join(data_dir,"%s.jsonl" % split)
     if not os.path.isfile(target_file):
         raise ValueError('Unknown file: %s' % target_file)
+
+    output_types = set()
     
     util_logger.info('Reading: %s' % target_file)
     instances = []
@@ -33,8 +35,10 @@ def load_classification_data(config,split):
             json_line = json.loads(line)
             text_passage = json_line["question"]["stem"].replace("_"," ") #<-- small hack for now 
             output = json_line["output"]
+            output_types.add(output)
             instances.append([text_passage,output])
 
+    util_logger.info('Loaded %d instances for splits=%s,outputs=%s' %\
+                         (len(instances),split,str(output_types)))
 
-    util_logger.info('Loaded %d instances for splits=%s' % (len(instances),split))
     return pd.DataFrame(instances)

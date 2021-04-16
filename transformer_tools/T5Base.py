@@ -963,16 +963,22 @@ class T5Trainer(ConfigurableClass):
     def force_exit(self):
         ## current a hack to deal with some strange memory issues  
         self.logger.info('Attempting to exit trainer, trying to clear CUDA cache, device=%s' % self._model._device)
-        target_device = self._model._device
-        self._model.to("cpu")
-        del self._trainer
-        del self._model
-        del self
-        torch._C._cuda_emptyCache()
-        with torch.cuda.device(target_device): torch.cuda.empty_cache()
-        ## manual garbage collection
-        import gc
-        gc.collect()
+
+        try: 
+            target_device = self._model._device
+            self._model.to("cpu")
+            del self._trainer
+            del self._model
+            del self
+            torch._C._cuda_emptyCache()
+            with torch.cuda.device(target_device): torch.cuda.empty_cache()
+            ## manual garbage collection
+            import gc
+            gc.collect()
+
+
+        except Exception as e:
+            self.logger.error('Error with manual forced exit',exc_info=True)
 
     def __enter__(self):
         self.logger.info('Entering the trainer...')
