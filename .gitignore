@@ -46,6 +46,8 @@ _runs/*
 cache_dir/*
 artifacts/*
 wandb/*
+notebooks/artifacts/*
+notebooks/wandb/*
 
 # Installer logs
 pip-log.txt
