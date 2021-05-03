@@ -488,9 +488,12 @@ class T5Text2TextBase(pl.LightningModule):
                                    (self.hparams.data_dir,self.hparams.train_batch_size,self.hparams.drop_last,
                                         not self.hparams.no_shuffle,str(self.hparams.num_train_epochs)))
 
-        dataloader = self.generic_dataloader("train",final_eval=False,
-                                            shuffle=not self.hparams.no_shuffle,
-                                            batch_size=self.hparams.train_batch_size)
+        dataloader = self.generic_dataloader(
+            "train",
+            final_eval=False,
+            shuffle=not self.hparams.no_shuffle,
+            batch_size=self.hparams.train_batch_size
+        )
 
         ##move to configure_optimizers
         try:
@@ -502,7 +505,12 @@ class T5Text2TextBase(pl.LightningModule):
                 // self.hparams.gradient_accumulation_steps
                 * float(self.hparams.num_train_epochs))
                     
-            scheduler = get_linear_schedule_with_warmup(self.opt,num_warmup_steps=self.hparams.warmup_steps,num_training_steps=t_total)
+            scheduler = get_linear_schedule_with_warmup(
+                self.opt,
+                num_warmup_steps=self.hparams.warmup_steps,
+                num_training_steps=t_total
+            )
+            
             self.lr_scheduler = scheduler
 
         return dataloader
@@ -530,7 +538,6 @@ class T5Text2TextBase(pl.LightningModule):
                         shuffle=shuffle,
                         drop_last=False,
                         num_workers=self.hparams.num_workers)
-
 
     ## general method for collecting data
     def _get_data(self,split,final_eval=False):
@@ -975,7 +982,6 @@ class T5Trainer(ConfigurableClass):
             ## manual garbage collection
             import gc
             gc.collect()
-
 
         except Exception as e:
             self.logger.error('Error with manual forced exit',exc_info=True)

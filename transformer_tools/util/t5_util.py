@@ -372,6 +372,18 @@ def generative_data(config,
     #return (inputs,targets,data_rep,original_sizes)
     return (inputs,targets,data_rep,output_sizes)
 
+def json_patch(json_line):
+    if "meta" in json_line and "prefix" in json_line["meta"]:
+        json_line["prefix"] = json_line["meta"]["prefix"]
+    if "answer" in json_line:
+        json_line["output"] = json_line["answer"]
+    if "context" in json_line:
+        del json_line["question"]
+        json_line["question"] = {}
+        json_line["question"]["stem"] = json_line["context"]
+        del json_line["context"]
+        
+
 
 def multi_qa(config,
                  tokenizer,
@@ -388,6 +400,10 @@ def multi_qa(config,
     with open(split_file,"r",encoding="utf-8") as f:
         for k,line in tqdm(enumerate(f)):
             json_line = json.loads(line.strip())
+
+            ### 
+            json_patch(json_line)
+            
             identifier = "%s_%d" % (split,k) if "id" not in json_line else json_line["id"]
 
             # ### skip over explanation stuff 
