@@ -129,9 +129,9 @@ def run_model(mode_set, user_input):
         for from_key in current_mode['from']:
             inquire_prompt = inquire_prompt + ("%s: %s " % (from_key,current_input[from_key]))
         to_key = current_mode['to']
-        inquire_prompt = inquire_prompt + to_key + ":" # uncomment this line if custom prefix used
+        #inquire_prompt = inquire_prompt + to_key + ":" # comment out this line if custom prefix used
         # inquire model
-        out = model.query(inquire_prompt,prefix="gen:")[0] # change this to: to_key+":"
+        out = model.query(inquire_prompt,prefix=to_key+":")[0] # change this to: to_key+":" rather than "gen:"
         # write output
         output.append({
             'step':i,
