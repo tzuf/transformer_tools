@@ -180,6 +180,17 @@ def main():
         if user_input[d]==d:
             user_input[d] = ""
 
+    #keywords
+    keywords = st_tags(
+        label='# Enter Keywords:',
+        text='Press enter to add more',
+        value=['Zero', 'One', 'Two'],
+        suggestions=['five', 'six', 'seven', 'eight', 'nine', 'three', 'eleven', 'ten', 'four'],
+        maxtags = 4,
+        key='1'
+    )
+
+    st.write(keywords)
 
     #story + answer + supporting facts => question 
     modes_s = st.multiselect(
