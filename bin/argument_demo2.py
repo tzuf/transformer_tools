@@ -183,12 +183,12 @@ def main():
 
     #keywords
     keywords = st_tags(
-        label='# Enter Keywords:',
+        label="*Modular Computations* (argument source=`s`, reason statements=`r`, conclusion statements=`c`, argdown reconstruction=`a`)",
         text='Press enter to add more',
-        value=['Zero', 'One', 'Two'],
-        suggestions=['five', 'six', 'seven', 'eight', 'nine', 'three', 'eleven', 'ten', 'four'],
-        maxtags = 4,
-        key='1'
+        value=["s => a"],
+        suggestions=[m['id'] for m in MODES],
+        maxtags = 8,
+        key='tags_1'
     )
 
     st.write(keywords)
