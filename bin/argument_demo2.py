@@ -181,17 +181,6 @@ def main():
         if user_input[d]==d:
             user_input[d] = ""
 
-    #keywords
-    keywords = st_tags(
-        label="*Modular Computations* (argument source=`s`, reason statements=`r`, conclusion statements=`c`, argdown reconstruction=`a`)",
-        text='Press enter to add more',
-        value=["s => a"],
-        suggestions=[m['id'] for m in MODES],
-        maxtags = 8,
-        key='tags_1'
-    )
-
-    st.write(keywords)
 
     #story + answer + supporting facts => question 
     modes_s = st.multiselect(
