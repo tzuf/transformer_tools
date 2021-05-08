@@ -1,4 +1,4 @@
-MODEL_ID="aaac/aaac_model_runs/multi_angle_exp_model:v1"
+MODEL_ID="aaac/aaac_model_runs/multi_angle_exp_model:v2"
 #MODEL_ID="aaac/finetune/model-3bfu0wcn:v0"
 
 
