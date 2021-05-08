@@ -2,6 +2,7 @@
 
 # Core Pkgs
 import streamlit as st 
+from streamlit_tags import st_tags
 import os
 import sys
 import re
