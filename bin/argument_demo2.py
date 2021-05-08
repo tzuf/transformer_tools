@@ -58,8 +58,8 @@ def params(config):
 def build_config():
     config = initialize_config(sys.argv[1:],params)
     config.T5_type = 'T5ClassificationMultiQA'
-    config.max_answer = 300
-    config.max_seq_len = 300
+    config.max_answer = 350
+    config.max_seq_len = 350
     config.no_repeat_ngram_size = 0
     return config
 
