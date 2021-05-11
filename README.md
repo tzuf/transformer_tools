@@ -130,6 +130,29 @@ Here is how it can be done through the terminal (see also `notebooks/load_t5_bab
 >>> model = LoadT5Generator(gen_config)
 >>> model.query("target query here..")
 ```
+Using T5 correctly
+----------------------------
+When using our pretrained T5 for AAAC, you must use a specific syntax to work with the model.
+
+If you want to use the model you have to use the following prompt structure:
+
+argument_source: [argument_source] argdown_reconstruction:
+argument_source: [argument_source] reason_statements: [reason_statement] argdown_reconstruction:
+argument_source: [argument_source] conclusion_statements: [conclusion_statement] argdown_reconstruction:
+argument_source: [argument_source] reason_statements:
+argument_source: [argument_source] argdown_reconstruction: [argdown_reconstruction] reason_statements:
+argument_source: [argument_source] conclusion_statements: [ conclusion_statements] reason_statements:
+argument_source: [argument_source] conclusion_statements:
+argument_source: [argument_source] reason_statements: [reason_statement] conclusion_statements:
+argument_source: [argument_source] argdown_reconstruction: [argdown_reconstruction] conclusion_statements:
+Squared brackets mean that one should insert the actual instance here.
+
+Furthermore, since the both the reason_statements and conclusion statements are lists, I concatenated them using the prompt
+
+ref_reco0: [first reason] ref_reco1: [second reason] ref_reco2: [third reason] ...
+and
+ref_reco0: [first conclusion] ref_reco1: [second conclusion] ref_reco2: [third conclusion] ...
+
 
 
 Polarity Projection Models 
