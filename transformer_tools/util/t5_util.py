@@ -375,15 +375,19 @@ def generative_data(config,
 def json_patch(json_line):
     if "meta" in json_line and "prefix" in json_line["meta"]:
         json_line["prefix"] = json_line["meta"]["prefix"]
+    else:
+        json_line["prefix"] = "answer:"
+
+        
     if "answer" in json_line:
         json_line["output"] = json_line["answer"]
     if "context" in json_line:
-        del json_line["question"]
+        if "question" in json_line: 
+            del json_line["question"]
         json_line["question"] = {}
         json_line["question"]["stem"] = json_line["context"]
         del json_line["context"]
         
-
 
 def multi_qa(config,
                  tokenizer,
@@ -423,8 +427,8 @@ def multi_qa(config,
             ##
             input_tokens = tokenizer.tokenize(input_)
             output_tokens = tokenizer.tokenize(target)
-            input_sizes.append(len(input_tokens))
-            output_sizes.append(len(output_tokens))
+            input_sizes.append(len(input_tokens)+1)
+            output_sizes.append(len(output_tokens)+1)
 
             tokenized_inputs = tokenizer.batch_encode_plus(
                     [input_],
@@ -788,7 +792,12 @@ def prepare_multi(config,tokenizer):
             if "stem" in json_line["question"]: 
                 special_tokens += re.findall(r'rel\=([A-Z\-\_]+)',str(json_line["question"]["stem"]))
 
-    util_logger.info('found %d special tokens' % len(set(special_tokens)))
+    if config.new_tokens:
+        for token in config.new_tokens.split(";"):
+            token = token.strip()
+            special_tokens.append(token)
+
+    util_logger.info('found %d special tokens: %s' % (len(set(special_tokens)),', '.join(special_tokens)))
     return list(set([s.strip() for s in special_tokens]))
 
 def multi_query(text_input,tokenizer,config,prefix):

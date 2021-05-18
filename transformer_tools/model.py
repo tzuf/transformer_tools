@@ -268,6 +268,12 @@ def params(config):
                          default='',
                          type=str,
                          help="Link to the wandb data [default='']")
+
+    group.add_option("--eval_subdir",
+                         dest="eval_subdir",
+                         default='',
+                         type=str,
+                         help="Sub directory in evaluation path [default='']")
     
     group.add_option("--eval_batch_size",
                          dest="eval_batch_size",
@@ -313,6 +319,9 @@ def params(config):
                          default='cuda',
                          type=str,
                          help="The special device (for loading) [default='cuda']")
+
+    
+    
     ## loading models and checkpoints
 
     group.add_option("--checkpoint_path",

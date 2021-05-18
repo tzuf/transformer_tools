@@ -92,7 +92,7 @@ def _update_config(args,config):
     args.verbose = config.verbose
     ## training
     args.learning_rate = config.learning_rate
-    args.train_batch_size = config.train_batch_size
+    #args.train_batch_size = config.train_batch_size
     args.no_shuffle = config.no_shuffle
     args.num_train_epochs = config.num_train_epochs
     args.remove_models = config.remove_models
@@ -704,6 +704,7 @@ class T5Text2TextBase(pl.LightningModule):
 
         ## update (needs work!)
         _update_config(args,config)
+        util_logger.info("updated parameters: %s" % str(args))
 
         ## build model 
         model = cls(args,config.target_model,config.target_model)
@@ -762,8 +763,11 @@ def _grab_wandb_data(config):
         if config.wandb_data:
             artifact = run.use_artifact(config.wandb_data, type='dataset')
             artifact_dir = artifact.download(root=data_cache)
-            util_logger.info('Download data to: %s' % artifact_dir)
-            config.data_dir = artifact_dir
+            util_logger.info('Download data to: %s,eval_subdir=%s' % (artifact_dir,config.eval_subdir))
+            if config.eval_subdir and config.eval_subdir != "/":
+                config.data_dir = os.path.join(artifact_dir,config.eval_subdir)
+            else: 
+                config.data_dir = artifact_dir
 
         ## grab existing model if specified
         if config.wandb_model:
@@ -952,10 +956,14 @@ class T5Trainer(ConfigurableClass):
 
         ## set up the model
         mclass = cls._MODELS.get(args.T5_type,None)
-        if mclass is None: raise ValueError('Unknown T5 model types: %s' % args.T5_type)
+        if mclass is None:
+            raise ValueError(
+                'Unknown T5 model types: %s' % args.T5_type
+            )
 
         ## load an existing model
         if args.target_model:
+            util_logger.info('Loading an existing model: %s' % args.target_model)
             model = mclass.load_existing(args)
         else: 
             model = mclass.from_config(args)
@@ -1041,6 +1049,12 @@ def params(config):
                          action='store_true',
                          default=False,
                          help="Dont add special tokens to model [default=False]")
+
+    group.add_option("--new_tokens",
+                         dest="new_tokens",
+                         type=str,
+                         default='',
+                         help="Special tokens to add, delimited by `;` [default='']")
 
     group.add_option("--mark_knowledge",
                          dest="mark_kwnowledge",
