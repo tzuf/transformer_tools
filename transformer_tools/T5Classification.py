@@ -15,6 +15,8 @@ from transformer_tools import initialize_config
 from optparse import OptionParser,OptionGroup
 from transformer_tools.util.t5_util import *
 from torch.nn import CrossEntropyLoss
+import h5py
+
 
 from transformer_tools.T5Base import (
     Text2TextData,
@@ -51,7 +53,7 @@ class T5Classification(T5Text2TextBase):
     :param LOADER: the classifier data loader class 
     """
     EVALUATOR = single_token_eval
-    LOADER    = ClassificationText2Text
+    LOADER = ClassificationText2Text
 
     #_generative_step = _classification_step
     def _generative_step(self,batch,
@@ -136,28 +138,61 @@ class T5ClassificationExplanation(T5Classification):
           no_repeat_ngram_size
         num_beams = num_beams if num_beams is not None else self.hparams.num_beams
         do_sample = do_sample if do_sample is not None else self.hparams.do_sample
-        to_p = top_p if top_p is not None else self.hparams.top_p
+        top_p = top_p if top_p is not None else self.hparams.top_p
         top_k = top_k if top_k is not None else self.hparams.top_k
         if do_sample and top_p: top_k = 0
 
-        ### 
+        ###
         outs = self.model.generate(input_ids=batch["source_ids"].to(self._device),
                                     attention_mask=batch["source_mask"].to(self._device),
                                     max_length=max_length,
                                     min_length=min_length,
-                                    num_beams=num_beams,
+                                    # num_beams=num_beams,
                                     early_stopping=True,
                                     no_repeat_ngram_size=no_repeat_ngram_size,
                                     top_p=top_p,
                                     top_k=top_k,
                                     do_sample=do_sample,
-                                    num_return_sequences=num_return_sequences)
+                                    num_return_sequences=num_return_sequences,
+                                    return_dict_in_generate=True,
+                                    output_attentions=True)
 
-        return outs
+        out_dict = {k: v for k,v in outs.items()}
+        del out_dict['decoder_attentions']
+
+        # Move batch index to be first axis.
+        out_dict['encoder_attentions'] = torch.cat([x.unsqueeze(0) for x in outs['encoder_attentions']], axis=0).unsqueeze(0).transpose(0, 2)
+        decoder_list = []
+        for decoder_idx, decoder_out in enumerate(outs['cross_attentions']):
+            decoder_list.append(torch.cat([layer_out.unsqueeze(0) for layer_out in decoder_out], axis=0).unsqueeze(0))
+
+        out_dict['cross_attentions'] = torch.cat(decoder_list, axis=0).unsqueeze(0).transpose(0,3)
+        out_dict['tokens'] = [self._tokenizer.convert_ids_to_tokens(token) for token in batch['source_ids']]
+        assert len(out_dict['tokens']) == out_dict['sequences'].shape[0]
+        assert out_dict['cross_attentions'].shape[0] == out_dict['sequences'].shape[0] , (out_dict['cross_attentions'].shape, out_dict['sequences'].shape)
+        assert out_dict['encoder_attentions'].shape[0] == out_dict['sequences'].shape[0]
+
+        # new_list = []
+        # for idx in range(len(batch["source_ids"])):
+        #     out_dic = {}
+        #     out_dic['encoder_attentions'] = np.array([layer[idx].detach().cpu().numpy() for layer in outs['encoder_attentions']])
+        #     out_dic['cross_attentions'] = np.array([layer[idx].detach().cpu().numpy() for layer in outs['cross_attentions']])
+        #     # out_dic['decoder_attentions'] = np.array([layer[idx].detach().cpu().numpy() for layer in outs['decoder_attentions']])
+        #
+        #     out_dic['sequences'] = outs['sequences'][idx].detach().cpu()
+        #     out_dic['sequences_np'] = outs['sequences'][idx].detach().cpu().numpy()
+        #
+        #     input_id_list = batch["source_ids"][idx].detach().cpu().numpy()
+        #     out_dic['tokens'] = np.array(self._tokenizer.convert_ids_to_tokens(input_id_list))
+        #     self.model_logger.info(f"5555555555555555: {type(out_dic['tokens'])}, {out_dic['tokens']}")
+        #
+        #     new_list.append(out_dic)
+
+        return out_dict
 
 
     @torch.no_grad()
-    def evaluate_output(self,dtype='dev',final_eval=False):
+    def evaluate_output(self,dtype='dev',final_eval=False, attention_local_dir=None):
         """Method for evaluating output, called after training step (passes by default). Loads the 
         data manually so it provides more control over printing model output.
         
@@ -181,9 +216,13 @@ class T5ClassificationExplanation(T5Classification):
                                 shuffle=False,
                                 num_workers=self.hparams.num_workers)
 
+
         outputs = []; targets = []
         ofile = None if (not final_eval or not dataset.data_rep or not self.hparams.output_dir) else \
           os.path.join(self.hparams.output_dir,"%s_eval.tsv" % dtype)
+
+
+        self.model_logger.info(os.path.join(self.hparams.output_dir, "%s_eval.tsv" % dtype))
 
         ## run the
         ## check mode
@@ -193,17 +232,46 @@ class T5ClassificationExplanation(T5Classification):
         self.model_logger.info('Going through batches, ofile=%s, lenght of data rep=%d, func=%s, output_size=%d' %\
                                    (ofile,len(dataset.data_rep),gen_func.__name__,output_size))
 
-        ## go through the batches 
-        for batch in tqdm(loader): 
-            outs = gen_func(batch,max_length=output_size).detach().cpu()
-            dec    = [self.tokenizer.decode(ids.detach().cpu()) if self.tokenizer.decode(ids).strip() else "" for ids in outs]
+        attention_types = ['encoder_attentions',
+                          'cross_attentions',
+                          'tokens',
+                          'sequences'
+                          ]
+
+        path_files = {att: os.path.join(attention_local_dir, f'{att}.h5') for att in attention_types}
+        ## go through the batches
+        running_idx = 0
+        for batch_idx, batch in enumerate(tqdm(loader)):
+
+            outs = gen_func(batch,max_length=output_size)
+            # sequences = [out['sequences'].detach().cpu() for out in outs ]
+
+            dec    = [self.tokenizer.decode(ids.detach().cpu()) if self.tokenizer.decode(ids).strip() else "" for ids in outs['sequences']]
             target = [self.tokenizer.decode(ids.detach().cpu()) for ids in batch["target_ids"].detach()]
             outputs.extend(dec)
             targets.extend(target)
 
+            if attention_local_dir:
+                for att_type, path_file in path_files.items():
+                    with h5py.File(path_file, 'a') as h5f:
+                        for out_idx, out in enumerate(outs[att_type]):
+                            sample_idx = dataset.data_rep[running_idx+out_idx].split("\t")[0]
+                            if sample_idx in h5f.keys():
+                                continue
+                            if isinstance(out, list):
+                                out = [o.encode('utf-8') for o in out]
+                                out = np.asarray(out, dtype='S')
+                                h5f.create_dataset(sample_idx, data=out)
+
+                            else:
+                                out = np.array([layer.detach().cpu().numpy() for layer in out])
+                                h5f.create_dataset(sample_idx, data=out)
+
+                running_idx += len(dec)
+
         ### pass to custom evaluator to make sense of it
         score = self.evaluator(outputs,targets)
-        if ofile: print_full_output(outputs,targets,dataset.data_rep,ofile,print_bleu=self.hparams.print_bleu)         
+        if ofile: print_full_output(outputs,targets,dataset.data_rep,ofile,print_bleu=self.hparams.print_bleu)
         self.model_logger.info('Processed and scored %d outputs/targets, score=%f' % (len(outputs),score))
         ## 
         return score
@@ -485,6 +553,7 @@ class QuestionContextGenerator(T5GenerativeTrainer):
                                    self.hparams.eval_batch_size,
                                    ))
 
+
         ## RUNNING THE GENERATION  
         ###########################
         
@@ -503,13 +572,14 @@ class QuestionContextGenerator(T5GenerativeTrainer):
         text_output = []
         num_return_sequences = self.hparams.regen_k if split == "train" else 1
         
-
         ### run the generatedx
         for batch in tqdm(loader):
             ## run the decoder
             outs = self._generative_step(batch,max_length=output_size,num_return_sequences=num_return_sequences)
-            # ## decode the output 
-            dec = [self.tokenizer.decode(ids.detach().cpu()) if self.tokenizer.decode(ids).strip()  else "" for ids in outs]
+            sequences = outs['sequences']
+
+            # ## decode the output
+            dec = [self.tokenizer.decode(ids.detach().cpu()) if self.tokenizer.decode(ids).strip()  else "" for ids in sequences]
             ## slice into batches
             text_output += [dec[i:i+num_return_sequences] for i in range(0,len(dec),num_return_sequences)]
 
@@ -518,7 +588,7 @@ class QuestionContextGenerator(T5GenerativeTrainer):
 
         self.model_logger.info('Running new contextual data through the QA model..')
         #### run classification mode with new generated data
-        next_inputs,next_targets,next_selected = add_generated_text(self.hparams,self.tokenizer,selected,text_output)
+        next_inputs, next_targets,next_selected = add_generated_text(self.hparams,self.tokenizer,selected,text_output)
         next_dataset = ClassificationText2Text(next_inputs,next_targets)
         next_loader = DataLoader(next_dataset,batch_size=batch_size,shuffle=False,num_workers=self.hparams.num_workers)
 
@@ -558,13 +628,12 @@ class QuestionContextGenerator(T5GenerativeTrainer):
         self.model_logger.info('Identifiers=%d,answers=%d,targets=%d,scores=%d' %\
                                    (len(next_selected),len(answer_out),len(targets),len(scores)))
 
-        ## update 
+        ## update
         create_new_set(self.hparams,
                            next_selected,
                            answer_out,
                            targets,
                            scores,
-                           full_data,split,
                            instance_scores=self.instance_scores
       )
         

@@ -109,6 +109,8 @@ def create_new_set(config,identifiers,
             instance_scores[identifier] = answer_score
 
     util_logger.info('# of items with new context=%d' % len(new_items))
+    util_logger.info('111111111111111111111111111111111111111111111111111111111111111111111111111111111111111')
+
     new_out = os.path.join(config.next_dir,split+".jsonl")
     changed = 0
 
@@ -660,14 +662,15 @@ def print_full_output(outputs,targets,data_rep,ofile,print_bleu=False):
     util_logger.info('Portion of output: %s' % ', '.join(outputs[:5]))
     util_logger.info('Portion of targets: %s' % ', '.join(targets[:5]))
 
-    ### 
+    ###
     with open(ofile,'w') as output_file:
         for k,output in enumerate(outputs):
+
             #print("%s\t%s\t%s" % (data_rep[k],targets[k],output),file=output_file)
             print("%s\t%s" % (data_rep[k],output.replace("<pad>","").replace("</s>","").strip()),file=output_file)
 
     ### print bleu scores for generation outputs
-    if print_bleu: 
+    if print_bleu:
         generation_out = os.path.join(os.path.dirname(ofile),"generation_eval.tsv")
         with open(generation_out,'w') as gen_out:
             for k,output in enumerate(outputs):

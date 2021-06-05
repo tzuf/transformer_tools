@@ -1,6 +1,7 @@
 ## base classes for T5 
 import argparse
-from argparse import ArgumentParser 
+from argparse import ArgumentParser
+import h5py
 import os
 import json
 import time
@@ -9,6 +10,7 @@ import random
 import re
 import sys
 import numpy as np
+import ntpath
 import torch
 from torch.utils.data import Dataset, DataLoader
 import pytorch_lightning as pl
@@ -435,6 +437,7 @@ class T5Text2TextBase(pl.LightningModule):
         """
         avg_loss = torch.stack([x["val_loss"].detach() for x in outputs]).mean()
         ### run the mcqa evaluation
+        self.model_logger.info("validation_epoch_end!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!")
         if self.hparams.callback_monitor == "val_score":
             out_score = self.evaluate_output()
             class_score = torch.from_numpy(np.array(out_score)).detach().cpu()
@@ -673,9 +676,16 @@ class T5Text2TextBase(pl.LightningModule):
                                     top_k=top_k,
                                     do_sample=do_sample,
                                     num_return_sequences=num_return_sequences,
-                                    use_cache=True)
+                                    use_cache=True,
+                                    return_dict_in_generate=True,
+                                    output_scores=True
+                                   )
+        input_id_list = batch["source_ids"][0].tolist()
+        tokens=self._tokenizer.convert_ids_to_tokens(input_id_list)
+        out_dic = {k: outs[k] for k in outs.keys()}
+        out_dic['tokens'] = tokens
 
-        return outs
+        return out_dic
 
     @torch.no_grad()
     def evaluate_output(self,dtype='dev',final_eval=False):
@@ -832,6 +842,15 @@ def _push_wandb_experiment(config,metrics):
         util_logger.info('Trying to log model output...')
         artifact = wandb.Artifact('%s_out' % config.wandb_name.replace(">","-"), type='model_output')
         artifact.add_file(os.path.join(config.output_dir,"dev_eval.tsv"))
+
+        # Back up the attention files if exists.
+        if config.attention_local_dir:
+            util_logger.info(f'Trying to back up in wandb attention from dir: {config.attention_local_dir}')
+            files = [f for f in os.listdir(config.attention_local_dir)]
+            for file_path in files:
+                full_path = os.path.join(config.attention_local_dir, file_path)
+                util_logger.info(f'!!!!!!!!!!!!!!!:  {full_path},{file_path}')
+                artifact.add_file(full_path)
         run.log_artifact(artifact)
 
     ### 
@@ -906,7 +925,7 @@ class T5Trainer(ConfigurableClass):
         ## set up the seed
         set_seed(config.seed)
 
-        ## set up the checkpoint 
+        ## set up the checkpoint
         checkpoint_callback = pl.callbacks.ModelCheckpoint(
             filepath=args.output_dir,
             prefix=args.callback_prefix,
@@ -979,13 +998,13 @@ class T5Trainer(ConfigurableClass):
         ## current a hack to deal with some strange memory issues  
         self.logger.info('Attempting to exit trainer, trying to clear CUDA cache, device=%s' % self._model._device)
 
-        try: 
+        self._model._device = torch.device('cuda')
+        try:
             target_device = self._model._device
             self._model.to("cpu")
             del self._trainer
             del self._model
             del self
-            torch._C._cuda_emptyCache()
             with torch.cuda.device(target_device): torch.cuda.empty_cache()
             ## manual garbage collection
             import gc
@@ -1218,6 +1237,10 @@ def params(config):
                          type=int,
                          help="The number of sentences to sample/generate for generative training [default=5]")
 
+    group.add_option("--attention_local_dir",
+                         dest="attention_local_dir",
+                         default="attention",
+                         help="The local directory of the attention")
 
     config.add_option_group(group)
 
@@ -1286,7 +1309,7 @@ def run_trainer_tester(config,trainer_class,t5_class,eval_map={}):
     ## evaluation (if set) 
     if config.dev_eval or config.test_eval or config.train_eval:
 
-        ### 
+        ###
         util_logger.info('Going into evaluation branch...')
         model    = t5_class.load_existing(config)
         model.eval()
@@ -1311,7 +1334,9 @@ def run_trainer_tester(config,trainer_class,t5_class,eval_map={}):
 
             ## regenerate evaluation data? 
             if config.regenerate_eval: model.regenerate_eval(split="dev")
-            dev_eval_score = model.evaluate_output(dtype='dev',final_eval=print_output)
+            dev_eval_score = model.evaluate_output(dtype='dev',
+                                                   final_eval=print_output,
+                                                   attention_local_dir=config.attention_local_dir)
             metrics[eval_map.get("dev_eval","dev_eval")] = dev_eval_score
             if eval_map.get("best_dev_score","best_dev_score") not in metrics:
                 metrics[eval_map.get("best_dev_score","best_dev_score")] = dev_eval_score
@@ -1320,7 +1345,9 @@ def run_trainer_tester(config,trainer_class,t5_class,eval_map={}):
             util_logger.info('Evaluating test...')
             ## print test output
             if config.regenerate_eval: model.regenerate_eval(split="test")
-            test_eval_score = model.evaluate_output(dtype='test',final_eval=print_output)
+            test_eval_score = model.evaluate_output(dtype='test',
+                                                    final_eval=print_output,
+                                                    attention_local_dir=config.attention_local_dir)
             metrics[eval_map.get("test_eval","test_eval")] = test_eval_score
 
     else:
