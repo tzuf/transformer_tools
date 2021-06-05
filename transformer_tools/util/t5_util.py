@@ -36,6 +36,7 @@ __all__ = [
     "add_generated_text",
     "create_new_set",
     "full_seq_eval",
+    "single_token_list",
 ]
 
 util_logger = logging.getLogger('transformer_tools.util.t5_util')
@@ -582,6 +583,27 @@ def json_mcqa(config,
     util_logger.info('length of data rep=%d' % len(data_rep))
     return (inputs,targets,data_rep)
 
+def single_token_list(outputs,targets,final_eval=False):
+    ## log the first few
+    util_logger.info('First few (outputs): %s' % ' '.join(outputs[:3]))
+    util_logger.info('First few (targets): %s' % ' '.join(targets[:3]))
+    
+    ## update for new tokenizer 
+    new_outputs = [
+        '+'.join(sorted(o.replace("<pad>","").replace("</s>","").strip().split()[0].split("+"))) if o.strip() else "" for o in outputs
+    ]
+
+    new_targets = [
+        "+".join(sorted(t.replace("<pad>","").replace("</s>","").strip().split()[0].split("+"))) for t in targets
+    ]
+        
+    util_logger.info('First few (outputs, processed): %s' % ' '.join(new_outputs[:3]))
+    util_logger.info('First few (targets, processed): %s' % ' '.join(new_targets[:3]))
+    #score = sklearn_metrics.accuracy_score(targets, new_outputs)
+    score = sklearn_metrics.accuracy_score(new_targets, new_outputs)
+    util_logger.info('resulting score: %f, length of inputs=%d' % (score,len(new_outputs)))
+    #return torch.from_numpy(np.array(score)).double()
+    return score
 
 def single_token_eval(outputs,targets,final_eval=False):
     """Compares targets to first token in output (which should correspond to output token in 
@@ -597,9 +619,14 @@ def single_token_eval(outputs,targets,final_eval=False):
     util_logger.info('First few (targets): %s' % ' '.join(targets[:3]))
     
     ## update for new tokenizer 
-    new_outputs = [o.replace("<pad>","").replace("</s>","").strip().split()[0]  if o.strip() else "" for o in outputs]
-    new_targets = [t.replace("<pad>","").replace("</s>","").strip() for t in targets]
+    new_outputs = [
+        o.replace("<pad>","").replace("</s>","").strip().split()[0] if o.strip() else "" for o in outputs
+    ]
 
+    new_targets = [
+        t.replace("<pad>","").replace("</s>","").strip() for t in targets
+    ]
+        
     util_logger.info('First few (outputs, processed): %s' % ' '.join(new_outputs[:3]))
     util_logger.info('First few (targets, processed): %s' % ' '.join(new_targets[:3]))
     #score = sklearn_metrics.accuracy_score(targets, new_outputs)

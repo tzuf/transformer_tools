@@ -277,6 +277,10 @@ class T5ClassificationMultiQA(T5ClassificationExplanation):
 
         return dec
 
+
+class T5ClassificationMultiList(T5ClassificationMultiQA):
+    EVALUATOR = single_token_list
+
 class T5GenerativeTrainer(T5ClassificationExplanation):
     """Model runs generation during training 
 
@@ -573,8 +577,10 @@ _CLASSIFICATION_MODELS={
     "T5Classification"            : T5Classification,
     "T5ClassificationExplanation" : T5ClassificationExplanation,
     "T5ClassificationMultiQA"     : T5ClassificationMultiQA,
-    "QuestionContextGenerator"    : QuestionContextGenerator
+    "QuestionContextGenerator"    : QuestionContextGenerator,
+    "T5ClassificationMultiList"   : T5ClassificationMultiList,
 }
+    
 
 def T5Model(config): 
     """Factory method for loading a T5 model 
