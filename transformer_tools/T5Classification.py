@@ -172,22 +172,6 @@ class T5ClassificationExplanation(T5Classification):
         assert out_dict['cross_attentions'].shape[0] == out_dict['sequences'].shape[0] , (out_dict['cross_attentions'].shape, out_dict['sequences'].shape)
         assert out_dict['encoder_attentions'].shape[0] == out_dict['sequences'].shape[0]
 
-        # new_list = []
-        # for idx in range(len(batch["source_ids"])):
-        #     out_dic = {}
-        #     out_dic['encoder_attentions'] = np.array([layer[idx].detach().cpu().numpy() for layer in outs['encoder_attentions']])
-        #     out_dic['cross_attentions'] = np.array([layer[idx].detach().cpu().numpy() for layer in outs['cross_attentions']])
-        #     # out_dic['decoder_attentions'] = np.array([layer[idx].detach().cpu().numpy() for layer in outs['decoder_attentions']])
-        #
-        #     out_dic['sequences'] = outs['sequences'][idx].detach().cpu()
-        #     out_dic['sequences_np'] = outs['sequences'][idx].detach().cpu().numpy()
-        #
-        #     input_id_list = batch["source_ids"][idx].detach().cpu().numpy()
-        #     out_dic['tokens'] = np.array(self._tokenizer.convert_ids_to_tokens(input_id_list))
-        #     self.model_logger.info(f"5555555555555555: {type(out_dic['tokens'])}, {out_dic['tokens']}")
-        #
-        #     new_list.append(out_dic)
-
         return out_dict
 
 
@@ -244,9 +228,9 @@ class T5ClassificationExplanation(T5Classification):
         for batch_idx, batch in enumerate(tqdm(loader)):
 
             outs = gen_func(batch,max_length=output_size)
-            # sequences = [out['sequences'].detach().cpu() for out in outs ]
-
-            dec    = [self.tokenizer.decode(ids.detach().cpu()) if self.tokenizer.decode(ids).strip() else "" for ids in outs['sequences']]
+            seq = outs['sequences']
+            dec    = [
+                self.tokenizer.decode(ids.detach().cpu()) if self.tokenizer.decode(ids).strip() else "" for ids in seq]
             target = [self.tokenizer.decode(ids.detach().cpu()) for ids in batch["target_ids"].detach()]
             outputs.extend(dec)
             targets.extend(target)
