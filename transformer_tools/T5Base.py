@@ -115,6 +115,7 @@ def _update_config(args,config):
     args.wandb_name = config.wandb_name
     args.wandb_note = config.wandb_note
     args.save_wandb_model = config.save_wandb_model
+    args.print_json = config.print_json
 
     try:
         args.max_regenerate = config.max_regenerate
@@ -831,7 +832,11 @@ def _push_wandb_experiment(config,metrics):
     if config.print_output:
         util_logger.info('Trying to log model output...')
         artifact = wandb.Artifact('%s_out' % config.wandb_name.replace(">","-"), type='model_output')
-        artifact.add_file(os.path.join(config.output_dir,"dev_eval.tsv"))
+
+        if config.print_json:
+            artifact.add_file(os.path.join(config.output_dir,"dev_eval.jsonl"))
+        else: 
+            artifact.add_file(os.path.join(config.output_dir,"dev_eval.tsv"))
         run.log_artifact(artifact)
 
     ### 

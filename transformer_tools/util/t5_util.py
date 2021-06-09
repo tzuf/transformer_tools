@@ -450,7 +450,10 @@ def multi_qa(config,
                 )
 
             if final_eval:
-                data_rep.append("%s\t%s\t%s" % (str(identifier),input_.replace("</s>",""),target.replace("</s>","")))
+                if config.print_json:
+                    data_rep.append(json_line)
+                else: 
+                    data_rep.append("%s\t%s\t%s" % (str(identifier),input_.replace("</s>",""),target.replace("</s>","")))
 
             ### print out some of the representations to spot check 
             if k <= 5 and (split == "train" or final_eval): # and dtype == 'train':
@@ -691,7 +694,14 @@ def print_full_output(outputs,targets,data_rep,ofile,print_bleu=False):
     with open(ofile,'w') as output_file:
         for k,output in enumerate(outputs):
             #print("%s\t%s\t%s" % (data_rep[k],targets[k],output),file=output_file)
-            print("%s\t%s" % (data_rep[k],output.replace("<pad>","").replace("</s>","").strip()),file=output_file)
+            orig_data = data_rep[k]
+            if isinstance(orig_data,dict):
+                orig_data["gen_output"] = output.replace("<pad>","").replace("</s>","").strip()
+                output_file.write(json.dumps(orig_data))
+                output_file.write('\n')
+                #print("%s\t%s" % (data_rep[k],output.replace("<pad>","").replace("</s>","").strip()),file=output_file)
+            else: 
+                print("%s\t%s" % (data_rep[k],output.replace("<pad>","").replace("</s>","").strip()),file=output_file)
 
     ### print bleu scores for generation outputs
     if print_bleu: 

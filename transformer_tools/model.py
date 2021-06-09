@@ -209,6 +209,12 @@ def params(config):
                          default=False,
                          help="Print output [default=False]")
 
+    group.add_option("--print_json",
+                         dest="print_json",
+                         action='store_true',
+                         default=False,
+                         help="Print json output [default=False]")
+
     group.add_option("--no_training",
                          dest="no_training",
                          action='store_true',

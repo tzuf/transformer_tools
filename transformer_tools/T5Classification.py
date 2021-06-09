@@ -184,7 +184,9 @@ class T5ClassificationExplanation(T5Classification):
         outputs = []; targets = []
         ofile = None if (not final_eval or not dataset.data_rep or not self.hparams.output_dir) else \
           os.path.join(self.hparams.output_dir,"%s_eval.tsv" % dtype)
-
+        if ".tsv" in ofile and self.hparams.print_json:
+            ofile =  os.path.join(self.hparams.output_dir,"%s_eval.jsonl" % dtype)
+          
         ## run the
         ## check mode
         gen_func = self._classification_step if not final_eval else self._generative_step
@@ -646,7 +648,7 @@ def params(config):
                          default='multi_qa',
                          type=str,
                          help="Dataset builder function [default='json_mcqa']")
-
+    
     group.add_option("--max_regenerate",
                          dest="max_regenerate",
                          default=500,
