@@ -140,8 +140,6 @@ class T5ClassificationExplanation(T5Classification):
         :rtype: dict 
         """
 
-        self.model_logger.info('111111111111111111111111111111')
-
         no_repeat_ngram_size = self.hparams.no_repeat_ngram_size if no_repeat_ngram_size is None else \
           no_repeat_ngram_size
         num_beams = num_beams if num_beams is not None else self.hparams.num_beams
