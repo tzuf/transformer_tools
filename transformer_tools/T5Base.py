@@ -22,6 +22,8 @@ from enum import Enum
 from typing import List, Optional
 from transformers import PreTrainedTokenizer
 from transformer_tools.model import Model,init_wandb,WANDB_CACHE
+from transformer_tools import initialize_config
+from transformers import T5Config
 
 from transformers import (
     AdamW,
@@ -80,7 +82,8 @@ def _update_config(args,config):
     args.top_k         = int(config.top_k) if config.top_k is not None else config.top_k
     args.min_length    = int(config.min_length) if config.min_length is not None else config.min_length
     args.regen_k       = int(config.regen_k) if config.regen_k is not None else config.regen_k
-
+    args.output_attentions = config.output_attentions
+    args.return_dict_in_generate = config.return_dict_in_generate
     ###
     args.early_stop_decoding = config.early_stop_decoding
     args.max_seq_length = config.max_seq_length
@@ -273,9 +276,13 @@ class T5Text2TextBase(pl.LightningModule):
         :param evaluator: the evaluator function 
         """
         super(T5Text2TextBase, self).__init__()
+
+
         self.hparams   = hparams
-        if model_loc is not None: self._model = T5ForConditionalGeneration.from_pretrained(model_loc)
+
+        if model_loc is not None: self._model = T5ForConditionalGeneration.from_pretrained(model_loc, output_attentions=True)
         else: self._model = T5ForConditionalGeneration.from_pretrained(self.hparams.model_name_or_path)
+
         self.dclass     = type(self).LOADER
         self.evaluator  = type(self).EVALUATOR
         ## tokenizer 
@@ -332,7 +339,10 @@ class T5Text2TextBase(pl.LightningModule):
         """
         previous_device = self._model.device
         self.model_logger.info('Changing model to %s, previous device=%s' % (model_path,previous_device))
-        self._model = T5ForConditionalGeneration.from_pretrained(model_path)
+
+        config = T5Config.from_pretrained(model_path, output_hidden_states=True, output_attentions=True)
+
+        self._model = T5ForConditionalGeneration.from_pretrained(config)
         self._model.to(previous_device)
         self.model_logger.info('new device=%s' % self._model.device)
 
@@ -437,7 +447,7 @@ class T5Text2TextBase(pl.LightningModule):
         """
         avg_loss = torch.stack([x["val_loss"].detach() for x in outputs]).mean()
         ### run the mcqa evaluation
-        self.model_logger.info("validation_epoch_end!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!")
+
         if self.hparams.callback_monitor == "val_score":
             out_score = self.evaluate_output()
             class_score = torch.from_numpy(np.array(out_score)).detach().cpu()
@@ -627,10 +637,15 @@ class T5Text2TextBase(pl.LightningModule):
         :rtype: dict 
         :returns: T5 model outputs
         """
+
         outs = self.model.generate(input_ids=batch["source_ids"].to(self._device),
                                     attention_mask=batch["source_mask"].to(self._device),
-                                    max_length=max_length)
+                                    max_length=max_length,
+                                    return_dict_in_generate=True,
+                                    output_attentions=True
+                                   )
                                     #max_length=self.hparams.classification_length)
+
         return outs
 
     #_generative_step = _classification_step
@@ -680,6 +695,8 @@ class T5Text2TextBase(pl.LightningModule):
                                     return_dict_in_generate=True,
                                     output_scores=True
                                    )
+
+
         input_id_list = batch["source_ids"][0].tolist()
         tokens=self._tokenizer.convert_ids_to_tokens(input_id_list)
         out_dic = {k: outs[k] for k in outs.keys()}
@@ -716,8 +733,9 @@ class T5Text2TextBase(pl.LightningModule):
         _update_config(args,config)
         util_logger.info("updated parameters: %s" % str(args))
 
-        ## build model 
+        ## build model
         model = cls(args,config.target_model,config.target_model)
+
         if config.special_device and torch.cuda.is_available():
             model.to(config.special_device)
         return model
@@ -849,7 +867,7 @@ def _push_wandb_experiment(config,metrics):
             files = [f for f in os.listdir(config.attention_local_dir)]
             for file_path in files:
                 full_path = os.path.join(config.attention_local_dir, file_path)
-                util_logger.info(f'!!!!!!!!!!!!!!!:  {full_path},{file_path}')
+                util_logger.info(f'Adding to wandb:  {full_path},{file_path}')
                 artifact.add_file(full_path)
         run.log_artifact(artifact)
 
@@ -1385,3 +1403,5 @@ def main(argv):
 
     ## run 
     run_trainer_tester(config)
+
+

@@ -26,7 +26,11 @@ from transformer_tools.T5Base import (
     run_trainer_tester,
 )
 
-util_logger = logging.getLogger('transformer_tools.T5Classification')
+ATTENTION_TYPES = ['encoder_attentions',
+                   'cross_attentions',
+                   'tokens',
+                   'sequences'
+                   ]
 
 _CLASSIFICATION_BUILDERS={
     "json_mcqa"       : json_mcqa,
@@ -64,7 +68,8 @@ class T5Classification(T5Text2TextBase):
                              top_p=None,
                              min_length=None,
                              top_k=None,
-                             num_return_sequences=None):
+                             num_return_sequences=None,
+                         ):
         """Replaces generative step with the classification step (no actual generation
         is used in this model) 
 
@@ -134,6 +139,9 @@ class T5ClassificationExplanation(T5Classification):
         :param top_k: the top k items to sample from 
         :rtype: dict 
         """
+
+        self.model_logger.info('111111111111111111111111111111')
+
         no_repeat_ngram_size = self.hparams.no_repeat_ngram_size if no_repeat_ngram_size is None else \
           no_repeat_ngram_size
         num_beams = num_beams if num_beams is not None else self.hparams.num_beams
@@ -157,7 +165,7 @@ class T5ClassificationExplanation(T5Classification):
                                     return_dict_in_generate=True,
                                     output_attentions=True)
 
-        out_dict = {k: v for k,v in outs.items()}
+        out_dict = {k: v for k, v in outs.items()}
         del out_dict['decoder_attentions']
 
         # Move batch index to be first axis.
@@ -166,10 +174,10 @@ class T5ClassificationExplanation(T5Classification):
         for decoder_idx, decoder_out in enumerate(outs['cross_attentions']):
             decoder_list.append(torch.cat([layer_out.unsqueeze(0) for layer_out in decoder_out], axis=0).unsqueeze(0))
 
-        out_dict['cross_attentions'] = torch.cat(decoder_list, axis=0).unsqueeze(0).transpose(0,3)
+        out_dict['cross_attentions'] = torch.cat(decoder_list, axis=0).unsqueeze(0).transpose(0, 3)
         out_dict['tokens'] = [self._tokenizer.convert_ids_to_tokens(token) for token in batch['source_ids']]
         assert len(out_dict['tokens']) == out_dict['sequences'].shape[0]
-        assert out_dict['cross_attentions'].shape[0] == out_dict['sequences'].shape[0] , (out_dict['cross_attentions'].shape, out_dict['sequences'].shape)
+        assert out_dict['cross_attentions'].shape[0] == out_dict['sequences'].shape[0]
         assert out_dict['encoder_attentions'].shape[0] == out_dict['sequences'].shape[0]
 
         return out_dict
@@ -216,13 +224,8 @@ class T5ClassificationExplanation(T5Classification):
         self.model_logger.info('Going through batches, ofile=%s, lenght of data rep=%d, func=%s, output_size=%d' %\
                                    (ofile,len(dataset.data_rep),gen_func.__name__,output_size))
 
-        attention_types = ['encoder_attentions',
-                          'cross_attentions',
-                          'tokens',
-                          'sequences'
-                          ]
 
-        path_files = {att: os.path.join(attention_local_dir, f'{att}.h5') for att in attention_types}
+        path_files = {att: os.path.join(attention_local_dir, f'{att}.h5') for att in ATTENTION_TYPES}
         ## go through the batches
         running_idx = 0
         for batch_idx, batch in enumerate(tqdm(loader)):
@@ -245,11 +248,10 @@ class T5ClassificationExplanation(T5Classification):
                             if isinstance(out, list):
                                 out = [o.encode('utf-8') for o in out]
                                 out = np.asarray(out, dtype='S')
-                                h5f.create_dataset(sample_idx, data=out)
 
                             else:
-                                out = np.array([layer.detach().cpu().numpy() for layer in out])
-                                h5f.create_dataset(sample_idx, data=out)
+                                out = out.detach().cpu().numpy()
+                            h5f.create_dataset(sample_idx, data=out)
 
                 running_idx += len(dec)
 
@@ -321,13 +323,28 @@ class T5ClassificationMultiQA(T5ClassificationExplanation):
                                 do_sample=do_sample,
                                 top_p=top_p,
                                 min_length=min_length,
-                                num_return_sequences=num_return_sequences)
+                                num_return_sequences=num_return_sequences,
+                            )
+
+            out_dict = {k: v for k, v in outs.items()}
+            del out_dict['decoder_attentions']
+            del out_dict['encoder_attentions']
+
+            decoder_list = []
+            for decoder_idx, decoder_out in enumerate(outs['cross_attentions']):
+                decoder_list.append(
+                    torch.cat([layer_out.unsqueeze(0) for layer_out in decoder_out], axis=0).unsqueeze(0))
+
+            cross_attentions = torch.cat(decoder_list, axis=0).unsqueeze(0).transpose(0, 3)
+
+            input_tokens = [self._tokenizer.convert_ids_to_tokens(token) for token in batch['source_ids']]
+            prediction_tokens = [self._tokenizer.convert_ids_to_tokens(token) for token in out_dict['sequences']]
 
             ## decoder output
             dec = [self.tokenizer.decode(ids).replace("<pad> ","").replace("</s>","").strip() \
-                       if self.tokenizer.decode(ids).strip() else "" for ids in outs]
+                       if self.tokenizer.decode(ids).strip() else "" for ids in outs['sequences']]
 
-        return dec
+        return dec, cross_attentions, input_tokens, prediction_tokens
 
 class T5GenerativeTrainer(T5ClassificationExplanation):
     """Model runs generation during training 
@@ -662,6 +679,9 @@ def T5ClassificationModel(config):
     return mtype
 
 def LoadModel(config):
+    config.output_attentions = True
+    config.return_dict_in_generate = True
+
     model_class = T5ClassificationModel(config)
     return model_class.load_existing(config)
 
@@ -720,3 +740,4 @@ def main(argv):
 
     ## trainer testing
     run_trainer_tester(config,T5ClassificationTrainer,t5_class)
+
