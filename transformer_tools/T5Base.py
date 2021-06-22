@@ -116,6 +116,7 @@ def _update_config(args,config):
     args.wandb_note = config.wandb_note
     args.save_wandb_model = config.save_wandb_model
     args.print_json = config.print_json
+    args.force_prefix = config.force_prefix
 
     try:
         args.max_regenerate = config.max_regenerate
@@ -168,7 +169,9 @@ class Text2TextData(LoggableClass):
     def from_file(cls,config,
                       tokenizer,
                       split,
-                      final_eval):
+                      final_eval,
+                      force_prefix=None,
+                      ):
         """Load data from file 
 
         :param config: the global configuration 
@@ -181,7 +184,7 @@ class Text2TextData(LoggableClass):
         if builder is None: raise ValueError('Unknown data builder=%s' % config.data_builder)
         
         ## build data using builder
-        o = builder(config,tokenizer,split,final_eval)
+        o = builder(config,tokenizer,split,final_eval,force_prefix=force_prefix)
         if len(o) == 3: 
             inputs,outputs,data_rep = o #builder(config,tokenizer,split,final_eval)
             data_sizes = [] 
@@ -541,7 +544,7 @@ class T5Text2TextBase(pl.LightningModule):
                         num_workers=self.hparams.num_workers)
 
     ## general method for collecting data
-    def _get_data(self,split,final_eval=False):
+    def _get_data(self,split,final_eval=False,force_prefix=None):
         """Main method for getting the data 
 
         :param split: the particular split 
@@ -550,7 +553,9 @@ class T5Text2TextBase(pl.LightningModule):
         return self.dclass.from_file(self.hparams,
                                          self._tokenizer,
                                          split,
-                                         final_eval)
+                                         final_eval,
+                                         force_prefix=force_prefix,
+                                         )
 
     @property
     def tokenizer(self):
@@ -1200,6 +1205,11 @@ def params(config):
                          default=None,
                          help="Nucleaus sampling parameter [default=None]")
 
+    group.add_option("--force_prefix",
+                         dest="force_prefix",
+                         default='',
+                         help="run the model in a target mode [default='']")
+
     group.add_option("--top_k",
                          dest="top_k",
                          default=None,
@@ -1312,20 +1322,23 @@ def run_trainer_tester(config,trainer_class,t5_class,eval_map={}):
             metrics[eval_map.get("train_eval","train_eval")] = train_eval_score
 
         if config.dev_eval:
-            util_logger.info('Evaluating dev...')
+            util_logger.info('Evaluating dev, prefix=%s...' % config.force_prefix)
 
             ## regenerate evaluation data? 
             if config.regenerate_eval: model.regenerate_eval(split="dev")
-            dev_eval_score = model.evaluate_output(dtype='dev',final_eval=print_output)
+            dev_eval_score = model.evaluate_output(dtype='dev',final_eval=print_output,
+                                                       force_prefix=config.force_prefix)
+
             metrics[eval_map.get("dev_eval","dev_eval")] = dev_eval_score
             if eval_map.get("best_dev_score","best_dev_score") not in metrics:
                 metrics[eval_map.get("best_dev_score","best_dev_score")] = dev_eval_score
 
         if config.test_eval:
-            util_logger.info('Evaluating test...')
+            util_logger.info('Evaluating test prefix=%s...' % config.force_prefix)
             ## print test output
             if config.regenerate_eval: model.regenerate_eval(split="test")
-            test_eval_score = model.evaluate_output(dtype='test',final_eval=print_output)
+            test_eval_score = model.evaluate_output(dtype='test',final_eval=print_output,
+                                                        force_prefix=config.force_prefix)
             metrics[eval_map.get("test_eval","test_eval")] = test_eval_score
 
     else:

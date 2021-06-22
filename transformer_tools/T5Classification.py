@@ -157,7 +157,7 @@ class T5ClassificationExplanation(T5Classification):
 
 
     @torch.no_grad()
-    def evaluate_output(self,dtype='dev',final_eval=False):
+    def evaluate_output(self,dtype='dev',final_eval=False,force_prefix=None):
         """Method for evaluating output, called after training step (passes by default). Loads the 
         data manually so it provides more control over printing model output.
         
@@ -165,17 +165,18 @@ class T5ClassificationExplanation(T5Classification):
         :rtype final_eval: bool
         :rtype: pytorch.Tensor
         """
-        self.model_logger.info('Attempting to evaluate input with dtype=%s, final_eval=%s,device=%s, max_answer=%d, no_repeat_ngram_size=%d, num_beams=%d, do_sample=%s, top_p=%s' %\
+        self.model_logger.info('Attempting to evaluate input with dtype=%s, final_eval=%s,device=%s, max_answer=%d, no_repeat_ngram_size=%d, num_beams=%d, do_sample=%s, top_p=%s,force_prefix=%s' %\
                                    (dtype,final_eval,self._device,
                                    self.hparams.max_answer,
                                    self.hparams.no_repeat_ngram_size,
                                    self.hparams.num_beams,
                                    str(self.hparams.do_sample),
                                    self.hparams.top_p,
+                                   force_prefix,
                                    ))
 
         ## loads the dataset on each round, can't seem to find the trainer dataset anywhere!
-        dataset = self._get_data(dtype,final_eval=final_eval)
+        dataset = self._get_data(dtype,final_eval=final_eval,force_prefix=force_prefix)
         loader = DataLoader(dataset,
                                 batch_size=self.hparams.eval_batch_size,
                                 shuffle=False,

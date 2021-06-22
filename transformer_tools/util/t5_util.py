@@ -393,7 +393,9 @@ def json_patch(json_line):
 def multi_qa(config,
                  tokenizer,
                  split,
-                 final_eval):
+                 final_eval,
+                 force_prefix=None,
+                 ):
     split_file = os.path.join(config.data_dir,"%s.jsonl" % split)
     util_logger.info('Reading file: %s, final eval=%s' % (split_file,final_eval))
     inputs   = []
@@ -416,6 +418,10 @@ def multi_qa(config,
             ## find the prefix
             if final_eval or split == "train": prefix = json_line["prefix"]
             else: prefix = "answer:"
+
+            ## force a particular mode 
+            if force_prefix:
+                prefix = force_prefix
 
             # # #### encoder side 
             #input_ = "%s %s </s>" % (prefix,json_line["question"]["stem"])
@@ -480,7 +486,9 @@ def multi_qa(config,
 def json_mcqa(config,
                   tokenizer,
                   split,
-                  final_eval):
+                  final_eval,
+                  force_prefix=None,
+                  ):
     """Json mcqa extractor and feature builder
 
     :param config: the global configuration 
