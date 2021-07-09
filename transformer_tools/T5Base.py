@@ -279,6 +279,7 @@ class T5Text2TextBase(pl.LightningModule):
         if model_loc is not None: self._model = T5ForConditionalGeneration.from_pretrained(model_loc)
         else: self._model = T5ForConditionalGeneration.from_pretrained(self.hparams.model_name_or_path)
         self.dclass     = type(self).LOADER
+
         self.evaluator  = type(self).EVALUATOR
         ## tokenizer 
         if tokenizer is None: self._tokenizer = T5Tokenizer.from_pretrained(self.hparams.tokenizer_name_or_path)
@@ -803,19 +804,25 @@ def _push_wandb_experiment(config,metrics):
     :param config: the global experiment configuration 
     :param metrics: the resulting metrics 
     """
+
     wandb.log(metrics)
+    
     wandb.log({"model_name" : config.model_name, "eval_name" : config.eval_name})
+    
     run = wandb.init(
             project=config.wandb_project,
             entity=config.wandb_entity,
             name="",
     )
 
+
     ## back up the standard T5 model files if specified
     if config.save_wandb_model and not config.no_training:
         util_logger.info('Backing up the model files to wandb')
         ## save instead as an artifact
         martifact = wandb.Artifact('%s_model' % config.wandb_name, type='model')
+        
+
 
         for model_file in [
                 "added_tokens.json",
@@ -829,23 +836,32 @@ def _push_wandb_experiment(config,metrics):
             martifact.add_file(
                 os.path.join(config.output_dir,model_file)
             )
-            
+        
+        
+
+
         ## log model 
         run.log_artifact(martifact)
+        
+
 
     ## back up the output file if exists 
     if config.print_output:
         util_logger.info('Trying to log model output...')
         artifact = wandb.Artifact('%s_out' % config.wandb_name.replace(">","-"), type='model_output')
-
+        
         if config.print_json:
+            
             artifact.add_file(os.path.join(config.output_dir,"dev_eval.jsonl"))
         else: 
+            
             artifact.add_file(os.path.join(config.output_dir,"dev_eval.tsv"))
+        
         run.log_artifact(artifact)
-
+        
     ### 
     run.finish()
+
 
 def _remove_models(config):
     """Remove models specified
@@ -1316,23 +1332,28 @@ def run_trainer_tester(config,trainer_class,t5_class,eval_map={}):
         #     wandb_logger.watch(model.model)
 
         ## (moved this out of the trainer) 
+
         if config.train_eval:
             util_logger.info('Evaluating train...')
             train_eval_score = model.evaluate_output(dtype='train',final_eval=print_output)
+
             metrics[eval_map.get("train_eval","train_eval")] = train_eval_score
 
+
         if config.dev_eval:
-            util_logger.info('Evaluating dev, prefix=%s...' % config.force_prefix)
+            util_logger.info('Evaluating dev...')
 
             ## regenerate evaluation data? 
             if config.regenerate_eval: model.regenerate_eval(split="dev")
-            dev_eval_score = model.evaluate_output(dtype='dev',final_eval=print_output,
-                                                       force_prefix=config.force_prefix)
-
+            dev_eval_score, dev_eval_score_proof = model.evaluate_output(dtype='dev',
+                                                   final_eval=print_output,
+                                                   attention_local_dir=config.attention_local_dir)
             metrics[eval_map.get("dev_eval","dev_eval")] = dev_eval_score
+            metrics[eval_map.get("dev_eval_proof","dev_eval_proof")] = dev_eval_score_proof
+
             if eval_map.get("best_dev_score","best_dev_score") not in metrics:
                 metrics[eval_map.get("best_dev_score","best_dev_score")] = dev_eval_score
-
+                metrics[eval_map.get("best_dev_score_proof","best_dev_score_proof")] = dev_eval_score_proof
         if config.test_eval:
             util_logger.info('Evaluating test prefix=%s...' % config.force_prefix)
             ## print test output
@@ -1351,6 +1372,7 @@ def run_trainer_tester(config,trainer_class,t5_class,eval_map={}):
         metrics_out = os.path.join(config.output_dir,"metrics.json")
         util_logger.info('Attempting to write metrics file, out=%s...' % metrics_out)
         ## print out 
+
         with open(metrics_out,'w') as my_metrics:
             my_metrics.write(json.dumps(metrics,indent=4))
 
@@ -1358,10 +1380,12 @@ def run_trainer_tester(config,trainer_class,t5_class,eval_map={}):
         if wandb_available and config.wandb_project:
             _push_wandb_experiment(config,metrics)
 
+
     ## remove models (if desired)
     if config.remove_models or config.remove_checkpoints:
         util_logger.info('Attempting to remove models...')
         _remove_models(config)
+
 
 def main(argv):
     """The main execution point for running the T5 model 

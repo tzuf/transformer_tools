@@ -205,6 +205,7 @@ class T5ClassificationExplanation(T5Classification):
             targets.extend(target)
 
         ### pass to custom evaluator to make sense of it
+        
         score = self.evaluator(outputs,targets)
         if ofile: print_full_output(outputs,targets,dataset.data_rep,ofile,print_bleu=self.hparams.print_bleu)         
         self.model_logger.info('Processed and scored %d outputs/targets, score=%f' % (len(outputs),score))
@@ -218,7 +219,7 @@ class T5ClassificationMultiQA(T5ClassificationExplanation):
     :param EVALUATOR: the classifier evaluation code 
     :param LOADER: the classifier data loader class 
     """
-    EVALUATOR = single_token_eval
+    EVALUATOR = single_token_eval_with_proof
 
     def prepare_data(self):
         """This method checks that provided data is an the right format

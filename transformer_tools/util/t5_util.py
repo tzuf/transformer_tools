@@ -616,6 +616,35 @@ def single_token_list(outputs,targets,final_eval=False):
     #return torch.from_numpy(np.array(score)).double()
     return score
 
+
+def single_token_eval_with_proof(outputs_with_proof, targets_with_proof, final_eval=False):
+    """Compares targets to first token in output (which should correspond to output token in
+    case of classification)
+
+    :param outputs: the model (generated) outputs
+    :type outputs: list
+    :param targets: the model target
+    :type targets: list
+    """
+    PROOF = "$proof$"
+
+    outputs = [p.split(PROOF)[0] for p in outputs_with_proof]
+    targets = [p.split(PROOF)[0] for p in outputs_with_proof]
+
+    outputs_proof = [p.split(PROOF)[1] for p in outputs_with_proof]
+    targets_proof = [p.split(PROOF)[1] for p in outputs_with_proof]
+
+    util_logger.info('Examples of outputs')
+
+    output_score = single_token_eval(outputs, targets)
+
+    util_logger.info('Examples of proofs')
+
+    proof_score = single_token_eval(outputs_proof, targets_proof)
+
+
+    return output_score, proof_score
+
 def single_token_eval(outputs,targets,final_eval=False):
     """Compares targets to first token in output (which should correspond to output token in 
     case of classification)
@@ -628,7 +657,8 @@ def single_token_eval(outputs,targets,final_eval=False):
     ## log the first few
     util_logger.info('First few (outputs): %s' % ' '.join(outputs[:3]))
     util_logger.info('First few (targets): %s' % ' '.join(targets[:3]))
-    
+
+
     ## update for new tokenizer 
     new_outputs = [
         o.replace("<pad>","").replace("</s>","").strip().split()[0] if o.strip() else "" for o in outputs
