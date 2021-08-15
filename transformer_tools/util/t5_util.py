@@ -23,6 +23,7 @@ from seqeval.metrics import f1_score
 
 __all__ = [
     "json_mcqa",
+    "single_token_eval_with_proof",
     "single_token_eval",
     "print_full_output",
     "prepare_explanations",
@@ -629,12 +630,10 @@ def single_token_eval_with_proof(outputs_with_proof, targets_with_proof, final_e
     PROOF = "$proof$"
 
     outputs = [p.split(PROOF)[0] for p in outputs_with_proof]
-    targets = [p.split(PROOF)[0] for p in outputs_with_proof]
+    targets = [p.split(PROOF)[0] for p in targets_with_proof]
 
     outputs_proof = [p.split(PROOF)[1] for p in outputs_with_proof]
-    targets_proof = [p.split(PROOF)[1] for p in outputs_with_proof]
-
-    util_logger.info('Examples of outputs')
+    targets_proof = [p.split(PROOF)[1] for p in targets_with_proof]
 
     output_score = single_token_eval(outputs, targets)
 

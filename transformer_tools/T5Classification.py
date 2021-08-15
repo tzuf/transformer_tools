@@ -14,6 +14,7 @@ from dataclasses import dataclass
 from transformer_tools import initialize_config
 from optparse import OptionParser,OptionGroup
 from transformer_tools.util.t5_util import *
+from transformer_tools.util.t5_util import single_token_eval_with_proof
 from torch.nn import CrossEntropyLoss
 
 from transformer_tools.T5Base import (
@@ -197,7 +198,7 @@ class T5ClassificationExplanation(T5Classification):
                                    (ofile,len(dataset.data_rep),gen_func.__name__,output_size))
 
         ## go through the batches 
-        for batch in tqdm(loader): 
+        for batch in tqdm(loader):
             outs = gen_func(batch,max_length=output_size).detach().cpu()
             dec    = [self.tokenizer.decode(ids.detach().cpu()) if self.tokenizer.decode(ids).strip() else "" for ids in outs]
             target = [self.tokenizer.decode(ids.detach().cpu()) for ids in batch["target_ids"].detach()]
@@ -206,11 +207,11 @@ class T5ClassificationExplanation(T5Classification):
 
         ### pass to custom evaluator to make sense of it
         
-        score = self.evaluator(outputs,targets)
+        output_score, proof_score = self.evaluator(outputs,targets)
         if ofile: print_full_output(outputs,targets,dataset.data_rep,ofile,print_bleu=self.hparams.print_bleu)         
-        self.model_logger.info('Processed and scored %d outputs/targets, score=%f' % (len(outputs),score))
+        self.model_logger.info('Processed and scored %d outputs/targets, score=%f, proof score=%f' % (len(outputs),output_score, proof_score))
         ## 
-        return score
+        return output_score, proof_score
     
 class T5ClassificationMultiQA(T5ClassificationExplanation):
     """Allows data that is explicitly mixed with explanations, reasoning patterns, 
@@ -676,4 +677,4 @@ def main(argv):
     t5_class = T5Model(config)
 
     ## trainer testing
-    run_trainer_tester(config,T5ClassificationTrainer,t5_class)
+    run_trainer_tester(config, T5ClassificationTrainer, t5_class)

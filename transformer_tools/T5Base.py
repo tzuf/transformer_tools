@@ -1328,6 +1328,9 @@ def run_trainer_tester(config,trainer_class,t5_class,eval_map={}):
         model.hparams.output_dir = config.output_dir
         print_output = config.print_output
 
+        util_logger.info(f'??????????????????????????????????????????????????????? {print_output}')
+
+
         # if wandb_logger:
         #     wandb_logger.watch(model.model)
 
@@ -1347,7 +1350,7 @@ def run_trainer_tester(config,trainer_class,t5_class,eval_map={}):
             if config.regenerate_eval: model.regenerate_eval(split="dev")
             dev_eval_score, dev_eval_score_proof = model.evaluate_output(dtype='dev',
                                                    final_eval=print_output,
-                                                   attention_local_dir=config.attention_local_dir)
+                                                   )
             metrics[eval_map.get("dev_eval","dev_eval")] = dev_eval_score
             metrics[eval_map.get("dev_eval_proof","dev_eval_proof")] = dev_eval_score_proof
 
